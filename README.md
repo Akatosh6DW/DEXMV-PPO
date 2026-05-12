@@ -5,7 +5,7 @@ This repository is the integration workspace for combining the Aero-Hand PPO pro
 ## Repository layout
 
 - `Aero-Hand/`: PPO subproject, tracked as a Git submodule.
-- `DexMV/`: reserved location for the DexMV project, to be added after download.
+- `DexMV/`: DexMV simulation project, tracked as a Git submodule.
 - `bridges/`: planned conversion scripts between DexMV outputs and PPO demonstration datasets.
 - `datasets/`: generated datasets such as `demo_dataset.npz`; ignored by Git.
 - `docs/`: integration notes and interface records.

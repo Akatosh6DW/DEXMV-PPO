@@ -1,3 +1,6 @@
 [submodule "Aero-Hand"]
 	path = Aero-Hand
 	url = https://github.com/Akatosh6DW/Aero-Hand.git
+[submodule "DexMV"]
+	path = DexMV
+	url = https://github.com/yzqin/dexmv-sim.git

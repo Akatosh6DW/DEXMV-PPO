@@ -35,6 +35,4 @@ tensorboard/
 *.mp4
 *.npz
 
-# Large external DexMV contents should be tracked as a submodule later.
-DexMV/*
-!DexMV/.gitkeep
+# External code is tracked through Git submodules.
