@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+*.conda
+
+# IDE/editor
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project generated outputs
+data/
+datasets/
+outputs/
+runs/
+logs/
+checkpoints/
+wandb/
+tensorboard/
+*.log
+*.mp4
+*.npz
+
+# Large external DexMV contents should be tracked as a submodule later.
+DexMV/*
+!DexMV/.gitkeep
