@@ -1,0 +1,11 @@
+{
+  "output": "artifacts/orca_cylinder_study/D05_reference_check",
+  "reference": "artifacts/orca_cylinder_study/D04_reference/reference.npz",
+  "method": "zero",
+  "steps": 0,
+  "eval_count": 16,
+  "eval_start": 95000,
+  "seed": 32001,
+  "std": 0.7,
+  "shaping": 1.0
+}

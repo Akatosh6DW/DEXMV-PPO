@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.75,
+      "success15": 0.75,
+      "pad_hold_sec": 27.78749942779541,
+      "broad_hold_sec": 27.78749942779541,
+      "pad_pair_fraction": 0.75,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0009400245035067201,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.511770248413086,
+      "step": 0,
+      "elapsed_sec": 16.42531879499802
+    },
+    {
+      "success30": 0.25,
+      "success15": 0.5,
+      "pad_hold_sec": 16.612499713897705,
+      "broad_hold_sec": 18.524999618530273,
+      "pad_pair_fraction": 0.44838055968284607,
+      "residual_rms_rad": 0.0008389048598473892,
+      "max_penetration_m": 0.0009398397523909807,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 6.008237361907959,
+      "step": 20480,
+      "elapsed_sec": 93.9926454109991
+    },
+    {
+      "success30": 1.0,
+      "success15": 1.0,
+      "pad_hold_sec": 37.04999923706055,
+      "broad_hold_sec": 37.04999923706055,
+      "pad_pair_fraction": 1.0,
+      "residual_rms_rad": 0.0013990463921800256,
+      "max_penetration_m": 0.0009426757460460067,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.47530460357666,
+      "step": 40960,
+      "elapsed_sec": 166.4790613410005
+    },
+    {
+      "success30": 1.0,
+      "success15": 1.0,
+      "pad_hold_sec": 37.04999923706055,
+      "broad_hold_sec": 37.04999923706055,
+      "pad_pair_fraction": 1.0,
+      "residual_rms_rad": 0.0019287898030597717,
+      "max_penetration_m": 0.0009585876832716167,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.826207637786865,
+      "step": 61440,
+      "elapsed_sec": 238.775054507998
+    },
+    {
+      "success30": 0.75,
+      "success15": 0.75,
+      "pad_hold_sec": 27.78749942779541,
+      "broad_hold_sec": 27.78749942779541,
+      "pad_pair_fraction": 0.75,
+      "residual_rms_rad": 0.0024788321752566844,
+      "max_penetration_m": 0.0009718448854982853,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.555797100067139,
+      "step": 81920,
+      "elapsed_sec": 311.0551370639987
+    }
+  ],
+  "final_step": 81920,
+  "success30": {
+    "first": 0.75,
+    "last": 0.75,
+    "max": 1.0,
+    "best_step": 40960
+  },
+  "pad_hold_sec": {
+    "first": 27.78749942779541,
+    "last": 27.78749942779541,
+    "max": 37.04999923706055,
+    "best_step": 40960
+  }
+}

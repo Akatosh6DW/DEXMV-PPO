@@ -4,3 +4,6 @@
 [submodule "DexMV"]
 	path = DexMV
 	url = https://github.com/Akatosh6DW/dexmv-sim.git
+[submodule "DexMV-Learn"]
+	path = DexMV-Learn
+	url = https://github.com/yzqin/dexmv-learn.git

@@ -1,0 +1,13 @@
+{
+  "output": "artifacts/orca_cylinder_study/D03_ppo_smoke",
+  "reference": "artifacts/orca_cylinder_study/D01_reference/reference.npz",
+  "method": "ppo",
+  "steps": 10240,
+  "evals": 2,
+  "eval_count": 4,
+  "eval_start": 95000,
+  "seed": 32001,
+  "std": 0.7,
+  "learning_rate": 0.0003,
+  "shaping": 1.0
+}

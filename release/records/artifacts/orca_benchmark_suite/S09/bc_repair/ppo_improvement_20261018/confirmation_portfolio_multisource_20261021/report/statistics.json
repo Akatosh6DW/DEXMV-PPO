@@ -1,0 +1,671 @@
+{
+  "status": "completed_precommitted_confirmation",
+  "plan_sha256": "12256e5bc18c1fcefeb02656d7e14fc823875ef5792fa35c02137474a62868b3",
+  "analysis_source_sha256": "53bbc79a777b9fc78c720ee929aac3777ea5c37278f6b40951a850d4ec005620",
+  "summaries": [
+    {
+      "group": "bc",
+      "success_rate": 0.4518229166666667,
+      "successes": 347,
+      "policy_state_pairs": 768,
+      "unique_states": 256,
+      "training_sources": 3,
+      "per_source": [
+        0.44140625,
+        0.453125,
+        0.4609375
+      ],
+      "descriptive_ci95": [
+        0.39453125,
+        0.51171875
+      ]
+    },
+    {
+      "group": "stage",
+      "success_rate": 0.4140625,
+      "successes": 318,
+      "policy_state_pairs": 768,
+      "unique_states": 256,
+      "training_sources": 3,
+      "per_source": [
+        0.41015625,
+        0.42578125,
+        0.40625
+      ],
+      "descriptive_ci95": [
+        0.3606770833333333,
+        0.4700520833333333
+      ]
+    },
+    {
+      "group": "expert_last",
+      "success_rate": 0.4088541666666667,
+      "successes": 314,
+      "policy_state_pairs": 768,
+      "unique_states": 256,
+      "training_sources": 3,
+      "per_source": [
+        0.41015625,
+        0.5234375,
+        0.29296875
+      ],
+      "descriptive_ci95": [
+        0.29296875,
+        0.5260416666666666
+      ]
+    },
+    {
+      "group": "portfolio",
+      "success_rate": 0.57421875,
+      "successes": 441,
+      "policy_state_pairs": 768,
+      "unique_states": 256,
+      "training_sources": 3,
+      "per_source": [
+        0.58984375,
+        0.640625,
+        0.4921875
+      ],
+      "descriptive_ci95": [
+        0.484375,
+        0.66015625
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "portfolio minus bc",
+      "difference": 0.12239583333333333,
+      "per_source_difference": [
+        0.1484375,
+        0.1875,
+        0.03125
+      ],
+      "descriptive_ci95": [
+        0.02734375,
+        0.20442708333333337
+      ]
+    },
+    {
+      "contrast": "portfolio minus stage",
+      "difference": 0.16015625,
+      "per_source_difference": [
+        0.1796875,
+        0.21484375,
+        0.0859375
+      ],
+      "descriptive_ci95": [
+        0.08984375,
+        0.234375
+      ]
+    },
+    {
+      "contrast": "portfolio minus expert_last",
+      "difference": 0.16536458333333334,
+      "per_source_difference": [
+        0.1796875,
+        0.1171875,
+        0.19921875
+      ],
+      "descriptive_ci95": [
+        0.10937500000000006,
+        0.22526041666666669
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "training_source": 14121,
+      "baseline": "bc",
+      "gained": 44,
+      "lost": 6
+    },
+    {
+      "training_source": 14122,
+      "baseline": "bc",
+      "gained": 55,
+      "lost": 7
+    },
+    {
+      "training_source": 14123,
+      "baseline": "bc",
+      "gained": 35,
+      "lost": 27
+    },
+    {
+      "training_source": 14121,
+      "baseline": "stage",
+      "gained": 50,
+      "lost": 4
+    },
+    {
+      "training_source": 14122,
+      "baseline": "stage",
+      "gained": 56,
+      "lost": 1
+    },
+    {
+      "training_source": 14123,
+      "baseline": "stage",
+      "gained": 25,
+      "lost": 3
+    },
+    {
+      "training_source": 14121,
+      "baseline": "expert_last",
+      "gained": 51,
+      "lost": 5
+    },
+    {
+      "training_source": 14122,
+      "baseline": "expert_last",
+      "gained": 32,
+      "lost": 2
+    },
+    {
+      "training_source": 14123,
+      "baseline": "expert_last",
+      "gained": 60,
+      "lost": 9
+    }
+  ],
+  "models": [
+    {
+      "training_source": 14121,
+      "group": "bc",
+      "successes": 113,
+      "n": 256,
+      "success_rate": 0.44140625,
+      "mean_hold_sec": 19.94511724030599,
+      "max_released_depth_mm": 2.524713985621929,
+      "max_all_depth_mm": 6.622493267059326,
+      "peak_force_n": 43.99431610107422,
+      "successful_peak_force_n": 24.68301010131836,
+      "all_depth_successes": 113,
+      "path_online_steps": 0,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "training_source": 14121,
+      "group": "stage",
+      "successes": 105,
+      "n": 256,
+      "success_rate": 0.41015625,
+      "mean_hold_sec": 18.10703130014008,
+      "max_released_depth_mm": 11.85338944196701,
+      "max_all_depth_mm": 11.85338944196701,
+      "peak_force_n": 129.1690673828125,
+      "successful_peak_force_n": 30.321949005126953,
+      "all_depth_successes": 105,
+      "path_online_steps": 655360,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "training_source": 14121,
+      "group": "expert_last",
+      "successes": 105,
+      "n": 256,
+      "success_rate": 0.41015625,
+      "mean_hold_sec": 18.447851618984714,
+      "max_released_depth_mm": 3.6749180871993303,
+      "max_all_depth_mm": 5.70977758616209,
+      "peak_force_n": 53.04503631591797,
+      "successful_peak_force_n": 33.018863677978516,
+      "all_depth_successes": 105,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    },
+    {
+      "training_source": 14121,
+      "group": "portfolio",
+      "successes": 151,
+      "n": 256,
+      "success_rate": 0.58984375,
+      "mean_hold_sec": 24.705859424429946,
+      "max_released_depth_mm": 4.935390781611204,
+      "max_all_depth_mm": 5.70977758616209,
+      "peak_force_n": 53.04503631591797,
+      "successful_peak_force_n": 27.114831924438477,
+      "all_depth_successes": 151,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    },
+    {
+      "training_source": 14122,
+      "group": "bc",
+      "successes": 116,
+      "n": 256,
+      "success_rate": 0.453125,
+      "mean_hold_sec": 19.378515663091093,
+      "max_released_depth_mm": 3.5550163593143225,
+      "max_all_depth_mm": 6.286023650318384,
+      "peak_force_n": 46.32630920410156,
+      "successful_peak_force_n": 25.10675048828125,
+      "all_depth_successes": 116,
+      "path_online_steps": 0,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "training_source": 14122,
+      "group": "stage",
+      "successes": 109,
+      "n": 256,
+      "success_rate": 0.42578125,
+      "mean_hold_sec": 19.29628911698819,
+      "max_released_depth_mm": 11.921130120754242,
+      "max_all_depth_mm": 11.921130120754242,
+      "peak_force_n": 52.90704345703125,
+      "successful_peak_force_n": 29.606033325195312,
+      "all_depth_successes": 108,
+      "path_online_steps": 655360,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "training_source": 14122,
+      "group": "expert_last",
+      "successes": 134,
+      "n": 256,
+      "success_rate": 0.5234375,
+      "mean_hold_sec": 21.021875060672755,
+      "max_released_depth_mm": 3.9121443405747414,
+      "max_all_depth_mm": 6.049470975995064,
+      "peak_force_n": 51.96984100341797,
+      "successful_peak_force_n": 44.295406341552734,
+      "all_depth_successes": 132,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    },
+    {
+      "training_source": 14122,
+      "group": "portfolio",
+      "successes": 164,
+      "n": 256,
+      "success_rate": 0.640625,
+      "mean_hold_sec": 25.483398479118478,
+      "max_released_depth_mm": 3.9121443405747414,
+      "max_all_depth_mm": 6.265053059905767,
+      "peak_force_n": 51.96984100341797,
+      "successful_peak_force_n": 44.295406341552734,
+      "all_depth_successes": 162,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    },
+    {
+      "training_source": 14123,
+      "group": "bc",
+      "successes": 118,
+      "n": 256,
+      "success_rate": 0.4609375,
+      "mean_hold_sec": 19.76699224789627,
+      "max_released_depth_mm": 3.6036327946931124,
+      "max_all_depth_mm": 8.727828972041607,
+      "peak_force_n": 49.21171569824219,
+      "successful_peak_force_n": 22.902484893798828,
+      "all_depth_successes": 118,
+      "path_online_steps": 0,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "training_source": 14123,
+      "group": "stage",
+      "successes": 104,
+      "n": 256,
+      "success_rate": 0.40625,
+      "mean_hold_sec": 17.480859413160942,
+      "max_released_depth_mm": 4.142248071730137,
+      "max_all_depth_mm": 6.104927510023117,
+      "peak_force_n": 53.31224060058594,
+      "successful_peak_force_n": 32.52043914794922,
+      "all_depth_successes": 104,
+      "path_online_steps": 655360,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "training_source": 14123,
+      "group": "expert_last",
+      "successes": 75,
+      "n": 256,
+      "success_rate": 0.29296875,
+      "mean_hold_sec": 15.84707040109788,
+      "max_released_depth_mm": 5.284448154270649,
+      "max_all_depth_mm": 6.371655501425266,
+      "peak_force_n": 55.06359100341797,
+      "successful_peak_force_n": 30.187231063842773,
+      "all_depth_successes": 73,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    },
+    {
+      "training_source": 14123,
+      "group": "portfolio",
+      "successes": 126,
+      "n": 256,
+      "success_rate": 0.4921875,
+      "mean_hold_sec": 21.273046933463775,
+      "max_released_depth_mm": 3.3050908241420984,
+      "max_all_depth_mm": 8.727828972041607,
+      "peak_force_n": 49.21171569824219,
+      "successful_peak_force_n": 32.51136016845703,
+      "all_depth_successes": 126,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    }
+  ],
+  "selections": [
+    {
+      "status": "assembled_not_newly_trained",
+      "training_source": 14121,
+      "sources": [
+        {
+          "group": "bc",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E19_bc_fast_critic_long/step_000000000/params.pkl",
+          "checkpoint_sha256": "1ddf8b9b8eea7727317c2ec2700208ac7e0600ff199c0806840d0098d8fa8206",
+          "episodes_sha256": "f094e9e51ee8c4579e692d44f34e2f98336f7dadcbaed54b69634dad7807e47e"
+        },
+        {
+          "group": "stage",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E24_bc_fast_critic_continue/step_000491520/params.pkl",
+          "checkpoint_sha256": "4ce29507c3d6eeea561acdcb1be145331d38ab7965f135fe31e1b5ab2cb81235",
+          "episodes_sha256": "bca11652cb1a57e7f9c60c42cd0d7b6eaa5267a9f814d1d0e660cf1af61bdc58"
+        },
+        {
+          "group": "expert_last",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E104_experts_long_s14121/step_000655360/params.pkl",
+          "checkpoint_sha256": "04255d318c7b59858f97c7f1b258cd9bc9456ab9d70bf33cb6c695a2a0ca02d0",
+          "episodes_sha256": "2f08c2b832a20de6ef34d249b07047dd6d563150ca540398ac2c782282c88b31"
+        }
+      ],
+      "development_seeds": [
+        130000,
+        130063
+      ],
+      "source_success_counts": [
+        [
+          9,
+          4,
+          7,
+          1,
+          0,
+          0
+        ],
+        [
+          9,
+          3,
+          6,
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          8,
+          4,
+          7,
+          0
+        ]
+      ],
+      "selected_source_by_mode": [
+        "bc",
+        "bc",
+        "expert_last",
+        "stage",
+        "expert_last",
+        "stage"
+      ],
+      "tie_rule": "BC then stage then endpoint",
+      "predicted_development_successes": 34,
+      "predicted_not_yet_executed": true,
+      "max_same_input_action_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extra_ppo_steps": 0,
+      "inherited_path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6,
+      "source_14122_identical_to_old_candidate": false,
+      "normalization": "Raw observations; accumulated source statistics are not used by the policy factory",
+      "candidate_sha256": "fcfcd5254233529f1154609c632fc5bf18b20126b5b447419342231108bfd746"
+    },
+    {
+      "status": "assembled_not_newly_trained",
+      "training_source": 14122,
+      "sources": [
+        {
+          "group": "bc",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E27_bc_fast_critic_s14102/step_000000000/params.pkl",
+          "checkpoint_sha256": "3981094f12e7db614cc7559ff47fdd1e451f13da2d5c58d99cb6cea6f8d1144f",
+          "episodes_sha256": "f47a9fa9a0d940c504ad088a1077a547986fc561e37898555fc3281467a87d4b"
+        },
+        {
+          "group": "stage",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E30_bc_fast_critic_continue_s14112/step_000491520/params.pkl",
+          "checkpoint_sha256": "4e54df8821b2e4c6bcfc2e7a7dbab0194cdba49983f3112d380461b4cfe51fb9",
+          "episodes_sha256": "37234aed6f0ea13f379cb67cbad212b9239ff1411cea5daf063aa8b1944f885f"
+        },
+        {
+          "group": "expert_last",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E78_bc_late_experts_long/step_000655360/params.pkl",
+          "checkpoint_sha256": "0def4bf9bfc66fc2b23e36c1a437009c364b8b7f6a5c5dab569e0f6c5faa318f",
+          "episodes_sha256": "d2449b47bd0db96b0cf142d89a8230999ecc8cffa2d932e217e882cccd05b4c0"
+        }
+      ],
+      "development_seeds": [
+        130000,
+        130063
+      ],
+      "source_success_counts": [
+        [
+          9,
+          6,
+          7,
+          3,
+          0,
+          1
+        ],
+        [
+          9,
+          4,
+          3,
+          9,
+          0,
+          4
+        ],
+        [
+          9,
+          3,
+          8,
+          6,
+          5,
+          5
+        ]
+      ],
+      "selected_source_by_mode": [
+        "bc",
+        "bc",
+        "expert_last",
+        "stage",
+        "expert_last",
+        "expert_last"
+      ],
+      "tie_rule": "BC then stage then endpoint",
+      "predicted_development_successes": 42,
+      "predicted_not_yet_executed": true,
+      "max_same_input_action_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extra_ppo_steps": 0,
+      "inherited_path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6,
+      "source_14122_identical_to_old_candidate": true,
+      "normalization": "Raw observations; accumulated source statistics are not used by the policy factory",
+      "candidate_sha256": "d3f315f9c01ac31533ea9aba54260ec786a6476967bb7a196624a2060d76d683"
+    },
+    {
+      "status": "assembled_not_newly_trained",
+      "training_source": 14123,
+      "sources": [
+        {
+          "group": "bc",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E29_bc_fast_critic_s14103/step_000000000/params.pkl",
+          "checkpoint_sha256": "a8d5c8fd13da8702d83403900e06228e537535d648643eb5bb9a7b943c780e86",
+          "episodes_sha256": "ac1aabb6149f60514649c532ee5847a0fc3b9accb8bf3fd2043565e03f02d3b4"
+        },
+        {
+          "group": "stage",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E32_bc_fast_critic_continue_s14113/step_000491520/params.pkl",
+          "checkpoint_sha256": "318c258c92d9d514ca4a51bec26d9cb2249d8345500e3fc0096bd38a89f7f0e3",
+          "episodes_sha256": "eadbb29cd3222b39800ef2edd8ae2ce4274317871b391d612b293154b3b30822"
+        },
+        {
+          "group": "expert_last",
+          "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E105_experts_long_s14123/step_000655360/params.pkl",
+          "checkpoint_sha256": "76abebdb3faebfd1d63ff40a38153a24c2b86a5af0b58d6756244abd5cdd0459",
+          "episodes_sha256": "44c2a999cde2f9d444b8ac3bb1ec6194f6cb8009f578b825ae2ad214e5a7659a"
+        }
+      ],
+      "development_seeds": [
+        130000,
+        130063
+      ],
+      "source_success_counts": [
+        [
+          9,
+          5,
+          6,
+          4,
+          0,
+          2
+        ],
+        [
+          9,
+          6,
+          0,
+          5,
+          6,
+          0
+        ],
+        [
+          6,
+          3,
+          6,
+          3,
+          7,
+          2
+        ]
+      ],
+      "selected_source_by_mode": [
+        "bc",
+        "stage",
+        "bc",
+        "stage",
+        "expert_last",
+        "bc"
+      ],
+      "tie_rule": "BC then stage then endpoint",
+      "predicted_development_successes": 35,
+      "predicted_not_yet_executed": true,
+      "max_same_input_action_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extra_ppo_steps": 0,
+      "inherited_path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6,
+      "source_14122_identical_to_old_candidate": false,
+      "normalization": "Raw observations; accumulated source statistics are not used by the policy factory",
+      "candidate_sha256": "94a7649266d224a8a3f0b60ff35a01793f4fbbc0643f8b804f6839fb1abad91a"
+    }
+  ],
+  "evidence": {
+    "bc_s14121": {
+      "episodes.json": "34f70ae3f12a8e47e33cd5c031e5450e8b8cfe8b6444c68705447d4354c1a5c2",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "92b3c83f1debe5d7819e7531c49e905d190ebc007c40d3ab6ee05d6ca8aae57d",
+      "native_replay_audit.json": "fd0a5d7a5ec2d9d9d59f1f7bee407c1b21d82106c98d992c9d58ef1f311bcfdf"
+    },
+    "stage_s14121": {
+      "episodes.json": "f9f9aee78ed87e3e8b4ad9ee8668684e8520581f13029755d2187937a54be919",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "4ce29507c3d6eeea561acdcb1be145331d38ab7965f135fe31e1b5ab2cb81235",
+      "native_replay_audit.json": "cae9da5b5815f1005012878ab48fdaa5c326b0190a102ea1f413aab4b2b2f392"
+    },
+    "expert_last_s14121": {
+      "episodes.json": "3ebff82e659195d0754ad75ec094e8967beb8d7cc193d1ba284997b371d8018a",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "04255d318c7b59858f97c7f1b258cd9bc9456ab9d70bf33cb6c695a2a0ca02d0",
+      "native_replay_audit.json": "b15c505dcc150f8e15fe8127187b557c2ff16eff6171dc3baf847a6ad4a0f82f"
+    },
+    "portfolio_s14121": {
+      "episodes.json": "7eb88a4b01c5c739ca78a2421e263a82952c9a573fd8cdac8c26f20b9807ac4e",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "fcfcd5254233529f1154609c632fc5bf18b20126b5b447419342231108bfd746",
+      "native_replay_audit.json": "8b0444ec14ba480183933e144db2f89deabcea4556a816c68eddf284a00759f9"
+    },
+    "bc_s14122": {
+      "episodes.json": "c8facbdd64687cbff4e98ed73747b4c01931784fe9d4b6236740991cd9f0f5c1",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "c0589765bce14a99daa84d0e356b2659998314d7a97f3df1ad9a2ffe01c6cff6",
+      "native_replay_audit.json": "50cefc345d943b77ac77ba15fb4c5ce77b43f550323757e9c2ccb3d1511a6c56"
+    },
+    "stage_s14122": {
+      "episodes.json": "fbdc36561bec9b7a1f23b11fe1c7fddd3636c530360bf015c5c949516b78a8c0",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "4e54df8821b2e4c6bcfc2e7a7dbab0194cdba49983f3112d380461b4cfe51fb9",
+      "native_replay_audit.json": "7e2d26d89068434376578bac73dbc081dabd807a953c4be45036022145b4f6af"
+    },
+    "expert_last_s14122": {
+      "episodes.json": "d111405a5bcaef972b1c355c1ecf11a53cefb06c5f517434b4faa3cfad8fadc8",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "0def4bf9bfc66fc2b23e36c1a437009c364b8b7f6a5c5dab569e0f6c5faa318f",
+      "native_replay_audit.json": "94af26c9fe602ebb143e7148d35864d7d77174cef43bdeef56abb4f25086dd46"
+    },
+    "portfolio_s14122": {
+      "episodes.json": "ad7b19effceab890d589fd669ce1c743fe7ba77cea1055b6301be794bdbf5c56",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "d3f315f9c01ac31533ea9aba54260ec786a6476967bb7a196624a2060d76d683",
+      "native_replay_audit.json": "a21689429fbf1adf8ad977aa56098c55098faafbd3f6b8dc4f462ec608f0671d"
+    },
+    "bc_s14123": {
+      "episodes.json": "05278d9bd419b06e78569a9d6bb27964b4f33531d116f02969652eed9c6cafa6",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "7b1a1baf91822c5033aa4dcac30d2afc6fbedb8d936b4782c2be2b650967cfa8",
+      "native_replay_audit.json": "4595a45a8f831ec06922345382b167707a770c71928f40c272323acd9f671bd3"
+    },
+    "stage_s14123": {
+      "episodes.json": "c22599a3552825b170f75f5c73e684e94c8fd00002bc00abef024ab701e8e431",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "318c258c92d9d514ca4a51bec26d9cb2249d8345500e3fc0096bd38a89f7f0e3",
+      "native_replay_audit.json": "799a753d293c0f115bd998280004b3033f61489adfbd366ce9b3db08a67df387"
+    },
+    "expert_last_s14123": {
+      "episodes.json": "6c66d420098ae97862981fae5b3fbb55c8833509e9cff3ac9e3999996f616521",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "76abebdb3faebfd1d63ff40a38153a24c2b86a5af0b58d6756244abd5cdd0459",
+      "native_replay_audit.json": "3104d435189cff0e8d89b7d27c4d14df1a4140b534aa6473aeaf7db896faca16"
+    },
+    "portfolio_s14123": {
+      "episodes.json": "25ce941f59c77133f2300760a58fb5142253f311bdf27ef34a796ff30f13e1a9",
+      "initial_states.npz": "886e1fc7fcb271cdc5443655fa554fdfc2abd65fe93a76863fa233c8f04bc8d4",
+      "params.pkl": "94a7649266d224a8a3f0b60ff35a01793f4fbbc0643f8b804f6839fb1abad91a",
+      "native_replay_audit.json": "c62234d15a5f7ca90fdbc2eb8d86d0d52113389c064790cc4d7d4ab4fc0c046a"
+    }
+  },
+  "initial_states_exactly_paired": true,
+  "additional_ppo_steps": 0,
+  "uncertainty": "Descriptive paired lineage/common-state bootstrap; three lineages, not 768 independent trainings",
+  "selection": "Fixed historical selection on old development cases only; no new test-driven reselection"
+}

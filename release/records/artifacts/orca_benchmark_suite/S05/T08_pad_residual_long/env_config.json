@@ -1,0 +1,116 @@
+{
+  "ctrl_dt": 0.05,
+  "sim_dt": 0.005,
+  "action_scale": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "action_repeat": 1,
+  "episode_length": 800,
+  "early_termination": true,
+  "history_len": 1,
+  "impl": "jax",
+  "nconmax": 64,
+  "njmax": 256,
+  "noise_config": {
+    "level": 0.2,
+    "scales": {
+      "joint_pos": 0.008,
+      "joint_vel": 0.02,
+      "cube_pos": 0.002
+    }
+  },
+  "spawn_config": {
+    "cube_pos": [
+      0.06413144621781895,
+      -0.04558596177799843,
+      0.24444132845074076
+    ],
+    "cube_jitter": [
+      0.002,
+      0.002,
+      0.0
+    ],
+    "support_pos": [
+      0.06413144621781895,
+      -0.04558596177799843,
+      0.2139413278813267
+    ],
+    "support_hidden_pos": [
+      0.0,
+      0.0,
+      -10.0
+    ]
+  },
+  "support_config": {
+    "release_after_sec": 2.0,
+    "release_ramp_sec": 1.0,
+    "force_release_after_sec": 3.0
+  },
+  "residual_prior": {
+    "enabled": false,
+    "dataset_path": "",
+    "ctrl_key": "orca_prior_ctrl",
+    "loop": false,
+    "residual_scale": 1.0
+  },
+  "reward_config": {
+    "scales": {
+      "proximity": 6.0,
+      "contact": 14.0,
+      "two_finger_contact": 18.0,
+      "thumb_contact": 12.0,
+      "closure": 3.0,
+      "prior_pose": 1.0,
+      "pre_release_grasp": 28.0,
+      "post_release_survival": 80.0,
+      "stable_hold": 140.0,
+      "progressive_hold": 70.0,
+      "cube_centering": 12.0,
+      "low_speed": 10.0,
+      "action_rate": -0.015,
+      "action_magnitude": -0.002,
+      "drop": -120.0,
+      "termination": -200.0
+    },
+    "hold_success_sec": 30.0,
+    "contact_distance": 0.028,
+    "drop_z_margin": 0.055
+  },
+  "initial_ctrl": [
+    -0.9886537065010693,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.22365515224208357,
+    0.3680065648395169,
+    0.35985625673398225,
+    -0.0013465596325942185,
+    0.19121574927241808,
+    0.030966035770570985,
+    -0.023131539271229934
+  ],
+  "initial_noise": 0.002,
+  "max_ctrl_delta": 0.1
+}

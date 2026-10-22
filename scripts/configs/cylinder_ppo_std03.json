@@ -1,0 +1,13 @@
+{
+  "output": "artifacts/orca_cylinder_study/D12_ppo_std03",
+  "reference": "artifacts/orca_cylinder_study/D04_reference/reference.npz",
+  "method": "ppo",
+  "steps": 81920,
+  "evals": 3,
+  "eval_count": 8,
+  "eval_start": 95000,
+  "seed": 32001,
+  "std": 0.3,
+  "learning_rate": 0.0003,
+  "shaping": 1.0
+}

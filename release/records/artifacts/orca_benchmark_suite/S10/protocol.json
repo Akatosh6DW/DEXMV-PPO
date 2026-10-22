@@ -1,0 +1,62 @@
+{
+  "version": "S10-R0",
+  "seeds": [
+    22101,
+    22102,
+    22103
+  ],
+  "steps": 163840,
+  "methods": [
+    "ppo",
+    "guided",
+    "residual",
+    "reference"
+  ],
+  "diagnostic": "bc",
+  "collection": [
+    212000,
+    64
+  ],
+  "development": [
+    211000,
+    16
+  ],
+  "test": [
+    220000,
+    128
+  ],
+  "recipes": {
+    "ppo": {
+      "lr": 0.0003,
+      "std": 0.3
+    },
+    "guided": {
+      "lr": 3e-06,
+      "std": 0.05,
+      "bc_updates": 20000
+    },
+    "residual": {
+      "lr": 3e-05,
+      "std": 0.1
+    }
+  },
+  "final_selection": "Last checkpoint only; development checkpoints retained; test never selects weights",
+  "controller": "Same frozen template and continuous 6DoF approach for every arm",
+  "physics": "Dynamic free root plus compliant weld to noncolliding mocap target; cylinder never welded",
+  "criterion": "42s, release5s, 30s strict continuous hold and valid at end; unchanged S09 contact gates",
+  "limits": "Ideal Cartesian positioner, not actual robot-arm dynamics or proof of reachability/safety",
+  "hashes": {
+    "artifacts/orca_benchmark_suite/S10/inputs/selection_v2.json": "117f83e3376148fd660477b66bc8d86b6bf12168b9eb723e7bcdefe4a4117368",
+    "artifacts/orca_benchmark_suite/S10/inputs/model.xml": "38262f073ff9b604930794f3eb41c95d1377ad4c4f2359a1a39bcd3b100b6128",
+    "artifacts/orca_benchmark_suite/S09/inputs/reference.npz": "0ff89e8be0c9ef4a0299bf13b5cc397e39cce6877b1b59beadde6a61b48a8468",
+    "scripts/s10_mobile_base.py": "88a58536a324000fff93a45f25462f4ba1c4600a07a46eed2a3bf4d862f8253b",
+    "scripts/orca_s10_env.py": "e7da3bd70c22ecef048c82365e370f3374e2535437df09ab87c5611b68386691",
+    "scripts/run_s10_job.py": "703cefcd4529d7bd2cc8d2fcc69d2a3dcbb9a7083e7fc9a53beb72642d682b3b",
+    "scripts/run_s10_study.py": "9e37c34d8e2b964fb59076398f0467a54d3acc39bfae72586bd28f31acf51fb8",
+    "scripts/s09_suspension.py": "3cf9b22a46ca21ba92a68977d14a1bf66bc858c5555af87d66f25d35955b5a56",
+    "scripts/orca_native_physics.py": "adc8f4d36c961c5225809c45eee9ac0f7032594ab9db6d28d0009c6512de0e36",
+    "scripts/run_s09_job.py": "68805e5387761445ce7df7f1961290e9a538558c299768fd96e62cddc33759aa",
+    "scripts/train_orca_matched.py": "fc51f1db484a19bea0f1e80aaa1608ed182590f1cb810f37c9d0774c37ee07d0",
+    "scripts/train_orca_comparison.py": "d44cd84e7a6e48e97cc97e4e2c2756a88d70318d6c93bd9cec0a1e9ec29f2754"
+  }
+}

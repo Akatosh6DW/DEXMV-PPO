@@ -1,0 +1,130 @@
+{
+  "version": "S09-R0",
+  "created": "2026-10-15 15:53:48",
+  "methods": [
+    "ppo",
+    "guided",
+    "residual",
+    "reference"
+  ],
+  "train_seeds": [
+    9101,
+    9102,
+    9103
+  ],
+  "steps": 163840,
+  "development_seeds": [
+    92000,
+    92001,
+    92002,
+    92003,
+    92004,
+    92005,
+    92006,
+    92007
+  ],
+  "test_strata": {
+    "uniform": [
+      93000,
+      128
+    ],
+    "web": [
+      94000,
+      32
+    ],
+    "x": [
+      95000,
+      32
+    ],
+    "y": [
+      96000,
+      32
+    ],
+    "z": [
+      97000,
+      32
+    ]
+  },
+  "reward": {
+    "stable": 15,
+    "drop": -50,
+    "coverage": 2,
+    "approach_before_release": 2,
+    "dt": 0.05
+  },
+  "recipes": {
+    "ppo": {
+      "learning_rate": 0.0003,
+      "std": 0.3
+    },
+    "guided": {
+      "learning_rate": 3e-05,
+      "std": 0.3,
+      "bc_updates": 4000
+    },
+    "residual": {
+      "learning_rate": 0.0003,
+      "std": 0.3,
+      "residual_bound": 0.08
+    }
+  },
+  "sample_split": "Development/reference selection and 90500:90627 collection excluded from final test seeds",
+  "test_checkpoint": "Final step163840, never selected by test success",
+  "reset": "Uniform SO(3), +/-2mm XYZ, +/-5mm/s horizontal velocity; no success filtering",
+  "reference": "Six source-derived orientation templates incl failures; closest undirected cylinder axis",
+  "criterion": "40s episode, release3s,30s strict continuous palmar opposing hold and valid at end; initial<=1mm, released<=3mm, no forbidden support, zero released rope force",
+  "dataset_successes": 56,
+  "dataset_attempts": 128,
+  "source_hashes": {
+    "artifacts/orca_benchmark_suite/S09/inputs/model.xml": "511437a672dc5dbd19f78742a0dc4db7614c5803336c5ce7de9f0b2b18aa114a",
+    "artifacts/orca_benchmark_suite/S09/inputs/reference.npz": "0ff89e8be0c9ef4a0299bf13b5cc397e39cce6877b1b59beadde6a61b48a8468",
+    "artifacts/orca_benchmark_suite/S09/demonstrations/trajectories.npz": "bb42f17fdec2efc466977b98b46422dd03a7059d1172f608cdf19e4a8f5d6249",
+    "artifacts/orca_benchmark_suite/S09/demonstrations/dataset_manifest.json": "3ec2a40f4a69a7b53778f7875ab5096cffdd6d60c7ef12c1b88c12537916d32b",
+    "artifacts/orca_cylinder_s02/source/selection96/selected_segment.npz": "7740e6f15e5b81ecadcb487d6b53c1ff075380df7f06f4cf27f27f95a3f7b8d9",
+    "scripts/s09_suspension.py": "3cf9b22a46ca21ba92a68977d14a1bf66bc858c5555af87d66f25d35955b5a56",
+    "scripts/orca_s09_env.py": "59ef4bf82fe269e6009354d4c901074c85750c4d54caca4cf4b2f561bc97eb4a",
+    "scripts/run_s09_job.py": "68805e5387761445ce7df7f1961290e9a538558c299768fd96e62cddc33759aa",
+    "scripts/run_s09_study.py": "a6649387cc5fb0d6a65a3735db52cb2672dafc35121b3e00c83e6dce977937f0",
+    "scripts/orca_native_physics.py": "adc8f4d36c961c5225809c45eee9ac0f7032594ab9db6d28d0009c6512de0e36",
+    "scripts/orca_contact_forces.py": "5ec909faa395c37f819856f84d7a3318a7e6f60f70755245ce31667e464a9a97",
+    "scripts/orca_matched_env.py": "9401b0f50e4c2a89e45ba88b2b2104fa0cb6541ea2d9aef8a82a870434a86999",
+    "scripts/train_orca_comparison.py": "d44cd84e7a6e48e97cc97e4e2c2756a88d70318d6c93bd9cec0a1e9ec29f2754",
+    "scripts/train_orca_matched.py": "fc51f1db484a19bea0f1e80aaa1608ed182590f1cb810f37c9d0774c37ee07d0"
+  },
+  "asset_hashes": {
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_00.stl": "d5f7bc2979913932ee1eeea68ac3725aa955190a1e994decb99201a7ef180ec6",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_01.stl": "f999fa0abae719ce24c04bca67efc9b42ced7451f2a716972d712bb93abe9c72",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_02.stl": "1f092f6b92470ce626c913909fde378e68e236b93029cf2e4eca9a0eda1ac3ac",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_03.stl": "b92ea0e3dec42fb99bc586e8f6eba5c99e588db9b6ec1c44c2a42b7ee903a750",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_04.stl": "471716359804bba223f3abe62d10c0d1c7ef7d2c8c2ebb4e5ad1ceecbb3b80be",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_05.stl": "8649b47a17e0236dfb8485e7bce5cf0798ca243f96efb8d1f82153508291ab40",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_06.stl": "d207ed9947763d90f93666868b732f590828031e2f702e0032a5e02886d6796b",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_07.stl": "6b49eaf5f09a074da6926f32152dffda378622e8854b085adb769fa729c3c2c7",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_08.stl": "dbeb2164a8637706332d1168adf72c43fa2bde76883f509ac1a23352f3a24d5e",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_09.stl": "7482819f5f58e90e55c216700462ebf76d5fda2c80ed696711b6e74c69f298a7",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_10.stl": "9f904d8c8b48ed56dad8dac820dba26f1e715353e9959dde7df96f2c73a357d6",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_11.stl": "da5b42a6f08948d2a0764ebfa2a530679863be38af6f9e793b15d19feb8058a7",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_12.stl": "f4cfa892a8091c2f0137432fb9554ac6e63cf2b86112255b5034252d7f6eae9b",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_13.stl": "d15f52ef155dc5f45c5ddd8213fcc876d8465facd423b3f916151f969730e8e4",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_14.stl": "99317840b6ecb7cc3a87264d7f403045100914b175386cd40feb006141fa893b",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_15.stl": "5464a5dfb0aad26c7c51300c9ed3e320b8d7824eec892894814935c0f5fa26ca",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_16.stl": "0ea53f111091df9a5707a7eed1bc5e00c61cc578e5a93348316f094a69f63c97",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_17.stl": "e2e31b601a6299e154302b2db199debac420386feb3805a270b69b94a86e0330",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_18.stl": "bb0140de23a64546fc7f47ae0fd18bb5e8e910b07f40c0d71724301efd08bc3a",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_19.stl": "f2b5fee64b46c8b336617b9214435344cec851ad43406a1ba9fc35ec8503ec1d",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G08_thumb_convex_candidate/right_T-PP_68395e98/part_00.stl": "b0cb1e616405d72d382a7a8f0dd2d0c16ad8e8c37f182988bfcaaae0ffed66a8",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G08_thumb_convex_candidate/right_T-PP_68395e98/part_01.stl": "9124d5f6dc1e91410a74b066574e95a053c1ce77d0019e30701bb3eb4b878ee2",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O01_hic53_source_object/hic20_cube_m.stl": "502aad667460b92366f326f19f06d688f80b019d69ef7f413ada2f7a0d2d529a",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O11_hic53_clean_dt5ms/hic20_clean_convex.stl": "4e4fa92f1a5895916b4af8e758e0ac520ff88430a39427414afaac9359fbf558"
+  },
+  "software_versions": {
+    "mujoco": "3.5.0",
+    "jax": "0.9.0.1",
+    "jaxlib": "0.9.0.1",
+    "brax": "0.14.1",
+    "flax": "0.12.4",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1"
+  },
+  "reward_iteration": "Separate post-comparison branch, development selection and NEW final test seeds"
+}

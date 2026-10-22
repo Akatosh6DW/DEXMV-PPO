@@ -1,0 +1,13 @@
+{
+  "output": "artifacts/orca_benchmark_suite/S03/smoke_training_v1",
+  "method": "ppo",
+  "seed": 19001,
+  "stage": "smoke",
+  "steps": 10240,
+  "evals": 2,
+  "eval_start": 60000,
+  "eval_count": 2,
+  "std": 0.7,
+  "learning_rate": 0.0003,
+  "shaping": 1.0
+}

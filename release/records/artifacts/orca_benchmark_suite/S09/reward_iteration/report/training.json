@@ -1,0 +1,281 @@
+[
+  {
+    "method": "ppo",
+    "version": "original",
+    "params": "artifacts/orca_benchmark_suite/S09/train/ppo_s9101/step_000163840/params.pkl",
+    "params_sha256": "776f3adbf105b55becf661e57b4774706e635142cd412712076a35d8568866c4",
+    "success30": {
+      "first": 0.0,
+      "last": 0.0,
+      "max": 0.0,
+      "best_step": 0
+    },
+    "hold_sec": {
+      "first": 0.0,
+      "last": 6.675000175833702,
+      "max": 6.675000175833702,
+      "best_step": 163840
+    },
+    "last_metrics": {
+      "success30": 0.0,
+      "success15": 0.125,
+      "hold_sec": 6.675000175833702,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.01311895065009594,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 140.54287719726562,
+      "step": 163840.0,
+      "elapsed_sec": 410.73871554100015
+    }
+  },
+  {
+    "method": "ppo",
+    "version": "continued_R0",
+    "params": "artifacts/orca_benchmark_suite/S09/reward_iteration/train/continued_R0_ppo/step_000040960/params.pkl",
+    "params_sha256": "79743207fe33a2daa7e5d6a33fadd93c1a20a18b25a91c7c694ef6cde7b280b2",
+    "success30": {
+      "first": 0.0,
+      "last": 0.5,
+      "max": 0.625,
+      "best_step": 20480
+    },
+    "hold_sec": {
+      "first": 6.675000175833702,
+      "last": 20.65000006556511,
+      "max": 24.83125001192093,
+      "best_step": 20480
+    },
+    "last_metrics": {
+      "success30": 0.5,
+      "success15": 0.5,
+      "hold_sec": 20.65000006556511,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0033120785374194384,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 31.40025520324707,
+      "step": 40960.0,
+      "elapsed_sec": 162.55546359900018
+    }
+  },
+  {
+    "method": "ppo",
+    "version": "penalty_R1",
+    "params": "artifacts/orca_benchmark_suite/S09/reward_iteration/train/penalty_R1_ppo/step_000040960/params.pkl",
+    "params_sha256": "de217ac1b18b97282fba61161c28eaa3b8d5b1996b2a698de17a86179016476e",
+    "success30": {
+      "first": 0.0,
+      "last": 0.5,
+      "max": 0.625,
+      "best_step": 20480
+    },
+    "hold_sec": {
+      "first": 6.675000175833702,
+      "last": 20.40625,
+      "max": 27.46250009536743,
+      "best_step": 20480
+    },
+    "last_metrics": {
+      "success30": 0.5,
+      "success15": 0.5,
+      "hold_sec": 20.40625,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0018767579458653927,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 28.860124588012695,
+      "step": 40960.0,
+      "elapsed_sec": 163.96862690199941
+    }
+  },
+  {
+    "method": "guided",
+    "version": "original",
+    "params": "artifacts/orca_benchmark_suite/S09/train/guided_s9101/step_000163840/params.pkl",
+    "params_sha256": "01e184252828ceb247677faeca4cfcca7702e7feb219fa3abcfd7b3e9c3f241a",
+    "success30": {
+      "first": 0.125,
+      "last": 0.0,
+      "max": 0.125,
+      "best_step": 0
+    },
+    "hold_sec": {
+      "first": 5.668750026263297,
+      "last": 2.6937501430511475,
+      "max": 5.668750026263297,
+      "best_step": 0
+    },
+    "last_metrics": {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 2.6937501430511475,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.003256862983107567,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 49.25883483886719,
+      "step": 163840.0,
+      "elapsed_sec": 456.7659105099997
+    }
+  },
+  {
+    "method": "guided",
+    "version": "continued_R0",
+    "params": "artifacts/orca_benchmark_suite/S09/reward_iteration/train/continued_R0_guided/step_000040960/params.pkl",
+    "params_sha256": "752b8632506c16cf516c4f3667a624a56722de1949fefc0a1c29ec70cf728ce6",
+    "success30": {
+      "first": 0.0,
+      "last": 0.0,
+      "max": 0.0,
+      "best_step": 0
+    },
+    "hold_sec": {
+      "first": 2.6937501430511475,
+      "last": 0.0,
+      "max": 2.6937501430511475,
+      "best_step": 0
+    },
+    "last_metrics": {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0045674508437514305,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 66.59471893310547,
+      "step": 40960.0,
+      "elapsed_sec": 159.60964076500022
+    }
+  },
+  {
+    "method": "guided",
+    "version": "penalty_R1",
+    "params": "artifacts/orca_benchmark_suite/S09/reward_iteration/train/penalty_R1_guided/step_000040960/params.pkl",
+    "params_sha256": "3bf8f6083b0a7d3ed91dcec78ccbcc24b6c2bdb698b6758c66489734c8f32b73",
+    "success30": {
+      "first": 0.0,
+      "last": 0.0,
+      "max": 0.125,
+      "best_step": 20480
+    },
+    "hold_sec": {
+      "first": 2.6937501430511475,
+      "last": 0.0,
+      "max": 4.625,
+      "best_step": 20480
+    },
+    "last_metrics": {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0011813242454081774,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 45.310523986816406,
+      "step": 40960.0,
+      "elapsed_sec": 168.06231799299985
+    }
+  },
+  {
+    "method": "residual",
+    "version": "original",
+    "params": "artifacts/orca_benchmark_suite/S09/train/residual_s9101/step_000163840/params.pkl",
+    "params_sha256": "62fdf3ec6c9b439c11c837c4df2e680003fb2c4e8c46048e16e116050e4e043f",
+    "success30": {
+      "first": 0.5,
+      "last": 0.5,
+      "max": 0.625,
+      "best_step": 122880
+    },
+    "hold_sec": {
+      "first": 22.725000143051147,
+      "last": 22.150000035762787,
+      "max": 27.71250009536743,
+      "best_step": 122880
+    },
+    "last_metrics": {
+      "success30": 0.5,
+      "success15": 0.5,
+      "hold_sec": 22.150000035762787,
+      "residual_rms_rad": 0.014522145851515234,
+      "max_penetration_m": 0.0012895262334495783,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 24.445964813232422,
+      "step": 163840.0,
+      "elapsed_sec": 489.785733018
+    }
+  },
+  {
+    "method": "residual",
+    "version": "continued_R0",
+    "params": "artifacts/orca_benchmark_suite/S09/reward_iteration/train/continued_R0_residual/step_000040960/params.pkl",
+    "params_sha256": "b1bbd40c3c4f36c6c1b22391c81cf184f28799c17c3a68be41dad4a81752a865",
+    "success30": {
+      "first": 0.5,
+      "last": 0.5,
+      "max": 0.5,
+      "best_step": 0
+    },
+    "hold_sec": {
+      "first": 22.150000035762787,
+      "last": 23.381250023841858,
+      "max": 23.381250023841858,
+      "best_step": 40960
+    },
+    "last_metrics": {
+      "success30": 0.5,
+      "success15": 0.5,
+      "hold_sec": 23.381250023841858,
+      "residual_rms_rad": 0.018464465159922838,
+      "max_penetration_m": 0.006262846756726503,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 18.747339248657227,
+      "step": 40960.0,
+      "elapsed_sec": 169.56981932500003
+    }
+  },
+  {
+    "method": "residual",
+    "version": "penalty_R1",
+    "params": "artifacts/orca_benchmark_suite/S09/reward_iteration/train/penalty_R1_residual/step_000040960/params.pkl",
+    "params_sha256": "2e9e3236a8683268d61c6d1e7b5f563c465f14454f1ba1ca16f76eff290e94d0",
+    "success30": {
+      "first": 0.5,
+      "last": 0.375,
+      "max": 0.5,
+      "best_step": 0
+    },
+    "hold_sec": {
+      "first": 22.150000035762787,
+      "last": 17.625,
+      "max": 22.52500009536743,
+      "best_step": 20480
+    },
+    "last_metrics": {
+      "success30": 0.375,
+      "success15": 0.375,
+      "hold_sec": 17.625,
+      "residual_rms_rad": 0.017088242922909558,
+      "max_penetration_m": 0.00201281625777483,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 14.723328590393066,
+      "step": 40960.0,
+      "elapsed_sec": 168.10680159000003
+    }
+  }
+]

@@ -1,0 +1,134 @@
+{
+  "plan_sha256": "42d4b51d8961ff8a342b3d8e29d63f96a9944833da1e8a931fe4e0cf217ad8b1",
+  "summaries": [
+    {
+      "group": "old_bc_ppo",
+      "success_rate": 0.052083333333333336,
+      "per_training_seed": [
+        0.0,
+        0.15625,
+        0.0
+      ],
+      "successes": 20,
+      "policy_episode_pairs": 384,
+      "unique_test_states": 128,
+      "descriptive_ci95": [
+        0.0,
+        0.15625
+      ],
+      "mean_best_hold_sec": 2.238671879497512,
+      "all_case_max_penetration_mm": 4.668960347771645,
+      "all_case_peak_force_n": 322.3790588378906,
+      "successful_case_peak_force_n": 36.489585876464844
+    },
+    {
+      "group": "new_bc",
+      "success_rate": 0.3697916666666667,
+      "per_training_seed": [
+        0.3359375,
+        0.3828125,
+        0.390625
+      ],
+      "successes": 142,
+      "policy_episode_pairs": 384,
+      "unique_test_states": 128,
+      "descriptive_ci95": [
+        0.2838541666666667,
+        0.4557291666666667
+      ],
+      "mean_best_hold_sec": 17.351041738768497,
+      "all_case_max_penetration_mm": 6.440384313464165,
+      "all_case_peak_force_n": 66.62118530273438,
+      "successful_case_peak_force_n": 19.449352264404297
+    },
+    {
+      "group": "new_bc_ppo",
+      "success_rate": 0.3541666666666667,
+      "per_training_seed": [
+        0.375,
+        0.328125,
+        0.359375
+      ],
+      "successes": 136,
+      "policy_episode_pairs": 384,
+      "unique_test_states": 128,
+      "descriptive_ci95": [
+        0.2734375,
+        0.4349609375000002
+      ],
+      "mean_best_hold_sec": 17.470442789354518,
+      "all_case_max_penetration_mm": 12.412597425282001,
+      "all_case_peak_force_n": 56.221351623535156,
+      "successful_case_peak_force_n": 18.871889114379883
+    },
+    {
+      "group": "reference",
+      "success_rate": 0.40625,
+      "per_training_seed": [
+        0.40625
+      ],
+      "successes": 52,
+      "policy_episode_pairs": 128,
+      "unique_test_states": 128,
+      "descriptive_ci95": [
+        0.3203125,
+        0.4921875
+      ],
+      "mean_best_hold_sec": 19.753125078976154,
+      "all_case_max_penetration_mm": 33.919963985681534,
+      "all_case_peak_force_n": 599.1465454101562,
+      "successful_case_peak_force_n": 22.743146896362305
+    }
+  ],
+  "differences": [
+    {
+      "contrast": "new_bc_ppo minus old_bc_ppo",
+      "difference": 0.30208333333333337,
+      "descriptive_ci95": [
+        0.171875,
+        0.4166666666666667
+      ]
+    },
+    {
+      "contrast": "new_bc_ppo minus new_bc",
+      "difference": -0.015625,
+      "descriptive_ci95": [
+        -0.078125,
+        0.052083333333333315
+      ]
+    },
+    {
+      "contrast": "new_bc_ppo minus reference",
+      "difference": -0.052083333333333315,
+      "descriptive_ci95": [
+        -0.125,
+        0.018229166666666685
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "replicate": 0,
+      "retained": 39,
+      "lost": 4,
+      "gained": 9,
+      "neither": 76
+    },
+    {
+      "replicate": 1,
+      "retained": 40,
+      "lost": 9,
+      "gained": 2,
+      "neither": 77
+    },
+    {
+      "replicate": 2,
+      "retained": 42,
+      "lost": 8,
+      "gained": 4,
+      "neither": 74
+    }
+  ],
+  "initial_states_exactly_paired": true,
+  "uncertainty": "Descriptive hierarchical bootstrap; only three training replicates. No hardware guarantee."
+}

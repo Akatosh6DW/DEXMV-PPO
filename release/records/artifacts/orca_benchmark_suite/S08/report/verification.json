@@ -1,0 +1,15 @@
+{
+  "status": "verified",
+  "jobs": 86,
+  "total_test_episodes": 3424,
+  "recomputed_saved_episodes": 1604,
+  "control_max_error_rad": 2.1119570692285095e-07,
+  "paired_initial_states": true,
+  "source_snapshots_verified": true,
+  "selection_sha256": "e78648dcce40ec6020a34e7fc37f8ea9018cab00da4a0d4fd13a03a0ae288f55",
+  "frozen_before_testing": true,
+  "evaluated_checkpoints_match_selection": true,
+  "intervention_settings_verified": true,
+  "zero_gain_exact": true,
+  "reference_origin": "P03 geometry, not video"
+}

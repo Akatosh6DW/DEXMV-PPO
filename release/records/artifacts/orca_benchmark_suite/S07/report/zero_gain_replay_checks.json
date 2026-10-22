@@ -1,0 +1,32 @@
+[
+  {
+    "train_seed": 7101,
+    "differences": {
+      "qpos": 0.0,
+      "ctrl": 0.0,
+      "hold": 0.0,
+      "active": 0.0
+    },
+    "exact": true
+  },
+  {
+    "train_seed": 7102,
+    "differences": {
+      "qpos": 0.0,
+      "ctrl": 0.0,
+      "hold": 0.0,
+      "active": 0.0
+    },
+    "exact": true
+  },
+  {
+    "train_seed": 7103,
+    "differences": {
+      "qpos": 0.0,
+      "ctrl": 0.0,
+      "hold": 0.0,
+      "active": 0.0
+    },
+    "exact": true
+  }
+]

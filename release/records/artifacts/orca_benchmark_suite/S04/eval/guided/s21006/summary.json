@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "job_sha256": "65b01c82a426595a75fa26a9537c416cdf6e633d39dec9f08c1d93a17da0511a",
+  "summaries": {
+    "evaluation": {
+      "success30": 0.98,
+      "success30_any": 1.0,
+      "mean_hold": 37.034500000000016,
+      "min_hold": 36.1,
+      "max_hold": 37.050000000000004,
+      "retained": 1.0,
+      "mean_return": 570.2718505859375,
+      "requested_residual_max_rad": 0.0,
+      "effective_residual_max_rad": 0.0,
+      "final_hold30": 0.98,
+      "active_residual_rms_rad": 0.0,
+      "active_residual_saturation": 0.0,
+      "active_action_rms": 0.6195194721221924,
+      "success15": 0.98,
+      "mean_finger_peak_n": 28.1201114654541,
+      "acquisition_rate": 1.0,
+      "mean_acquisition_sec": 3.0,
+      "forbidden_rate": 0.0,
+      "clean_success30": 0.98,
+      "max_penetration_m": 0.002164326375350356,
+      "substep_forbidden_rate": 0.0
+    }
+  },
+  "elapsed_sec": 76.26085090599918
+}

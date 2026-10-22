@@ -1,0 +1,11 @@
+{
+  "first": 0.0,
+  "last": 0.0,
+  "max": 0.0,
+  "best_step": 0,
+  "final_step": 0,
+  "elapsed_sec": 140.54669231900334,
+  "bc_elapsed_sec": 0.0,
+  "status": "completed",
+  "job_sha256": "287c5a388ab9dd4e39b08cbb19d3279c7528c1c4a353493641168718495df7b5"
+}

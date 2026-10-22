@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "episodes": 4100,
+  "aggregate": [
+    {
+      "method": "ppo",
+      "policies": 10,
+      "episodes": 1000,
+      "clean": 0.313,
+      "ci_low": 0.18700000000000006,
+      "ci_high": 0.44,
+      "raw": 0.313,
+      "full_clean": 0.313,
+      "mean_force_n": 37.72727855491638,
+      "raw_failures": 687,
+      "dirty_successes": 0
+    },
+    {
+      "method": "guided",
+      "policies": 10,
+      "episodes": 1000,
+      "clean": 0.84,
+      "ci_low": 0.674,
+      "ci_high": 0.958,
+      "raw": 0.84,
+      "full_clean": 0.839,
+      "mean_force_n": 25.363417776107788,
+      "raw_failures": 160,
+      "dirty_successes": 0
+    },
+    {
+      "method": "residual",
+      "policies": 10,
+      "episodes": 1000,
+      "clean": 0.851,
+      "ci_low": 0.7860000000000001,
+      "ci_high": 0.9089999999999999,
+      "raw": 0.852,
+      "full_clean": 0.851,
+      "mean_force_n": 14.330359365463258,
+      "raw_failures": 148,
+      "dirty_successes": 1
+    },
+    {
+      "method": "bc",
+      "policies": 10,
+      "episodes": 1000,
+      "clean": 0.635,
+      "ci_low": 0.53,
+      "ci_high": 0.728,
+      "raw": 0.639,
+      "full_clean": 0.635,
+      "mean_force_n": 13.740137348175049,
+      "raw_failures": 361,
+      "dirty_successes": 4
+    },
+    {
+      "method": "zero",
+      "policies": 1,
+      "episodes": 100,
+      "clean": 0.66,
+      "ci_low": 0.5700000000000001,
+      "ci_high": 0.75,
+      "raw": 0.68,
+      "full_clean": 0.66,
+      "mean_force_n": 13.233232297897338,
+      "raw_failures": 32,
+      "dirty_successes": 2
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "guided-ppo",
+      "difference_pp": 52.7,
+      "ci_low_pp": 29.100000000000005,
+      "ci_high_pp": 72.50000000000001,
+      "p": 0.005859375,
+      "positive_seeds": 9,
+      "holm_2_p": 0.005859375,
+      "supported_on_this_benchmark": true
+    },
+    {
+      "comparison": "residual-ppo",
+      "difference_pp": 53.800000000000004,
+      "ci_low_pp": 38.800000000000004,
+      "ci_high_pp": 68.2,
+      "p": 0.001953125,
+      "positive_seeds": 10,
+      "holm_2_p": 0.00390625,
+      "supported_on_this_benchmark": true
+    }
+  ],
+  "protocol_sha256": "122e1c8e8bb1ec43b48faa2aab2209e8a89425f5fae660205e0dd94307c9cb15",
+  "design": "Prior-friendly task and budget chosen after S03 results; new test starts, reused policies, not independent retraining"
+}

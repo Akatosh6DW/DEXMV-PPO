@@ -1,0 +1,388 @@
+% 基于人类视频先验的灵巧手强化学习研究综述
+% 编译：XeLaTeX + BibTeX（xelatex → bibtex → xelatex ×2），或 tectonic main.tex；Overleaf 选 XeLaTeX。
+\documentclass[UTF8,a4paper,zihao=-4]{ctexart}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,array}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,fit,backgrounds,calc}
+\usepackage{gbt7714}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+
+\bibliographystyle{gbt7714-numerical-doi}
+\citestyle{super}  % 样式文件改名后需显式指定顺序编码制上标引用
+\captionsetup{labelsep=quad,font=small}
+\setlist{nosep,leftmargin=2.2em}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlength{\emergencystretch}{3em}
+\hyphenation{Deep-Mimic ViVi-Dex Manip-Trans}
+\ctexset{
+  section    = {format=\large\heiti\raggedright, beforeskip=2ex plus .5ex, afterskip=1ex},
+  subsection = {format=\normalsize\heiti\raggedright, beforeskip=1.5ex plus .3ex, afterskip=.8ex},
+}
+
+\title{\heiti 基于人类视频先验的灵巧手强化学习研究综述}
+\author{（作者姓名）\\[2pt]{\small （作者单位）}}
+\date{2026 年 10 月}
+
+\begin{document}
+\maketitle
+
+\begingroup\small
+\noindent{\heiti 摘\quad 要：}多指灵巧手具有高维动作空间与接触丰富的动力学，从零开始的深度强化学习普遍面临探索困难、样本效率低和训练结果对随机种子敏感等问题。人类视频蕴含大量低成本的操作先验，为缓解上述问题提供了新途径。本文围绕“如何从人类视频中获取操作先验并将其与强化学习融合”这一核心问题，对近十年的相关研究进行系统梳理。首先，将灵巧操作学习形式化为部分可观测马尔可夫决策过程，并按“先验进入学习的位置”提出奖励、初始化、数据和动作结构四类途径的统一分类框架；其次，回顾灵巧操作强化学习的算法基础，以及手–物位姿估计、跨形态运动重定向等从视频获取先验的关键技术；进而重点比较示范增强策略优化、预训练–微调、残差策略学习与参考轨迹跟踪四类融合范式的原理、优势与局限；随后总结该领域的评测基准、接触质量度量与统计评估规范；最后从先验–物理鸿沟、先验适用边界、微调遗忘、闭环反馈验证、数据规模与真实部署六个方面讨论开放问题与未来研究方向。
+
+\smallskip
+\noindent{\heiti 关键词：}灵巧操作；人类视频；模仿学习；强化学习；残差策略学习；跨形态重定向
+
+\noindent{\heiti 中图分类号：}TP242；TP181
+
+\bigskip
+\begin{center}
+  {\large\bfseries A Survey on Reinforcement Learning for Dexterous Hands with Human Video Priors}
+\end{center}
+
+\noindent\textbf{Abstract:} Multi-fingered dexterous hands combine a high-dimensional action space with contact-rich dynamics, so deep reinforcement learning from scratch typically suffers from hard exploration, low sample efficiency and high sensitivity to random seeds. Human videos contain abundant and inexpensive manipulation priors, offering a promising way to alleviate these issues. This paper systematically reviews research on how to extract manipulation priors from human videos and integrate them with reinforcement learning. We first formulate dexterous manipulation learning as a partially observable Markov decision process and propose a unified taxonomy according to where the prior enters learning: the reward, the initialization, the data, or the action structure. We then review the algorithmic foundations of reinforcement learning for dexterous manipulation, together with key techniques for extracting priors from videos, including hand--object pose estimation and cross-embodiment motion retargeting. Next, we compare four integration paradigms in depth, namely demonstration-augmented policy optimization, pretraining--finetuning, residual policy learning and reference trajectory tracking, in terms of their principles, strengths and limitations. We further summarize benchmarks, contact-quality metrics and statistical evaluation practices in this field. Finally, we discuss open problems and future directions from six aspects: the prior--physics gap, the applicability boundary of priors, forgetting during finetuning, verification of closed-loop feedback, data scale and real-world deployment.
+
+\smallskip
+\noindent\textbf{Key words:} dexterous manipulation; human videos; imitation learning; reinforcement learning; residual policy learning; cross-embodiment retargeting
+\endgroup
+
+% ======================================================================
+\section{引言}\label{sec:intro}
+
+灵巧操作是机器人走向通用化的关键能力之一。与二指夹爪相比，多指灵巧手可以完成手内重定向、工具使用和精细抓握等任务，但其动作空间通常达到十几至数十维，任务成败又取决于多个指尖与物体之间频繁建立和断开的接触，基于解析模型的传统抓握与操作规划方法难以完整刻画这类复杂的接触动力学\cite{okamura2000}。深度强化学习（reinforcement learning，RL）为此提供了数据驱动的途径：OpenAI 借助大规模仿真与近端策略优化（PPO）训练，在真实灵巧手上实现了手内物体重定向\cite{openai2018}，并进一步完成了单手复原魔方\cite{rubik2019}。然而，这类成果依赖海量仿真经验和精心设计的奖励函数；在一般实验条件下，从零开始的 RL 往往探索困难、样本效率低，且最终性能对随机种子与超参数高度敏感\cite{henderson2018,agarwal2021}。
+
+引入示范是缓解探索难题的经典思路。Rajeswaran 等\cite{dapg}提出的示范增强策略梯度（DAPG）方法表明，少量人类示范即可显著降低灵巧操作的样本复杂度；基于确定性策略梯度的示范增强方法也取得了类似效果\cite{ddpgfd,nair2018}。但机器人示范通常需要借助数据手套或视觉遥操作系统采集\cite{dexpilot,anyteleop}，成本高且难以规模化。相比之下，人类操作视频数量庞大、获取成本低，人手与拟人灵巧手的形态又较为接近，视频中天然蕴含“如何接近、如何合拢、如何施力”等操作先验。DexMV\cite{dexmv}首次构建了从人类视频中提取三维手–物轨迹、转换为机器人示范并用于模仿学习的完整流程；此后，DexVIP\cite{dexvip}、VideoDex\cite{videodex}等工作进一步利用互联网视频为灵巧手学习提供先验。
+
+然而，从“人类视频”到“可执行的机器人策略”之间至少存在三重鸿沟。其一是感知鸿沟：视频只提供二维图像，需要借助参数化手部模型\cite{mano}和手–物交互数据集\cite{hic,dexycb}重建三维手部与物体位姿，估计误差不可避免。其二是形态鸿沟：人手与机器人手在尺寸、自由度和关节限位上均有差异，需要通过跨形态运动重定向（retargeting）把人手运动映射到机器人关节空间\cite{dexmv,dexpilot}。其三是物理鸿沟：运动学上相似的轨迹在动力学上未必可行，重定向结果常伴随穿透、滑脱或接触力不足等问题，仅靠模仿难以稳定完成任务\cite{vividex,dextrack}。前两重鸿沟决定先验“像不像”，第三重鸿沟决定先验“能不能用”；而跨越物理鸿沟恰恰需要在物理环境中通过交互试错加以修正，这正是 RL 的长处。因此，如何将视频先验与 RL 有效融合，成为该方向的核心问题\cite{maniptrans,human2sim2robot}。
+
+已有综述从不同角度覆盖了相关内容。Kober 等\cite{kober2013}系统总结了机器人领域的强化学习；Ravichandar 等\cite{ravichandar2020}综述了机器人示范学习的进展；Eze 与 Crick\cite{eze2024}从视频特征表征、物体可供性理解、三维手部建模等方面梳理了基于视频的机器人操作学习；An 等\cite{an2025}则从模仿学习的角度综述了灵巧操作。这些工作或面向一般操作任务，或将模仿学习与强化学习分开讨论，较少聚焦“视频先验如何与 RL 融合”这一具体问题，也缺少对不同融合方式的统一刻画。与上述综述相比，本文的主要贡献如下：
+\begin{enumerate}
+  \item 提出按“先验进入学习的位置”划分的统一框架，将奖励、初始化、数据与动作结构四类途径纳入同一形式化描述；
+  \item 系统梳理从人类视频获取操作先验的感知与重定向技术，并比较示范增强、预训练–微调、残差策略学习与参考轨迹跟踪四类融合范式的原理、适用条件与失效模式；
+  \item 总结灵巧操作学习的评测指标与统计规范，强调接触质量度量、多随机种子评估与公平的基线调参；
+  \item 归纳该方向的开放问题，并给出未来研究方向。
+\end{enumerate}
+
+本文其余部分安排如下：第~\ref{sec:framework} 节给出问题定义与统一框架；第~\ref{sec:rl} 节回顾灵巧操作强化学习的算法基础；第~\ref{sec:prior} 节介绍从人类视频获取操作先验的关键技术；第~\ref{sec:fusion} 节比较四类融合范式；第~\ref{sec:eval} 节讨论评测基准与实验规范；第~\ref{sec:future} 节展望挑战与未来方向；第~\ref{sec:conclusion} 节总结全文。
+
+% ======================================================================
+\section{问题定义与统一框架}\label{sec:framework}
+
+\subsection{问题定义}
+
+灵巧操作任务通常建模为部分可观测马尔可夫决策过程（partially observable Markov decision process，POMDP），记为 $\mathcal{M}=(\mathcal{S},\mathcal{A},\mathcal{O},P,\Omega,r,\gamma)$，其中 $\mathcal{S}$ 为包含手部与物体完整状态的状态空间，$\mathcal{A}$ 为动作空间，$\mathcal{O}$ 为观测空间，$P$ 为状态转移函数，$\Omega$ 为观测函数，$r$ 为奖励函数，$\gamma\in[0,1)$ 为折扣因子。对多指灵巧手而言，动作 $a_t$ 一般是各关节的期望位置，由底层比例–微分（PD）控制器或位置伺服执行；观测 $o_t$ 包括关节本体感知、物体位姿和触觉信号等。学习目标是求解参数为 $\theta$ 的策略 $\pi_\theta(a_t\mid o_t)$，使期望累积回报最大：
+\begin{equation}\label{eq:objective}
+  J(\theta)=\mathbb{E}_{\tau\sim\pi_{\theta}}\Big[\sum_{t=0}^{T}\gamma^{t}\,r(s_{t},a_{t})\Big]
+\end{equation}
+式中 $\tau$ 为策略与环境交互产生的轨迹，$T$ 为回合长度。设人类视频为 $V$，经过感知模块与重定向模块处理后得到的操作先验记为 $\mathcal{P}$。依据具体方法的不同，$\mathcal{P}$ 可以表现为机器人关节参考轨迹、状态–动作示范数据集 $\mathcal{D}$、物体运动轨迹、预抓握姿态，或者从视频中学到的视觉表征与奖励模型（详见第~\ref{sec:prior} 节）。
+
+\subsection{先验进入学习的四种途径}
+
+从式~\eqref{eq:objective} 出发，视频先验可以在四个位置改变 RL 的学习过程，统一写为：
+\begin{equation}\label{eq:unified}
+\begin{aligned}
+  \max_{\theta}\;&\mathbb{E}_{\tau\sim\pi_{\theta}}\Big[\sum_{t}\gamma^{t}\big(r_{\mathrm{task}}(s_{t},a_{t})+\lambda_{r}\,r_{\mathrm{prior}}(s_{t},a_{t};\mathcal{P})\big)\Big]-\lambda_{d}\,\mathcal{L}_{\mathrm{demo}}(\theta;\mathcal{D})\\
+  \mathrm{s.t.}\;&\theta^{(0)}=\theta_{\mathrm{prior}},\quad s_{0}\sim\rho_{0}(\cdot\mid\mathcal{P}),\quad u_{t}=g(a_{t},\mathcal{P}_{t}),\quad a_{t}\sim\pi_{\theta}(\cdot\mid o_{t})
+\end{aligned}
+\end{equation}
+式中 $r_{\mathrm{task}}$ 为任务奖励，$r_{\mathrm{prior}}$ 为由先验导出的奖励项，$\lambda_r$ 与 $\lambda_d$ 为权重系数，$\mathcal{L}_{\mathrm{demo}}$ 为示范数据上的监督损失，$\theta^{(0)}$ 与 $\rho_0$ 分别为策略参数初值与初始状态分布，$u_t$ 为最终送往执行器的指令，$g(\cdot)$ 为动作组合函数。据此，可将现有方法归纳为四类途径：
+\begin{enumerate}
+  \item \textbf{奖励途径}：令 $\lambda_r>0$，以先验构造跟踪奖励、姿态先验奖励或物体中心奖励，引导策略向先验靠拢；
+  \item \textbf{初始化途径}：以先验决定学习的起点，包括由行为克隆或生成式预训练得到的策略参数初值 $\theta_{\mathrm{prior}}$，以及由预抓握姿态等确定的初始状态分布 $\rho_0$；
+  \item \textbf{数据途径}：令 $\lambda_d>0$，或将示范样本放入经验回放池，使先验持续参与每一次策略更新；
+  \item \textbf{动作结构途径}：令 $g$ 不再是恒等映射，例如残差形式 $u_t=a^{\mathrm{base}}(\mathcal{P}_t)+\alpha a_t$，使先验成为执行链的一部分，同时把 RL 的探索限制在先验附近。
+\end{enumerate}
+
+四类途径并不互斥，许多方法同时使用其中两类或更多。例如，DAPG\cite{dapg}同时采用行为克隆初始化与示范增强梯度；ManipTrans\cite{maniptrans}在预训练轨迹模仿器之上叠加残差模块；Human2Sim2Robot\cite{human2sim2robot}则结合物体中心奖励与预抓握状态初始化。表~\ref{tab:routes} 汇总了各途径的作用对象、典型形式与代表性工作。
+
+\begin{table}[htbp]
+  \centering\small
+  \caption{视频先验进入强化学习的四类途径}\label{tab:routes}
+  \begin{tabularx}{\textwidth}{@{}l l Y Y l@{}}
+    \toprule
+    途径 & 式~\eqref{eq:unified} 中的作用对象 & 典型形式 & 代表性工作 & 详见 \\
+    \midrule
+    奖励 & $r_{\mathrm{prior}}$ & 参考跟踪奖励、手部姿态先验奖励、物体中心奖励 & DeepMimic\cite{deepmimic}、DexVIP\cite{dexvip}、HuDOR\cite{hudor}、Human2Sim\-2Robot\cite{human2sim2robot} & \ref{sec:tracking} 节 \\
+    初始化 & $\theta^{(0)}$、$\rho_0$ & 行为克隆预训练、生成式基础策略、预抓握初始化 & DAPG\cite{dapg}、HOP\cite{hop}、PGDM\cite{pgdm} & \ref{sec:pretrain} 节 \\
+    数据 & $\mathcal{L}_{\mathrm{demo}}$、回放池 & 增广策略梯度、示范回放、引导策略起步 & DDPGfD\cite{ddpgfd}、AWAC\cite{awac}、RLPD\cite{rlpd}、JSRL\cite{jsrl} & \ref{sec:augment} 节 \\
+    动作结构 & $g(\cdot)$ & 残差动作、有界修正 & RPL\cite{rpl}、残差 RL\cite{johannink}、ResiP\cite{resip}、ManipTrans\cite{maniptrans} & \ref{sec:residual} 节 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      font=\footnotesize,
+      box/.style={draw=black!45, rounded corners=3pt, minimum width=3.6cm, minimum height=1.6cm,
+                  align=center, line width=0.6pt},
+      prior/.style={box, draw=blue!65!black, fill=blue!7, line width=1pt},
+      route/.style={box, fill=black!6},
+      loopbox/.style={box, minimum height=1.15cm},
+      arr/.style={-{Stealth[length=2mm]}, draw=black!55, line width=0.6pt},
+      ln/.style={draw=black!55, line width=0.6pt},
+    ]
+    \def\xa{0}\def\xb{3.95}\def\xc{7.9}\def\xd{11.85}
+    \node[box]   (video) at (\xa,0) {{\heiti 人类视频}\\ 单段 RGB(-D) 视频\\ 或大规模网络视频};
+    \node[box]   (perc)  at (\xb,0) {{\heiti 手–物三维感知}\\ MANO 手部参数\\ 物体 6D 位姿};
+    \node[box]   (ret)   at (\xc,0) {{\heiti 跨形态重定向}\\ 关键向量优化\\ 式~\eqref{eq:retarget}};
+    \node[prior] (prior) at (\xd,0) {{\heiti 视频先验 $\mathcal{P}$}\\ 参考轨迹、示范数据\\ 物体轨迹、预抓握姿态};
+    \node[route] (init) at (\xa,-2.75) {{\heiti 初始化途径}\\ $\theta^{(0)}$、$\rho_0$\\ BC 预训练、预抓握};
+    \node[route] (act)  at (\xb,-2.75) {{\heiti 动作结构途径}\\ $u=a^{\mathrm{base}}+\alpha a$\\ 残差策略};
+    \node[route] (rew)  at (\xc,-2.75) {{\heiti 奖励途径}\\ $r_{\mathrm{prior}}$\\ 跟踪、物体中心奖励};
+    \node[route] (dat)  at (\xd,-2.75) {{\heiti 数据途径}\\ $\mathcal{L}_{\mathrm{demo}}$、回放池\\ 示范增强};
+    \node[loopbox] (pol)  at (\xa,-5.45) {{\heiti 策略 $\pi_\theta$}\\ $o_t\to a_t$};
+    \node[loopbox] (comp) at (\xb,-5.45) {{\heiti 动作组合 $g(\cdot)$}\\ $a_t\to u_t$};
+    \node[loopbox] (env)  at (\xc,-5.45) {{\heiti 仿真环境}\\ 返回 $o_t$ 与 $r_t$};
+    \node[loopbox] (upd)  at (\xd,-5.45) {{\heiti 策略更新}\\ PPO 等算法};
+    \draw[arr] (video) -- (perc);
+    \draw[arr] (perc) -- (ret);
+    \draw[arr] (ret) -- (prior);
+    \draw[ln] (prior.south) -- ++(0,-0.3) coordinate (bus);
+    \draw[ln] (init.north |- bus) -- (bus);
+    \foreach \n in {init,act,rew,dat} \draw[arr] (\n.north |- bus) -- (\n.north);
+    \foreach \a/\b in {init/pol,act/comp,rew/env,dat/upd} \draw[arr] (\a) -- (\b);
+    \draw[arr] (pol) -- (comp);
+    \draw[arr] (comp) -- (env);
+    \draw[arr] (env) -- (upd);
+    \draw[arr] (upd.south) -- ++(0,-0.45) -| node[pos=0.25, above, font=\footnotesize] {更新参数 $\theta$} (pol.south);
+    \coordinate (loopbottom) at ($(pol.south)+(0,-1.05)$);
+    \begin{scope}[on background layer]
+      \node[draw=black!40, dashed, rounded corners=4pt, inner sep=5pt,
+            fit=(pol)(upd)(loopbottom),
+            label={[anchor=south east, font=\small\heiti, inner sep=4pt]south east:强化学习训练回路}] {};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{从人类视频到强化学习的技术链路与四类先验途径}\label{fig:framework}
+\end{figure}
+
+如图~\ref{fig:framework} 所示，上方为先验的获取链路，中部为四类途径，下方为 RL 训练回路；每类途径的箭头指向它在回路中作用的环节。
+
+% ======================================================================
+\section{灵巧操作的强化学习基础}\label{sec:rl}
+
+\subsection{策略梯度与近端策略优化}
+
+灵巧操作的动作空间连续且维数高，主流方法多为基于策略梯度的在策略（on-policy）算法。信赖域策略优化（TRPO）\cite{trpo}通过约束相邻两次策略之间的 KL 散度来保证更新稳定，并给出了单调改进的理论依据，但其二阶优化实现较为复杂。近端策略优化（PPO）\cite{ppo}以截断的概率比替代显式信赖域约束，其目标函数为
+\begin{equation}\label{eq:ppo}
+  L^{\mathrm{CLIP}}(\theta)=\hat{\mathbb{E}}_{t}\Big[\min\big(\rho_{t}(\theta)\hat{A}_{t},\;\mathrm{clip}(\rho_{t}(\theta),1-\epsilon,1+\epsilon)\,\hat{A}_{t}\big)\Big],\qquad
+  \rho_{t}(\theta)=\frac{\pi_{\theta}(a_{t}\mid o_{t})}{\pi_{\theta_{\mathrm{old}}}(a_{t}\mid o_{t})}
+\end{equation}
+式中 $\epsilon$ 为截断系数，$\hat{A}_t$ 为优势函数估计。PPO 允许在同一批数据上进行多轮小批量更新，实现简单、对超参数相对鲁棒，并且易于与大规模并行仿真结合，因而成为灵巧操作 RL 中最常用的算法\cite{openai2018}。优势函数通常采用广义优势估计（GAE）\cite{gae}计算：
+\begin{equation}\label{eq:gae}
+  \hat{A}_{t}^{\mathrm{GAE}(\gamma,\lambda)}=\sum_{l=0}^{\infty}(\gamma\lambda)^{l}\,\delta_{t+l},\qquad
+  \delta_{t}=r_{t}+\gamma V_{\phi}(s_{t+1})-V_{\phi}(s_{t})
+\end{equation}
+式中 $V_\phi$ 为价值网络，$\lambda\in[0,1]$ 用于在估计偏差与方差之间折中。
+
+\subsection{非对称 Actor–Critic 与特权信息}
+
+仿真训练时可以获得物体精确位姿、接触力等真实部署中难以直接观测的特权信息。Pinto 等\cite{pinto}提出非对称 Actor–Critic 结构：策略网络（Actor）只接收可观测量 $o_t$，以保证可部署性；价值网络（Critic）则接收完整状态 $s_t$，以降低价值估计的方差。式~\eqref{eq:gae} 中 $V_\phi$ 的输入正是完整状态 $s_t$。由于 Critic 只在训练阶段使用，这种设计不会影响部署。OpenAI 的灵巧手工作同样采用了这一思路\cite{openai2018}，它已成为仿真训练灵巧手策略的常用配置。
+
+\subsection{仿真平台与仿真到现实迁移}
+
+物理仿真器是灵巧操作 RL 的基础设施。MuJoCo\cite{mujoco}以凸优化求解接触动力学，兼顾精度与速度，被 DAPG、DexMV 等大量灵巧操作基准采用\cite{dapg,dexmv}。需要注意的是，MuJoCo 的接触为软约束，允许物体之间出现小幅穿透，这会给接触质量的评测带来影响（见第~\ref{sec:eval} 节）。Brax\cite{brax}等基于硬件加速器的仿真器支持成千上万个环境并行运行，大幅缩短了在策略算法的训练时间。仿真训练的策略迁移到真实机器人时，常借助域随机化\cite{tobin2017}或自动域随机化\cite{rubik2019}缩小仿真与现实之间的差距。
+
+\subsection{探索难题与奖励设计}
+
+灵巧操作 RL 的核心困难在于探索。以抓取为例，只有多个手指以合适的时序和姿态同时接触物体，任务奖励才会出现；在十几维的关节空间中靠随机探索偶然命中这种协调动作，其概率极低。Rajeswaran 等\cite{dapg}的实验表明，在稀疏奖励下从零训练的策略梯度方法难以完成 Adroit 灵巧手任务。常见的缓解办法是奖励塑形，即在任务奖励之外加入接近物体、建立接触等过程奖励。Ng 等\cite{ng1999}证明，形如
+\begin{equation}\label{eq:shaping}
+  F(s,s')=\gamma\,\Phi(s')-\Phi(s)
+\end{equation}
+的基于势函数的塑形项不会改变最优策略，式中 $\Phi$ 为势函数。但实践中的塑形项往往并不满足这一形式，需要针对任务反复调整权重，有时还会诱导出“钻奖励漏洞”的行为。此外，Henderson 等\cite{henderson2018}和 Agarwal 等\cite{agarwal2021}指出，深度 RL 的结果对随机种子、超参数和实现细节高度敏感，少量种子下的比较极易得出不可靠的结论。上述探索难题、奖励设计负担与结果不稳定性，正是引入人类视频先验的主要动机。
+
+% ======================================================================
+\section{从人类视频获取操作先验}\label{sec:prior}
+
+\subsection{手–物三维感知与数据集}
+
+从视频中获取操作先验的第一步，是恢复人手与物体的三维运动。MANO\cite{mano}是最常用的参数化手部模型，它用低维的姿态参数与形状参数描述手部网格，使手部姿态估计可以转化为参数回归问题。在数据方面，HIC 数据集\cite{hic}利用判别式显著点与物理仿真，跟踪了手与手、手与物体交互过程中的三维手部运动；DexYCB\cite{dexycb}以多视角 RGB-D 相机采集了人手抓取 YCB 物体的过程，并为三维手部姿态估计、物体 6D 位姿估计等任务建立了基准。DexMV\cite{dexmv}在此基础上，分别估计视频中手部的 MANO 参数与物体的 6D 位姿，得到手–物三维轨迹。需要指出的是，单目视频的深度歧义与手–物相互遮挡会给估计结果带来不可忽略的噪声，ViViDex\cite{vividex}就指出，轨迹估计噪声是限制视频先验收益的主要因素之一。
+
+\subsection{跨形态运动重定向}
+
+运动重定向旨在把人手运动映射为机器人手的关节轨迹。主流做法是在每一帧求解如下优化问题：
+\begin{equation}\label{eq:retarget}
+  \min_{q_{t}}\;\sum_{i=1}^{N}\big\|f_{i}(q_{t})-\beta\,v_{i,t}\big\|^{2}+\eta\,\|q_{t}-q_{t-1}\|^{2}
+  \qquad\mathrm{s.t.}\quad q_{\min}\le q_{t}\le q_{\max}
+\end{equation}
+式中 $q_t$ 为机器人关节角，$v_{i,t}$ 为人手第 $i$ 个关键向量（如由掌心指向指尖的向量），$f_i(\cdot)$ 为机器人上对应向量的正运动学函数，$\beta$ 为尺度系数，$\eta$ 为平滑项权重，$q_{\min}$ 与 $q_{\max}$ 为关节限位。DexPilot\cite{dexpilot}采用基于关键向量的代价函数，并根据指尖间距调整权重，以在遥操作中保证捏取接触；AnyTeleop\cite{anyteleop}将这一流程推广到多种机器人手与机械臂。DexMV\cite{dexmv}进一步把物体纳入重定向：先匹配手–物相对位置得到机器人手的运动轨迹，再借助逆动力学恢复对应的动作序列，从而把人类视频转换为可用于模仿学习的状态–动作示范。
+
+式~\eqref{eq:retarget} 只约束运动学上的相似性，并不保证动力学上的可行性。人手柔软且接触面积大，而机器人手刚度高、指尖形状不同，因此即使重定向后的姿态与人手非常接近，也可能出现手指穿入物体、接触力不足或物体滑脱等问题。这是第~\ref{sec:intro} 节所述“物理鸿沟”的直接来源，也是后续需要在仿真中借助交互加以修正的根本原因。
+
+\subsection{先验的表示形式}
+
+根据从视频中抽取的信息不同，现有工作中的视频先验大致可分为五种表示形式（表~\ref{tab:methods}）：
+\begin{enumerate}
+  \item \textbf{视觉表征}：在大规模人类视频上预训练视觉编码器，为下游策略提供感知先验，如 R3M\cite{r3m}和 MVP\cite{mvp}。这类先验不包含动作信息，主要服务于基于图像的策略学习。
+  \item \textbf{奖励与任务目标}：从视频中学习或构造奖励函数。DVD\cite{dvd}从野外人类视频中学习可泛化的任务奖励；DexVIP\cite{dexvip}以 YouTube 抓取图像中的人手姿态作为奖励先验；HuDOR\cite{hudor}与 Human2Sim2Robot\cite{human2sim2robot}则以物体运动轨迹构造奖励，从而绕开人手与机器人手的形态差异。
+  \item \textbf{运动轨迹与示范}：将视频中的手部运动重定向为机器人轨迹或示范数据，如 DexMV\cite{dexmv}、ILAD\cite{ilad}、ViViDex\cite{vividex}、DexTrack\cite{dextrack}和 ManipTrans\cite{maniptrans}；ObjDex\cite{objdex}则从人手动作捕捉数据中学习以物体目标为条件的腕部轨迹生成模型。
+  \item \textbf{关键姿态}：只提取少数关键时刻的手部姿态，如 PGDM\cite{pgdm}的预抓握姿态和 Human2Sim2Robot\cite{human2sim2robot}的预操作手姿，以此为 RL 提供探索起点。
+  \item \textbf{预训练策略}：以视频重定向得到的大量轨迹训练与任务无关的基础策略，再针对下游任务微调，如 HOP\cite{hop}。
+\end{enumerate}
+
+\begin{table}[htbp]
+  \centering\small
+  \caption{基于人类视频先验的代表性灵巧操作方法}\label{tab:methods}
+  \begin{tabularx}{\textwidth}{@{}l Y Y Y@{}}
+    \toprule
+    方法 & 先验来源 & 先验形式 & 与 RL 的结合方式 \\
+    \midrule
+    DexMV\cite{dexmv} & 自采人类操作视频 & 重定向得到的机器人示范 & 模仿学习与示范增强 RL \\
+    DexVIP\cite{dexvip} & YouTube 抓取图像 & 手部姿态先验 & 作为辅助奖励项 \\
+    ILAD\cite{ilad} & 人手抓取可供性模型 & 类别级大规模示范 & 模仿学习目标结合几何表征学习 \\
+    VideoDex\cite{videodex} & 互联网人类视频 & 视觉、动作与物理先验 & 先验网络引导策略学习 \\
+    PGDM\cite{pgdm} & 人类示例物体轨迹 & 预抓握姿态与物体轨迹 & 预抓握初始化与轨迹跟踪 RL \\
+    ViViDex\cite{vividex} & 人类操作视频 & 估计的手–物轨迹 & 轨迹引导奖励 RL，再蒸馏为视觉策略 \\
+    HOP\cite{hop} & 野外人类视频 & 生成式基础策略 & 以 RL 或 BC 微调 \\
+    HuDOR\cite{hudor} & 单段人类视频 & 物体点轨迹 & 物体导向奖励与在线微调 \\
+    ObjDex\cite{objdex} & 人手动作捕捉数据 & 腕部轨迹生成模型 & 高层生成腕部轨迹，低层 RL 控制手指 \\
+    DexTrack\cite{dextrack} & 人–物运动学参考 & 大规模跟踪示范 & RL 与模仿学习交替的数据飞轮 \\
+    ManipTrans\cite{maniptrans} & 双手人–物交互数据集 & 手部运动轨迹 & 预训练轨迹模仿器与残差微调 \\
+    Human2Sim\-2Robot\cite{human2sim2robot} & 单段 RGB-D 人类视频 & 物体位姿轨迹与预操作手姿 & 物体中心奖励与初始化，仿真训练后迁移真机 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+从表~\ref{tab:methods} 可以看出，先验从“视觉表征”到“运动轨迹”，所携带的动作信息越来越具体，对感知精度与重定向质量的依赖也越来越强。近期工作出现两个明显趋势：一是以物体运动而非手部姿态定义先验，以降低对形态匹配的要求\cite{human2sim2robot,hudor}；二是不再把重定向结果直接当作可执行动作，而是在仿真中通过 RL 学习“把先验变成可执行动作”的跟踪器或修正器\cite{dextrack,maniptrans}。
+
+% ======================================================================
+\section{示范先验与强化学习的融合方法}\label{sec:fusion}
+
+本节按第~\ref{sec:framework} 节的统一框架，依次介绍数据、初始化、动作结构与奖励四类途径对应的融合范式，最后对它们进行比较。
+
+\subsection{示范增强的策略优化}\label{sec:augment}
+
+这一范式让示范数据在 RL 训练全过程中持续发挥作用。DAPG\cite{dapg}在行为克隆预训练之后，用如下增广梯度更新策略：
+\begin{equation}\label{eq:dapg}
+\begin{aligned}
+  g_{\mathrm{aug}}&=\sum_{(s,a)\in\rho_{\pi}}\nabla_{\theta}\ln\pi_{\theta}(a\mid s)\,A^{\pi}(s,a)+\sum_{(s,a)\in\rho_{\mathcal{D}}}\nabla_{\theta}\ln\pi_{\theta}(a\mid s)\,w(s,a)\\
+  w(s,a)&=\lambda_{0}\lambda_{1}^{k}\max_{(s',a')\in\rho_{\pi}}A^{\pi}(s',a')
+\end{aligned}
+\end{equation}
+式中 $\rho_\pi$ 与 $\rho_{\mathcal{D}}$ 分别为策略交互数据与示范数据，$k$ 为迭代次数，$\lambda_0$ 与 $\lambda_1<1$ 为超参数。随着训练推进，示范项的权重按指数衰减，策略逐步从模仿转向由任务奖励主导。在离策略算法中，DDPGfD\cite{ddpgfd}将示范放入经验回放池并优先采样；Nair 等\cite{nair2018}在演员损失中加入行为克隆项，并用 Q 值过滤器仅在示范动作优于当前策略时进行模仿。AWAC\cite{awac}以优势加权回归统一离线预训练与在线微调；RLPD\cite{rlpd}表明，只需对现有离策略算法做少量关键修改（如在线、离线数据对称采样），即可高效利用离线数据；IBRL\cite{ibrl}先训练模仿策略，再用它为在线探索和目标值自举提供候选动作。JSRL\cite{jsrl}则另辟蹊径：由引导策略执行回合前段，探索策略接管后段，并逐步缩短引导段长度，形成起始状态的课程。
+
+这一范式的前提是示范带有机器人动作标签。人类视频本身只有状态信息，因此需要先经过第~\ref{sec:prior} 节的重定向与动作恢复；DexMV\cite{dexmv}正是在此基础上，对多种示范增强算法进行了系统评测。
+
+\subsection{预训练–微调}\label{sec:pretrain}
+
+预训练–微调范式先用示范训练策略，再以其参数作为 RL 的初值。行为克隆的目标为
+\begin{equation}\label{eq:bc}
+  \mathcal{L}_{\mathrm{BC}}(\theta)=\mathbb{E}_{(o,a)\sim\mathcal{D}}\big[-\ln\pi_{\theta}(a\mid o)\big]
+\end{equation}
+该范式实现简单，可与任何 RL 算法组合，训练起点的性能也较高。HOP\cite{hop}把这一思路推广到大规模数据：先在野外视频重定向得到的轨迹上训练与任务无关的生成式基础策略，再分别用 RL 或 BC 微调，从而提高下游任务的样本效率与鲁棒性。
+
+该范式存在三个已知问题。第一，行为克隆存在复合误差：策略一旦偏离示范分布，误差会沿时间累积，这是 DAgger\cite{dagger}等交互式模仿学习方法试图解决的问题。第二，RL 初始化并不总是有效。JSRL\cite{jsrl}指出，直接用预训练策略初始化 RL，效果往往不佳，在基于价值的方法中尤为明显；一个常见原因是价值网络随机初始化，早期不准确的优势估计会破坏预训练得到的行为。第三，微调过程中会发生遗忘。Wołczyk 等\cite{wolczyk}发现，对于微调初期尚未访问到的那部分状态，预训练策略原本表现良好，但随着微调推进，这部分能力会逐渐丧失，导致迁移收益流失；他们同时表明，引入知识保持技术可以缓解这一问题。实践中常用的应对措施还包括降低学习率、对价值网络进行预热，以及加入与预训练策略之间的 KL 正则项。
+
+初始化途径还包括初始状态的初始化。PGDM\cite{pgdm}表明，仅将回合起点设置为预抓握姿态，就足以诱导出高效的探索策略，在 50 个灵巧操作任务上无需针对具体任务调参；Human2Sim2Robot\cite{human2sim2robot}同样用从视频中提取的预操作手姿初始化并引导探索。
+
+\subsection{残差策略学习}\label{sec:residual}
+
+残差策略学习把先验固定为执行链的一部分，RL 只学习修正量：
+\begin{equation}\label{eq:residual}
+  u_{t}=\mathrm{clip}\big(a^{\mathrm{base}}_{t}+\alpha\,\pi_{\theta}(o_{t}),\;u_{\min},\;u_{\max}\big)
+\end{equation}
+式中 $a^{\mathrm{base}}_t$ 为基础控制器（或参考轨迹）给出的动作，$\pi_\theta$ 的输出被限制在 $[-1,1]$ 内，$\alpha$ 为残差幅度上界。Silver 等\cite{rpl}与 Johannink 等\cite{johannink}几乎同时提出这一框架：前者表明，在不完美的基础控制器上学习残差，可以显著提高复杂操作任务的数据效率；后者以传统反馈控制器为基础，由 RL 补偿摩擦与接触等难以建模的部分，完成了真实机器人上的插装任务。Alakuijala 等\cite{alakuijala}把基础控制器替换为由示范学到的 BC 策略，在 28 自由度灵巧手上验证了其对未见环境条件的泛化能力。近期工作将残差思想用于修正大规模模仿策略：ResiP\cite{resip}指出，采用动作分块的 BC 策略更像开环的“轨迹规划器”，叠加残差 RL 后可以获得精密装配所需的闭环修正能力；Policy Decorator\cite{policydecorator}对任意结构的模仿模型学习残差，并通过受控探索实现稳定、高样本效率的在线学习；ManipTrans\cite{maniptrans}先预训练通用的手部轨迹模仿器，再针对具体任务在交互约束下微调残差模块，高效地把人类双手操作迁移到灵巧手上。
+
+残差范式有三个突出优点：训练起点的性能等于基础控制器的性能；探索被限制在先验附近，有利于安全与稳定；基础先验始终保留在执行链中，不会像第~\ref{sec:pretrain} 节那样在微调中被遗忘。它的局限也同样明确。其一，性能上界受 $\alpha$ 制约，当任务条件（如物体质量、位置）与先验差别较大时，有界修正可能不足以弥补。其二，基础先验常是按时间索引的开环轨迹，本身不随状态调整。其三，残差带来的收益究竟来自随状态变化的闭环修正，还是仅相当于对先验施加一个固定偏置，需要通过回放固定修正量等对照实验加以区分。
+
+\subsection{参考轨迹跟踪}\label{sec:tracking}
+
+参考轨迹跟踪以先验构造奖励，引导策略在物理仿真中复现参考运动。DeepMimic\cite{deepmimic}给出了这一范式的典型形式：
+\begin{equation}\label{eq:imitation}
+  r^{\mathrm{im}}_{t}=\sum_{k}w_{k}\exp\big(-\kappa_{k}\,\|x^{\mathrm{ref}}_{k,t}-x_{k,t}\|^{2}\big)
+\end{equation}
+式中 $x_k$ 依次表示关节姿态、速度、末端位置等跟踪量，$w_k$ 与 $\kappa_k$ 为权重与尺度系数。DeepMimic 同时采用“参考状态初始化”与提前终止，以提高探索效率；SFV\cite{sfv}进一步把视频姿态估计与该框架结合，从网络视频中学到了物理上可行的运动技能。在灵巧操作中，ViViDex\cite{vividex}对每段视频用轨迹引导的奖励训练状态策略，以获得既自然又物理可行的轨迹，再蒸馏为统一的视觉策略；DexTrack\cite{dextrack}将跟踪对象扩展为人–物交互参考，并借助数据飞轮训练可泛化的跟踪控制器。
+
+跟踪对象的选择存在明显的权衡。以手部姿态为跟踪目标，得到的动作自然，但可能复制重定向中不可行的部分；以物体运动为目标\cite{human2sim2robot,hudor}，可以绕开形态差异、允许机器人采用与人不同的抓法，代价是探索空间变大，通常需要结合预抓握初始化等手段\cite{pgdm}。
+
+\subsection{比较与讨论}\label{sec:compare}
+
+表~\ref{tab:paradigms} 从先验作用位置、数据要求、训练起点和主要风险等方面比较了四类范式。
+
+\begin{table}[htbp]
+  \centering\footnotesize
+  \caption{四类融合范式的比较}\label{tab:paradigms}
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{1.6cm} Y Y Y Y Y@{}}
+    \toprule
+    范式 & 先验作用位置 & 是否需要动作标签 & 训练起点性能 & 主要风险 & 代表性工作 \\
+    \midrule
+    示范增强 & 损失函数或回放池 & 需要 & 较高（常配合 BC 预训练） & 示范权重设置不当时偏离任务目标 & DAPG\cite{dapg}、RLPD\cite{rlpd}、IBRL\cite{ibrl} \\
+    预训练–微调 & 参数初值或初始状态 & 参数初始化需要；状态初始化不需要 & 高 & 价值函数冷启动、微调遗忘 & HOP\cite{hop}、PGDM\cite{pgdm}、JSRL\cite{jsrl} \\
+    残差策略 & 动作组合函数 & 不需要（需基础控制器或参考轨迹） & 等于基础控制器 & 修正幅度受限，先验不适配时性能封顶 & RPL\cite{rpl}、ResiP\cite{resip}、ManipTrans\cite{maniptrans} \\
+    参考跟踪 & 奖励函数 & 不需要（需参考状态） & 低（需从头学习跟踪） & 奖励权衡复杂，可能复制不可行动作 & DeepMimic\cite{deepmimic}、ViViDex\cite{vividex}、Human2Sim\-2Robot\cite{human2sim2robot} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+综合来看，四类范式在“先验约束强度”上构成一条谱系：参考跟踪只通过奖励软性地引导策略；示范增强与预训练–微调让先验影响参数，但允许策略在训练中远离先验；残差策略则在结构上强制策略保持在先验附近。约束越强，训练起点越高、过程越稳定，但当先验与任务不匹配时，可修正的余地也越小。在单段视频、物体与任务较为匹配、交互预算有限的场景中，强约束的残差范式更具吸引力；当任务条件变化较大或交互预算充足时，弱约束范式有更大的提升空间。此外，多数工作报告的收益集中体现在样本效率与训练稳定性上；在交互预算充足时，先验方法的渐近性能是否仍然占优，以及不同范式在同一基准下的直接比较，目前仍缺乏系统研究。
+
+% ======================================================================
+\section{评测基准与实验规范}\label{sec:eval}
+
+\subsection{任务基准与实验平台}
+
+仿真基准方面，DAPG\cite{dapg}提出的 Adroit 任务集包含物体搬移、手内转笔、开门和使用锤子四项任务，是示范增强灵巧操作研究中最常用的基准；DexMV\cite{dexmv}在其基础上加入了与人类视频示范配套的搬移、倾倒和放置任务；PGDM\cite{pgdm}构建的 TCDM 基准包含基于多种物体与多种灵巧手的 50 项任务；Policy Decorator\cite{policydecorator}等工作则同时在 ManiSkill 与 Adroit 上评测。真实平台方面，早期工作多依赖价格昂贵的商用灵巧手\cite{openai2018}，HuDOR\cite{hudor}等近期工作采用四指 Allegro 手。ORCA\cite{orca}等开源灵巧手提供了 17 自由度、腱驱动并集成触觉传感器的低成本方案，有望降低真实环境评测的门槛。
+
+\subsection{评价指标}
+
+现有工作常用的评价指标可归为四类：
+\begin{enumerate}
+  \item \textbf{任务成功率}：按物体位置误差、保持时长等阈值判定单个回合是否成功，是最常用的主指标。由于判定阈值因任务而异，不同论文之间的成功率通常不能直接比较。
+  \item \textbf{跟踪精度}：在参考跟踪类方法中，常用物体位姿误差与手部关节误差衡量对参考的复现程度\cite{dextrack,maniptrans}。
+  \item \textbf{样本效率}：以成功率随环境交互步数变化的学习曲线、达到给定成功率所需的步数等表示。需要注意的是，横轴通常只统计在线交互步数，并不包含先验准备（视频处理、重定向、示范生成与预训练）所花费的计算量。
+  \item \textbf{物理合理性与接触质量}：包括手–物穿透深度、接触力大小，以及掌心、桌面等非期望部位的接触。软接触模型允许小幅穿透（见第~\ref{sec:rl} 节），策略可能借助“穿模”夹持物体，从而虚高成功率。因此，有必要在物理子步而非控制帧的粒度上检查穿透与禁止接触，并同时报告接触力，以评估硬件安全性。
+\end{enumerate}
+此外，鲁棒性与泛化通常通过改变物体初始位置、朝向、质量、摩擦系数或施加外力扰动来考察；跨物体泛化则需要在训练中未出现的物体上测试\cite{ilad}。
+
+\subsection{统计可靠性与公平比较}
+
+深度 RL 的评测存在两类常见问题。其一是随机性：Henderson 等\cite{henderson2018}发现，仅改变随机种子，同一算法、同一组超参数的结果就可能出现统计显著的差异。Agarwal 等\cite{agarwal2021}进一步指出，在少量独立运行下仅报告点估计极易误导结论，并建议采用分层自助法（bootstrap）置信区间\cite{efron1993}、四分位均值和性能分布曲线等区间化指标。其二是公平性：对照方法如果没有得到同等的调参机会，比较结果会系统性地偏向精心调参的方法\cite{henderson2018}。结合上述研究，本文认为视频先验与 RL 融合方向的实验应至少遵循以下规范：
+\begin{enumerate}
+  \item 以独立训练种子为统计单位，每种方法训练多个（建议不少于 5～10 个）种子，并在相同的测试初态上进行配对评估；
+  \item 报告置信区间而非仅报告均值；同时检验多个假设时，采用 Holm 法等多重比较校正\cite{holm1979}；
+  \item 为所有对照方法分配相同的调参预算，且只在开发集上选择超参数与检查点；
+  \item 区分在线交互成本与先验准备成本，避免把“在线步数相同”表述为“总成本相同”；
+  \item 同时报告任务成功率与接触质量指标，并保留失败案例与不利结果。
+\end{enumerate}
+
+% ======================================================================
+\section{挑战与未来方向}\label{sec:future}
+
+\subsection{从运动学重定向到物理感知的先验}
+
+现有重定向方法大多只优化运动学相似性（式~\eqref{eq:retarget}），接触与动力学可行性要到下游 RL 阶段才得到修正。DexTrack\cite{dextrack}、ManipTrans\cite{maniptrans}等工作通过学习跟踪器或修正器来弥补这一缺口，但代价是大量仿真交互。未来可以把接触约束、物体动力学乃至可微仿真\cite{brax}直接纳入重定向优化，在生成先验的阶段就保证其物理可执行性，使 RL 从“修正不可行的先验”转向“优化本已可行的先验”。
+
+\subsection{先验的适用边界与条件化先验}
+
+由单段视频得到的、按时间索引的参考轨迹，只在示范条件附近有效。当物体位置、姿态或质量偏离示范较多时，先验可能由助力变为束缚；对残差类方法而言，有界修正还会进一步限制可达的性能上界。一个有前景的方向是构造以物体状态或任务目标为条件的先验，例如 ObjDex\cite{objdex}以物体目标状态为条件生成腕部轨迹，ILAD\cite{ilad}由可供性模型生成类别级示范。另一个方向是让先验与策略之间的权重随状态自适应变化，并能够识别先验何时已不再适用。
+
+\subsection{微调遗忘与先验约束的平衡}
+
+第~\ref{sec:compare} 节指出，各范式在先验约束强度上形成一条谱系。约束过弱，策略会在微调中遗忘先验能力\cite{wolczyk}；约束过强，策略又难以超越先验。DAPG\cite{dapg}中按指数衰减的示范权重，可以视为在训练过程中逐步放松约束的一种早期尝试。如何根据交互预算、先验与任务的匹配程度自动选择约束强度，例如在残差结构中逐步解冻基础策略，或对 KL 正则项进行调度，目前仍缺乏系统研究。
+
+\subsection{闭环反馈作用的验证}
+
+残差与跟踪类方法常以“闭环修正”解释其性能提升，ResiP\cite{resip}也把闭环修正能力视为残差 RL 的核心价值。然而，多数工作只报告结果层面的成功率，较少在机制层面检验收益是否真正来自反馈。可行的对照设计包括：在相同扰动下，比较实时闭环修正与回放预先录制的修正序列；预先标定扰动强度，使其既不会让所有方法都失败，也不会让所有方法都成功；并报告扰动后的恢复率，而不仅仅是最终成功率。
+
+\subsection{从单段视频到大规模视频数据}
+
+现有工作呈现两极分化：一端只使用单段视频\cite{human2sim2robot,hudor}，另一端利用大规模人类视频\cite{videodex,hop,r3m}。前者的先验质量可控，但泛化能力有限；后者覆盖面广，但面临估计噪声大、物体缺少三维模型、重定向与物理修正难以规模化等问题。数据飞轮式的迭代扩充\cite{dextrack}与生成式基础策略\cite{hop}为两者的结合提供了思路。在评测上，应按视频而非按轨迹划分训练集与测试集，并注意同一段视频经多次仿真回放得到的多条轨迹不等同于多段独立视频。
+
+\subsection{真实部署与安全}
+
+多数视频先验方法在仿真中训练，且策略输入常依赖物体精确位姿等特权信息。迁移到真实机器人时，需要解决三方面问题：一是仿真到现实的差距，可借助域随机化\cite{tobin2017}与自动域随机化\cite{rubik2019}缓解；二是物体状态估计与触觉感知，集成触觉传感器的低成本开源灵巧手\cite{orca}为此提供了硬件基础；三是接触力、手指自碰撞与执行器载荷的安全约束。仿真中的“清洁接触”并不等同于真机安全，这一点在实验报告中应予以明确。
+
+% ======================================================================
+\section{结论}\label{sec:conclusion}
+
+本文围绕“如何从人类视频中获取操作先验并与强化学习融合”这一问题，系统梳理了灵巧手操作学习的相关研究，得到以下三点结论。第一，视频先验的价值在于缩小探索空间、提高训练起点与训练稳定性；其质量受感知、形态与物理三重鸿沟制约，其中物理鸿沟必须借助仿真交互才能弥合。第二，按先验进入学习的位置，现有方法可归为奖励、初始化、数据和动作结构四类途径；对应的融合范式在先验约束强度上构成谱系，约束强弱决定了起点性能与可提升空间之间的权衡。第三，该方向的实验结论高度依赖评测规范，多种子统计、配对评估、公平调参、接触质量审查以及成本口径都会显著影响结论。
+
+对于“单段视频、任务匹配、交互预算有限”这一类研究设定，上述分析给出三点启示。其一，先验经仿真校正后的物理可执行性，往往比运动学精度更为关键。其二，行为克隆初始化与执行端残差是两种代表性的接入方式：前者灵活，但存在微调遗忘的风险；后者稳定，但受修正幅度限制，宜在同一基准、同等调参预算下并行比较。其三，应同时报告有限预算与充足预算下的结果，以区分先验带来的样本效率收益与渐近性能差异，并明确指出先验的适用边界。
+
+\bibliography{refs}
+
+\end{document}

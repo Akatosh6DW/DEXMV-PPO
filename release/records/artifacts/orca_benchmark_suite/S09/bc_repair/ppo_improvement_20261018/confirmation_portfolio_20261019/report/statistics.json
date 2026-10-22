@@ -1,0 +1,194 @@
+{
+  "status": "completed_checkpoint_selection_confirmation",
+  "plan_sha256": "2fec5a0967277f918d86a319f6b38bbea5d3a6479880a3b150408d5ea9720c63",
+  "summaries": [
+    {
+      "group": "bc",
+      "successes": 94,
+      "n": 256,
+      "success_rate": 0.3671875,
+      "ci95": [
+        0.3105076134241139,
+        0.4277943484390082
+      ],
+      "hold_sec": 17.617578212404624,
+      "max_released_depth_mm": 3.457337385043502,
+      "max_all_depth_mm": 3.457337385043502,
+      "peak_force_n": 37.851219177246094,
+      "successful_peak_force_n": 22.333499908447266,
+      "all_depth_success_rate": 0.3671875,
+      "path_online_steps": 0,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "group": "expert",
+      "successes": 117,
+      "n": 256,
+      "success_rate": 0.45703125,
+      "ci95": [
+        0.3970936285540288,
+        0.5182393591075696
+      ],
+      "hold_sec": 18.80859379922913,
+      "max_released_depth_mm": 3.8490870501846075,
+      "max_all_depth_mm": 15.625478699803352,
+      "peak_force_n": 45.786529541015625,
+      "successful_peak_force_n": 43.625946044921875,
+      "all_depth_success_rate": 0.45703125,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    },
+    {
+      "group": "portfolio",
+      "successes": 137,
+      "n": 256,
+      "success_rate": 0.53515625,
+      "ci95": [
+        0.47399030188691665,
+        0.5952827082081391
+      ],
+      "hold_sec": 23.16445321367064,
+      "max_released_depth_mm": 3.8490870501846075,
+      "max_all_depth_mm": 15.625478699803352,
+      "peak_force_n": 52.522850036621094,
+      "successful_peak_force_n": 52.522850036621094,
+      "all_depth_success_rate": 0.53125,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    }
+  ],
+  "paired": [
+    {
+      "contrast": "portfolio minus bc",
+      "difference": 0.16796875,
+      "ci95": [
+        0.109375,
+        0.2265625
+      ],
+      "exact_mcnemar_p": 3.382168502403561e-08,
+      "retained": 84,
+      "lost": 10,
+      "gained": 53,
+      "neither": 109,
+      "holm_p_two_comparisons": 6.764337004807122e-08
+    },
+    {
+      "contrast": "portfolio minus expert",
+      "difference": 0.078125,
+      "ci95": [
+        0.046875,
+        0.11328125
+      ],
+      "exact_mcnemar_p": 1.0967254638671875e-05,
+      "retained": 116,
+      "lost": 1,
+      "gained": 21,
+      "neither": 118,
+      "holm_p_two_comparisons": 1.0967254638671875e-05
+    }
+  ],
+  "selection": {
+    "status": "assembled_not_newly_trained",
+    "sources": [
+      {
+        "name": "bc",
+        "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E27_bc_fast_critic_s14102/step_000000000/params.pkl",
+        "checkpoint_sha256": "3981094f12e7db614cc7559ff47fdd1e451f13da2d5c58d99cb6cea6f8d1144f",
+        "episodes_sha256": "f47a9fa9a0d940c504ad088a1077a547986fc561e37898555fc3281467a87d4b"
+      },
+      {
+        "name": "stage",
+        "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E30_bc_fast_critic_continue_s14112/step_000491520/params.pkl",
+        "checkpoint_sha256": "4e54df8821b2e4c6bcfc2e7a7dbab0194cdba49983f3112d380461b4cfe51fb9",
+        "episodes_sha256": "37234aed6f0ea13f379cb67cbad212b9239ff1411cea5daf063aa8b1944f885f"
+      },
+      {
+        "name": "expert",
+        "checkpoint": "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E78_bc_late_experts_long/step_000655360/params.pkl",
+        "checkpoint_sha256": "0def4bf9bfc66fc2b23e36c1a437009c364b8b7f6a5c5dab569e0f6c5faa318f",
+        "episodes_sha256": "d2449b47bd0db96b0cf142d89a8230999ecc8cffa2d932e217e882cccd05b4c0"
+      }
+    ],
+    "development_seeds": [
+      130000,
+      130063
+    ],
+    "source_success_counts": [
+      [
+        9,
+        6,
+        7,
+        3,
+        0,
+        1
+      ],
+      [
+        9,
+        4,
+        3,
+        9,
+        0,
+        4
+      ],
+      [
+        9,
+        3,
+        8,
+        6,
+        5,
+        5
+      ]
+    ],
+    "selected_source_by_mode": [
+      "bc",
+      "bc",
+      "expert",
+      "stage",
+      "expert",
+      "expert"
+    ],
+    "tie_rule": "earliest source BC then stage then expert",
+    "predicted_development_successes": 42,
+    "predicted_not_yet_executed": true,
+    "max_same_input_action_errors": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "extra_ppo_steps": 0,
+    "inherited_path_online_steps": 1310720,
+    "normalization": "raw observations; source running statistics differ but are not used by the frozen policy factory",
+    "actor_parameter_multiplier": 6,
+    "candidate_sha256": "d3f315f9c01ac31533ea9aba54260ec786a6476967bb7a196624a2060d76d683",
+    "source_sha256": "cff661efb58614ec5166ce1cb24c8aef3aa913adc75d79ac1752f9192d731945"
+  },
+  "evidence": {
+    "bc": {
+      "episodes_sha256": "64700c0a1bd953e5e69c08826ae9fc1566a4cd459de1e62bdce8cfd2714a0cf5",
+      "audit_sha256": "4172f27335a3d639fad3bbc6caa7574ddefd5acfafdc0ad5e6350606b3a9c120",
+      "supplementary_audit_sources": {}
+    },
+    "expert": {
+      "episodes_sha256": "fb7409e34fb957788736c1410b642d3c86854af53c4c045ac08da2cd02390b0f",
+      "audit_sha256": "bd7cd0e0755311c5d29054e06f519bac12819f6e729a49734eaf0a5ada4b2311",
+      "supplementary_audit_sources": {
+        "scripts/audit_s09_matched_experts.py": "3224a78e43135c8e569a9b45c0fb284cb1594fa1d6bc7dad5701b3a392f81f11",
+        "scripts/audit_s09_wide_actor.py": "3f05c7a0e28bcb8cea3939a2c21210f68e633037368d92681af81650aaab6f0a"
+      }
+    },
+    "portfolio": {
+      "episodes_sha256": "0eacf0f8f2b8ca44e6a7ce1a8118e832d741590827dcfb0e3eecf619a43724a8",
+      "audit_sha256": "0ad922664aa08ba2a9aa562b4bcaf704238c507fa36be2eec2f5e301b95db3fa",
+      "supplementary_audit_sources": {
+        "scripts/audit_s09_matched_experts.py": "3224a78e43135c8e569a9b45c0fb284cb1594fa1d6bc7dad5701b3a392f81f11",
+        "scripts/audit_s09_wide_actor.py": "3f05c7a0e28bcb8cea3939a2c21210f68e633037368d92681af81650aaab6f0a"
+      }
+    }
+  },
+  "source_sha256": "055bbba46584cebb2bd7e7aca7c4a7f8a417519c302ed4c96c924651497879c6",
+  "limitations": "New method designed after 170000 confirmation; 180000 range not used for source selection. One ancestral training path, six actors, zero additional PPO updates, extra development selection cost.",
+  "interval_scope": "Fixed candidate policies and random initial states; not training-seed uncertainty"
+}

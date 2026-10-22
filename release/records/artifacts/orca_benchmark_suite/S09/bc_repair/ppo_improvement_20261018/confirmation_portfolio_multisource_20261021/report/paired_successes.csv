@@ -1,0 +1,10 @@
+training_source,baseline,gained,lost
+14121,bc,44,6
+14122,bc,55,7
+14123,bc,35,27
+14121,stage,50,4
+14122,stage,56,1
+14123,stage,25,3
+14121,expert_last,51,5
+14122,expert_last,32,2
+14123,expert_last,60,9

@@ -1,0 +1,2 @@
+success30,success15,hold_sec,residual_rms_rad,max_penetration_m,max_initial_penetration_m,forbidden_rate,released_rope_force_n,peak_force_n,full_path_success30,max_path_penetration_m,max_tracking_error_m,step,elapsed_sec
+0.0,0.0,0.05234375057625584,0.0,0.009166370145976543,0.0,0.0,0.0,79.89256286621094,0.0,0.009166370145976543,0.00446590781211853,0,246.89173496200237

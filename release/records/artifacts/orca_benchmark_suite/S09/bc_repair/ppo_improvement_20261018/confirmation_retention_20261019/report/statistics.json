@@ -1,0 +1,139 @@
+{
+  "plan_sha256": "0e3c6d6b0a67aa456e449a30de1b3a4b4dcfa4e188f55bc4ba094ba945c40b09",
+  "training_repetitions": 1,
+  "cases": 256,
+  "uncertainty": "10000 paired bootstrap draws across initial states only; no training-seed uncertainty; four intervals unadjusted for multiplicity",
+  "supplemental_source_audit": {
+    "scope": "Retrospective, not precommitted in plan; unchanged across all five historical training snapshots, evaluation snapshots and current files",
+    "shared_sources": {
+      "orca_benchmark_env.py": "5c70e4ccbed4ad616e91253708a9ae70a808fb2bb62db6e527f40b438f500cd5",
+      "orca_residual_controls.py": "6e421298173f6e0cea32cee76c190e695da5a25c1e76516bd5cb0d38290c627c",
+      "orca_residual_env.py": "93dc5b3f1901ae10ec244fac68a132bc48901c4e1fb81c00b9f2660e184921a3",
+      "orca_refit_env.py": "e3e69c89a03bcd2757b71749f4db5b973e0c77a9cbb4cff0a1881d8eeb69fed1",
+      "prepare_hic_orca_object.py": "fa0169735541cf4c31c8a6918db7cb8f5f2dd34ffafe77b6360ab4ccf7bdf8ab",
+      "orca_hic53_env.py": "64379c8173162d4b58157ea1098cfff718560a7fc14f17204aec947aae8e325a",
+      "diagnose_orca_grasp.py": "137d0d54ff3a4677863f579518ae7fcb2bf6e05daa883972f970a3b27de7430f",
+      "probe_hic53_orca.py": "a15ac97d729e614eb41d85cba159c22a3cb71208231a17cb5011342c1ea48511",
+      "orca_residual_metrics.py": "81df54fc2a0eae0459e691b8880c5288d1bc181603bb92ed2e5e9d22a6b64c6c",
+      "train_orca_residual.py": "6d197658377f34f7eb9b58015a3cfec3425f38f79670d21c26406c3d1cdad66d",
+      "orca_guidance_recheck.py": "180759d407c2de2269b2422d41a61ddfa4addc8734ec485d35bfd074b833dc94",
+      "train_orca_guidance_recheck.py": "b6194012d7394c165e5abcb42d0149c0ae67c58e906f7ba08f77f3d5f51c0736"
+    },
+    "historical_configs": {
+      "artifacts/orca_benchmark_suite/S09/bc_repair/I27_phase_s13102/run_config.json": "e9e1b2168e5fd9a6a4db31c17d9ac893725a1da6f3f654225c311a4d3d08e722",
+      "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E30_bc_fast_critic_continue_s14112/run_config.json": "533e114db1e1894d06ac6392a040b768c48ae84271c29733b0b7aa4a8ae240b3",
+      "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E46_bc_budget_continue_s14122/run_config.json": "d2dd95c8016771d0726511dc3c81867d51d7da7712c529a5c6b4ad19098be91e",
+      "artifacts/orca_benchmark_suite/S09/bc_repair/ppo_improvement_20261018/E72_bc_stage_retention/run_config.json": "781310b4990d88dacb856067ab212f82139803a453e62d63b6e76f3ce2b233b7"
+    }
+  },
+  "source_sha256": "c10b432e4f62e167b0d58bf3e5e1f66dd88d609deb4f5350a7527cadbfe48a1c",
+  "rows": [
+    {
+      "group": "bc",
+      "n": 256,
+      "successes": 107,
+      "success30": 0.41796875,
+      "hold_sec": 18.69804693199694,
+      "secondary_all_depth_success": 0.41796875,
+      "max_released_depth_mm": 2.903501270338893,
+      "max_pre_release_depth_mm": 6.990764755755663,
+      "max_peak_force_n": 59.415618896484375,
+      "gate_disagreement_frames": 0,
+      "audited_preview_episodes": 4
+    },
+    {
+      "group": "stage_start",
+      "n": 256,
+      "successes": 110,
+      "success30": 0.4296875,
+      "hold_sec": 18.625976613446255,
+      "secondary_all_depth_success": 0.42578125,
+      "max_released_depth_mm": 6.618404760956764,
+      "max_pre_release_depth_mm": 9.31647140532732,
+      "max_peak_force_n": 223.71255493164062,
+      "gate_disagreement_frames": 0,
+      "audited_preview_episodes": 4
+    },
+    {
+      "group": "control_last",
+      "n": 256,
+      "successes": 76,
+      "success30": 0.296875,
+      "hold_sec": 15.265429748455063,
+      "secondary_all_depth_success": 0.28515625,
+      "max_released_depth_mm": 6.607071962207556,
+      "max_pre_release_depth_mm": 13.39555624872446,
+      "max_peak_force_n": 151.3683319091797,
+      "gate_disagreement_frames": 0,
+      "audited_preview_episodes": 4
+    },
+    {
+      "group": "control_selected",
+      "n": 256,
+      "successes": 121,
+      "success30": 0.47265625,
+      "hold_sec": 20.230468800247763,
+      "secondary_all_depth_success": 0.46875,
+      "max_released_depth_mm": 7.482433691620827,
+      "max_pre_release_depth_mm": 19.17862705886364,
+      "max_peak_force_n": 205.55084228515625,
+      "gate_disagreement_frames": 0,
+      "audited_preview_episodes": 4
+    },
+    {
+      "group": "candidate",
+      "n": 256,
+      "successes": 114,
+      "success30": 0.4453125,
+      "hold_sec": 20.84277354303049,
+      "secondary_all_depth_success": 0.44140625,
+      "max_released_depth_mm": 6.986009422689676,
+      "max_pre_release_depth_mm": 9.064839221537113,
+      "max_peak_force_n": 53.403076171875,
+      "gate_disagreement_frames": 0,
+      "audited_preview_episodes": 4
+    }
+  ],
+  "paired": [
+    {
+      "control": "bc",
+      "gained": 27,
+      "lost": 20,
+      "both_success": 87,
+      "both_failure": 122,
+      "gain_pp": 2.734375,
+      "ci95_low_pp": -2.734375,
+      "ci95_high_pp": 8.203125
+    },
+    {
+      "control": "stage_start",
+      "gained": 10,
+      "lost": 6,
+      "both_success": 104,
+      "both_failure": 136,
+      "gain_pp": 1.5625,
+      "ci95_low_pp": -1.5625,
+      "ci95_high_pp": 4.6875
+    },
+    {
+      "control": "control_last",
+      "gained": 71,
+      "lost": 33,
+      "both_success": 43,
+      "both_failure": 109,
+      "gain_pp": 14.84375,
+      "ci95_low_pp": 7.421875,
+      "ci95_high_pp": 22.65625
+    },
+    {
+      "control": "control_selected",
+      "gained": 32,
+      "lost": 39,
+      "both_success": 82,
+      "both_failure": 103,
+      "gain_pp": -2.734375,
+      "ci95_low_pp": -9.375,
+      "ci95_high_pp": 3.90625
+    }
+  ]
+}

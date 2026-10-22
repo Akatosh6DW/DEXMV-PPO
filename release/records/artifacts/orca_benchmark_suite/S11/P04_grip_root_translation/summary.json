@@ -1,0 +1,135 @@
+{
+  "status": "completed",
+  "kind": "contact-fit mechanics probe, not PPO",
+  "config": {
+    "name": "P04_grip_root_translation",
+    "count": 2,
+    "fit_root": true
+  },
+  "sources": {
+    "/home/ll/SRTP/DEXMV-PPO/scripts/fit_s11_grip.py": "4a6618d77ca71cb0c8cb474b2b09bac4e4189fa00aacda973da464e02ef83ae2",
+    "/home/ll/SRTP/DEXMV-PPO/scripts/s11_cap.py": "7d6ea5c18b65af2b20509224a6e31ac9edc2d79e331634f72afff0aae839c09d",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_formal/CAP21_thread_stop_and_filter/model.xml": "028a998366fc3e2b653db2741270e3f1e477a07fb697701ce134d7aba1c9b408",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_formal/CAP21_thread_stop_and_filter/report.json": "f68149b032a8aaf5c79cc2798b3bc35d15aac209e5a010ca13ebf8dc8fbdd721",
+    "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_formal/CAP10_sequence_mount_ik/kinematic_reference.npz": "96085c363ea08af8d707455702bf337e73495e2f0a21ef443a9e2020f84b0599"
+  },
+  "fit": {
+    "converged": true,
+    "nfev": 35,
+    "initial_pad_gaps_m": [
+      0.001221445852123965,
+      0.005215226794313781
+    ],
+    "fitted_pad_errors_m": [
+      7.374605177865207e-06,
+      0.001229015723538734
+    ],
+    "max_joint_change_rad": 0.048710398117707505,
+    "root_offset_m": [
+      -0.0029548563118384965,
+      -0.0003639797891687196,
+      -0.002073914563890966
+    ],
+    "target_pad_centers": [
+      [
+        0.02032374664054842,
+        0.05669504357106275,
+        0.24478321912921577
+      ],
+      [
+        0.06633204234916529,
+        0.02573994252228366,
+        0.2641821488011741
+      ]
+    ],
+    "ctrl": [
+      -0.221477631348814,
+      -0.3283104713608962,
+      0.8551093691276409,
+      1.85510949087415,
+      -0.16845182546459136,
+      0.5897316194269396,
+      1.6430598409430655,
+      -0.4712389949999993,
+      0.5845402707947391,
+      1.4777815283826732,
+      -0.3969689887511292,
+      0.41156192321612883,
+      1.4097865095789057,
+      -0.21930906732051456,
+      0.4074825287952686,
+      0.09870763759886489,
+      0.4493046823683547
+    ]
+  },
+  "episodes": [
+    {
+      "moving": false,
+      "seed": 240000,
+      "success": false,
+      "released": false,
+      "max_degrees": 0.8465057919008782,
+      "final_degrees": -0.304584042825684,
+      "final_lift_m": -2.865015089163559e-05,
+      "final_hold_sec": 0.0,
+      "best_hold_sec": 0.0,
+      "initial_depth_m": 0.000769692584794676,
+      "max_depth_m": 0.000769692584794676,
+      "peak_force_n": 0.6178538730850168,
+      "paired_steps": 0,
+      "ever_bad": false,
+      "duration_sec": 23.999999999997577
+    },
+    {
+      "moving": false,
+      "seed": 240001,
+      "success": false,
+      "released": false,
+      "max_degrees": 0.5101445417682586,
+      "final_degrees": -0.30458404535076034,
+      "final_lift_m": -2.8650150909289827e-05,
+      "final_hold_sec": 0.0,
+      "best_hold_sec": 0.0,
+      "initial_depth_m": 0.0005279052260533873,
+      "max_depth_m": 0.0005279052260533873,
+      "peak_force_n": 0.41008657337086196,
+      "paired_steps": 0,
+      "ever_bad": false,
+      "duration_sec": 23.999999999997577
+    },
+    {
+      "moving": true,
+      "seed": 240000,
+      "success": false,
+      "released": true,
+      "max_degrees": 490.755268086895,
+      "final_degrees": 490.2868963626942,
+      "final_lift_m": 0.008608011509948204,
+      "final_hold_sec": 0.0,
+      "best_hold_sec": 0.0,
+      "initial_depth_m": 0.000769692584794676,
+      "max_depth_m": 0.000769692584794676,
+      "peak_force_n": 0.9771585860199892,
+      "paired_steps": 24,
+      "ever_bad": false,
+      "duration_sec": 23.999999999997577
+    },
+    {
+      "moving": true,
+      "seed": 240001,
+      "success": false,
+      "released": true,
+      "max_degrees": 490.7554595223351,
+      "final_degrees": 490.28723621946807,
+      "final_lift_m": 0.008608036503691833,
+      "final_hold_sec": 0.0,
+      "best_hold_sec": 0.0,
+      "initial_depth_m": 0.0005279052260533873,
+      "max_depth_m": 0.0005279052260533873,
+      "peak_force_n": 0.9771666565267161,
+      "paired_steps": 24,
+      "ever_bad": false,
+      "duration_sec": 23.999999999997577
+    }
+  ]
+}

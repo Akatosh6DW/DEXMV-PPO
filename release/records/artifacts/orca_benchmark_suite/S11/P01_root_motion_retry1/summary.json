@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "kind": "pregrasp mechanics feasibility, not a learned policy comparison",
+  "source_model_sha256": "028a998366fc3e2b653db2741270e3f1e477a07fb697701ce134d7aba1c9b408",
+  "reference_sha256": "96085c363ea08af8d707455702bf337e73495e2f0a21ef443a9e2020f84b0599",
+  "config": {
+    "name": "P01_root_motion_retry1",
+    "count": 1,
+    "grip_times": [
+      0.0
+    ],
+    "twist_seconds": 14.0
+  },
+  "episodes": [
+    {
+      "moving": false,
+      "grip_time": 0.0,
+      "seed": 240000,
+      "success": false,
+      "released": false,
+      "max_degrees": 2.3879218836448395,
+      "final_degrees": 2.3879218836448395,
+      "final_lift_m": 1.4837209826550756e-05,
+      "best_hold_sec": 0.0,
+      "final_hold_sec": 0.0,
+      "initial_depth_m": 0.0,
+      "max_depth_m": 0.0,
+      "peak_force_n": 0.0,
+      "ever_bad": false,
+      "duration_sec": 23.999999999997577,
+      "trace": "fixed_grip0/seed240000.npz"
+    },
+    {
+      "moving": true,
+      "grip_time": 0.0,
+      "seed": 240000,
+      "success": false,
+      "released": false,
+      "max_degrees": 117.4599682469144,
+      "final_degrees": 116.77388880611046,
+      "final_lift_m": 0.0009243455360694937,
+      "best_hold_sec": 0.0,
+      "final_hold_sec": 0.0,
+      "initial_depth_m": 0.0,
+      "max_depth_m": 0.00020497374443933028,
+      "peak_force_n": 0.4911498036622679,
+      "ever_bad": false,
+      "duration_sec": 23.999999999997577,
+      "trace": "moving_grip0/seed240000.npz"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "declared_before_final_test_evaluation": true,
+  "primary_benchmark": "B0_nominal",
+  "primary_metric": "clean_success30",
+  "primary_controls": ["ppo", "guided", "zero_video", "linear", "unrefined"],
+  "primary_correction": "Holm over the five B0 contrasts",
+  "secondary_correction": "Holm over all thirty benchmark-by-control contrasts, also reported",
+  "interval": "5000 crossed bootstrap draws over training seeds and shared test initial states; marginal 95% intervals",
+  "test": "two-sided exact sign flips of training-seed mean paired differences; conditional on fixed test cases and symmetry assumption",
+  "minimum_p_with_ten_seeds": 0.001953125,
+  "limitation": "With ten seeds, no two-sided exact contrast can pass the global Holm-30 family at 0.05; secondary contrasts are descriptive unless more independent training is preregistered. Primary B0 family is not a global guarantee across benchmarks.",
+  "selection": "Final checkpoint for every training; no selection by final evaluation; all failures retained",
+  "reason": "Separate the original nominal-task hypotheses from zero-retraining stress tests before any final test evaluation, while retaining the stricter global correction transparently."
+}

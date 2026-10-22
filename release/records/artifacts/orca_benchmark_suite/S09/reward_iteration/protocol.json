@@ -1,0 +1,70 @@
+{
+  "version": "S09-R1-exploratory",
+  "parent_protocol_sha256": "90efff4b203bd8c461a30e13f44bebfc89e7b3fafd787ddf0684706883fd26de",
+  "initialization_seed": 9101,
+  "continuation_seed": 10101,
+  "extra_steps": 40960,
+  "development_seeds": [
+    92000,
+    92001,
+    92002,
+    92003,
+    92004,
+    92005,
+    92006,
+    92007
+  ],
+  "test_strata": {
+    "uniform": [
+      100000,
+      32
+    ],
+    "web": [
+      100200,
+      16
+    ]
+  },
+  "penalty": {
+    "weight": 5,
+    "start_m": 0.0015,
+    "scale_m": 0.0015,
+    "cap": 4
+  },
+  "recipes": {
+    "ppo": {
+      "learning_rate": 0.0003,
+      "std": 0.3
+    },
+    "guided": {
+      "learning_rate": 3e-05,
+      "std": 0.3,
+      "bc_updates": 4000
+    },
+    "residual": {
+      "learning_rate": 0.0003,
+      "std": 0.3,
+      "residual_bound": 0.08
+    }
+  },
+  "methods": [
+    "ppo",
+    "guided",
+    "residual"
+  ],
+  "versions": [
+    "original",
+    "continued_R0",
+    "penalty_R1"
+  ],
+  "sources": {
+    "run_s09_reward_job.py": "f0e5e5a46cce9546f2c46806187064e9799f22cd49775ae519ef74c0f17b5584",
+    "run_s09_reward_study.py": "7ea2e67c502c8796c6c5922566fba10400c3ac9239b66ada7cf8727785be7bc4"
+  },
+  "checkpoints": {
+    "ppo": "776f3adbf105b55becf661e57b4774706e635142cd412712076a35d8568866c4",
+    "guided": "01e184252828ceb247677faeca4cfcca7702e7feb219fa3abcfd7b3e9c3f241a",
+    "residual": "62fdf3ec6c9b439c11c837c4df2e680003fb2c4e8c46048e16e116050e4e043f"
+  },
+  "checkpoint_selection": "Fixed final extra step40960, not selected by test outcomes",
+  "limitation": "One paired continuation seed; exploratory, not a replacement for 3-seed R0"
+}

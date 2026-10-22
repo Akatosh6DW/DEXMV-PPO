@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 2.768750064074993,
+      "broad_hold_sec": 12.537500157952309,
+      "pad_pair_fraction": 0.11868517682887614,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.008223163895308971,
+      "forbidden_rate": 0.78125,
+      "peak_force_n": 52.39536666870117,
+      "step": 0,
+      "elapsed_sec": 80.63297469500003
+    }
+  ],
+  "final_step": 0,
+  "success30": {
+    "first": 0.0,
+    "last": 0.0,
+    "max": 0.0,
+    "best_step": 0
+  },
+  "pad_hold_sec": {
+    "first": 2.768750064074993,
+    "last": 2.768750064074993,
+    "max": 2.768750064074993,
+    "best_step": 0
+  }
+}

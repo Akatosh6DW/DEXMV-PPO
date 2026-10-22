@@ -1,0 +1,155 @@
+{
+  "policy_comparisons": {
+    "guided_minus_bc": {
+      "mean": -0.0026041666666666665,
+      "ci95": [
+        -0.044270833333333336,
+        0.0390625
+      ],
+      "per_origin": [
+        0.0078125,
+        -0.03125,
+        0.015625
+      ],
+      "gained": [
+        5,
+        2,
+        6
+      ],
+      "lost": [
+        4,
+        6,
+        4
+      ]
+    },
+    "residual_minus_reference_exact": {
+      "mean": 0.0,
+      "ci95": [
+        -0.0546875,
+        0.0546875
+      ],
+      "per_origin": [
+        -0.015625,
+        0.0078125,
+        0.0078125
+      ],
+      "gained": [
+        7,
+        7,
+        7
+      ],
+      "lost": [
+        9,
+        6,
+        6
+      ]
+    },
+    "residual_minus_reference": {
+      "mean": 0.015625,
+      "ci95": [
+        -0.0390625,
+        0.0703125
+      ],
+      "per_origin": [
+        0.0,
+        0.0234375,
+        0.0234375
+      ],
+      "gained": [
+        8,
+        8,
+        8
+      ],
+      "lost": [
+        8,
+        5,
+        5
+      ]
+    },
+    "guided_minus_ppo": {
+      "mean": 0.9192708333333334,
+      "ci95": [
+        0.8411458333333334,
+        0.9765625
+      ],
+      "per_origin": [
+        0.9609375,
+        0.8515625,
+        0.9453125
+      ],
+      "gained": [
+        123,
+        110,
+        121
+      ],
+      "lost": [
+        0,
+        1,
+        0
+      ]
+    },
+    "residual_minus_ppo": {
+      "mean": 0.8984375,
+      "ci95": [
+        0.8411458333333334,
+        0.9479166666666666
+      ],
+      "per_origin": [
+        0.8984375,
+        0.875,
+        0.921875
+      ],
+      "gained": [
+        115,
+        113,
+        118
+      ],
+      "lost": [
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "interpretation": "Only three training origins; paired descriptive bootstrap, not broad robustness proof",
+  "alignment_comparisons": {
+    "fixed_template": {
+      "mean": -0.03125,
+      "ci95": [
+        -0.09375,
+        0.03125
+      ]
+    },
+    "fixed_bank": {
+      "mean": 0.4453125,
+      "ci95": [
+        0.3515625,
+        0.546875
+      ]
+    },
+    "aligned_preplaced": {
+      "mean": -0.078125,
+      "ci95": [
+        -0.125,
+        -0.0390625
+      ]
+    }
+  },
+  "common_success_contact_force": {
+    "count": 110,
+    "columns": [
+      "fixed_template",
+      "aligned_moving"
+    ],
+    "median_n": [
+      9.130892987759788,
+      5.532072649383196
+    ],
+    "mean_n": [
+      10.324869131012866,
+      5.491424824738734
+    ],
+    "moving_lower_count": 102,
+    "scope": "Post-hoc description conditioned on both succeeding; not all states or hardware safety"
+  }
+}

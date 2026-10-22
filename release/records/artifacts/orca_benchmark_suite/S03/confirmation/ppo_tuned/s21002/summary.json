@@ -1,0 +1,15 @@
+{
+  "first": 0.0,
+  "last": 1.0,
+  "max": 1.0,
+  "best_step": 655360,
+  "final_step": 655360,
+  "clean_auc": 0.1796875,
+  "raw_first": 0.0,
+  "raw_last": 1.0,
+  "final_force_n": 72.81169128417969,
+  "elapsed_sec": 656.1183617360002,
+  "bc_elapsed_sec": 0.0,
+  "status": "completed",
+  "job_sha256": "2e54e8eace19ce42885b7dae04ae90e56583aafaa7fa7aad044021c54cec15bb"
+}

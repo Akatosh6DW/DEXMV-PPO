@@ -1,0 +1,29 @@
+[
+  {
+    "study": "S05",
+    "episode_metrics": 128,
+    "recomputed_saved_traces": 128,
+    "run_count": 4,
+    "paired_initials": true,
+    "raw_counts_match_report": true,
+    "input_and_checkpoint_hashes": true
+  },
+  {
+    "study": "S06",
+    "episode_metrics": 64,
+    "recomputed_saved_traces": 64,
+    "run_count": 4,
+    "paired_initials": true,
+    "raw_counts_match_report": true,
+    "input_and_checkpoint_hashes": true
+  },
+  {
+    "study": "S07",
+    "episode_metrics": 3424,
+    "recomputed_saved_traces": 1604,
+    "run_count": 86,
+    "paired_initials": true,
+    "raw_counts_match_report": true,
+    "input_and_checkpoint_hashes": true
+  }
+]

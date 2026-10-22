@@ -1,0 +1,62 @@
+[
+  {
+    "orientation": "uniform",
+    "method": "ppo",
+    "contrast": "penalty_R1 minus continued_R0",
+    "difference": 0.0625,
+    "episode_only_ci95": [
+      -0.09375,
+      0.21875
+    ]
+  },
+  {
+    "orientation": "uniform",
+    "method": "guided",
+    "contrast": "penalty_R1 minus continued_R0",
+    "difference": 0.09375,
+    "episode_only_ci95": [
+      0.0,
+      0.1875
+    ]
+  },
+  {
+    "orientation": "uniform",
+    "method": "residual",
+    "contrast": "penalty_R1 minus continued_R0",
+    "difference": -0.09375,
+    "episode_only_ci95": [
+      -0.21875,
+      0.0
+    ]
+  },
+  {
+    "orientation": "web",
+    "method": "ppo",
+    "contrast": "penalty_R1 minus continued_R0",
+    "difference": 0.0,
+    "episode_only_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "orientation": "web",
+    "method": "guided",
+    "contrast": "penalty_R1 minus continued_R0",
+    "difference": 0.0625,
+    "episode_only_ci95": [
+      0.0,
+      0.1875
+    ]
+  },
+  {
+    "orientation": "web",
+    "method": "residual",
+    "contrast": "penalty_R1 minus continued_R0",
+    "difference": 0.0,
+    "episode_only_ci95": [
+      0.0,
+      0.0
+    ]
+  }
+]

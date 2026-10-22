@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.453125,
+      "success15": 0.453125,
+      "hold_sec": 21.76015628501773,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0029530951287597418,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 60.31652069091797,
+      "step": 0,
+      "elapsed_sec": 131.00387892100116
+    },
+    {
+      "success30": 0.453125,
+      "success15": 0.453125,
+      "hold_sec": 22.150000056251884,
+      "residual_rms_rad": 0.0003100987023572088,
+      "max_penetration_m": 0.0028045254293829203,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 39.230873107910156,
+      "step": 20480,
+      "elapsed_sec": 319.5546460200021
+    },
+    {
+      "success30": 0.46875,
+      "success15": 0.46875,
+      "hold_sec": 21.989062618929893,
+      "residual_rms_rad": 0.0005928893988311756,
+      "max_penetration_m": 0.0025081303901970387,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 63.31740951538086,
+      "step": 40960,
+      "elapsed_sec": 502.56349176599906
+    }
+  ],
+  "final_step": 40960,
+  "success30": {
+    "first": 0.453125,
+    "last": 0.46875,
+    "max": 0.46875,
+    "best_step": 40960
+  },
+  "hold_sec": {
+    "first": 21.76015628501773,
+    "last": 21.989062618929893,
+    "max": 22.150000056251884,
+    "best_step": 20480
+  }
+}

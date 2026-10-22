@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "jobs": 86,
+  "total_test_episodes": 3424,
+  "recomputed_saved_episodes": 1604,
+  "paired_initial_states": true,
+  "source_snapshots_verified": true,
+  "residual_control_max_error_rad": 1.7881393432617188e-07,
+  "selection_sha256": "202261961b1cecfc249ca27c5fa7af7628b69fadee27a8d7cff92fb9022a7778",
+  "limitation": "Only saved traces recomputed; robustness batches save first4, with all episode metrics/initial states retained. 3 training seeds, no real hardware or causal proof that video is indispensable."
+}

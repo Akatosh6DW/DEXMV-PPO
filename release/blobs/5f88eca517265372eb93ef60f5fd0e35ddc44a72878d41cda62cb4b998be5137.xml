@@ -1,0 +1,222 @@
+<mujoco model="Orca shared grasp cube">
+  <compiler angle="radian" />
+  <option timestep="0.005" integrator="implicitfast" iterations="32" ls_iterations="8" cone="elliptic" />
+  <statistic extent="0.35" center="0.08 0.02 0.22" />
+  <default>
+    <joint limited="true" armature="0.001" damping="0.08" frictionloss="0.0005" />
+    <geom condim="4" friction="1.4 0.02 0.003" solref="0.008" solimp="0.92 0.98 0.002" />
+    <general ctrllimited="true" forcelimited="true" forcerange="-3 3" biastype="affine" gainprm="7" biasprm="0 -7 -0.08" />
+  </default>
+  <asset>
+    <texture type="skybox" colorspace="auto" builtin="gradient" rgb1="0.35 0.45 0.6" rgb2="0.04 0.05 0.07" width="512" height="3072" />
+    <texture type="2d" colorspace="auto" name="groundplane" builtin="checker" rgb1="0.18 0.22 0.28" rgb2="0.08 0.1 0.13" width="256" height="256" />
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.12" />
+    <material name="cube_mat" rgba="0.95 0.35 0.12 1" />
+    <material name="support_mat" rgba="0.2 0.2 0.22 0.85" />
+    <mesh name="orca_palm_proxy_fit_mesh_00" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_00.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_01" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_01.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_02" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_02.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_03" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_03.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_04" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_04.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_05" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_05.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_06" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_06.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_07" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_07.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_08" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_08.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_09" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_09.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_10" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_10.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_11" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_11.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_12" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_12.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_13" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_13.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_14" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_14.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_15" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_15.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_16" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_16.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_17" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_17.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_18" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_18.stl" />
+    <mesh name="orca_palm_proxy_fit_mesh_19" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G06_coacd_hybrid_candidate/right_R-Carpals_8d1f1041/part_19.stl" />
+    <mesh name="orca_thumb_prox_proxy_fit_mesh_00" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G08_thumb_convex_candidate/right_T-PP_68395e98/part_00.stl" />
+    <mesh name="orca_thumb_prox_proxy_fit_mesh_01" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/G08_thumb_convex_candidate/right_T-PP_68395e98/part_01.stl" />
+  <mesh name="hic20_cube_source" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O01_hic53_source_object/hic20_cube_m.stl" maxhullvert="64" /><mesh name="hic20_clean_convex" file="/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O11_hic53_clean_dt5ms/hic20_clean_convex.stl" maxhullvert="64" /></asset>
+  <worldbody>
+    <geom name="floor" size="0 0 0.05" type="plane" contype="4" conaffinity="2" material="groundplane" />
+    <camera name="side" pos="0.3 -0.36 0.26" quat="0.851827 0.523823 0 0" />
+    <camera name="top" pos="0.08 0.02 0.62" />
+    <camera name="front" pos="0.08 -0.34 0.28" quat="0.851827 0.523823 0 0" />
+    <light pos="0.1 0.4 1.1" dir="0 -0.287348 -0.957826" diffuse="0.85 0.85 0.85" />
+    <body name="right_mount" pos="0.09363 0.00332 0.058" quat="0.707105 0.707108 0 0">
+      <body name="right_tower">
+        <body name="right_ForeArmStructure-Model_e18f2368">
+          <body name="right_TopTower-Model_4a80d30e" pos="-0.01 0.0523 0" quat="-0.5 0.5 -0.5 -0.5">
+            <body name="right_R-Carpals_8d1f1041" pos="-0.00187708 0.005 0.0895" quat="-0.707107 0 0 0.707107">
+              <joint name="right_wrist" pos="0.005 0.00187708 -0.0495" axis="-1 0 0" range="-1.13446 0.610865" />
+              <body name="right_T-TP-R_1c2b802d" pos="-0.0212134 0.0143325 -0.0217248" quat="0.659119 0.359511 -0.0724731 -0.656553">
+                <joint name="right_t-cmc" pos="0 0 0.00385" axis="0 0 -1" range="-0.785398 0.575959" />
+                <body name="right_R-T-AP_a9723101" pos="-0.036 0 0" quat="0.819152 -0.573576 0 0">
+                  <joint name="right_t-abd" pos="0.028 0 0" axis="0 0.34202 0.939693" range="-0.314159 0.959931" />
+                  <body name="right_T-PP_68395e98" pos="0 0 0" quat="0 0.707107 0 -0.707107">
+                    <joint name="right_t-mcp" pos="0 0 0" axis="0 -1 0" range="-0.436332 1.74533" />
+                    <body name="right_T-DP_b7429e50" pos="0.001 0 0.032" quat="1 0 0 0">
+                      <joint name="right_t-pip" pos="0 0 0" axis="0 -1 0" range="-0.261799 1.8675" />
+                      <geom name="orca_thumb_tip_ball_proxy" size="0.0001" pos="0 0 0.026" conaffinity="0" group="4" friction="1.6 0.025 0.004" rgba="0.62 0.15 0.95 0.94" contype="0" mass="0" />
+                      <inertial pos="0 0 0.01648570829" quat="1 0 0 0" mass="0.01085848356" diaginertia="1.480102328e-06 1.480102328e-06 3.555307441e-07" />
+                      <geom name="orca_thumb_tip_proxy_fit_00" type="capsule" pos="-1.805755725e-05 2.979266891e-05 -0.001537431891" quat="0.6859529746 0.01567367657 -0.003279904643 0.7274696521" size="0.007678992756 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                      <geom name="orca_thumb_tip_proxy_fit_01" type="capsule" pos="0.001197605893 -0.0001315228066 0.01124813782" quat="0.6859529746 0.01567367657 -0.003279904643 0.7274696521" size="0.009796632085 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                      <geom name="orca_thumb_tip_proxy_fit_02" type="capsule" pos="0.0001931220701 -0.000322323115 0.02387116959" quat="0.6859529746 0.01567367657 -0.003279904643 0.7274696521" size="0.008518806913 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                    </body>
+                    <inertial pos="0.0005 0 0.015" quat="0.01665970362 0 -0.9998612175 0" mass="0.008650292174" diaginertia="1.378189246e-06 1.378189246e-06 2.752933086e-07" />
+                    <geom name="orca_thumb_prox_proxy_fit_00" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_thumb_prox_proxy_fit_mesh_00" />
+                    <geom name="orca_thumb_prox_proxy_fit_01" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_thumb_prox_proxy_fit_mesh_01" />
+                  </body>
+                  <inertial pos="0.015 0 0" quat="0.7071067812 0 -0.7071067812 0" mass="0.00817651848" diaginertia="1.279370464e-06 1.279370464e-06 2.479227636e-07" />
+                  <geom name="orca_thumb_mid_proxy_fit_00" type="capsule" pos="0.01219365629 8.57963198e-05 5.206127358e-05" quat="-0.5518719303 0.4371282661 0.5552200689 -0.4428170352" size="0.009670397894 0.01047189708" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                </body>
+                <inertial pos="0.015 0 0" quat="0.7071067812 0 -0.7071067812 0" mass="0.008646785578" diaginertia="1.376647747e-06 1.376647747e-06 2.751754169e-07" />
+                <geom name="orca_thumb_base_proxy_fit_00" type="box" pos="-4.343766981e-05 -0.001595558564 -0.01247103849" quat="0.7147089163 -0.03729093985 -0.6977886129 -0.0298597123" size="0.003266302687 0.0107396489 0.009449888111" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_thumb_base_proxy_fit_01" type="box" pos="-0.004870858126 -0.001509857705 -0.005819179821" quat="0.7147089163 -0.03729093985 -0.6977886129 -0.0298597123" size="0.003266302687 0.01294123321 0.01234170735" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_thumb_base_proxy_fit_02" type="box" pos="-0.004985089272 -0.001477920097 0.0007181463445" quat="0.7147089163 -0.03729093985 -0.6977886129 -0.0298597123" size="0.003266302687 0.01296017206 0.01253301108" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_thumb_base_proxy_fit_03" type="box" pos="-0.003398100536 -0.001532007549 0.007214755941" quat="0.7147089163 -0.03729093985 -0.6977886129 -0.0298597123" size="0.003266302687 0.01288572619 0.01276374592" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_thumb_base_proxy_fit_04" type="box" pos="-0.001168035723 -0.001325535387 0.01369323006" quat="0.7147089163 -0.03729093985 -0.6977886129 -0.0298597123" size="0.003266302687 0.01188407537 0.01054008067" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_thumb_base_proxy_fit_05" type="box" pos="0.001429881068 -0.001274532088 0.02016418167" quat="0.7147089163 -0.03729093985 -0.6977886129 -0.0298597123" size="0.003266302687 0.009861582624 0.008052390035" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+              </body>
+              <body name="right_I-AP-R_d95d02d1" pos="-0.0255755 0.000680925 0.0383573" quat="0.519647 0.566724 0.43173 -0.471593">
+                <joint name="right_i-abd" pos="0.01875 0 0.001" axis="0 0 1" range="-0.436332 0.523599" />
+                <body name="right_I-PP_bacbd481" pos="-0.000400968 0 0" quat="0.707107 0 -0.707107 0">
+                  <joint name="right_i-mcp" pos="0 0 0" axis="0 -1 0" range="-0.436332 1.74533" />
+                  <body name="right_I-FingerTipAssembly_ec49c16c" pos="0.0015 0 0.037" quat="1 0 0 0">
+                    <joint name="right_i-pip" pos="0 0 0" axis="0 -1 0" range="-0.261799 1.8675" />
+                    <geom name="orca_index_tip_ball_proxy" size="0.0001" pos="0 0 0.03" conaffinity="0" group="4" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.88" contype="0" mass="0" />
+                    <inertial pos="0 0 0.01877263692" quat="1 0 0 0" mass="0.009569697535" diaginertia="1.519341587e-06 1.519341587e-06 2.673458505e-07" />
+                    <geom name="orca_index_tip_proxy_fit_00" type="capsule" pos="0.001536562654 -0.0003667017386 -0.001071633967" quat="-0.02619718254 -0.08382485665 0.0007221746049 0.9961358238" size="0.007801619469 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_index_tip_proxy_fit_01" type="capsule" pos="0.002019587142 8.947819339e-07 0.01251216196" quat="-0.02619718254 -0.08382485665 0.0007221746049 0.9961358238" size="0.008658609249 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_index_tip_proxy_fit_02" type="capsule" pos="-0.000280285375 -7.901047961e-05 0.02568603206" quat="-0.02619718254 -0.08382485665 0.0007221746049 0.9961358238" size="0.008737856215 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_index_tip_proxy_fit_03" type="capsule" pos="-0.004963951456 -0.0001064240334 0.0383472192" quat="-0.02619718254 -0.08382485665 0.0007221746049 0.9961358238" size="0.007883799019 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                  </body>
+                  <inertial pos="0.00075 0 0.017" quat="0.02204270066 0 -0.9997570302 0" mass="0.006675728356" diaginertia="1.142389212e-06 1.142389212e-06 1.56515245e-07" />
+                  <geom name="orca_index_prox_proxy_fit_00" type="capsule" pos="0.002301069899 3.72448485e-05 0.03574054693" quat="-0.01575534309 -0.02907751272 0.9994506167 0.002175377527" size="0.00983358676 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_index_prox_proxy_fit_01" type="capsule" pos="0.001504395257 -6.18651589e-05 0.0177418287" quat="-0.01575534309 -0.02907751272 0.9994506167 0.002175377527" size="0.009768818552 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_index_prox_proxy_fit_02" type="capsule" pos="0.000775554987 3.600538444e-05 -0.0004242810255" quat="-0.01575534309 -0.02907751272 0.9994506167 0.002175377527" size="0.008873901573 0.0001702713469" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                </body>
+                <inertial pos="0.0188 0 0.001" quat="1 0 0 0" mass="0.00143675504" diaginertia="2.816039879e-08 2.816039879e-08 2.816039879e-08" />
+                <geom name="orca_index_base_proxy_fit_00" type="capsule" pos="0.007649515527 0.004809603906 0.000396246008" quat="0.4808594487 0.52975383 -0.5053046074 -0.4824959315" size="0.007231071752 0.008982536076" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_index_base_proxy_fit_01" type="capsule" pos="0.007210772372 -0.004484078452 0.0004614813262" quat="0.4808594487 0.52975383 -0.5053046074 -0.4824959315" size="0.007278512646 0.008630964489" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+              </body>
+              <body name="right_M-AP_e04a96f2" pos="-0.00075673 -0.00114633 0.0482518" quat="-0.500654 -0.500654 -0.499345 0.499345">
+                <joint name="right_m-abd" pos="0.01925 0 0.001" axis="0 0 1" range="-0.471239 0.471239" />
+                <body name="right_M-PP_08efa608" pos="-0.000616968 0 0" quat="-0.707107 0 0.707107 0">
+                  <joint name="right_m-mcp" pos="0 0 0" axis="0 -1 0" range="-0.436332 1.74533" />
+                  <body name="right_M-FingerTipAssembly_34afb748" pos="0.002 0 0.04" quat="1 0 0 0">
+                    <joint name="right_m-pip" pos="0 0 0" axis="0 -1 0" range="-0.261799 1.8675" />
+                    <geom name="orca_middle_tip_ball_proxy" size="0.0001" pos="0 0 0.032" conaffinity="0" group="4" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.88" contype="0" mass="0" />
+                    <inertial pos="0 0 0.01962252891" quat="1 0 0 0" mass="0.01123014654" diaginertia="2.020843294e-06 2.020843294e-06 3.468603127e-07" />
+                    <geom name="orca_middle_tip_proxy_fit_00" type="capsule" pos="0.001529103586 -0.000125261807 -0.001046977627" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.007937843093 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_middle_tip_proxy_fit_01" type="capsule" pos="0.002071379993 7.244313113e-05 0.01258116217" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.008799389301 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_middle_tip_proxy_fit_02" type="capsule" pos="-0.0001709699523 0.0001095567361 0.02571421676" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.008744659288 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_middle_tip_proxy_fit_03" type="capsule" pos="-0.004902546693 8.150383137e-05 0.03827997994" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.007984159673 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                  </body>
+                  <inertial pos="0.001 0 0.0185" quat="0.02699748653 0 -0.9996355014 0" mass="0.008315128166" diaginertia="1.671773842e-06 1.671773842e-06 2.239227842e-07" />
+                  <geom name="orca_middle_prox_proxy_fit_00" type="capsule" pos="0.002953606517 9.470138323e-06 0.03795015525" quat="-0.02885847741 -0.004794605304 0.9995719235 0.0004119516677" size="0.009735175151 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_middle_prox_proxy_fit_01" type="capsule" pos="0.001739919613 3.603644537e-06 0.01886980757" quat="-0.02885847741 -0.004794605304 0.9995719235 0.0004119516677" size="0.01001747872 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_middle_prox_proxy_fit_02" type="capsule" pos="0.0005366519968 -0.0004414670108 -0.0003213020297" quat="-0.02885847741 -0.004794605304 0.9995719235 0.0004119516677" size="0.009373417351 0.000188717243" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                </body>
+                <inertial pos="0.0193 0 0.001" quat="1 0 0 0" mass="0.001697398322" diaginertia="3.717981284e-08 3.717981284e-08 3.717981284e-08" />
+                <geom name="orca_middle_base_proxy_fit_00" type="capsule" pos="0.007331932646 -0.004584184575 0.0003827865784" quat="-0.4859763302 0.5150575187 0.518436409 -0.4793395965" size="0.00738801606 0.009148842795" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_middle_base_proxy_fit_01" type="capsule" pos="0.007194249567 0.004543505844 0.0004409073749" quat="-0.4859763302 0.5150575187 0.518436409 -0.4793395965" size="0.007527372278 0.008821238995" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+              </body>
+              <body name="right_M-AP_6ec59111" pos="0.0230054 -0.00010145 0.0408507" quat="-0.485171 -0.438492 -0.554729 0.514401">
+                <joint name="right_r-abd" pos="0.01925 0 0.001" axis="0 0 1" range="-0.471239 0.471239" />
+                <body name="right_M-PP_8660a1eb" pos="-0.000616968 0 0" quat="-0.707107 0 0.707107 0">
+                  <joint name="right_r-mcp" pos="0 0 0" axis="0 -1 0" range="-0.436332 1.74533" />
+                  <body name="right_M-FingerTipAssembly_424a8e75" pos="0.002 0 0.04" quat="1 0 0 0">
+                    <joint name="right_r-pip" pos="0 0 0" axis="0 -1 0" range="-0.261799 1.8675" />
+                    <geom name="orca_ring_tip_ball_proxy" size="0.0001" pos="0 0 0.032" conaffinity="0" group="4" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.88" contype="0" mass="0" />
+                    <inertial pos="0 0 0.01962252891" quat="1 0 0 0" mass="0.01123014654" diaginertia="2.020843294e-06 2.020843294e-06 3.468603127e-07" />
+                    <geom name="orca_ring_tip_proxy_fit_00" type="capsule" pos="0.001529103586 -0.000125261807 -0.001046977627" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.007937843093 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_ring_tip_proxy_fit_01" type="capsule" pos="0.002071379993 7.244313113e-05 0.01258116217" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.008799389301 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_ring_tip_proxy_fit_02" type="capsule" pos="-0.0001709699523 0.0001095567361 0.02571421676" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.008744659288 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_ring_tip_proxy_fit_03" type="capsule" pos="-0.004902546693 8.150383137e-05 0.03827997994" quat="0.9954381675 0.004163212602 -0.08717569578 -0.03854763841" size="0.007984159673 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                  </body>
+                  <inertial pos="0.001 0 0.0185" quat="0.02699748653 0 -0.9996355014 0" mass="0.008315128166" diaginertia="1.671773842e-06 1.671773842e-06 2.239227842e-07" />
+                  <geom name="orca_ring_prox_proxy_fit_00" type="capsule" pos="0.002953606517 9.470138323e-06 0.03795015525" quat="-0.02885847741 -0.004794605304 0.9995719235 0.0004119516677" size="0.009735175151 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_ring_prox_proxy_fit_01" type="capsule" pos="0.001739919613 3.603644537e-06 0.01886980757" quat="-0.02885847741 -0.004794605304 0.9995719235 0.0004119516677" size="0.01001747872 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_ring_prox_proxy_fit_02" type="capsule" pos="0.0005366519968 -0.0004414670108 -0.0003213020297" quat="-0.02885847741 -0.004794605304 0.9995719235 0.0004119516677" size="0.009373417351 0.000188717243" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                </body>
+                <inertial pos="0.0193 0 0.001" quat="1 0 0 0" mass="0.001697398322" diaginertia="3.717981284e-08 3.717981284e-08 3.717981284e-08" />
+                <geom name="orca_ring_base_proxy_fit_00" type="capsule" pos="0.007331932646 -0.004584184575 0.0003827865784" quat="-0.4859763302 0.5150575187 0.518436409 -0.4793395965" size="0.00738801606 0.009148842795" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_ring_base_proxy_fit_01" type="capsule" pos="0.007194249567 0.004543505844 0.0004409073749" quat="-0.4859763302 0.5150575187 0.518436409 -0.4793395965" size="0.007527372278 0.008821238995" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+              </body>
+              <body name="right_P-AP_f5e42b61" pos="0.0466688 0.00500098 0.0291014" quat="-0.457318 -0.340199 -0.613869 0.546159">
+                <joint name="right_p-abd" pos="0.01775 0 0.001" axis="0 0 1" range="-0.523599 0.523599" />
+                <body name="right_P-PP_1d411b9b" pos="0 0 0" quat="-0.707107 0 0.707107 0">
+                  <joint name="right_p-mcp" pos="0 0 0" axis="0 -1 0" range="-0.436332 1.74533" />
+                  <body name="right_P-FingerTipAssembly_cd219176" pos="0.001 0 0.031" quat="1 0 0 0">
+                    <joint name="right_p-pip" pos="0 0 0" axis="0 -1 0" range="-0.261799 1.8675" />
+                    <geom name="orca_pinky_tip_ball_proxy" size="0.0001" pos="0 0 0.026" conaffinity="0" group="4" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.88" contype="0" mass="0" />
+                    <inertial pos="0 0 0.01594199634" quat="1 0 0 0" mass="0.007616762067" diaginertia="9.540380962e-07 9.540380962e-07 1.886352174e-07" />
+                    <geom name="orca_pinky_tip_proxy_fit_00" type="capsule" pos="0.001600922228 0.0004081916224 -0.001337440175" quat="0.003228473472 -0.1214212489 -0.003158059039 0.9925907938" size="0.007338766234 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_pinky_tip_proxy_fit_01" type="capsule" pos="0.001125294502 -1.956128307e-05 0.01033463368" quat="0.003228473472 -0.1214212489 -0.003158059039 0.9925907938" size="0.00812509632 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_pinky_tip_proxy_fit_02" type="capsule" pos="-0.001664125521 -1.217143633e-05 0.02150760893" quat="0.003228473472 -0.1214212489 -0.003158059039 0.9925907938" size="0.008218830913 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                    <geom name="orca_pinky_tip_proxy_fit_03" type="capsule" pos="-0.00664767026 -3.331422447e-05 0.03201093822" quat="0.003228473472 -0.1214212489 -0.003158059039 0.9925907938" size="0.006915201646 0.0001" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                  </body>
+                  <inertial pos="0.0005 0 0.0145" quat="0.01723370842 0 -0.9998514886 0" mass="0.005532338363" diaginertia="7.435616102e-07 7.435616102e-07 1.218174403e-07" />
+                  <geom name="orca_pinky_prox_proxy_fit_00" type="capsule" pos="0.001727429933 -7.082640075e-05 0.03048798796" quat="0.0001675182531 0.9989096679 -0.04483368073 -0.01301492706" size="0.009108250551 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_pinky_prox_proxy_fit_01" type="capsule" pos="0.001328883491 8.437802614e-05 0.01500328337" quat="0.0001675182531 0.9989096679 -0.04483368073 -0.01301492706" size="0.008947569233 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                  <geom name="orca_pinky_prox_proxy_fit_02" type="capsule" pos="0.0007287716852 0.0001183912222 -0.0006830281048" quat="0.0001675182531 0.9989096679 -0.04483368073 -0.01301492706" size="0.007877172448 0.0001" contype="1" conaffinity="2" group="3" friction="1.4 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" />
+                </body>
+                <inertial pos="0.0178 0 0.001" quat="1 0 0 0" mass="0.001317089682" diaginertia="2.436089075e-08 2.436089075e-08 2.436089075e-08" />
+                <geom name="orca_pinky_base_proxy_fit_00" type="capsule" pos="0.007115326827 0.004427543302 0.0005315293448" quat="-0.4931022701 -0.5083087753 0.5232443726 0.4740123065" size="0.006984035564 0.008085205765" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+                <geom name="orca_pinky_base_proxy_fit_01" type="capsule" pos="0.007172328161 -0.004365211853 0.0003056558955" quat="-0.4931022701 -0.5083087753 0.5232443726 0.4740123065" size="0.007092199109 0.007882468691" contype="1" conaffinity="2" group="3" friction="1.6 0.025 0.004" rgba="0.15 0.45 1 0.6" mass="0" />
+              </body>
+              <inertial pos="0.004 0 0.022" quat="1 0 0 0" mass="0.13056" diaginertia="4.247552e-05 7.537664e-05 6.771712e-05" />
+              <geom name="orca_palm_proxy_fit_00" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_00" />
+              <geom name="orca_palm_proxy_fit_01" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_01" />
+              <geom name="orca_palm_proxy_fit_02" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_02" />
+              <geom name="orca_palm_proxy_fit_03" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_03" />
+              <geom name="orca_palm_proxy_fit_04" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_04" />
+              <geom name="orca_palm_proxy_fit_05" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_05" />
+              <geom name="orca_palm_proxy_fit_06" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_06" />
+              <geom name="orca_palm_proxy_fit_07" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_07" />
+              <geom name="orca_palm_proxy_fit_08" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_08" />
+              <geom name="orca_palm_proxy_fit_09" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_09" />
+              <geom name="orca_palm_proxy_fit_10" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_10" />
+              <geom name="orca_palm_proxy_fit_11" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_11" />
+              <geom name="orca_palm_proxy_fit_12" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_12" />
+              <geom name="orca_palm_proxy_fit_13" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_13" />
+              <geom name="orca_palm_proxy_fit_14" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_14" />
+              <geom name="orca_palm_proxy_fit_15" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_15" />
+              <geom name="orca_palm_proxy_fit_16" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_16" />
+              <geom name="orca_palm_proxy_fit_17" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_17" />
+              <geom name="orca_palm_proxy_fit_18" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_18" />
+              <geom name="orca_palm_proxy_fit_19" type="mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" friction="1.2 0.02 0.003" rgba="0.15 0.45 1 0.6" mass="0" mesh="orca_palm_proxy_fit_mesh_19" />
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="cube" pos="0.029453513893854328 0.03563416267617684 0.2369927151493251" quat="-0.3506913492185 -0.3506913492185 0.6140159424504449 0.6140159424504449">
+      <joint name="cube_freejoint" type="free" armature="0" damping="0" frictionloss="0" />
+      <geom name="cube" type="cylinder" contype="2" conaffinity="5" group="3" friction="1.35 0.025 0.004" mass=".035" material="cube_mat" size="0.0265 0.0265" pos="0 0 0" quat="0.7071067811865476 0.7071067811865476 0 0" />
+    <geom name="hic20_cube_visual" type="cylinder" contype="0" conaffinity="0" group="2" friction="1.35 0.025 0.004" mass="0" material="cube_mat" size="0.0265 0.0265" pos="0 0 0" quat="0.7071067811865476 0.7071067811865476 0 0" />
+    </body>
+    <body name="cube_support" pos="0.029453513893854328 0.03563416267617684 0.20649271458369053" mocap="true">
+      <geom name="cube_support" size="0.038 0.038 0.004" type="box" contype="4" conaffinity="2" group="1" friction="1 0.01 0.002" material="support_mat" />
+    </body>
+  </worldbody>
+  <actuator>
+    <general name="right_wrist_actuator" joint="right_wrist" ctrlrange="-1.13446 0.610865" />
+    <general name="right_p-abd_actuator" joint="right_p-abd" ctrlrange="-0.523599 0.523599" />
+    <general name="right_p-mcp_actuator" joint="right_p-mcp" ctrlrange="-0.436332 1.74533" />
+    <general name="right_p-pip_actuator" joint="right_p-pip" ctrlrange="-0.261799 1.8675" />
+    <general name="right_r-abd_actuator" joint="right_r-abd" ctrlrange="-0.471239 0.471239" />
+    <general name="right_r-mcp_actuator" joint="right_r-mcp" ctrlrange="-0.436332 1.74533" />
+    <general name="right_r-pip_actuator" joint="right_r-pip" ctrlrange="-0.261799 1.8675" />
+    <general name="right_m-abd_actuator" joint="right_m-abd" ctrlrange="-0.471239 0.471239" />
+    <general name="right_m-mcp_actuator" joint="right_m-mcp" ctrlrange="-0.436332 1.74533" />
+    <general name="right_m-pip_actuator" joint="right_m-pip" ctrlrange="-0.261799 1.8675" />
+    <general name="right_i-abd_actuator" joint="right_i-abd" ctrlrange="-0.436332 0.523599" />
+    <general name="right_i-mcp_actuator" joint="right_i-mcp" ctrlrange="-0.436332 1.74533" />
+    <general name="right_i-pip_actuator" joint="right_i-pip" ctrlrange="-0.261799 1.8675" />
+    <general name="right_t-cmc_actuator" joint="right_t-cmc" ctrlrange="-0.785398 0.575959" />
+    <general name="right_t-abd_actuator" joint="right_t-abd" ctrlrange="-0.314159 0.959931" />
+    <general name="right_t-mcp_actuator" joint="right_t-mcp" ctrlrange="-0.436332 1.74533" />
+    <general name="right_t-pip_actuator" joint="right_t-pip" ctrlrange="-0.261799 1.8675" />
+  </actuator>
+</mujoco>

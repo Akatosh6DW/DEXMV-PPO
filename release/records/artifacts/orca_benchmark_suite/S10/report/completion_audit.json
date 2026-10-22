@@ -1,0 +1,98 @@
+{
+  "status": "verified",
+  "frozen_files": 12,
+  "training_runs": [
+    "artifacts/orca_benchmark_suite/S10/train/ppo_s22101",
+    "artifacts/orca_benchmark_suite/S10/train/guided_s22101",
+    "artifacts/orca_benchmark_suite/S10/train/residual_s22101",
+    "artifacts/orca_benchmark_suite/S10/train/ppo_s22102",
+    "artifacts/orca_benchmark_suite/S10/train/guided_s22102",
+    "artifacts/orca_benchmark_suite/S10/train/residual_s22102",
+    "artifacts/orca_benchmark_suite/S10/train/ppo_s22103",
+    "artifacts/orca_benchmark_suite/S10/train/guided_s22103",
+    "artifacts/orca_benchmark_suite/S10/train/residual_s22103"
+  ],
+  "evaluations": [
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/reference_s0",
+      "count": 128,
+      "successes": 115
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/reference_exact_quality_s0",
+      "count": 128,
+      "successes": 117
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/ppo_s22101",
+      "count": 128,
+      "successes": 0
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/bc_s22101",
+      "count": 128,
+      "successes": 122
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/guided_s22101",
+      "count": 128,
+      "successes": 123
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/residual_s22101",
+      "count": 128,
+      "successes": 115
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/ppo_s22102",
+      "count": 128,
+      "successes": 6
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/bc_s22102",
+      "count": 128,
+      "successes": 119
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/guided_s22102",
+      "count": 128,
+      "successes": 115
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/residual_s22102",
+      "count": 128,
+      "successes": 118
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/ppo_s22103",
+      "count": 128,
+      "successes": 0
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/bc_s22103",
+      "count": 128,
+      "successes": 119
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/guided_s22103",
+      "count": 128,
+      "successes": 121
+    },
+    {
+      "run": "artifacts/orca_benchmark_suite/S10/eval/residual_s22103",
+      "count": 128,
+      "successes": 118
+    }
+  ],
+  "unique_policy_state_evaluations": 1792,
+  "video_files": 14,
+  "paired_initial_states": "bitwise equal",
+  "forearm_preview_records": 58,
+  "forearm_min_sampled_clearance_m": 0.02894538091207781,
+  "tests": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 3.669s\n\nOK\n"
+  },
+  "scope": "All final policy budgets/provenance/outcomes; physics replay only saved audited previews, not every trajectory"
+}

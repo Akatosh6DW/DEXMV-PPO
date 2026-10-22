@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.4375,
+      "success15": 0.4375,
+      "hold_sec": 18.835937522351742,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0031224791891872883,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 27.952367782592773,
+      "step": 0,
+      "elapsed_sec": 66.62721751400022
+    },
+    {
+      "success30": 0.4375,
+      "success15": 0.4375,
+      "hold_sec": 18.296875,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.002012925921007991,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 27.30633544921875,
+      "step": 40960,
+      "elapsed_sec": 246.69890589399802
+    },
+    {
+      "success30": 0.46875,
+      "success15": 0.46875,
+      "hold_sec": 19.100000045262277,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.003206580178812146,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 22.915069580078125,
+      "step": 81920,
+      "elapsed_sec": 425.99474807399747
+    },
+    {
+      "success30": 0.4375,
+      "success15": 0.4375,
+      "hold_sec": 18.071875020861626,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0019401195459067822,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 30.328317642211914,
+      "step": 122880,
+      "elapsed_sec": 605.5314374709997
+    },
+    {
+      "success30": 0.4375,
+      "success15": 0.4375,
+      "hold_sec": 17.61875000409782,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.002499981550499797,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 31.71495819091797,
+      "step": 163840,
+      "elapsed_sec": 784.0536692379974
+    }
+  ],
+  "final_step": 163840,
+  "success30": {
+    "first": 0.4375,
+    "last": 0.4375,
+    "max": 0.46875,
+    "best_step": 81920
+  },
+  "hold_sec": {
+    "first": 18.835937522351742,
+    "last": 17.61875000409782,
+    "max": 19.100000045262277,
+    "best_step": 81920
+  }
+}

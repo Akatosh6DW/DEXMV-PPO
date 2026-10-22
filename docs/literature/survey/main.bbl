@@ -1,0 +1,439 @@
+\begin{thebibliography}{56}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Okamura et~al.(2000)Okamura, Smaby, and Cutkosky]{okamura2000}
+OKAMURA A~M, SMABY N, CUTKOSKY M~R.
+\newblock An overview of dexterous manipulation\allowbreak[C]//\allowbreak
+Proceedings of the 2000 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2000: 255-262.
+\newblock DOI: \doi{10.1109/ROBOT.2000.844067}.
+
+\bibitem[{OpenAI} et~al.(2020){OpenAI}, Andrychowicz, Baker,
+  et~al.]{openai2018}
+{OpenAI}, ANDRYCHOWICZ M, BAKER B, et~al.
+\newblock Learning dexterous in-hand manipulation\allowbreak[J].
+\newblock The International Journal of Robotics Research, 2020, 39\allowbreak
+  (1): 3-20.
+\newblock DOI: \doi{10.1177/0278364919887447}.
+
+\bibitem[{OpenAI} et~al.(2019){OpenAI}, Akkaya, Andrychowicz,
+  et~al.]{rubik2019}
+{OpenAI}, AKKAYA I, ANDRYCHOWICZ M, et~al.
+\newblock Solving {Rubik's} cube with a robot hand\allowbreak[EB/OL].
+\newblock \allowbreak(2019-10-16)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/1910.07113}.
+
+\bibitem[Henderson et~al.(2018)Henderson, Islam, Bachman,
+  et~al.]{henderson2018}
+HENDERSON P, ISLAM R, BACHMAN P, et~al.
+\newblock Deep reinforcement learning that matters\allowbreak[C]//\allowbreak
+Proceedings of the {AAAI} Conference on Artificial Intelligence.
+\newblock Palo Alto: AAAI Press, 2018: 3207-3214.
+\newblock DOI: \doi{10.1609/aaai.v32i1.11694}.
+
+\bibitem[Agarwal et~al.(2021)Agarwal, Schwarzer, Castro, et~al.]{agarwal2021}
+AGARWAL R, SCHWARZER M, CASTRO P~S, et~al.
+\newblock Deep reinforcement learning at the edge of the statistical
+  precipice\allowbreak[C]//\allowbreak
+Advances in Neural Information Processing Systems 34.
+\newblock Red Hook: Curran Associates, 2021: 29304-29320.
+
+\bibitem[Rajeswaran et~al.(2018)Rajeswaran, Kumar, Gupta, et~al.]{dapg}
+RAJESWARAN A, KUMAR V, GUPTA A, et~al.
+\newblock Learning complex dexterous manipulation with deep reinforcement
+  learning and demonstrations\allowbreak[C]//\allowbreak
+Robotics: Science and Systems {XIV}.
+\newblock Pittsburgh, 2018.
+\newblock DOI: \doi{10.15607/RSS.2018.XIV.049}.
+
+\bibitem[Vecerik et~al.(2017)Vecerik, Hester, Scholz, et~al.]{ddpgfd}
+VECERIK M, HESTER T, SCHOLZ J, et~al.
+\newblock Leveraging demonstrations for deep reinforcement learning on robotics
+  problems with sparse rewards\allowbreak[EB/OL].
+\newblock \allowbreak(2017-07-27)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/1707.08817}.
+
+\bibitem[Nair et~al.(2018)Nair, McGrew, Andrychowicz, et~al.]{nair2018}
+NAIR A, MCGREW B, ANDRYCHOWICZ M, et~al.
+\newblock Overcoming exploration in reinforcement learning with
+  demonstrations\allowbreak[C]//\allowbreak
+Proceedings of the 2018 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2018: 6292-6299.
+\newblock DOI: \doi{10.1109/ICRA.2018.8463162}.
+
+\bibitem[Handa et~al.(2020)Handa, Van~Wyk, Yang, et~al.]{dexpilot}
+HANDA A, VAN~WYK K, YANG W, et~al.
+\newblock {DexPilot}: vision-based teleoperation of dexterous robotic hand-arm
+  system\allowbreak[C]//\allowbreak
+Proceedings of the 2020 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2020: 9164-9170.
+\newblock DOI: \doi{10.1109/ICRA40945.2020.9197124}.
+
+\bibitem[Qin et~al.(2023)Qin, Yang, Huang, et~al.]{anyteleop}
+QIN Y, YANG W, HUANG B, et~al.
+\newblock {AnyTeleop}: a general vision-based dexterous robot arm-hand
+  teleoperation system\allowbreak[C]//\allowbreak
+Robotics: Science and Systems {XIX}.
+\newblock Daegu, 2023.
+\newblock DOI: \doi{10.15607/RSS.2023.XIX.015}.
+
+\bibitem[Qin et~al.(2022)Qin, Wu, Liu, et~al.]{dexmv}
+QIN Y, WU Y~H, LIU S, et~al.
+\newblock {DexMV}: imitation learning for dexterous manipulation from human
+  videos\allowbreak[C]//\allowbreak
+Computer Vision -- {ECCV} 2022.
+\newblock Cham: Springer, 2022: 570-587.
+\newblock DOI: \doi{10.1007/978-3-031-19842-7_33}.
+
+\bibitem[Mandikal et~al.(2021)Mandikal and Grauman]{dexvip}
+MANDIKAL P, GRAUMAN K.
+\newblock {DexVIP}: learning dexterous grasping with human hand pose priors
+  from video\allowbreak[C]//\allowbreak
+Proceedings of the 5th Conference on Robot Learning.
+\newblock PMLR, 2021.
+
+\bibitem[Shaw et~al.(2022)Shaw, Bahl, and Pathak]{videodex}
+SHAW K, BAHL S, PATHAK D.
+\newblock {VideoDex}: learning dexterity from internet
+  videos\allowbreak[C]//\allowbreak
+Proceedings of the 6th Conference on Robot Learning.
+\newblock PMLR, 2022.
+
+\bibitem[Romero et~al.(2017)Romero, Tzionas, and Black]{mano}
+ROMERO J, TZIONAS D, BLACK M~J.
+\newblock Embodied hands: modeling and capturing hands and bodies
+  together\allowbreak[J].
+\newblock ACM Transactions on Graphics, 2017, 36\allowbreak (6): 245.
+\newblock DOI: \doi{10.1145/3130800.3130883}.
+
+\bibitem[Tzionas et~al.(2016)Tzionas, Ballan, Srikantha, et~al.]{hic}
+TZIONAS D, BALLAN L, SRIKANTHA A, et~al.
+\newblock Capturing hands in action using discriminative salient points and
+  physics simulation\allowbreak[J].
+\newblock International Journal of Computer Vision, 2016, 118\allowbreak (2):
+  172-193.
+\newblock DOI: \doi{10.1007/s11263-016-0895-4}.
+
+\bibitem[Chao et~al.(2021)Chao, Yang, Xiang, et~al.]{dexycb}
+CHAO Y~W, YANG W, XIANG Y, et~al.
+\newblock {DexYCB}: a benchmark for capturing hand grasping of
+  objects\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition.
+\newblock Piscataway: IEEE, 2021: 9040-9049.
+\newblock DOI: \doi{10.1109/CVPR46437.2021.00893}.
+
+\bibitem[Chen et~al.(2025)Chen, Chen, Arlaud, et~al.]{vividex}
+CHEN Z, CHEN S, ARLAUD E, et~al.
+\newblock {ViViDex}: learning vision-based dexterous manipulation from human
+  videos\allowbreak[C]//\allowbreak
+Proceedings of the 2025 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2025: 3336-3343.
+\newblock DOI: \doi{10.1109/ICRA55743.2025.11127358}.
+
+\bibitem[Liu et~al.(2025)Liu, Adalibieke, Han, et~al.]{dextrack}
+LIU X, ADALIBIEKE J, HAN Q, et~al.
+\newblock {DexTrack}: towards generalizable neural tracking control for
+  dexterous manipulation from human references\allowbreak[C]//\allowbreak
+Proceedings of the 13th International Conference on Learning Representations.
+\newblock Singapore, 2025.
+
+\bibitem[Li et~al.(2025)Li, Li, Liu, et~al.]{maniptrans}
+LI K, LI P, LIU T, et~al.
+\newblock {ManipTrans}: efficient dexterous bimanual manipulation transfer via
+  residual learning\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition.
+\newblock Piscataway: IEEE, 2025: 6991-7003.
+\newblock DOI: \doi{10.1109/CVPR52734.2025.00656}.
+
+\bibitem[Lum et~al.(2025)Lum, Lee, Liu, et~al.]{human2sim2robot}
+LUM T~G~W, LEE O~Y, LIU C~K, et~al.
+\newblock Crossing the human-robot embodiment gap with sim-to-real {RL} using
+  one human demonstration\allowbreak[EB/OL].
+\newblock \allowbreak(2025-04-17)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/2504.12609}.
+
+\bibitem[Kober et~al.(2013)Kober, Bagnell, and Peters]{kober2013}
+KOBER J, BAGNELL J~A, PETERS J.
+\newblock Reinforcement learning in robotics: a survey\allowbreak[J].
+\newblock The International Journal of Robotics Research, 2013, 32\allowbreak
+  (11): 1238-1274.
+\newblock DOI: \doi{10.1177/0278364913495721}.
+
+\bibitem[Ravichandar et~al.(2020)Ravichandar, Polydoros, Chernova,
+  et~al.]{ravichandar2020}
+RAVICHANDAR H, POLYDOROS A~S, CHERNOVA S, et~al.
+\newblock Recent advances in robot learning from demonstration\allowbreak[J].
+\newblock Annual Review of Control, Robotics, and Autonomous Systems, 2020, 3:
+  297-330.
+\newblock DOI: \doi{10.1146/annurev-control-100819-063206}.
+
+\bibitem[Eze et~al.(2025)Eze and Crick]{eze2024}
+EZE C, CRICK C.
+\newblock Learning by watching: a review of video-based learning approaches for
+  robot manipulation\allowbreak[J].
+\newblock IEEE Access, 2025, 13: 184071-184109.
+\newblock DOI: \doi{10.1109/ACCESS.2025.3624723}.
+
+\bibitem[An et~al.(2026)An, Meng, Tang, et~al.]{an2025}
+AN S, MENG Z, TANG C, et~al.
+\newblock Dexterous manipulation through imitation learning: a
+  survey\allowbreak[J].
+\newblock IEEE Transactions on Automation Science and Engineering, 2026, 23:
+  1760-1792.
+\newblock DOI: \doi{10.1109/TASE.2025.3646183}.
+
+\bibitem[Peng et~al.(2018)Peng, Abbeel, Levine, et~al.]{deepmimic}
+PENG X~B, ABBEEL P, LEVINE S, et~al.
+\newblock {DeepMimic}: example-guided deep reinforcement learning of
+  physics-based character skills\allowbreak[J].
+\newblock ACM Transactions on Graphics, 2018, 37\allowbreak (4): 143.
+\newblock DOI: \doi{10.1145/3197517.3201311}.
+
+\bibitem[Guzey et~al.(2025)Guzey, Dai, Savva, et~al.]{hudor}
+GUZEY I, DAI Y, SAVVA G, et~al.
+\newblock Bridging the human to robot dexterity gap through object-oriented
+  rewards\allowbreak[C]//\allowbreak
+Proceedings of the 2025 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2025: 3344-3351.
+\newblock DOI: \doi{10.1109/ICRA55743.2025.11128690}.
+
+\bibitem[Singh et~al.(2025)Singh, Loquercio, Sferrazza, et~al.]{hop}
+SINGH H~G, LOQUERCIO A, SFERRAZZA C, et~al.
+\newblock Hand-object interaction pretraining from
+  videos\allowbreak[C]//\allowbreak
+Proceedings of the 2025 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2025: 3352-3360.
+\newblock DOI: \doi{10.1109/ICRA55743.2025.11127811}.
+
+\bibitem[Dasari et~al.(2023)Dasari, Gupta, and Kumar]{pgdm}
+DASARI S, GUPTA A, KUMAR V.
+\newblock Learning dexterous manipulation from exemplar object trajectories and
+  pre-grasps\allowbreak[C]//\allowbreak
+Proceedings of the 2023 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2023: 3889-3896.
+\newblock DOI: \doi{10.1109/ICRA48891.2023.10161147}.
+
+\bibitem[Nair et~al.(2020)Nair, Gupta, Dalal, et~al.]{awac}
+NAIR A, GUPTA A, DALAL M, et~al.
+\newblock {AWAC}: accelerating online reinforcement learning with offline
+  datasets\allowbreak[EB/OL].
+\newblock \allowbreak(2020-06-16)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/2006.09359}.
+
+\bibitem[Ball et~al.(2023)Ball, Smith, Kostrikov, et~al.]{rlpd}
+BALL P~J, SMITH L, KOSTRIKOV I, et~al.
+\newblock Efficient online reinforcement learning with offline
+  data\allowbreak[C]//\allowbreak
+Proceedings of the 40th International Conference on Machine Learning.
+\newblock PMLR, 2023.
+
+\bibitem[Uchendu et~al.(2023)Uchendu, Xiao, Lu, et~al.]{jsrl}
+UCHENDU I, XIAO T, LU Y, et~al.
+\newblock Jump-start reinforcement learning\allowbreak[C]//\allowbreak
+Proceedings of the 40th International Conference on Machine Learning.
+\newblock PMLR, 2023.
+
+\bibitem[Silver et~al.(2018)Silver, Allen, Tenenbaum, et~al.]{rpl}
+SILVER T, ALLEN K, TENENBAUM J, et~al.
+\newblock Residual policy learning\allowbreak[EB/OL].
+\newblock \allowbreak(2018-12-15)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/1812.06298}.
+
+\bibitem[Johannink et~al.(2019)Johannink, Bahl, Nair, et~al.]{johannink}
+JOHANNINK T, BAHL S, NAIR A, et~al.
+\newblock Residual reinforcement learning for robot
+  control\allowbreak[C]//\allowbreak
+Proceedings of the 2019 International Conference on Robotics and Automation.
+\newblock Piscataway: IEEE, 2019: 6023-6029.
+\newblock DOI: \doi{10.1109/ICRA.2019.8794127}.
+
+\bibitem[Ankile et~al.(2025)Ankile, Simeonov, Shenfeld, et~al.]{resip}
+ANKILE L, SIMEONOV A, SHENFELD I, et~al.
+\newblock From imitation to refinement: residual {RL} for precise
+  assembly\allowbreak[C]//\allowbreak
+Proceedings of the 2025 IEEE International Conference on Robotics and
+  Automation.
+\newblock Piscataway: IEEE, 2025.
+\newblock DOI: \doi{10.1109/ICRA55743.2025.11127442}.
+
+\bibitem[Schulman et~al.(2015)Schulman, Levine, Moritz, et~al.]{trpo}
+SCHULMAN J, LEVINE S, MORITZ P, et~al.
+\newblock Trust region policy optimization\allowbreak[C]//\allowbreak
+Proceedings of the 32nd International Conference on Machine Learning.
+\newblock PMLR, 2015: 1889-1897.
+
+\bibitem[Schulman et~al.(2017)Schulman, Wolski, Dhariwal, et~al.]{ppo}
+SCHULMAN J, WOLSKI F, DHARIWAL P, et~al.
+\newblock Proximal policy optimization algorithms\allowbreak[EB/OL].
+\newblock \allowbreak(2017-07-20)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/1707.06347}.
+
+\bibitem[Schulman et~al.(2016)Schulman, Moritz, Levine, et~al.]{gae}
+SCHULMAN J, MORITZ P, LEVINE S, et~al.
+\newblock High-dimensional continuous control using generalized advantage
+  estimation\allowbreak[C]//\allowbreak
+Proceedings of the 4th International Conference on Learning Representations.
+\newblock San Juan, 2016.
+
+\bibitem[Pinto et~al.(2018)Pinto, Andrychowicz, Welinder, et~al.]{pinto}
+PINTO L, ANDRYCHOWICZ M, WELINDER P, et~al.
+\newblock Asymmetric actor critic for image-based robot
+  learning\allowbreak[C]//\allowbreak
+Robotics: Science and Systems {XIV}.
+\newblock Pittsburgh, 2018.
+\newblock DOI: \doi{10.15607/RSS.2018.XIV.008}.
+
+\bibitem[Todorov et~al.(2012)Todorov, Erez, and Tassa]{mujoco}
+TODOROV E, EREZ T, TASSA Y.
+\newblock {MuJoCo}: a physics engine for model-based
+  control\allowbreak[C]//\allowbreak
+Proceedings of the 2012 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems.
+\newblock Piscataway: IEEE, 2012: 5026-5033.
+\newblock DOI: \doi{10.1109/IROS.2012.6386109}.
+
+\bibitem[Freeman et~al.(2021)Freeman, Frey, Raichuk, et~al.]{brax}
+FREEMAN C~D, FREY E, RAICHUK A, et~al.
+\newblock {Brax}: a differentiable physics engine for large scale rigid body
+  simulation\allowbreak[C]//\allowbreak
+Proceedings of the Neural Information Processing Systems Track on Datasets and
+  Benchmarks.
+\newblock 2021.
+
+\bibitem[Tobin et~al.(2017)Tobin, Fong, Ray, et~al.]{tobin2017}
+TOBIN J, FONG R, RAY A, et~al.
+\newblock Domain randomization for transferring deep neural networks from
+  simulation to the real world\allowbreak[C]//\allowbreak
+Proceedings of the 2017 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems.
+\newblock Piscataway: IEEE, 2017: 23-30.
+\newblock DOI: \doi{10.1109/IROS.2017.8202133}.
+
+\bibitem[Ng et~al.(1999)Ng, Harada, and Russell]{ng1999}
+NG A~Y, HARADA D, RUSSELL S.
+\newblock Policy invariance under reward transformations: theory and
+  application to reward shaping\allowbreak[C]//\allowbreak
+Proceedings of the 16th International Conference on Machine Learning.
+\newblock San Francisco: Morgan Kaufmann, 1999: 278-287.
+
+\bibitem[Nair et~al.(2022)Nair, Rajeswaran, Kumar, et~al.]{r3m}
+NAIR S, RAJESWARAN A, KUMAR V, et~al.
+\newblock {R3M}: a universal visual representation for robot
+  manipulation\allowbreak[C]//\allowbreak
+Proceedings of the 6th Conference on Robot Learning.
+\newblock PMLR, 2022: 892-909.
+
+\bibitem[Xiao et~al.(2022)Xiao, Radosavovic, Darrell, et~al.]{mvp}
+XIAO T, RADOSAVOVIC I, DARRELL T, et~al.
+\newblock Masked visual pre-training for motor control\allowbreak[EB/OL].
+\newblock \allowbreak(2022-03-11)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/2203.06173}.
+
+\bibitem[Chen et~al.(2021)Chen, Nair, and Finn]{dvd}
+CHEN A~S, NAIR S, FINN C.
+\newblock Learning generalizable robotic reward functions from ``in-the-wild''
+  human videos\allowbreak[C]//\allowbreak
+Robotics: Science and Systems {XVII}.
+\newblock 2021.
+\newblock DOI: \doi{10.15607/RSS.2021.XVII.012}.
+
+\bibitem[Wu et~al.(2022)Wu, Wang, and Wang]{ilad}
+WU Y~H, WANG J, WANG X.
+\newblock Learning generalizable dexterous manipulation from human grasp
+  affordance\allowbreak[C]//\allowbreak
+Proceedings of the 6th Conference on Robot Learning.
+\newblock PMLR, 2022.
+
+\bibitem[Chen et~al.(2024)Chen, Wang, Yang, et~al.]{objdex}
+CHEN Y, WANG C, YANG Y, et~al.
+\newblock Object-centric dexterous manipulation from human motion
+  data\allowbreak[C]//\allowbreak
+Proceedings of the 8th Conference on Robot Learning.
+\newblock PMLR, 2024.
+
+\bibitem[Hu et~al.(2024)Hu, Mirchandani, and Sadigh]{ibrl}
+HU H, MIRCHANDANI S, SADIGH D.
+\newblock Imitation bootstrapped reinforcement
+  learning\allowbreak[C]//\allowbreak
+Robotics: Science and Systems {XX}.
+\newblock Delft, 2024.
+
+\bibitem[Ross et~al.(2011)Ross, Gordon, and Bagnell]{dagger}
+ROSS S, GORDON G~J, BAGNELL J~A.
+\newblock A reduction of imitation learning and structured prediction to
+  no-regret online learning\allowbreak[C]//\allowbreak
+Proceedings of the 14th International Conference on Artificial Intelligence and
+  Statistics.
+\newblock PMLR, 2011: 627-635.
+
+\bibitem[Wo{\l}czyk et~al.(2024)Wo{\l}czyk, Cupia{\l}, Ostaszewski,
+  et~al.]{wolczyk}
+WO{\L}CZYK M, CUPIA{\L} B, OSTASZEWSKI M, et~al.
+\newblock Fine-tuning reinforcement learning models is secretly a forgetting
+  mitigation problem\allowbreak[C]//\allowbreak
+Proceedings of the 41st International Conference on Machine Learning.
+\newblock PMLR, 2024.
+
+\bibitem[Alakuijala et~al.(2021)Alakuijala, Dulac-Arnold, Mairal,
+  et~al.]{alakuijala}
+ALAKUIJALA M, DULAC-ARNOLD G, MAIRAL J, et~al.
+\newblock Residual reinforcement learning from
+  demonstrations\allowbreak[EB/OL].
+\newblock \allowbreak(2021-06-15)\allowbreak[2026-10-10].
+\newblock \url{https://arxiv.org/abs/2106.08050}.
+
+\bibitem[Yuan et~al.(2025)Yuan, Mu, Tao, et~al.]{policydecorator}
+YUAN X, MU T, TAO S, et~al.
+\newblock Policy decorator: model-agnostic online refinement for large policy
+  model\allowbreak[C]//\allowbreak
+Proceedings of the 13th International Conference on Learning Representations.
+\newblock Singapore, 2025.
+
+\bibitem[Peng et~al.(2018)Peng, Kanazawa, Malik, et~al.]{sfv}
+PENG X~B, KANAZAWA A, MALIK J, et~al.
+\newblock {SFV}: reinforcement learning of physical skills from
+  videos\allowbreak[J].
+\newblock ACM Transactions on Graphics, 2018, 37\allowbreak (6): 178.
+\newblock DOI: \doi{10.1145/3272127.3275014}.
+
+\bibitem[Christoph et~al.(2025)Christoph, Eberlein, Katsimalis, et~al.]{orca}
+CHRISTOPH C~C, EBERLEIN M, KATSIMALIS F, et~al.
+\newblock {ORCA}: an open-source, reliable, cost-effective, anthropomorphic
+  robotic hand for uninterrupted dexterous task
+  learning\allowbreak[C]//\allowbreak
+Proceedings of the 2025 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems.
+\newblock Piscataway: IEEE, 2025: 8503-8510.
+\newblock DOI: \doi{10.1109/IROS60139.2025.11246681}.
+
+\bibitem[Efron et~al.(1993)Efron and Tibshirani]{efron1993}
+EFRON B, TIBSHIRANI R~J.
+\newblock An introduction to the bootstrap\allowbreak[M].
+\newblock New York: Chapman \& Hall, 1993.
+
+\bibitem[Holm(1979)]{holm1979}
+HOLM S.
+\newblock A simple sequentially rejective multiple test
+  procedure\allowbreak[J].
+\newblock Scandinavian Journal of Statistics, 1979, 6\allowbreak (2): 65-70.
+
+\end{thebibliography}

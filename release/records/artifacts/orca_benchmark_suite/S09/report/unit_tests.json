@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "backend": "CPU",
+  "output": "test_complete_reset_has_no_prior_episode_dependency (test_s09_suspension.SuspensionTests.test_complete_reset_has_no_prior_episode_dependency) ... ok\ntest_no_hand_cannot_hold_after_release (test_s09_suspension.SuspensionTests.test_no_hand_cannot_hold_after_release) ... ok\ntest_orientation_sampler_and_geom_axis (test_s09_suspension.SuspensionTests.test_orientation_sampler_and_geom_axis) ... ok\ntest_rope_is_unilateral_and_releases (test_s09_suspension.SuspensionTests.test_rope_is_unilateral_and_releases) ... ok\ntest_axis_descriptor_matches_actual_cylinder (test_s09_env.EnvTests.test_axis_descriptor_matches_actual_cylinder) ... ok\ntest_callback_matches_direct_native_steps (test_s09_env.EnvTests.test_callback_matches_direct_native_steps) ... ok\ntest_explicit_residual_and_reproducible_interleaved_states (test_s09_env.EnvTests.test_explicit_residual_and_reproducible_interleaved_states) ... ok\ntest_reset_shape_and_continuous_orientation (test_s09_env.EnvTests.test_reset_shape_and_continuous_orientation) ... ok\ntest_identical_physics_and_explicit_penalty (test_s09_reward.RewardTest.test_identical_physics_and_explicit_penalty) ... ok\ntest_changed_frozen_state_is_rejected (test_s09_audit.AuditTests.test_changed_frozen_state_is_rejected) ... ok\ntest_unused_action_after_terminal_is_not_executed (test_s09_audit.AuditTests.test_unused_action_after_terminal_is_not_executed) ... ok\ntest_wrong_executed_action_is_rejected (test_s09_audit.AuditTests.test_wrong_executed_action_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 4.060s\n\nOK\n",
+  "sources": {
+    "test_s09_suspension": "9965600fc0ece7788272993da7d22ec56391fadb1ace6430a82462815b204226",
+    "test_s09_env": "5d623cae90e45fa5ad9ae68bcda7fcc0d2b84f9c312cea3cda25c977c4427bcd",
+    "test_s09_reward": "b40c2b9d3c07d35f403f77feea83d464f6b9eaac279588e0baabc7c3d6c043fb",
+    "test_s09_audit": "3961d46541ec61e350dc6b41b1df7dac2791a8d7e2b3995ed5f48cb9e1d6ac29"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "case": "guided_s22101",
+  "seed": 220000,
+  "steps": 840,
+  "backend": "cpu",
+  "policy_sha256": "93fbc82774eeb04b1afe062c66dd06edea2f48a583ae1e35a18cf3b0ca003d2c",
+  "final_hold_sec": 37.0,
+  "best_hold_sec": 37.0,
+  "success30": true,
+  "done": false,
+  "inputs": "release only, no artifacts reads required",
+  "python_history_open_guard": true,
+  "scope": "single-case portable XML inference check, not a repetition of the GPU batch benchmark"
+}

@@ -1,0 +1,14 @@
+{
+  "case": "residual_s22101",
+  "seed": 220000,
+  "steps": 840,
+  "backend": "cpu",
+  "policy_sha256": "6984f3899c2c71c8f958193f7b0f4fa7e96255134fdc80f09f498b84f674c74f",
+  "final_hold_sec": 37.0,
+  "best_hold_sec": 37.0,
+  "success30": true,
+  "done": false,
+  "inputs": "release only, no artifacts reads required",
+  "python_history_open_guard": true,
+  "scope": "single-case portable XML inference check, not a repetition of the GPU batch benchmark"
+}

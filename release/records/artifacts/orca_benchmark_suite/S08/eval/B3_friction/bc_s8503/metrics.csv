@@ -1,0 +1,2 @@
+success30,success15,pad_hold_sec,broad_hold_sec,pad_pair_fraction,residual_rms_rad,max_penetration_m,forbidden_rate,peak_force_n,max_initial_penetration_m,step,elapsed_sec
+0.5,0.5,18.878124691545963,18.878124691545963,0.5250240680761635,0.0,0.002894379198551178,0.0625,1570.6572265625,0.0,0,82.50996503199895

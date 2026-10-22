@@ -1,0 +1,26 @@
+{
+  "reference_preparation": [
+    {
+      "stage": "P01_source_ik",
+      "rollouts": 6,
+      "active_control_transitions": 691
+    },
+    {
+      "stage": "P02_bounded_correction",
+      "rollouts": 2388,
+      "active_control_transitions": 296903
+    },
+    {
+      "stage": "P03_long_selection",
+      "rollouts": 167,
+      "active_control_transitions": 104090
+    }
+  ],
+  "ik_endpoint_starts": 36,
+  "ik_sampled_frame_fits": 96,
+  "bc_updates_per_guided_seed": 4000,
+  "collection_attempts": 128,
+  "collection_successes": 56,
+  "collection_active_control_transitions": 79680,
+  "note": "Active rollout transitions, not complete GPU kernel counts; IK function calls and total BC wall time were not instrumented."
+}

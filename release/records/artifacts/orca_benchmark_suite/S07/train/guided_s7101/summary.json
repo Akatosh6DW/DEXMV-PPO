@@ -1,0 +1,135 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.75,
+      "success15": 0.75,
+      "pad_hold_sec": 32.33749961853027,
+      "broad_hold_sec": 34.04374969005585,
+      "pad_pair_fraction": 0.875,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0010313066886737943,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 9.483917236328125,
+      "step": 0,
+      "elapsed_sec": 31.60234446300001
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 22.08750009536743,
+      "broad_hold_sec": 22.61250013113022,
+      "pad_pair_fraction": 0.875,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0019993640016764402,
+      "forbidden_rate": 0.125,
+      "peak_force_n": 5.717831134796143,
+      "step": 20480,
+      "elapsed_sec": 121.43738154599987
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 1.912500061094761,
+      "broad_hold_sec": 9.443750083446503,
+      "pad_pair_fraction": 0.16233904287219048,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.013610598631203175,
+      "forbidden_rate": 1.0,
+      "peak_force_n": 13.170403480529785,
+      "step": 40960,
+      "elapsed_sec": 203.713299281
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 1.2687500026077032,
+      "broad_hold_sec": 7.037500083446503,
+      "pad_pair_fraction": 0.12070605903863907,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.004380150698125362,
+      "forbidden_rate": 0.875,
+      "peak_force_n": 12.061286926269531,
+      "step": 61440,
+      "elapsed_sec": 283.474638145
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 0.6437500091269612,
+      "broad_hold_sec": 7.043750107288361,
+      "pad_pair_fraction": 0.05091527407057583,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0029656433034688234,
+      "forbidden_rate": 1.0,
+      "peak_force_n": 18.863086700439453,
+      "step": 81920,
+      "elapsed_sec": 361.6468786209998
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 0.7312500290572643,
+      "broad_hold_sec": 4.993750035762787,
+      "pad_pair_fraction": 0.07527998462319374,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0034421314485371113,
+      "forbidden_rate": 0.875,
+      "peak_force_n": 24.499088287353516,
+      "step": 102400,
+      "elapsed_sec": 439.262123666
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 3.4562500715255737,
+      "broad_hold_sec": 9.643750190734863,
+      "pad_pair_fraction": 0.3158690817654133,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0031344639137387276,
+      "forbidden_rate": 0.75,
+      "peak_force_n": 15.939908027648926,
+      "step": 122880,
+      "elapsed_sec": 516.286682536
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 2.375000014901161,
+      "broad_hold_sec": 6.9562501311302185,
+      "pad_pair_fraction": 0.24277910683304071,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.003427955089136958,
+      "forbidden_rate": 1.0,
+      "peak_force_n": 16.483795166015625,
+      "step": 143360,
+      "elapsed_sec": 593.224578997
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "pad_hold_sec": 2.9187500588595867,
+      "broad_hold_sec": 7.3625001311302185,
+      "pad_pair_fraction": 0.3398091411218047,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.004117473494261503,
+      "forbidden_rate": 1.0,
+      "peak_force_n": 17.953371047973633,
+      "step": 163840,
+      "elapsed_sec": 672.028633977
+    }
+  ],
+  "final_step": 163840,
+  "success30": {
+    "first": 0.75,
+    "last": 0.0,
+    "max": 0.75,
+    "best_step": 0
+  },
+  "pad_hold_sec": {
+    "first": 32.33749961853027,
+    "last": 2.9187500588595867,
+    "max": 32.33749961853027,
+    "best_step": 0
+  }
+}

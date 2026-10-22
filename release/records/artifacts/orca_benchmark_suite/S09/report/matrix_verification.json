@@ -1,0 +1,9 @@
+{
+  "status": "matrix_verified",
+  "jobs": 50,
+  "episodes": 2560,
+  "paired_initial_states": true,
+  "checkpoint_binding": true,
+  "protocol_sha256": "90efff4b203bd8c461a30e13f44bebfc89e7b3fafd787ddf0684706883fd26de",
+  "warning": "Matrix and metric consistency audit, not yet an independent replay of every saved physical trace"
+}

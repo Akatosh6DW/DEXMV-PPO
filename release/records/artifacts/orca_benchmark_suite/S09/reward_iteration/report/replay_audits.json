@@ -1,0 +1,952 @@
+[
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/original_ppo",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 64,
+        "success30": false,
+        "max_qpos_error": 2.9575438431628243e-08,
+        "max_qvel_error": 1.585567659390108e-07,
+        "max_audit_error": 9.536747658245304e-08,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 736
+      },
+      {
+        "seed": 100001,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 2.9797318501501024e-08,
+        "max_qvel_error": 1.9913795501480536e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100016,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 2.9762902586938367e-08,
+        "max_qvel_error": 6.631374249721489e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 119,
+        "success30": false,
+        "max_qpos_error": 2.9722677652443963e-08,
+        "max_qvel_error": 1.8308687899093457e-07,
+        "max_audit_error": 1.9073496471122553e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 681
+      }
+    ],
+    "trace_sha256": "6f194dd5fae71c38069dca640f87df13a0b216ef090a0d706a288ef934b8e4d9",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/continued_R0_ppo",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 2.9785400812443186e-08,
+        "max_qvel_error": 1.0061761113178136e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100001,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 2.9787972866124335e-08,
+        "max_qvel_error": 1.1483799511324833e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100003,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 2.9796463185682853e-08,
+        "max_qvel_error": 5.76998466783607e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 5,
+        "success30": false,
+        "max_qpos_error": 2.9451495020538232e-08,
+        "max_qvel_error": 1.8309364264723627e-06,
+        "max_audit_error": 9.435038066385459e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 795
+      }
+    ],
+    "trace_sha256": "eb9f84951098931b9211e2597ddc5f02d5d36a50def740d9659710ecaa9b0a96",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/penalty_R1_ppo",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 494,
+        "success30": false,
+        "max_qpos_error": 2.9791240141463504e-08,
+        "max_qvel_error": 2.0241984355351406e-07,
+        "max_audit_error": 7.629405445186421e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 306
+      },
+      {
+        "seed": 100001,
+        "steps": 774,
+        "success30": false,
+        "max_qpos_error": 2.9708346560575194e-08,
+        "max_qvel_error": 3.257460789996003e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 26
+      },
+      {
+        "seed": 100002,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 2.9780410915059008e-08,
+        "max_qvel_error": 8.7499616885367e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100007,
+        "steps": 160,
+        "success30": false,
+        "max_qpos_error": 2.9802083023611203e-08,
+        "max_qvel_error": 2.1004512618105764e-07,
+        "max_audit_error": 3.356113850827569e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 640
+      }
+    ],
+    "trace_sha256": "0954f3c813960422f9c628b3e0903b1dafe562f9493d8fae8632a6485608dd9e",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/original_guided",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.953080139953215e-08,
+        "max_qvel_error": 4.4120293907212726e-07,
+        "max_audit_error": 9.338871223008027e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      },
+      {
+        "seed": 100001,
+        "steps": 117,
+        "success30": false,
+        "max_qpos_error": 5.954877946301451e-08,
+        "max_qvel_error": 3.6372672411744134e-06,
+        "max_audit_error": 1.905266664437022e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 683
+      },
+      {
+        "seed": 100017,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.960355897727254e-08,
+        "max_qvel_error": 2.8793868089849184e-07,
+        "max_audit_error": 1.905829790871394e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.914537792861552e-08,
+        "max_qvel_error": 6.398089666959095e-07,
+        "max_audit_error": 1.4192097985699093e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      }
+    ],
+    "trace_sha256": "3844bff536f8aef4b492ef14e239db8c702d83ac3d70d1f0c04e613c9cc1ffb4",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/continued_R0_guided",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 68,
+        "success30": false,
+        "max_qpos_error": 5.949579606756572e-08,
+        "max_qvel_error": 2.1117773130185924e-07,
+        "max_audit_error": 1.905612435848525e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 732
+      },
+      {
+        "seed": 100001,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.9468773239146344e-08,
+        "max_qvel_error": 2.6375763617636494e-07,
+        "max_audit_error": 9.536747658245304e-08,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      },
+      {
+        "seed": 100002,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.9477434977139865e-08,
+        "max_qvel_error": 3.981874119318718e-07,
+        "max_audit_error": 9.536747658245304e-08,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      }
+    ],
+    "trace_sha256": "14a8e66a49d50d9f4042e1efb4c09984014d3badce4bf69793201e68b755e0bf",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/penalty_R1_guided",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 18,
+        "success30": false,
+        "max_qpos_error": 5.9470471658329416e-08,
+        "max_qvel_error": 5.5220831711721985e-06,
+        "max_audit_error": 3.428875974265111e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 782
+      },
+      {
+        "seed": 100001,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.952813175724714e-08,
+        "max_qvel_error": 2.0577971593382927e-07,
+        "max_audit_error": 1.9072207635417726e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100003,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.957942139644956e-08,
+        "max_qvel_error": 2.362971809333203e-07,
+        "max_audit_error": 1.9068440053615632e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.94219820015951e-08,
+        "max_qvel_error": 4.330019685028219e-07,
+        "max_audit_error": 1.085705596537423e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      }
+    ],
+    "trace_sha256": "7d0fef5b2efe68f4c98669b73a6f08b283fe4f7e51bc8bc9e166802a5998bcff",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/original_residual",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 425,
+        "success30": false,
+        "max_qpos_error": 5.955188342454676e-08,
+        "max_qvel_error": 4.2929480947861975e-07,
+        "max_audit_error": 7.629405445186421e-07,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 375
+      },
+      {
+        "seed": 100001,
+        "steps": 608,
+        "success30": false,
+        "max_qpos_error": 5.9434203114605566e-08,
+        "max_qvel_error": 2.3550884709067077e-07,
+        "max_audit_error": 7.62941176901677e-07,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 192
+      },
+      {
+        "seed": 100004,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.957143600632264e-08,
+        "max_qvel_error": 1.0418562457203961e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 5.245208734017126e-08,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 5.9598822543804886e-08,
+        "max_qvel_error": 5.725861385030839e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "6925a73b143c49bfac28da2ad5a830d99d7ef72d2f1514693c0a34766e6de09d",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/continued_R0_residual",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 457,
+        "success30": false,
+        "max_qpos_error": 5.9541557462239325e-08,
+        "max_qvel_error": 1.8635440746095355e-07,
+        "max_audit_error": 7.629405445186421e-07,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 343
+      },
+      {
+        "seed": 100001,
+        "steps": 496,
+        "success30": false,
+        "max_qpos_error": 5.959192783677736e-08,
+        "max_qvel_error": 3.6644203227353955e-07,
+        "max_audit_error": 7.629405445186421e-07,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 304
+      },
+      {
+        "seed": 100003,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.9553600051387434e-08,
+        "max_qvel_error": 9.754635321712612e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 5.959418314382958e-08,
+        "max_qvel_error": 6.109921635299997e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "f9935b6826e24862049d6665d5e58372642f212bdc78963bc7bab8e30bd7895c",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/penalty_R1_residual",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 639,
+        "success30": false,
+        "max_qpos_error": 5.9563299181775164e-08,
+        "max_qvel_error": 2.292622349742146e-07,
+        "max_audit_error": 7.629415250676175e-07,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 161
+      },
+      {
+        "seed": 100001,
+        "steps": 759,
+        "success30": false,
+        "max_qpos_error": 5.9484665193565434e-08,
+        "max_qvel_error": 1.6937421598584024e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 41
+      },
+      {
+        "seed": 100004,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.959451532255855e-08,
+        "max_qvel_error": 9.41659439313014e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 5.951817705351914e-08,
+        "max_qvel_error": 5.111078560382509e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "be7012e260ab85d73ddf7484adb9fc027f65a4ed97d813eaf0648e36bd8bddd2",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/uniform/reference",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100000,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.9597448753834215e-08,
+        "max_qvel_error": 2.9641873067198787e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100001,
+        "steps": 157,
+        "success30": false,
+        "max_qpos_error": 5.9015242470650264e-08,
+        "max_qvel_error": 3.785089983665557e-07,
+        "max_audit_error": 2.3039663687995926e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 643
+      },
+      {
+        "seed": 100004,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.940811131921464e-08,
+        "max_qvel_error": 4.436436440435898e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100002,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 5.9583188827261324e-08,
+        "max_qvel_error": 9.595634464787395e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "52364d26e4964d61f551682abaa15c9305fcc36f97c1980002d754486c784f9a",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/original_ppo",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 599,
+        "success30": false,
+        "max_qpos_error": 2.980066182711738e-08,
+        "max_qvel_error": 4.641202338007133e-07,
+        "max_audit_error": 7.629411271636855e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 201
+      },
+      {
+        "seed": 100201,
+        "steps": 751,
+        "success30": false,
+        "max_qpos_error": 2.9761255015969823e-08,
+        "max_qvel_error": 3.599247992980281e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 49
+      },
+      {
+        "seed": 100202,
+        "steps": 657,
+        "success30": false,
+        "max_qpos_error": 2.9750663377292597e-08,
+        "max_qvel_error": 2.472917408624653e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 143
+      }
+    ],
+    "trace_sha256": "59b4502ff60bf4777c05cd4bdfbe5ae8d943fdbdbab82c069a1694f0449ffc3d",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/continued_R0_ppo",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 426,
+        "success30": false,
+        "max_qpos_error": 2.9786827671074434e-08,
+        "max_qvel_error": 3.420355376704265e-07,
+        "max_audit_error": 9.459257590549441e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 374
+      },
+      {
+        "seed": 100201,
+        "steps": 720,
+        "success30": false,
+        "max_qpos_error": 2.9790817701602634e-08,
+        "max_qvel_error": 3.9939595986027143e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 80
+      },
+      {
+        "seed": 100202,
+        "steps": 695,
+        "success30": false,
+        "max_qpos_error": 2.979500091093712e-08,
+        "max_qvel_error": 9.026434675263317e-07,
+        "max_audit_error": 1.8487389041865754e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 105
+      }
+    ],
+    "trace_sha256": "9f9b96d202d355bdad7b17687f598482bc862f03942627ad97d0b2c83f798111",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/penalty_R1_ppo",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 2.979862212537654e-08,
+        "max_qvel_error": 1.054723925975054e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100201,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 2.980052027368174e-08,
+        "max_qvel_error": 5.469962083282098e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100202,
+        "steps": 800,
+        "success30": false,
+        "max_qpos_error": 2.9782802113409446e-08,
+        "max_qvel_error": 1.4706878470605034e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "3a6940ac8df3a6cc8f7ed2f46c109dbdabd80f1be8a6607201a811821a78fcac",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/original_guided",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 64,
+        "success30": false,
+        "max_qpos_error": 5.945889891556533e-08,
+        "max_qvel_error": 5.841282018081984e-07,
+        "max_audit_error": 1.6794095500927142e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 736
+      },
+      {
+        "seed": 100201,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.879709275014022e-08,
+        "max_qvel_error": 3.508215868919251e-07,
+        "max_audit_error": 1.7627411352805211e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      },
+      {
+        "seed": 100202,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.900537147773832e-08,
+        "max_qvel_error": 4.3328970278366796e-07,
+        "max_audit_error": 1.900810147503762e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      }
+    ],
+    "trace_sha256": "717c9b72120b6e7536db382670e5a1cfc048a3fef1466865927afecfc7ae0d54",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/continued_R0_guided",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 70,
+        "success30": false,
+        "max_qpos_error": 5.941525449415508e-08,
+        "max_qvel_error": 4.6075727055949756e-07,
+        "max_audit_error": 1.8609988785556197e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 730
+      },
+      {
+        "seed": 100201,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.944112735356555e-08,
+        "max_qvel_error": 4.001910713924417e-07,
+        "max_audit_error": 8.890089624458142e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      },
+      {
+        "seed": 100202,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.9530184781664275e-08,
+        "max_qvel_error": 3.743123322408337e-07,
+        "max_audit_error": 9.371572780025872e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      }
+    ],
+    "trace_sha256": "c28450209f6511bab2dfb8f938c568fd9eb58e7eab2e1602d048aec389d6ccb4",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/penalty_R1_guided",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.952082315907603e-08,
+        "max_qvel_error": 7.390744265478588e-07,
+        "max_audit_error": 2.4082640521783105e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      },
+      {
+        "seed": 100201,
+        "steps": 64,
+        "success30": false,
+        "max_qpos_error": 5.933657964973804e-08,
+        "max_qvel_error": 3.9312653044021317e-07,
+        "max_audit_error": 9.256848407801499e-07,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 736
+      },
+      {
+        "seed": 100209,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.959951554501686e-08,
+        "max_qvel_error": 2.1993715293433524e-07,
+        "max_audit_error": 1.906420578734469e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100202,
+        "steps": 63,
+        "success30": false,
+        "max_qpos_error": 5.938491054457984e-08,
+        "max_qvel_error": 3.6446823692415364e-07,
+        "max_audit_error": 9.536747658245304e-08,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 737
+      }
+    ],
+    "trace_sha256": "351636ee10a02488eabd38416f5cf1abf87385b5054c7b609c5675c99b018364",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/original_residual",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.957608961715266e-08,
+        "max_qvel_error": 2.8920563610590477e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100201,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.95992335483686e-08,
+        "max_qvel_error": 4.9962610937370755e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100202,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.957897952768576e-08,
+        "max_qvel_error": 1.1122761778281642e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 5.245208734017126e-08,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "00439900c168c11d3d41afe258c0746bb9dc6ca0ee9a01ed3aae28ca3487bab1",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/continued_R0_residual",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.955885806763206e-08,
+        "max_qvel_error": 2.9794542610872554e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100201,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.9536118035552477e-08,
+        "max_qvel_error": 3.421893168820134e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100202,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.9598837420793416e-08,
+        "max_qvel_error": 2.8451330180701007e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "54e13aa2aad18d33b0676348d8ede52a7064e29f146b1f4c4f78ee2454afb794",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/penalty_R1_residual",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.958015170115516e-08,
+        "max_qvel_error": 2.8326709422543672e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100201,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.9594282397767984e-08,
+        "max_qvel_error": 2.7997934193280116e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100202,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.960457882814296e-08,
+        "max_qvel_error": 5.610603293071392e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": 0.0,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "28a53405a8a1fdcddcad67fd122f34ab07fe1dc17b46c65447983629f105f224",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  },
+  {
+    "status": "verified",
+    "run": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S09/reward_iteration/eval/web/reference",
+    "step": 0,
+    "episodes": [
+      {
+        "seed": 100200,
+        "steps": 787,
+        "success30": false,
+        "max_qpos_error": 5.957495896602438e-08,
+        "max_qvel_error": 3.7672021946377754e-07,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 13
+      },
+      {
+        "seed": 100201,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.955606408036829e-08,
+        "max_qvel_error": 2.8683307728982754e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      },
+      {
+        "seed": 100202,
+        "steps": 800,
+        "success30": true,
+        "max_qpos_error": 5.956112003602243e-08,
+        "max_qvel_error": 2.8683307728982754e-08,
+        "max_audit_error": 1.5258809114016003e-06,
+        "passed": true,
+        "active_composition_error": null,
+        "frozen_padding_steps": 0
+      }
+    ],
+    "trace_sha256": "09e700410c34d2f34af60ac530d99d7440fbd721643e302555cb2ca98c7c4a60",
+    "scope": "Every executed step in saved previews; post-terminal padding is not an executed action; direct native replay, not all unrecorded episodes; shared rope/contact definitions remain explicit"
+  }
+]

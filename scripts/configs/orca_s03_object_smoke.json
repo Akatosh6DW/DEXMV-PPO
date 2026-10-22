@@ -1,0 +1,10 @@
+{
+  "output": "artifacts/orca_benchmark_suite/S03/smoke_object_v1",
+  "stage": "smoke",
+  "method": "zero",
+  "seed": 19001,
+  "std": 0.3,
+  "eval_start": 60050,
+  "eval_count": 2,
+  "shape": "sphere"
+}

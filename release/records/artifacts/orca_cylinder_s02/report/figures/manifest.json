@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "files": [
+    "learning_curves.png",
+    "clean_success.png",
+    "nominal_outcomes.png"
+  ],
+  "status": "Evaluation matrix complete",
+  "note": "Curves use development raw success, not final clean success. Error bars are marginal intervals. Empty panels have no complete groups, not zero success."
+}

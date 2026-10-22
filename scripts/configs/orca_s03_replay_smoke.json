@@ -1,0 +1,12 @@
+{
+  "output": "artifacts/orca_benchmark_suite/S03/smoke_replay_v1",
+  "stage": "smoke",
+  "method": "residual",
+  "seed": 1001,
+  "std": 0.3,
+  "eval_start": 60060,
+  "eval_count": 2,
+  "paired_replay": true,
+  "push_force": 0.6,
+  "checkpoint": "artifacts/orca_benchmark_suite/S02/train/residual_s1001/params.pkl"
+}

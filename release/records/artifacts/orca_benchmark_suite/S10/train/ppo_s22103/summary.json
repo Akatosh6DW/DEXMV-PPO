@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "final_step": 163840,
+  "rows": [
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0036971119698137045,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 3.557955741882324,
+      "step": 0,
+      "elapsed_sec": 35.13308470999982
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.00333035527728498,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 9.863759994506836,
+      "step": 40960,
+      "elapsed_sec": 184.43316997500006
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.003980246838182211,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 9.660706520080566,
+      "step": 81920,
+      "elapsed_sec": 326.92285071100196
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0031250000465661287,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0022705879528075457,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 3.459261655807495,
+      "step": 122880,
+      "elapsed_sec": 464.626981514004
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.203125,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.00521521270275116,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 9.075030326843262,
+      "step": 163840,
+      "elapsed_sec": 602.9885804299993
+    }
+  ],
+  "success30": {
+    "first": 0.0,
+    "last": 0.0,
+    "max": 0.0,
+    "best_step": 0
+  },
+  "hold_sec": {
+    "first": 0.0,
+    "last": 0.203125,
+    "max": 0.203125,
+    "best_step": 163840
+  }
+}

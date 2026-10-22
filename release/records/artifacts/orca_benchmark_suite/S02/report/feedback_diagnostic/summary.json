@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "missing": [],
+  "groups": [
+    {
+      "method": "bc",
+      "saved_pairs": 40,
+      "interpretable_pairs": 38,
+      "responding_pairs": 38,
+      "mean_target_response_rms_rad": 0.0007339768164552209,
+      "mean_residual_response_rms_rad": 0.0
+    },
+    {
+      "method": "guided",
+      "saved_pairs": 40,
+      "interpretable_pairs": 40,
+      "responding_pairs": 40,
+      "mean_target_response_rms_rad": 0.00042548012715997173,
+      "mean_residual_response_rms_rad": 0.0
+    },
+    {
+      "method": "linear",
+      "saved_pairs": 40,
+      "interpretable_pairs": 40,
+      "responding_pairs": 30,
+      "mean_target_response_rms_rad": 2.3997430577793464e-06,
+      "mean_residual_response_rms_rad": 2.3997119701135715e-06
+    },
+    {
+      "method": "ppo",
+      "saved_pairs": 40,
+      "interpretable_pairs": 29,
+      "responding_pairs": 29,
+      "mean_target_response_rms_rad": 0.0009673910828245551,
+      "mean_residual_response_rms_rad": 0.0
+    },
+    {
+      "method": "residual",
+      "saved_pairs": 40,
+      "interpretable_pairs": 40,
+      "responding_pairs": 30,
+      "mean_target_response_rms_rad": 2.5303965372813763e-06,
+      "mean_residual_response_rms_rad": 2.5299821391655543e-06
+    },
+    {
+      "method": "unrefined",
+      "saved_pairs": 40,
+      "interpretable_pairs": 40,
+      "responding_pairs": 40,
+      "mean_target_response_rms_rad": 5.975224095777776e-06,
+      "mean_residual_response_rms_rad": 5.974964233246283e-06
+    },
+    {
+      "method": "zero_linear",
+      "saved_pairs": 4,
+      "interpretable_pairs": 4,
+      "responding_pairs": 0,
+      "mean_target_response_rms_rad": 0.0,
+      "mean_residual_response_rms_rad": 0.0
+    },
+    {
+      "method": "zero_unrefined",
+      "saved_pairs": 4,
+      "interpretable_pairs": 4,
+      "responding_pairs": 0,
+      "mean_target_response_rms_rad": 0.0,
+      "mean_residual_response_rms_rad": 0.0
+    },
+    {
+      "method": "zero_video",
+      "saved_pairs": 4,
+      "interpretable_pairs": 4,
+      "responding_pairs": 0,
+      "mean_target_response_rms_rad": 0.0,
+      "mean_residual_response_rms_rad": 0.0
+    }
+  ],
+  "paired_cases": 252,
+  "exploratory": true,
+  "additional_hypothesis_tests": 0,
+  "threshold_rad": 1e-06,
+  "comparison_window_action_indices": [
+    201,
+    224
+  ],
+  "note": "First four saved test cases only; matched before push. Demonstrates state-dependent output, not the causal performance benefit of feedback over a learned open-loop offset.",
+  "source_sha256": "54c7ab8aff2c257b3367ae3e5ae332bfbf7fab4dfd72769a3eb5d0dfe0a691fa"
+}

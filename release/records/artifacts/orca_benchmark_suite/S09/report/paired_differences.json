@@ -1,0 +1,137 @@
+[
+  {
+    "stratum": "uniform",
+    "contrast": "residual minus ppo",
+    "success_rate_difference": 0.13802083333333334,
+    "descriptive_ci95": [
+      -0.078125,
+      0.3151041666666667
+    ]
+  },
+  {
+    "stratum": "uniform",
+    "contrast": "residual minus guided",
+    "success_rate_difference": 0.3307291666666667,
+    "descriptive_ci95": [
+      0.23697916666666666,
+      0.421875
+    ]
+  },
+  {
+    "stratum": "uniform",
+    "contrast": "residual minus reference",
+    "success_rate_difference": -0.10416666666666667,
+    "descriptive_ci95": [
+      -0.16927083333333334,
+      -0.0390625
+    ]
+  },
+  {
+    "stratum": "web",
+    "contrast": "residual minus ppo",
+    "success_rate_difference": 0.90625,
+    "descriptive_ci95": [
+      0.7708333333333334,
+      1.0
+    ]
+  },
+  {
+    "stratum": "web",
+    "contrast": "residual minus guided",
+    "success_rate_difference": 1.0,
+    "descriptive_ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "stratum": "web",
+    "contrast": "residual minus reference",
+    "success_rate_difference": 0.0,
+    "descriptive_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "stratum": "x",
+    "contrast": "residual minus ppo",
+    "success_rate_difference": 0.8229166666666666,
+    "descriptive_ci95": [
+      0.65625,
+      1.0
+    ]
+  },
+  {
+    "stratum": "x",
+    "contrast": "residual minus guided",
+    "success_rate_difference": 0.9895833333333334,
+    "descriptive_ci95": [
+      0.9375,
+      1.0
+    ]
+  },
+  {
+    "stratum": "x",
+    "contrast": "residual minus reference",
+    "success_rate_difference": -0.010416666666666666,
+    "descriptive_ci95": [
+      -0.0625,
+      0.0
+    ]
+  },
+  {
+    "stratum": "y",
+    "contrast": "residual minus ppo",
+    "success_rate_difference": 0.2916666666666667,
+    "descriptive_ci95": [
+      -0.14609375,
+      0.6875
+    ]
+  },
+  {
+    "stratum": "y",
+    "contrast": "residual minus guided",
+    "success_rate_difference": 0.8541666666666666,
+    "descriptive_ci95": [
+      0.7291666666666666,
+      0.9481770833333318
+    ]
+  },
+  {
+    "stratum": "y",
+    "contrast": "residual minus reference",
+    "success_rate_difference": 0.041666666666666664,
+    "descriptive_ci95": [
+      -0.125,
+      0.20833333333333334
+    ]
+  },
+  {
+    "stratum": "z",
+    "contrast": "residual minus ppo",
+    "success_rate_difference": -0.4166666666666667,
+    "descriptive_ci95": [
+      -0.96875,
+      0.0
+    ]
+  },
+  {
+    "stratum": "z",
+    "contrast": "residual minus guided",
+    "success_rate_difference": -0.03125,
+    "descriptive_ci95": [
+      -0.14583333333333334,
+      0.041666666666666664
+    ]
+  },
+  {
+    "stratum": "z",
+    "contrast": "residual minus reference",
+    "success_rate_difference": -0.020833333333333332,
+    "descriptive_ci95": [
+      -0.09375,
+      0.041666666666666664
+    ]
+  }
+]

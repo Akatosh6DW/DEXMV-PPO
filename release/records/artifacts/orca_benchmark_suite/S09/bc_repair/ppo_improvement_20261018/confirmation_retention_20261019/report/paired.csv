@@ -1,0 +1,5 @@
+control,gained,lost,both_success,both_failure,gain_pp,ci95_low_pp,ci95_high_pp
+bc,27,20,87,122,2.734375,-2.734375,8.203125
+stage_start,10,6,104,136,1.5625,-1.5625,4.6875
+control_last,71,33,43,109,14.84375,7.421875,22.65625
+control_selected,32,39,82,103,-2.734375,-9.375,3.90625

@@ -1,0 +1,2 @@
+success30,success30_any,mean_hold,min_hold,max_hold,retained,mean_return,requested_residual_max_rad,effective_residual_max_rad,final_hold30,active_residual_rms_rad,active_residual_saturation,active_action_rms,success15,mean_finger_peak_n,acquisition_rate,mean_acquisition_sec,forbidden_rate,clean_success30,max_penetration_m,substep_forbidden_rate,step,elapsed_sec
+0.0,0.0,3.155,0.0,18.150000000000002,0.0,58.940155029296875,0.0,0.0,0.0,0.0,0.0,0.6000692248344421,0.0,32.259620666503906,0.445,3.0,0.16,0.0,0.0024574294220656157,0.18,0,128.59451222899952

@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.002122756326571107,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 3.566753387451172,
+      "step": 0,
+      "elapsed_sec": 16.63487711500011
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.002345023211091757,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 9.821731567382812,
+      "step": 40960,
+      "elapsed_sec": 121.13152973499973
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.002007777336984873,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 4.028791904449463,
+      "step": 81920,
+      "elapsed_sec": 223.1576638949996
+    },
+    {
+      "success30": 0.0,
+      "success15": 0.0,
+      "hold_sec": 0.26875001192092896,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.001157953287474811,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 3.4319562911987305,
+      "step": 122880,
+      "elapsed_sec": 327.1641406490003
+    },
+    {
+      "success30": 0.625,
+      "success15": 0.625,
+      "hold_sec": 30.60000005364418,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0030102648306638002,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 43.98538589477539,
+      "step": 163840,
+      "elapsed_sec": 450.4891886119999
+    }
+  ],
+  "final_step": 163840,
+  "success30": {
+    "first": 0.0,
+    "last": 0.625,
+    "max": 0.625,
+    "best_step": 163840
+  },
+  "hold_sec": {
+    "first": 0.0,
+    "last": 30.60000005364418,
+    "max": 30.60000005364418,
+    "best_step": 163840
+  }
+}

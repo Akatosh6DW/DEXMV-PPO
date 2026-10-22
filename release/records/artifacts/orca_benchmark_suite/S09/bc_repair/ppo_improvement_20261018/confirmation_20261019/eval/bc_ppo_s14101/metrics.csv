@@ -1,0 +1,2 @@
+success30,success15,hold_sec,residual_rms_rad,max_penetration_m,max_initial_penetration_m,forbidden_rate,released_rope_force_n,peak_force_n,effective_target_residual_rms_rad,max_all_penetration_m,max_pre_release_penetration_m,peak_pre_release_force_n,peak_released_force_n,success30_all_depth_le_3mm,step,elapsed_sec
+0.435546875,0.46875,18.534863330402004,0.0,0.011550158262252808,0.0,0.0,0.0,55.80232620239258,0.0,0.011550158262252808,0.004142252262681723,42.05868911743164,55.80232620239258,0.435546875,0,945.154309306

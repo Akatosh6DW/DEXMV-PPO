@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.4375,
+      "success15": 0.4609375,
+      "hold_sec": 20.908691512398946,
+      "residual_rms_rad": 0.000369406916462367,
+      "max_penetration_m": 0.016066785901784897,
+      "max_initial_penetration_m": 0.0,
+      "forbidden_rate": 0.0,
+      "released_rope_force_n": 0.0,
+      "peak_force_n": 190.3850860595703,
+      "effective_target_residual_rms_rad": 0.00036202239189719876,
+      "max_all_penetration_m": 0.019027454778552055,
+      "max_pre_release_penetration_m": 0.019027454778552055,
+      "peak_pre_release_force_n": 190.3850860595703,
+      "peak_released_force_n": 110.99148559570312,
+      "success30_all_depth_le_3mm": 0.435546875,
+      "step": 0,
+      "elapsed_sec": 975.2356260309998
+    }
+  ],
+  "final_step": 0,
+  "success30": {
+    "first": 0.4375,
+    "last": 0.4375,
+    "max": 0.4375,
+    "best_step": 0
+  },
+  "hold_sec": {
+    "first": 20.908691512398946,
+    "last": 20.908691512398946,
+    "max": 20.908691512398946,
+    "best_step": 0
+  }
+}

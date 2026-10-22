@@ -1,0 +1,222 @@
+[
+  {
+    "orientation": "uniform",
+    "method": "ppo",
+    "version": "original",
+    "successes": 2,
+    "count": 32,
+    "success_rate": 0.0625,
+    "hold_sec": 5.626562582794577,
+    "max_penetration_mm": 4.080226179212332,
+    "peak_force_n": 17.674076080322266
+  },
+  {
+    "orientation": "uniform",
+    "method": "ppo",
+    "version": "continued_R0",
+    "successes": 13,
+    "count": 32,
+    "success_rate": 0.40625,
+    "hold_sec": 17.88906256109476,
+    "max_penetration_mm": 4.079757258296013,
+    "peak_force_n": 40.540199279785156
+  },
+  {
+    "orientation": "uniform",
+    "method": "ppo",
+    "version": "penalty_R1",
+    "successes": 15,
+    "count": 32,
+    "success_rate": 0.46875,
+    "hold_sec": 21.09375010430813,
+    "max_penetration_mm": 6.296824663877487,
+    "peak_force_n": 200.7015838623047
+  },
+  {
+    "orientation": "uniform",
+    "method": "guided",
+    "version": "original",
+    "successes": 2,
+    "count": 32,
+    "success_rate": 0.0625,
+    "hold_sec": 3.407812476158142,
+    "max_penetration_mm": 3.486115951091051,
+    "peak_force_n": 53.801170349121094
+  },
+  {
+    "orientation": "uniform",
+    "method": "guided",
+    "version": "continued_R0",
+    "successes": 0,
+    "count": 32,
+    "success_rate": 0.0,
+    "hold_sec": 0.004687500186264515,
+    "max_penetration_mm": 4.557920154184103,
+    "peak_force_n": 66.43185424804688
+  },
+  {
+    "orientation": "uniform",
+    "method": "guided",
+    "version": "penalty_R1",
+    "successes": 3,
+    "count": 32,
+    "success_rate": 0.09375,
+    "hold_sec": 3.46875,
+    "max_penetration_mm": 2.7255190070718527,
+    "peak_force_n": 40.87303161621094
+  },
+  {
+    "orientation": "uniform",
+    "method": "residual",
+    "version": "original",
+    "successes": 7,
+    "count": 32,
+    "success_rate": 0.21875,
+    "hold_sec": 14.210937574505806,
+    "max_penetration_mm": 11.50157954543829,
+    "peak_force_n": 41.71418762207031
+  },
+  {
+    "orientation": "uniform",
+    "method": "residual",
+    "version": "continued_R0",
+    "successes": 10,
+    "count": 32,
+    "success_rate": 0.3125,
+    "hold_sec": 15.851562596857548,
+    "max_penetration_mm": 2.6456292252987623,
+    "peak_force_n": 41.119361877441406
+  },
+  {
+    "orientation": "uniform",
+    "method": "residual",
+    "version": "penalty_R1",
+    "successes": 7,
+    "count": 32,
+    "success_rate": 0.21875,
+    "hold_sec": 14.367187559604645,
+    "max_penetration_mm": 1.591407461091876,
+    "peak_force_n": 41.536590576171875
+  },
+  {
+    "orientation": "uniform",
+    "method": "reference",
+    "version": "original",
+    "successes": 10,
+    "count": 32,
+    "success_rate": 0.3125,
+    "hold_sec": 17.467187594273128,
+    "max_penetration_mm": 1.580811687745154,
+    "peak_force_n": 37.63874816894531
+  },
+  {
+    "orientation": "web",
+    "method": "ppo",
+    "version": "original",
+    "successes": 0,
+    "count": 16,
+    "success_rate": 0.0,
+    "hold_sec": 7.20625014603138,
+    "max_penetration_mm": 7.481523789465427,
+    "peak_force_n": 62.30629348754883
+  },
+  {
+    "orientation": "web",
+    "method": "ppo",
+    "version": "continued_R0",
+    "successes": 0,
+    "count": 16,
+    "success_rate": 0.0,
+    "hold_sec": 2.2437500581145287,
+    "max_penetration_mm": 8.681125938892365,
+    "peak_force_n": 66.24584197998047
+  },
+  {
+    "orientation": "web",
+    "method": "ppo",
+    "version": "penalty_R1",
+    "successes": 0,
+    "count": 16,
+    "success_rate": 0.0,
+    "hold_sec": 4.221875101327896,
+    "max_penetration_mm": 2.9404156375676394,
+    "peak_force_n": 21.46882438659668
+  },
+  {
+    "orientation": "web",
+    "method": "guided",
+    "version": "original",
+    "successes": 0,
+    "count": 16,
+    "success_rate": 0.0,
+    "hold_sec": 0.0,
+    "max_penetration_mm": 4.448221530765295,
+    "peak_force_n": 44.912471771240234
+  },
+  {
+    "orientation": "web",
+    "method": "guided",
+    "version": "continued_R0",
+    "successes": 0,
+    "count": 16,
+    "success_rate": 0.0,
+    "hold_sec": 0.0,
+    "max_penetration_mm": 3.3754475880414248,
+    "peak_force_n": 58.54240036010742
+  },
+  {
+    "orientation": "web",
+    "method": "guided",
+    "version": "penalty_R1",
+    "successes": 1,
+    "count": 16,
+    "success_rate": 0.0625,
+    "hold_sec": 2.3125,
+    "max_penetration_mm": 2.6707351207733154,
+    "peak_force_n": 175.49221801757812
+  },
+  {
+    "orientation": "web",
+    "method": "residual",
+    "version": "original",
+    "successes": 16,
+    "count": 16,
+    "success_rate": 1.0,
+    "hold_sec": 37.0,
+    "max_penetration_mm": 1.1853311443701386,
+    "peak_force_n": 11.852309226989746
+  },
+  {
+    "orientation": "web",
+    "method": "residual",
+    "version": "continued_R0",
+    "successes": 16,
+    "count": 16,
+    "success_rate": 1.0,
+    "hold_sec": 37.0,
+    "max_penetration_mm": 1.2150980764999986,
+    "peak_force_n": 12.585006713867188
+  },
+  {
+    "orientation": "web",
+    "method": "residual",
+    "version": "penalty_R1",
+    "successes": 16,
+    "count": 16,
+    "success_rate": 1.0,
+    "hold_sec": 37.0,
+    "max_penetration_mm": 1.2248724233359098,
+    "peak_force_n": 12.444263458251953
+  },
+  {
+    "orientation": "web",
+    "method": "reference",
+    "version": "original",
+    "successes": 15,
+    "count": 16,
+    "success_rate": 0.9375,
+    "hold_sec": 36.63437497615814,
+    "max_penetration_mm": 1.02961715310812,
+    "peak_force_n": 9.609796524047852
+  }
+]

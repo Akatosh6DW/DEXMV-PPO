@@ -1,0 +1,578 @@
+{
+  "plan_sha256": "49d1db994439ec94a0f4ee003595217efd85098496cef209beae7eeff06236d8",
+  "summaries": [
+    {
+      "group": "bc",
+      "success_rate": 0.3899739583333333,
+      "successes": 599,
+      "policy_episode_pairs": 1536,
+      "unique_initial_states": 512,
+      "per_training_seed": [
+        0.373046875,
+        0.39453125,
+        0.40234375
+      ],
+      "descriptive_ci95": [
+        0.3483072916666667,
+        0.4329427083333333
+      ],
+      "mean_best_hold_sec": 17.565266994980146,
+      "mean_total_valid_grasp_sec": 17.779915364583335,
+      "mean_streak_break_events": 0.375,
+      "max_released_depth_mm": 17.624972388148308,
+      "max_pre_release_depth_mm": 14.990665018558502,
+      "peak_force_n": 233.72999572753906,
+      "successful_peak_force_n": 26.096708297729492,
+      "secondary_all_depth_success_rate": 0.3899739583333333,
+      "validity_reconstruction_disagreement_frames": 0,
+      "failed_by_3s": 5,
+      "failed_but_alive_40s": 197,
+      "mean_requested_residual_rms_rad": 0.0,
+      "mean_effective_target_residual_rms_rad": 0.0,
+      "max_effective_target_residual_rad": 0.0
+    },
+    {
+      "group": "bc_ppo",
+      "success_rate": 0.4231770833333333,
+      "successes": 650,
+      "policy_episode_pairs": 1536,
+      "unique_initial_states": 512,
+      "per_training_seed": [
+        0.435546875,
+        0.431640625,
+        0.40234375
+      ],
+      "descriptive_ci95": [
+        0.38279622395833335,
+        0.462890625
+      ],
+      "mean_best_hold_sec": 18.49899093141721,
+      "mean_total_valid_grasp_sec": 19.045996093750002,
+      "mean_streak_break_events": 0.783203125,
+      "max_released_depth_mm": 11.550158262252808,
+      "max_pre_release_depth_mm": 9.420501999557018,
+      "peak_force_n": 55.80232620239258,
+      "successful_peak_force_n": 31.341110229492188,
+      "secondary_all_depth_success_rate": 0.419921875,
+      "validity_reconstruction_disagreement_frames": 0,
+      "failed_by_3s": 10,
+      "failed_but_alive_40s": 151,
+      "mean_requested_residual_rms_rad": 0.0,
+      "mean_effective_target_residual_rms_rad": 0.0,
+      "max_effective_target_residual_rad": 0.0
+    },
+    {
+      "group": "bc_ppo_last",
+      "success_rate": 0.3170572916666667,
+      "successes": 487,
+      "policy_episode_pairs": 1536,
+      "unique_initial_states": 512,
+      "per_training_seed": [
+        0.365234375,
+        0.326171875,
+        0.259765625
+      ],
+      "descriptive_ci95": [
+        0.2565104166666667,
+        0.3750162760416667
+      ],
+      "mean_best_hold_sec": 15.067252662782266,
+      "mean_total_valid_grasp_sec": 15.137727864583333,
+      "mean_streak_break_events": 0.5807291666666666,
+      "max_released_depth_mm": 9.640657342970371,
+      "max_pre_release_depth_mm": 11.893654242157936,
+      "peak_force_n": 66.05338287353516,
+      "successful_peak_force_n": 43.15058517456055,
+      "secondary_all_depth_success_rate": 0.3118489583333333,
+      "validity_reconstruction_disagreement_frames": 0,
+      "failed_by_3s": 10,
+      "failed_but_alive_40s": 141,
+      "mean_requested_residual_rms_rad": 0.0,
+      "mean_effective_target_residual_rms_rad": 0.0,
+      "max_effective_target_residual_rad": 0.0
+    },
+    {
+      "group": "reference",
+      "success_rate": 0.4453125,
+      "successes": 228,
+      "policy_episode_pairs": 512,
+      "unique_initial_states": 512,
+      "per_training_seed": [
+        0.4453125
+      ],
+      "descriptive_ci95": [
+        0.404296875,
+        0.490234375
+      ],
+      "mean_best_hold_sec": 21.774121188209392,
+      "mean_total_valid_grasp_sec": 22.036914062500003,
+      "mean_streak_break_events": 0.54296875,
+      "max_released_depth_mm": 18.393846228718758,
+      "max_pre_release_depth_mm": 18.579067662358284,
+      "peak_force_n": 186.5536651611328,
+      "successful_peak_force_n": 27.869915008544922,
+      "secondary_all_depth_success_rate": 0.443359375,
+      "validity_reconstruction_disagreement_frames": 0,
+      "failed_by_3s": 5,
+      "failed_but_alive_40s": 54,
+      "mean_requested_residual_rms_rad": 0.0,
+      "mean_effective_target_residual_rms_rad": 9.295014518273179e-10,
+      "max_effective_target_residual_rad": 1.1920928955078125e-07
+    },
+    {
+      "group": "residual",
+      "success_rate": 0.4329427083333333,
+      "successes": 665,
+      "policy_episode_pairs": 1536,
+      "unique_initial_states": 512,
+      "per_training_seed": [
+        0.431640625,
+        0.4375,
+        0.4296875
+      ],
+      "descriptive_ci95": [
+        0.3919270833333333,
+        0.4765625
+      ],
+      "mean_best_hold_sec": 20.767513125293288,
+      "mean_total_valid_grasp_sec": 21.093912760416668,
+      "mean_streak_break_events": 0.541015625,
+      "max_released_depth_mm": 23.73334765434265,
+      "max_pre_release_depth_mm": 19.027454778552055,
+      "peak_force_n": 197.22752380371094,
+      "successful_peak_force_n": 27.947113037109375,
+      "secondary_all_depth_success_rate": 0.4296875,
+      "validity_reconstruction_disagreement_frames": 0,
+      "failed_by_3s": 33,
+      "failed_but_alive_40s": 145,
+      "mean_requested_residual_rms_rad": 0.0004213680179248058,
+      "mean_effective_target_residual_rms_rad": 0.00040907180952369043,
+      "max_effective_target_residual_rad": 0.004472017288208008
+    }
+  ],
+  "differences": [
+    {
+      "contrast": "bc_ppo minus bc",
+      "difference": 0.033203125,
+      "descriptive_ci95": [
+        -0.017578125,
+        0.07747395833333337
+      ]
+    },
+    {
+      "contrast": "bc_ppo_last minus bc",
+      "difference": -0.07291666666666663,
+      "descriptive_ci95": [
+        -0.15625,
+        0.006510416666666631
+      ]
+    },
+    {
+      "contrast": "residual minus reference",
+      "difference": -0.012369791666666685,
+      "descriptive_ci95": [
+        -0.027994791666666685,
+        0.0032714843750000413
+      ]
+    }
+  ],
+  "paired_transitions": [
+    {
+      "group": "bc_ppo",
+      "training_seed": 14101,
+      "retained": 164,
+      "lost": 27,
+      "gained": 59,
+      "neither": 262
+    },
+    {
+      "group": "bc_ppo",
+      "training_seed": 14102,
+      "retained": 118,
+      "lost": 84,
+      "gained": 103,
+      "neither": 207
+    },
+    {
+      "group": "bc_ppo",
+      "training_seed": 14103,
+      "retained": 131,
+      "lost": 75,
+      "gained": 75,
+      "neither": 231
+    },
+    {
+      "group": "bc_ppo_last",
+      "training_seed": 14101,
+      "retained": 71,
+      "lost": 120,
+      "gained": 116,
+      "neither": 205
+    },
+    {
+      "group": "bc_ppo_last",
+      "training_seed": 14102,
+      "retained": 63,
+      "lost": 139,
+      "gained": 104,
+      "neither": 206
+    },
+    {
+      "group": "bc_ppo_last",
+      "training_seed": 14103,
+      "retained": 49,
+      "lost": 157,
+      "gained": 84,
+      "neither": 222
+    },
+    {
+      "group": "residual",
+      "training_seed": 14101,
+      "retained": 217,
+      "lost": 11,
+      "gained": 4,
+      "neither": 280
+    },
+    {
+      "group": "residual",
+      "training_seed": 14102,
+      "retained": 217,
+      "lost": 11,
+      "gained": 7,
+      "neither": 277
+    },
+    {
+      "group": "residual",
+      "training_seed": 14103,
+      "retained": 209,
+      "lost": 19,
+      "gained": 11,
+      "neither": 273
+    }
+  ],
+  "failure_gates": [
+    {
+      "group": "bc",
+      "gate": "forbidden_contact",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc",
+      "gate": "height_loss_ge_15mm",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 790,
+      "invalid_seconds_total": 4300.999999999998,
+      "break_events_total": 143
+    },
+    {
+      "group": "bc",
+      "gate": "initial_penetration_gt_1mm",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc",
+      "gate": "no_longer_alive",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 735,
+      "invalid_seconds_total": 36.75000000000005,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc",
+      "gate": "opposing_load_le_0_02n",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 920,
+      "invalid_seconds_total": 8038.049999999976,
+      "break_events_total": 451
+    },
+    {
+      "group": "bc",
+      "gate": "penetration_gt_3mm",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 20,
+      "invalid_seconds_total": 1.5000000000000004,
+      "break_events_total": 3
+    },
+    {
+      "group": "bc",
+      "gate": "rope_force_nonzero",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc",
+      "gate": "thumb_load_le_0_02n",
+      "failed_policy_episode_pairs": 937,
+      "failed_pairs_with_gate": 792,
+      "invalid_seconds_total": 608.2499999999977,
+      "break_events_total": 53
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "forbidden_contact",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "height_loss_ge_15mm",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 792,
+      "invalid_seconds_total": 4720.199999999998,
+      "break_events_total": 242
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "initial_penetration_gt_1mm",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "no_longer_alive",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 725,
+      "invalid_seconds_total": 36.25000000000008,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "opposing_load_le_0_02n",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 827,
+      "invalid_seconds_total": 3256.950000000001,
+      "break_events_total": 741
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "penetration_gt_3mm",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 43,
+      "invalid_seconds_total": 63.89999999999999,
+      "break_events_total": 4
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "rope_force_nonzero",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo",
+      "gate": "thumb_load_le_0_02n",
+      "failed_policy_episode_pairs": 886,
+      "failed_pairs_with_gate": 778,
+      "invalid_seconds_total": 2073.950000000004,
+      "break_events_total": 267
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "forbidden_contact",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "height_loss_ge_15mm",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 981,
+      "invalid_seconds_total": 4645.299999999996,
+      "break_events_total": 251
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "initial_penetration_gt_1mm",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "no_longer_alive",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 898,
+      "invalid_seconds_total": 44.89999999999959,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "opposing_load_le_0_02n",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 967,
+      "invalid_seconds_total": 2656.5500000000025,
+      "break_events_total": 117
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "penetration_gt_3mm",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 60,
+      "invalid_seconds_total": 102.65000000000003,
+      "break_events_total": 3
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "rope_force_nonzero",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "bc_ppo_last",
+      "gate": "thumb_load_le_0_02n",
+      "failed_policy_episode_pairs": 1049,
+      "failed_pairs_with_gate": 912,
+      "invalid_seconds_total": 3700.300000000003,
+      "break_events_total": 546
+    },
+    {
+      "group": "reference",
+      "gate": "forbidden_contact",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "reference",
+      "gate": "height_loss_ge_15mm",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 246,
+      "invalid_seconds_total": 998.7500000000005,
+      "break_events_total": 106
+    },
+    {
+      "group": "reference",
+      "gate": "initial_penetration_gt_1mm",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "reference",
+      "gate": "no_longer_alive",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 225,
+      "invalid_seconds_total": 11.250000000000025,
+      "break_events_total": 0
+    },
+    {
+      "group": "reference",
+      "gate": "opposing_load_le_0_02n",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 270,
+      "invalid_seconds_total": 1455.6000000000015,
+      "break_events_total": 179
+    },
+    {
+      "group": "reference",
+      "gate": "penetration_gt_3mm",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 10,
+      "invalid_seconds_total": 0.6000000000000001,
+      "break_events_total": 1
+    },
+    {
+      "group": "reference",
+      "gate": "rope_force_nonzero",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "reference",
+      "gate": "thumb_load_le_0_02n",
+      "failed_policy_episode_pairs": 284,
+      "failed_pairs_with_gate": 240,
+      "invalid_seconds_total": 141.3500000000001,
+      "break_events_total": 10
+    },
+    {
+      "group": "residual",
+      "gate": "forbidden_contact",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "residual",
+      "gate": "height_loss_ge_15mm",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 757,
+      "invalid_seconds_total": 3126.4999999999973,
+      "break_events_total": 298
+    },
+    {
+      "group": "residual",
+      "gate": "initial_penetration_gt_1mm",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "residual",
+      "gate": "no_longer_alive",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 693,
+      "invalid_seconds_total": 34.65000000000017,
+      "break_events_total": 1
+    },
+    {
+      "group": "residual",
+      "gate": "opposing_load_le_0_02n",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 812,
+      "invalid_seconds_total": 4321.7500000000055,
+      "break_events_total": 546
+    },
+    {
+      "group": "residual",
+      "gate": "penetration_gt_3mm",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 16,
+      "invalid_seconds_total": 0.9500000000000001,
+      "break_events_total": 3
+    },
+    {
+      "group": "residual",
+      "gate": "rope_force_nonzero",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 0,
+      "invalid_seconds_total": 0.0,
+      "break_events_total": 0
+    },
+    {
+      "group": "residual",
+      "gate": "thumb_load_le_0_02n",
+      "failed_policy_episode_pairs": 871,
+      "failed_pairs_with_gate": 755,
+      "invalid_seconds_total": 453.84999999999906,
+      "break_events_total": 51
+    }
+  ],
+  "initial_states_exactly_paired": true,
+  "uncertainty": "Descriptive hierarchical bootstrap: resample training origins and shared test cases. Three origins only.",
+  "audit_scope": "All-case outcome/quality statistics; policy/reference/native replay audit covers saved previews only."
+}

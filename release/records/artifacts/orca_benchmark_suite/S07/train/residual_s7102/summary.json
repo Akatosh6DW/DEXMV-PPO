@@ -1,0 +1,135 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "success30": 0.5,
+      "success15": 0.5,
+      "pad_hold_sec": 27.487500190734863,
+      "broad_hold_sec": 28.99375021457672,
+      "pad_pair_fraction": 0.75,
+      "residual_rms_rad": 0.0,
+      "max_penetration_m": 0.0013156275963410735,
+      "forbidden_rate": 0.125,
+      "peak_force_n": 5.60545539855957,
+      "step": 0,
+      "elapsed_sec": 26.358124176000047
+    },
+    {
+      "success30": 0.875,
+      "success15": 0.875,
+      "pad_hold_sec": 36.68749952316284,
+      "broad_hold_sec": 36.97499942779541,
+      "pad_pair_fraction": 0.9922402128577232,
+      "residual_rms_rad": 0.0013093440065858886,
+      "max_penetration_m": 0.0009327890002168715,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.625553131103516,
+      "step": 20480,
+      "elapsed_sec": 118.33283603799998
+    },
+    {
+      "success30": 0.5,
+      "success15": 0.5,
+      "pad_hold_sec": 27.574999809265137,
+      "broad_hold_sec": 28.131249845027924,
+      "pad_pair_fraction": 0.75,
+      "residual_rms_rad": 0.0017684208432910964,
+      "max_penetration_m": 0.0009350299369543791,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.252197742462158,
+      "step": 40960,
+      "elapsed_sec": 202.18315866900014
+    },
+    {
+      "success30": 0.625,
+      "success15": 0.625,
+      "pad_hold_sec": 32.18749952316284,
+      "broad_hold_sec": 32.18749952316284,
+      "pad_pair_fraction": 0.875,
+      "residual_rms_rad": 0.002176216206862591,
+      "max_penetration_m": 0.000931969319935888,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 7.4650092124938965,
+      "step": 61440,
+      "elapsed_sec": 286.571894218
+    },
+    {
+      "success30": 0.75,
+      "success15": 0.75,
+      "pad_hold_sec": 32.29374980926514,
+      "broad_hold_sec": 32.40624952316284,
+      "pad_pair_fraction": 0.8719635605812073,
+      "residual_rms_rad": 0.002472900290740654,
+      "max_penetration_m": 0.0009468104690313339,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.978097438812256,
+      "step": 81920,
+      "elapsed_sec": 370.92958691399997
+    },
+    {
+      "success30": 1.0,
+      "success15": 1.0,
+      "pad_hold_sec": 37.04999923706055,
+      "broad_hold_sec": 37.04999923706055,
+      "pad_pair_fraction": 1.0,
+      "residual_rms_rad": 0.0030451968195848167,
+      "max_penetration_m": 0.0009633481386117637,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.999855995178223,
+      "step": 102400,
+      "elapsed_sec": 456.4376723040001
+    },
+    {
+      "success30": 1.0,
+      "success15": 1.0,
+      "pad_hold_sec": 37.04999923706055,
+      "broad_hold_sec": 37.04999923706055,
+      "pad_pair_fraction": 1.0,
+      "residual_rms_rad": 0.0032869181595742702,
+      "max_penetration_m": 0.0009662433876655996,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 6.430820941925049,
+      "step": 122880,
+      "elapsed_sec": 541.5726414710001
+    },
+    {
+      "success30": 0.625,
+      "success15": 0.625,
+      "pad_hold_sec": 26.418749570846558,
+      "broad_hold_sec": 27.72499942779541,
+      "pad_pair_fraction": 0.7147435918450356,
+      "residual_rms_rad": 0.003957108448958024,
+      "max_penetration_m": 0.0009691278683021665,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 5.848203659057617,
+      "step": 143360,
+      "elapsed_sec": 624.8977982729999
+    },
+    {
+      "success30": 0.875,
+      "success15": 0.875,
+      "pad_hold_sec": 32.31874942779541,
+      "broad_hold_sec": 32.69374933838844,
+      "pad_pair_fraction": 0.8723009452223778,
+      "residual_rms_rad": 0.0047680981806479394,
+      "max_penetration_m": 0.001585011137649417,
+      "forbidden_rate": 0.0,
+      "peak_force_n": 6.32882022857666,
+      "step": 163840,
+      "elapsed_sec": 709.1156066699999
+    }
+  ],
+  "final_step": 163840,
+  "success30": {
+    "first": 0.5,
+    "last": 0.875,
+    "max": 1.0,
+    "best_step": 102400
+  },
+  "pad_hold_sec": {
+    "first": 27.487500190734863,
+    "last": 32.31874942779541,
+    "max": 37.04999923706055,
+    "best_step": 102400
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "status": "post-hoc exploratory; not part of the S02 preregistered hypothesis families",
+  "seed_power_b0_residual_vs_ppo": [
+    {
+      "seeds_per_method": 10,
+      "power_alpha_0_0167": 0.561,
+      "power_alpha_0_01": 0.433
+    },
+    {
+      "seeds_per_method": 15,
+      "power_alpha_0_0167": 0.896,
+      "power_alpha_0_01": 0.838
+    },
+    {
+      "seeds_per_method": 20,
+      "power_alpha_0_0167": 0.98,
+      "power_alpha_0_01": 0.962
+    },
+    {
+      "seeds_per_method": 30,
+      "power_alpha_0_0167": 1.0,
+      "power_alpha_0_01": 0.998
+    }
+  ],
+  "residual_vs_reference_precision": [
+    {
+      "benchmark": "B0_nominal",
+      "difference_pp": 1.8,
+      "se_test_states": 2.796947366838411,
+      "se_training_seeds": 1.1259563836036357,
+      "approx_total_se_200_states": 3.0150775032562764,
+      "approx_total_se_1000_states": 1.682961880837068,
+      "approx_total_se_2000_states": 1.431806284056684
+    },
+    {
+      "benchmark": "B1_position",
+      "difference_pp": 8.6,
+      "se_test_states": 2.282817618954049,
+      "se_training_seeds": 0.924361641590803,
+      "approx_total_se_200_states": 2.462864333626901,
+      "approx_total_se_1000_states": 1.3772057583113175,
+      "approx_total_se_2000_states": 1.1728469945330242
+    },
+    {
+      "benchmark": "B2_yaw",
+      "difference_pp": 4.0,
+      "se_test_states": 2.436118504267428,
+      "se_training_seeds": 0.7637626158259733,
+      "approx_total_se_200_states": 2.5530387188931356,
+      "approx_total_se_1000_states": 1.330514188838348,
+      "approx_total_se_2000_states": 1.0848044386048346
+    },
+    {
+      "benchmark": "B3_friction",
+      "difference_pp": 0.7,
+      "se_test_states": 1.101643359010647,
+      "se_training_seeds": 0.34318767136623335,
+      "approx_total_se_200_states": 1.1538612863901965,
+      "approx_total_se_1000_states": 0.6004176845065692,
+      "approx_total_se_2000_states": 0.4890190045621989
+    },
+    {
+      "benchmark": "B4_mass",
+      "difference_pp": -2.45,
+      "se_test_states": 2.773254804567239,
+      "se_training_seeds": 1.6987740677716188,
+      "approx_total_se_200_states": 3.2521954960285844,
+      "approx_total_se_1000_states": 2.103335868458575,
+      "approx_total_se_2000_states": 1.9117864824396211
+    },
+    {
+      "benchmark": "B5_push",
+      "difference_pp": 2.0,
+      "se_test_states": 2.86812319353028,
+      "se_training_seeds": 1.0110500592068734,
+      "approx_total_se_200_states": 3.041110467491859,
+      "approx_total_se_1000_states": 1.6332324858621594,
+      "approx_total_se_2000_states": 1.3582471378761876
+    }
+  ],
+  "power_method": "bootstrap seeds from observed S02 per-seed results; two-sided sign-flip test; plug-in estimate, optimistic because it treats 10 observed seeds as the population"
+}

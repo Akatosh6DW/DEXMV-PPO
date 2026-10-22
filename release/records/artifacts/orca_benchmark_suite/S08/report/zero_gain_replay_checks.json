@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 8501,
+    "differences": {
+      "qpos": 0.0,
+      "ctrl": 0.0,
+      "hold": 0.0,
+      "active": 0.0
+    },
+    "exact": true
+  },
+  {
+    "seed": 8502,
+    "differences": {
+      "qpos": 0.0,
+      "ctrl": 0.0,
+      "hold": 0.0,
+      "active": 0.0
+    },
+    "exact": true
+  },
+  {
+    "seed": 8503,
+    "differences": {
+      "qpos": 0.0,
+      "ctrl": 0.0,
+      "hold": 0.0,
+      "active": 0.0
+    },
+    "exact": true
+  }
+]

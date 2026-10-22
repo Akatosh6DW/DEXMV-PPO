@@ -36,3 +36,11 @@ tensorboard/
 *.npz
 
 # External code is tracked through Git submodules.
+
+# Local experiment history; curated publication assets use a separate manifest.
+/artifacts/
+/deliverables/
+/MUJOCO_LOG.TXT
+
+# Curated references are part of the published policy interface.
+!/release/blobs/*.npz

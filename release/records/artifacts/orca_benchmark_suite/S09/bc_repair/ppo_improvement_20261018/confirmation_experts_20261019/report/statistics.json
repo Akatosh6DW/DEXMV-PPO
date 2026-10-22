@@ -1,0 +1,147 @@
+{
+  "status": "completed_one_origin_confirmation",
+  "plan_sha256": "68ffc59dec1e4cc31fdb206dbe61a6e0246ba7de6239532a1af1cd212a4e0e91",
+  "summaries": [
+    {
+      "group": "bc",
+      "successes": 93,
+      "n": 256,
+      "success_rate": 0.36328125,
+      "ci95": [
+        0.3067900082905613,
+        0.4238149524508879
+      ],
+      "mean_hold_sec": 16.306054753280478,
+      "max_released_depth_mm": 20.472973585128784,
+      "max_all_depth_mm": 20.472973585128784,
+      "successful_peak_force_n": 19.147228240966797,
+      "peak_force_n": 252.16946411132812,
+      "all_depth_success_rate": 0.36328125,
+      "path_online_steps": 0,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "group": "stage",
+      "successes": 87,
+      "n": 256,
+      "success_rate": 0.33984375,
+      "ci95": [
+        0.28457152593543,
+        0.39985142807598195
+      ],
+      "mean_hold_sec": 15.972656324214768,
+      "max_released_depth_mm": 12.309771962463856,
+      "max_all_depth_mm": 12.309771962463856,
+      "successful_peak_force_n": 27.862215042114258,
+      "peak_force_n": 79.17369079589844,
+      "all_depth_success_rate": 0.33984375,
+      "path_online_steps": 655360,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "group": "single_last",
+      "successes": 78,
+      "n": 256,
+      "success_rate": 0.3046875,
+      "ci95": [
+        0.25153621542356636,
+        0.36361372849278967
+      ],
+      "mean_hold_sec": 14.779296953929588,
+      "max_released_depth_mm": 7.168755866587162,
+      "max_all_depth_mm": 7.168755866587162,
+      "successful_peak_force_n": 31.806751251220703,
+      "peak_force_n": 52.335086822509766,
+      "all_depth_success_rate": 0.3046875,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 1
+    },
+    {
+      "group": "expert_last",
+      "successes": 113,
+      "n": 256,
+      "success_rate": 0.44140625,
+      "ci95": [
+        0.38189072167350635,
+        0.5026542615014005
+      ],
+      "mean_hold_sec": 17.671875051193638,
+      "max_released_depth_mm": 2.9985453002154827,
+      "max_all_depth_mm": 10.636111721396446,
+      "successful_peak_force_n": 44.72999572753906,
+      "peak_force_n": 79.01505279541016,
+      "all_depth_success_rate": 0.44140625,
+      "path_online_steps": 1310720,
+      "actor_parameter_multiplier": 6
+    }
+  ],
+  "differences": [
+    {
+      "contrast": "expert_last minus bc",
+      "difference": 0.078125,
+      "ci95": [
+        0.0078125,
+        0.1484375
+      ],
+      "exact_mcnemar_p": 0.03752953363441315,
+      "retained": 61,
+      "lost": 32,
+      "gained": 52,
+      "neither": 111,
+      "holm_p_three_comparisons": 0.03752953363441315
+    },
+    {
+      "contrast": "expert_last minus stage",
+      "difference": 0.1015625,
+      "ci95": [
+        0.05078125,
+        0.15234375
+      ],
+      "exact_mcnemar_p": 0.00030586400160359517,
+      "retained": 75,
+      "lost": 12,
+      "gained": 38,
+      "neither": 131,
+      "holm_p_three_comparisons": 0.0006117280032071903
+    },
+    {
+      "contrast": "expert_last minus single_last",
+      "difference": 0.13671875,
+      "ci95": [
+        0.078125,
+        0.19921875
+      ],
+      "exact_mcnemar_p": 1.5717029852739467e-05,
+      "retained": 63,
+      "lost": 15,
+      "gained": 50,
+      "neither": 128,
+      "holm_p_three_comparisons": 4.71510895582184e-05
+    }
+  ],
+  "evidence": {
+    "bc": {
+      "config_sha256": "ce590b4524340cf920bee53421ba5862de9d2ff9cffbb244aa8d08ee8d0bfcdc",
+      "episodes_sha256": "c6cf3f496f1f887d81811ce83e60c6be0152fb187bb2679e2107a8cf64ce96bf",
+      "audit_sha256": "6013a00751247c157490b011adcfea6d8c703690abd89c2be50f73cea3a5238f"
+    },
+    "stage": {
+      "config_sha256": "88e1ce96fbc0f869d6ba6a0ec7111402c93da816f3882aeda9d760e326713ee5",
+      "episodes_sha256": "1fbb744277a0a585588d369aaf39db55e4f1c07cf3623aa5af6520ace8ea3666",
+      "audit_sha256": "8d4e0937ea704be7ca899a37f510a35d0b50cc9187ed18d17d75d62eaa0c66d4"
+    },
+    "single_last": {
+      "config_sha256": "06623d74d96485aee8863ddad586f2a458e14c654ddaef42fa9b835f830e5f1a",
+      "episodes_sha256": "74993375323e492057a44bfa92c6f9c666516d778abbbf4cdef03c592e7531f5",
+      "audit_sha256": "794b2897b7c10d7957d6e60f810a073d1ebe94a786f283c82407bb4ff6acd962"
+    },
+    "expert_last": {
+      "config_sha256": "35525e3a79260201e70947aa3797e9e81b04d7418a69429a56da8a4dbf2083eb",
+      "episodes_sha256": "b3303cb1cab3ce3c9896fef4b34d797302ae7dda19a08ef398886c3fd3e2c715",
+      "audit_sha256": "b5bb428b3fc9a48129a8f4eb28c1e91126a9435acd61dd11ddc49c286cc0b9fc"
+    }
+  },
+  "source_sha256": "d5735938601788deade3814c16b780c7ab1f4110258ad915b7de4abb06904398",
+  "limitations": "One BC/training origin, sixfold actor capacity; not independent training replications or equal search cost. 256 paired states measure initial-state uncertainty only.",
+  "interval_scope": "Conditional on fixed policies; initial-state uncertainty, not training-seed variance"
+}

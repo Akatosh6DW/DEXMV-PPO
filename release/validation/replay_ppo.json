@@ -1,0 +1,14 @@
+{
+  "case": "ppo_s22101",
+  "seed": 220000,
+  "steps": 103,
+  "backend": "cpu",
+  "policy_sha256": "7b828fe5b22c52188159de870d733c700d6a67e2f1c7e8c3a25abb7272476f06",
+  "final_hold_sec": 0.0,
+  "best_hold_sec": 0.0,
+  "success30": false,
+  "done": true,
+  "inputs": "release only, no artifacts reads required",
+  "python_history_open_guard": true,
+  "scope": "single-case portable XML inference check, not a repetition of the GPU batch benchmark"
+}

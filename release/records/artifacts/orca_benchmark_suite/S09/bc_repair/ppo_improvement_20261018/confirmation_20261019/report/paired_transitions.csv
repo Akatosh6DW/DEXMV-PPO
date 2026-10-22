@@ -1,0 +1,10 @@
+group,training_seed,retained,lost,gained,neither
+bc_ppo,14101,164,27,59,262
+bc_ppo,14102,118,84,103,207
+bc_ppo,14103,131,75,75,231
+bc_ppo_last,14101,71,120,116,205
+bc_ppo_last,14102,63,139,104,206
+bc_ppo_last,14103,49,157,84,222
+residual,14101,217,11,4,280
+residual,14102,217,11,7,277
+residual,14103,209,19,11,273
