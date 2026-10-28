@@ -93,6 +93,7 @@ def main():
     provenance = dict(case=a.case, mode="fresh_training" if a.from_scratch else
         "weights_only_warm_start" if a.steps else "evaluation", additional_steps=a.steps,
         original_steps=config["steps"], optimizer_restored=False, rng_restored=False,
+        initialization_checkpoint_sha256=None if a.from_scratch else digest(checkpoint),
         original_checkpoint_sha256=digest(checkpoint), original_model_sha256=config["model_sha256"],
         runtime_model_sha256=runtime_hash, scene_equivalence="XML identical after replacing asset paths by verified content hashes",
         protocol_sha256=digest(checked(study + "/protocol.json")), release_tag=manifest["tag"])

@@ -51,6 +51,7 @@ guided 会先用配套样本做 10000 次 BC 更新。另两组将方法改为 p
 - [原发布清单](../../release/manifest.json)：S02/S04、圆柱 S02、S05–S10、BC 修复与消融实验，245 个唯一参数载荷、1141 项评估。
 - [扩展清单](../../release/developer_manifest.json)：S12 最终与开发记录、学习样本、逐帧轨迹、视频、SHA-256、来源路径和附件位置。
 - [S12 正式统计表](../../release/records/artifacts/orca_benchmark_suite/S12/study_v2/report/aggregate.csv)、[人话报告](../experiments/S12/实验总结.md)。
+- [42段去重手心视频索引](../../release/VIDEOS.md)：保留任务、方法、初态与外观/碰撞版本名称。
 
 权重不是单独通用模型，必须配套观测定义、动作语义、参考和场景。历史 `run_config.json` 中的旧绝对路径是来源记录，不是新机器启动命令。S10 发布推理入口仍是 `scripts/replay_release_s10.py`；S02/S04 等旧权重及源码已完整保留，但不声称所有历史训练器都拥有本次新增的 S12 一键续训适配。
 

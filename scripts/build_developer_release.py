@@ -228,9 +228,16 @@ def main():
                     config=entries[folder+"/run_config.json"]["storage"],
                     role="BC_initial" if name.startswith("bc_") else "final_51200_steps"))
     with (RELEASE / "POLICIES.csv").open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(policy_rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(policy_rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(policy_rows)
+    lines = ["# Published Grasp Videos", "", "One link per unique payload. Original descriptive names are preserved below.", ""]
+    video_keys = set()
+    for original, entry in sorted(entries.items(), key=lambda item: (item[1]["role"] != "curated_video", item[0])):
+        if original.endswith(".mp4") and entry["sha256"] not in video_keys:
+            video_keys.add(entry["sha256"])
+            lines.append(f"- [{Path(original).name}]({entry['storage']})")
+    (RELEASE / "VIDEOS.md").write_text("\n".join(lines)+"\n")
     print(json.dumps(summary, indent=2))
 
 

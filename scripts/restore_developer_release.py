@@ -137,8 +137,10 @@ def main():
     parser.add_argument("--archive-dir", type=Path)
     parser.add_argument("--verify-only", action="store_true")
     args = parser.parse_args()
-    print(json.dumps(restore(all_records=args.all, trajectories=args.trajectories,
-        archive_dir=args.archive_dir, verify_only=args.verify_only), indent=2))
+    report = restore(all_records=args.all, trajectories=args.trajectories,
+                     archive_dir=args.archive_dir, verify_only=args.verify_only)
+    print(json.dumps({**report, "relocated": len(report["relocated"]),
+                      "detail": "outputs/release_restore.json" if not args.verify_only else None}, indent=2))
 
 
 if __name__ == "__main__":

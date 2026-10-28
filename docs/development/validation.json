@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-28",
+  "scope": "Developer handoff smoke checks, not a repeated statistical benchmark",
+  "clean_checkout": "/tmp/dexmv-developer-check",
+  "isolated_cpu_environment": "/tmp/dexmv-publication-env",
+  "initial_remote_ci": {
+    "run_id": 40657945415,
+    "commit": "b55741d8264f9c0cd2cf0a85d74e4fc43b0576f5",
+    "result": "success",
+    "url": "https://github.com/Akatosh6DW/DEXMV-PPO/actions/runs/40657945415"
+  },
+  "tests": {
+    "developer_release": 4,
+    "s12_cpu": 21,
+    "pip_check": "passed",
+    "historical_release": {"files": 6049, "policies": 245, "reference_arrays": 153, "scenes": 7},
+    "expanded_release": {"unique_git_payloads_verified": 5422, "archive_trace_payloads_verified": 2070}
+  },
+  "warm_starts": [
+    {
+      "case": "guided_s25211",
+      "additional_steps": 640,
+      "environment": "existing aero_rl, clean checkout",
+      "initial_checkpoint_sha256": "e72efc06af4d2e989f69e5e85e86b8376a573f953b6d53cb8b01273c7dc00779",
+      "actor_l2_change": 0.018525606021285057,
+      "critic_l2_change": 0.07266143709421158,
+      "all_parameter_differences_finite": true,
+      "development_seed": 251010,
+      "before_success": true,
+      "after_success": true,
+      "after_hold_sec": 16.700000762939453
+    },
+    {
+      "case": "residual_s25211",
+      "additional_steps": 640,
+      "environment": "new isolated CPU environment, clean checkout",
+      "initial_checkpoint_sha256": "cf99c28d936c7d047472dec8a38c69870953e4c6177eb264485b8d2ec01a912b",
+      "actor_l2_change": 0.03514222428202629,
+      "critic_l2_change": 0.07668324559926987,
+      "all_parameter_differences_finite": true,
+      "development_seed": 251010,
+      "before_success": false,
+      "after_success": false,
+      "after_hold_sec": 8.050000190734863
+    }
+  ],
+  "fresh_bc": {
+    "case": "guided_s25211",
+    "environment": "new isolated CPU environment",
+    "supervised_updates": 10000,
+    "ppo_steps": 0,
+    "development_seed": 251010,
+    "success": true,
+    "hold_sec": 16.700000762939453
+  },
+  "limits": [
+    "Optimizer, RNG and rollout state are not restored from historical weights",
+    "No claim of bitwise identity between CPU and original GPU evaluation",
+    "Legacy DexMV Python 3.7 environment not reinstalled during this publication",
+    "CI validates installation and interfaces, not real hardware or asymptotic training quality"
+  ]
+}
