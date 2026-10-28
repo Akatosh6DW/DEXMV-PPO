@@ -47,3 +47,6 @@ tensorboard/
 !/release/blobs/*.mp4
 !/release/records/**/*.log
 /release_downloads/
+# Release is curated by its manifest; retain even records under logs/ folders.
+!/release/**/
+!/release/**

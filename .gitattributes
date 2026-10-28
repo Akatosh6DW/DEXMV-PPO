@@ -1,0 +1,2 @@
+# Frozen records must retain exact bytes, including the original CSV line endings.
+release/** -text -whitespace
