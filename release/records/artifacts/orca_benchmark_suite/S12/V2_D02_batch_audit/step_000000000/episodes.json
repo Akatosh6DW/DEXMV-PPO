@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 250100,
+    "success15": true,
+    "best_hold_sec": 16.700000762939453,
+    "duration_sec": 24.0,
+    "return_sum": 222.23668278718833,
+    "max_principal_strain": 0.16083750128746033,
+    "max_penetration_m": 0.0008359185303561389,
+    "peak_force_n": 0.5731744170188904,
+    "min_volume_ratio": 0.8801389336585999,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250101,
+    "success15": true,
+    "best_hold_sec": 16.75,
+    "duration_sec": 24.0,
+    "return_sum": 224.37224375578808,
+    "max_principal_strain": 0.2150743454694748,
+    "max_penetration_m": 0.0007957897032611072,
+    "peak_force_n": 0.5071387887001038,
+    "min_volume_ratio": 0.8398249745368958,
+    "final_support_force_n": 0.0
+  }
+]

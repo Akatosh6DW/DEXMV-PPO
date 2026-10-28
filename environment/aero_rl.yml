@@ -1,0 +1,7 @@
+name: aero_rl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.14
+  - pip
+  - ffmpeg

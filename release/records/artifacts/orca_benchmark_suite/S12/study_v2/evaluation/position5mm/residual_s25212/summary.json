@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "count": 16,
+  "success15": 0.4375,
+  "physical_success15": 0.9375,
+  "hold_sec": 13.046875149011612,
+  "strain_max": 0.9998477697372437,
+  "depth_max": 0.0009852852672338486
+}

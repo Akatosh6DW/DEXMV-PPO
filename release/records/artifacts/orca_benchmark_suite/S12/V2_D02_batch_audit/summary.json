@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "step": 0,
+      "elapsed_sec": 51.22341196799971,
+      "success15": 1.0,
+      "hold_sec": 16.725000381469727,
+      "return_mean": 223.3044632714882,
+      "strain_max": 0.2150743454694748,
+      "penetration_max": 0.0008359185303561389,
+      "force_max": 0.5731744170188904
+    }
+  ],
+  "success15": {
+    "first": 1.0,
+    "last": 1.0,
+    "max": 1.0,
+    "best_step": 0
+  },
+  "hold_sec": {
+    "first": 16.725000381469727,
+    "last": 16.725000381469727,
+    "max": 16.725000381469727,
+    "best_step": 0
+  }
+}

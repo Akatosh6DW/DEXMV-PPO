@@ -1,0 +1,11 @@
+{
+  "dataset": "artifacts/orca_benchmark_suite/S12/V2_D01_raise3mm/trajectories.npz",
+  "dataset_sha256": "aadabca9c475e7eff987e59b546a445b4d1b5076ddcc69274ffb7a44b8beb59a",
+  "observation_shape": [4, 480, 93],
+  "action_shape": [4, 480, 17],
+  "total_rows": 1920,
+  "unique_phase_action_pairs": 480,
+  "max_between_episode_action_difference": 0.0,
+  "max_between_episode_phase_difference": 0.0,
+  "interpretation": "Four distinct physical initial states replay one identical reference action curve. Phase-only BC sees repeated phase/action pairs, not independent recovery demonstrations. Episode-wise BC validation monitors curve fitting, not new-motion generalization."
+}

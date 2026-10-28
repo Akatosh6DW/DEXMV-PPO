@@ -1,0 +1,13 @@
+{
+  "trace": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/bc_initial_s25211/trajectory_260000.npz",
+  "frames": 227,
+  "fps": 20,
+  "camera": "palm",
+  "mode": "visual",
+  "video": "S12_soft_cylinder_bc_initial_s25211_i260000_palm_visual_success.mp4",
+  "stop_reason": "four_seconds_stable_hold; full_episode_verified_separately",
+  "geometry_time_offset_sec": -0.0002,
+  "maximum_vertex_error_m": 3.1305688374949625e-08,
+  "full_episode_success": true,
+  "geometry": "true deformable surface; optional massless hand CAD"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "ppo",
+    "train_seed": 25211,
+    "initial_seed": 260000,
+    "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/ppo_s25211/trajectory_260000.npz",
+    "success15": false,
+    "duration_sec": 5.300000000000001
+  },
+  {
+    "method": "bc_initial",
+    "train_seed": 25211,
+    "initial_seed": 260000,
+    "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/bc_initial_s25211/trajectory_260000.npz",
+    "success15": true,
+    "duration_sec": 24.0
+  },
+  {
+    "method": "guided",
+    "train_seed": 25211,
+    "initial_seed": 260000,
+    "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25211/trajectory_260000.npz",
+    "success15": true,
+    "duration_sec": 24.0
+  },
+  {
+    "method": "reference",
+    "train_seed": null,
+    "initial_seed": 260000,
+    "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/reference/trajectory_260000.npz",
+    "success15": false,
+    "duration_sec": 24.0
+  },
+  {
+    "method": "residual",
+    "train_seed": 25211,
+    "initial_seed": 260000,
+    "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/residual_s25211/trajectory_260000.npz",
+    "success15": false,
+    "duration_sec": 24.0
+  }
+]

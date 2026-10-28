@@ -1,0 +1,98 @@
+[
+  {
+    "seed": 250100,
+    "success15": true,
+    "best_hold_sec": 16.700000762939453,
+    "duration_sec": 24.0,
+    "return_sum": 222.23668278718833,
+    "max_principal_strain": 0.16083750128746033,
+    "max_penetration_m": 0.0008359185303561389,
+    "peak_force_n": 0.5731744170188904,
+    "min_volume_ratio": 0.8801389336585999,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250101,
+    "success15": true,
+    "best_hold_sec": 16.75,
+    "duration_sec": 24.0,
+    "return_sum": 224.37224375578808,
+    "max_principal_strain": 0.2150743454694748,
+    "max_penetration_m": 0.0007957897032611072,
+    "peak_force_n": 0.5071387887001038,
+    "min_volume_ratio": 0.8398249745368958,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250102,
+    "success15": true,
+    "best_hold_sec": 16.700000762939453,
+    "duration_sec": 24.0,
+    "return_sum": 223.5252770408988,
+    "max_principal_strain": 0.23265641927719116,
+    "max_penetration_m": 0.0008340766071341932,
+    "peak_force_n": 0.5699880123138428,
+    "min_volume_ratio": 0.8122480511665344,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250103,
+    "success15": false,
+    "best_hold_sec": 6.25,
+    "duration_sec": 24.0,
+    "return_sum": 135.2736626303522,
+    "max_principal_strain": 0.12316180020570755,
+    "max_penetration_m": 0.000802870315965265,
+    "peak_force_n": 0.5190038084983826,
+    "min_volume_ratio": 0.938081681728363,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250104,
+    "success15": false,
+    "best_hold_sec": 4.650000095367432,
+    "duration_sec": 24.0,
+    "return_sum": 136.67118155077333,
+    "max_principal_strain": 0.10848458856344223,
+    "max_penetration_m": 0.0009114679996855557,
+    "peak_force_n": 0.7186235785484314,
+    "min_volume_ratio": 0.9481738209724426,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250105,
+    "success15": true,
+    "best_hold_sec": 16.700000762939453,
+    "duration_sec": 24.0,
+    "return_sum": 223.3481638112571,
+    "max_principal_strain": 0.2213979810476303,
+    "max_penetration_m": 0.0008303509093821049,
+    "peak_force_n": 0.5635879039764404,
+    "min_volume_ratio": 0.8209146857261658,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250106,
+    "success15": false,
+    "best_hold_sec": 11.800000190734863,
+    "duration_sec": 24.0,
+    "return_sum": 174.33925290923798,
+    "max_principal_strain": 0.1985560655593872,
+    "max_penetration_m": 0.000800995621830225,
+    "peak_force_n": 0.5153050422668457,
+    "min_volume_ratio": 0.8762091994285583,
+    "final_support_force_n": 0.0
+  },
+  {
+    "seed": 250107,
+    "success15": false,
+    "best_hold_sec": 4.450000286102295,
+    "duration_sec": 24.0,
+    "return_sum": 142.31068482471164,
+    "max_principal_strain": 0.11879633367061615,
+    "max_penetration_m": 0.0008151729707606137,
+    "peak_force_n": 0.5381578803062439,
+    "min_volume_ratio": 0.937322199344635,
+    "final_support_force_n": 0.0
+  }
+]

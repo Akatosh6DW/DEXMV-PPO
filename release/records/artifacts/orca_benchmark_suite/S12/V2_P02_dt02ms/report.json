@@ -1,0 +1,55 @@
+{
+  "config": {
+    "mesh_version": "conforming_prism_v2",
+    "young": 10000.0,
+    "poisson": 0.3,
+    "damping": 0.002,
+    "mass": 0.035,
+    "radius": 0.026,
+    "half_length": 0.026,
+    "contact_radius": 0.0005,
+    "sectors": 12,
+    "layers": 3,
+    "dof": "full",
+    "timestep": 0.0002,
+    "control_dt": 0.05,
+    "approach_sec": 2.0,
+    "release_sec": 5.0,
+    "lift_start": 6.0,
+    "lift_sec": 2.0,
+    "lift_m": 0.05,
+    "episode_sec": 24.0,
+    "hold_sec": 15.0,
+    "max_strain": 0.3,
+    "max_penetration": 0.003,
+    "max_force": 30.0
+  },
+  "seed": 250000,
+  "grip_scale": 1.0,
+  "offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "duration_sec": 23.999999999970743,
+  "success15": false,
+  "best_hold_sec": 8.499999999999986,
+  "final_center": [
+    0.0775077754192889,
+    0.04746904776919905,
+    0.5461763856303972
+  ],
+  "max_principal_strain": 0.12428640475566588,
+  "max_penetration_m": 0.0007952867271938018,
+  "peak_force_n": 0.5062928698751803,
+  "min_volume_ratio": 0.9368336247738113,
+  "final_loads": [
+    0.6216407145769484,
+    0.07236823791909863,
+    0.22478575494402492,
+    0.1608936522115121,
+    0.0
+  ],
+  "final_support_force_n": 0.0,
+  "wall_sec": 42.77850800300075
+}

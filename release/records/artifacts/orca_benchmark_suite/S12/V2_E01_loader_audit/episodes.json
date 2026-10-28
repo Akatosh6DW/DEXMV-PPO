@@ -1,0 +1,38 @@
+[
+  {
+    "seed": 251000,
+    "success15": false,
+    "best_hold_sec": 0.0,
+    "duration_sec": 5.3500000000000005,
+    "return_sum": -1.2214949173503555,
+    "max_principal_strain": 0.217587411403656,
+    "max_penetration_m": 0.0010478211333975196,
+    "peak_force_n": 0.5683948993682861,
+    "min_volume_ratio": 0.8710042834281921,
+    "final_support_force_n": 0.0,
+    "physical_success15": false,
+    "physical_best_hold_sec": 0.0,
+    "forbidden_force_max_n": 0.2482304722070694,
+    "final_center_z": 0.3688868284225464,
+    "post_release_strain_max": 0.217587411403656,
+    "requested_residual_rms": 0.0
+  },
+  {
+    "seed": 251001,
+    "success15": false,
+    "best_hold_sec": 0.0,
+    "duration_sec": 5.3500000000000005,
+    "return_sum": -1.2483034269534983,
+    "max_principal_strain": 0.2679122984409332,
+    "max_penetration_m": 0.0010184847051277757,
+    "peak_force_n": 0.5374065637588501,
+    "min_volume_ratio": 0.8300468325614929,
+    "final_support_force_n": 0.6284043788909912,
+    "physical_success15": false,
+    "physical_best_hold_sec": 0.0,
+    "forbidden_force_max_n": 0.03537807986140251,
+    "final_center_z": 0.3947345018386841,
+    "post_release_strain_max": 0.2679122984409332,
+    "requested_residual_rms": 0.0
+  }
+]

@@ -1,0 +1,806 @@
+{
+  "status": "completed_with_physics_failures",
+  "data_integrity": "passed",
+  "all_episodes_physically_valid": false,
+  "physics_failures": [
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260001,
+      "first_time_sec": 4.0,
+      "min_volume_ratio": 0.03935324400663376,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260001.npz"
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260003,
+      "first_time_sec": 4.2,
+      "min_volume_ratio": 0.005929182283580303,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260003.npz"
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260005,
+      "first_time_sec": 4.05,
+      "min_volume_ratio": 0.03487567603588104,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260005.npz"
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260020,
+      "first_time_sec": 3.35,
+      "min_volume_ratio": -0.881019651889801,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260020.npz"
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260021,
+      "first_time_sec": 4.0,
+      "min_volume_ratio": 0.04195695370435715,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260021.npz"
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260036,
+      "first_time_sec": 4.1000000000000005,
+      "min_volume_ratio": -0.012186151929199696,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260036.npz"
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260058,
+      "first_time_sec": 4.05,
+      "min_volume_ratio": -0.08847206085920334,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260058.npz"
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "seed": 260063,
+      "first_time_sec": 4.05,
+      "min_volume_ratio": -0.013440823182463646,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/guided_s25212/trajectory_260063.npz"
+    },
+    {
+      "job": "position5mm_guided_s25211",
+      "seed": 261011,
+      "first_time_sec": 4.05,
+      "min_volume_ratio": -0.0657346174120903,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/guided_s25211/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_bc_initial_s25211",
+      "seed": 261011,
+      "first_time_sec": 3.9000000000000004,
+      "min_volume_ratio": 0.011644264683127403,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/bc_initial_s25211/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_residual_s25211",
+      "seed": 261011,
+      "first_time_sec": 3.6500000000000004,
+      "min_volume_ratio": 0.031215358525514603,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/residual_s25211/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_guided_s25212",
+      "seed": 261004,
+      "first_time_sec": 4.1000000000000005,
+      "min_volume_ratio": -0.01111789420247078,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/guided_s25212/trajectory_261004.npz"
+    },
+    {
+      "job": "position5mm_guided_s25212",
+      "seed": 261005,
+      "first_time_sec": 4.0,
+      "min_volume_ratio": 0.04256194084882736,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/guided_s25212/trajectory_261005.npz"
+    },
+    {
+      "job": "position5mm_bc_initial_s25212",
+      "seed": 261011,
+      "first_time_sec": 4.05,
+      "min_volume_ratio": -0.10744836926460266,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/bc_initial_s25212/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_residual_s25212",
+      "seed": 261011,
+      "first_time_sec": 3.85,
+      "min_volume_ratio": -0.06695029139518738,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/residual_s25212/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_guided_s25213",
+      "seed": 261011,
+      "first_time_sec": 3.7,
+      "min_volume_ratio": 0.0075155580416321754,
+      "inverted": false,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/guided_s25213/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_bc_initial_s25213",
+      "seed": 261011,
+      "first_time_sec": 4.05,
+      "min_volume_ratio": -0.27821865677833557,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/bc_initial_s25213/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_residual_s25213",
+      "seed": 261011,
+      "first_time_sec": 3.85,
+      "min_volume_ratio": -0.061193156987428665,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/residual_s25213/trajectory_261011.npz"
+    },
+    {
+      "job": "position5mm_reference",
+      "seed": 261011,
+      "first_time_sec": 3.85,
+      "min_volume_ratio": -0.2096550613641739,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/position5mm/reference/trajectory_261011.npz"
+    },
+    {
+      "job": "soft5kpa_guided_s25212",
+      "seed": 262003,
+      "first_time_sec": 3.6,
+      "min_volume_ratio": -0.053313247859478,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/soft5kpa/guided_s25212/trajectory_262003.npz"
+    },
+    {
+      "job": "soft5kpa_guided_s25212",
+      "seed": 262007,
+      "first_time_sec": 3.7,
+      "min_volume_ratio": -0.00825057365000248,
+      "inverted": true,
+      "trace": "artifacts/orca_benchmark_suite/S12/study_v2/evaluation/soft5kpa/guided_s25212/trajectory_262007.npz"
+    }
+  ],
+  "protocol_sha256": "773b9467ba70e51d89621f23dfa97c9d62a411f903d527b3d6349a4f2dbe6c0d",
+  "training_updates": [
+    {
+      "run": "ppo_s25211",
+      "actor_l2_change": 0.35136744342105275,
+      "critic_l2_change": 1.8365905630366735
+    },
+    {
+      "run": "guided_s25211",
+      "actor_l2_change": 0.18603878051880415,
+      "critic_l2_change": 4.177292728838372
+    },
+    {
+      "run": "residual_s25211",
+      "actor_l2_change": 0.47137805984614256,
+      "critic_l2_change": 5.03069021230534
+    },
+    {
+      "run": "ppo_s25212",
+      "actor_l2_change": 0.29039091601501216,
+      "critic_l2_change": 1.7523796751273542
+    },
+    {
+      "run": "guided_s25212",
+      "actor_l2_change": 0.16657021569054178,
+      "critic_l2_change": 3.7672023685272267
+    },
+    {
+      "run": "residual_s25212",
+      "actor_l2_change": 0.44172491144569037,
+      "critic_l2_change": 4.705029694902414
+    },
+    {
+      "run": "ppo_s25213",
+      "actor_l2_change": 0.4926039319443918,
+      "critic_l2_change": 1.847967065163474
+    },
+    {
+      "run": "guided_s25213",
+      "actor_l2_change": 0.16346226727118518,
+      "critic_l2_change": 4.269057279302899
+    },
+    {
+      "run": "residual_s25213",
+      "actor_l2_change": 0.5012702699569549,
+      "critic_l2_change": 4.555210782242068
+    }
+  ],
+  "evaluation_audits": [
+    {
+      "job": "nominal_ppo_s25211",
+      "method": "ppo",
+      "condition": "nominal",
+      "train_seed": 25211,
+      "count": 64,
+      "action_max_error_rad": 6.754308934375786e-08
+    },
+    {
+      "job": "nominal_guided_s25211",
+      "method": "guided",
+      "condition": "nominal",
+      "train_seed": 25211,
+      "count": 64,
+      "action_max_error_rad": 1.7079585790114038e-07
+    },
+    {
+      "job": "nominal_bc_initial_s25211",
+      "method": "bc_initial",
+      "condition": "nominal",
+      "train_seed": 25211,
+      "count": 64,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "nominal_residual_s25211",
+      "method": "residual",
+      "condition": "nominal",
+      "train_seed": 25211,
+      "count": 64,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0026151550518989097,
+      "bounded_target_correction_rms_mean_rad": 0.0023327153350168797,
+      "one_step_command_effect_rms_mean_rad": 0.0023322362275760376,
+      "max_requested_rad": 0.005500312894582748
+    },
+    {
+      "job": "nominal_ppo_s25212",
+      "method": "ppo",
+      "condition": "nominal",
+      "train_seed": 25212,
+      "count": 64,
+      "action_max_error_rad": 6.701409827059024e-08
+    },
+    {
+      "job": "nominal_guided_s25212",
+      "method": "guided",
+      "condition": "nominal",
+      "train_seed": 25212,
+      "count": 64,
+      "action_max_error_rad": 1.7104041605264797e-07
+    },
+    {
+      "job": "nominal_bc_initial_s25212",
+      "method": "bc_initial",
+      "condition": "nominal",
+      "train_seed": 25212,
+      "count": 64,
+      "action_max_error_rad": 1.701880694149338e-07
+    },
+    {
+      "job": "nominal_residual_s25212",
+      "method": "residual",
+      "condition": "nominal",
+      "train_seed": 25212,
+      "count": 64,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.002467665031872457,
+      "bounded_target_correction_rms_mean_rad": 0.0024175719879650955,
+      "one_step_command_effect_rms_mean_rad": 0.0024174857539316723,
+      "max_requested_rad": 0.006193340755999088
+    },
+    {
+      "job": "nominal_ppo_s25213",
+      "method": "ppo",
+      "condition": "nominal",
+      "train_seed": 25213,
+      "count": 64,
+      "action_max_error_rad": 6.692171106159606e-08
+    },
+    {
+      "job": "nominal_guided_s25213",
+      "method": "guided",
+      "condition": "nominal",
+      "train_seed": 25213,
+      "count": 64,
+      "action_max_error_rad": 1.7108488092887342e-07
+    },
+    {
+      "job": "nominal_bc_initial_s25213",
+      "method": "bc_initial",
+      "condition": "nominal",
+      "train_seed": 25213,
+      "count": 64,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "nominal_residual_s25213",
+      "method": "residual",
+      "condition": "nominal",
+      "train_seed": 25213,
+      "count": 64,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.002260929835756542,
+      "bounded_target_correction_rms_mean_rad": 0.0020720955878628135,
+      "one_step_command_effect_rms_mean_rad": 0.0020720772412896006,
+      "max_requested_rad": 0.004391014110296965
+    },
+    {
+      "job": "nominal_reference",
+      "method": "reference",
+      "condition": "nominal",
+      "train_seed": null,
+      "count": 64,
+      "action_max_error_rad": 1.385792491870319e-07
+    },
+    {
+      "job": "position5mm_ppo_s25211",
+      "method": "ppo",
+      "condition": "position5mm",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 6.753712900042785e-08
+    },
+    {
+      "job": "position5mm_guided_s25211",
+      "method": "guided",
+      "condition": "position5mm",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 1.7081809078334231e-07
+    },
+    {
+      "job": "position5mm_bc_initial_s25211",
+      "method": "bc_initial",
+      "condition": "position5mm",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "position5mm_residual_s25211",
+      "method": "residual",
+      "condition": "position5mm",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0025855404237518087,
+      "bounded_target_correction_rms_mean_rad": 0.002320174734153798,
+      "one_step_command_effect_rms_mean_rad": 0.002319672431585183,
+      "max_requested_rad": 0.005505416076630354
+    },
+    {
+      "job": "position5mm_ppo_s25212",
+      "method": "ppo",
+      "condition": "position5mm",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 6.70275093206385e-08
+    },
+    {
+      "job": "position5mm_guided_s25212",
+      "method": "guided",
+      "condition": "position5mm",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 1.709959507323333e-07
+    },
+    {
+      "job": "position5mm_bc_initial_s25212",
+      "method": "bc_initial",
+      "condition": "position5mm",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 1.701880694149338e-07
+    },
+    {
+      "job": "position5mm_residual_s25212",
+      "method": "residual",
+      "condition": "position5mm",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.002433902947814204,
+      "bounded_target_correction_rms_mean_rad": 0.002386678078836544,
+      "one_step_command_effect_rms_mean_rad": 0.0023865775348750804,
+      "max_requested_rad": 0.006224381271749735
+    },
+    {
+      "job": "position5mm_ppo_s25213",
+      "method": "ppo",
+      "condition": "position5mm",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 6.694555287900528e-08
+    },
+    {
+      "job": "position5mm_guided_s25213",
+      "method": "guided",
+      "condition": "position5mm",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 1.7110711336698614e-07
+    },
+    {
+      "job": "position5mm_bc_initial_s25213",
+      "method": "bc_initial",
+      "condition": "position5mm",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "position5mm_residual_s25213",
+      "method": "residual",
+      "condition": "position5mm",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0022332679873215966,
+      "bounded_target_correction_rms_mean_rad": 0.0020546285205781784,
+      "one_step_command_effect_rms_mean_rad": 0.00205460833197634,
+      "max_requested_rad": 0.004411809612065554
+    },
+    {
+      "job": "position5mm_reference",
+      "method": "reference",
+      "condition": "position5mm",
+      "train_seed": null,
+      "count": 16,
+      "action_max_error_rad": 1.385792491870319e-07
+    },
+    {
+      "job": "soft5kpa_ppo_s25211",
+      "method": "ppo",
+      "condition": "soft5kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 6.744325165009002e-08
+    },
+    {
+      "job": "soft5kpa_guided_s25211",
+      "method": "guided",
+      "condition": "soft5kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 1.7079585790114038e-07
+    },
+    {
+      "job": "soft5kpa_bc_initial_s25211",
+      "method": "bc_initial",
+      "condition": "soft5kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "soft5kpa_residual_s25211",
+      "method": "residual",
+      "condition": "soft5kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.00261677430535201,
+      "bounded_target_correction_rms_mean_rad": 0.002334361972741881,
+      "one_step_command_effect_rms_mean_rad": 0.0023338826846379477,
+      "max_requested_rad": 0.005580697674304247
+    },
+    {
+      "job": "soft5kpa_ppo_s25212",
+      "method": "ppo",
+      "condition": "soft5kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 6.696343413103989e-08
+    },
+    {
+      "job": "soft5kpa_guided_s25212",
+      "method": "guided",
+      "condition": "soft5kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 1.710626484907607e-07
+    },
+    {
+      "job": "soft5kpa_bc_initial_s25212",
+      "method": "bc_initial",
+      "condition": "soft5kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 1.701880694149338e-07
+    },
+    {
+      "job": "soft5kpa_residual_s25212",
+      "method": "residual",
+      "condition": "soft5kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0024638346367282793,
+      "bounded_target_correction_rms_mean_rad": 0.0024137304136671867,
+      "one_step_command_effect_rms_mean_rad": 0.00241364447721013,
+      "max_requested_rad": 0.006189417559653521
+    },
+    {
+      "job": "soft5kpa_ppo_s25213",
+      "method": "ppo",
+      "condition": "soft5kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 6.688296805279492e-08
+    },
+    {
+      "job": "soft5kpa_guided_s25213",
+      "method": "guided",
+      "condition": "soft5kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 1.7108488092887342e-07
+    },
+    {
+      "job": "soft5kpa_bc_initial_s25213",
+      "method": "bc_initial",
+      "condition": "soft5kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "soft5kpa_residual_s25213",
+      "method": "residual",
+      "condition": "soft5kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0022541811922565103,
+      "bounded_target_correction_rms_mean_rad": 0.0020659931624043655,
+      "one_step_command_effect_rms_mean_rad": 0.0020659748771155216,
+      "max_requested_rad": 0.0043907384388148785
+    },
+    {
+      "job": "soft5kpa_reference",
+      "method": "reference",
+      "condition": "soft5kpa",
+      "train_seed": null,
+      "count": 16,
+      "action_max_error_rad": 1.385792491870319e-07
+    },
+    {
+      "job": "stiff20kpa_ppo_s25211",
+      "method": "ppo",
+      "condition": "stiff20kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 6.752818815236594e-08
+    },
+    {
+      "job": "stiff20kpa_guided_s25211",
+      "method": "guided",
+      "condition": "stiff20kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 1.7077362546302766e-07
+    },
+    {
+      "job": "stiff20kpa_bc_initial_s25211",
+      "method": "bc_initial",
+      "condition": "stiff20kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "stiff20kpa_residual_s25211",
+      "method": "residual",
+      "condition": "stiff20kpa",
+      "train_seed": 25211,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.002619345556013286,
+      "bounded_target_correction_rms_mean_rad": 0.0023362120881137444,
+      "one_step_command_effect_rms_mean_rad": 0.002335734532776216,
+      "max_requested_rad": 0.005492246709764004
+    },
+    {
+      "job": "stiff20kpa_ppo_s25212",
+      "method": "ppo",
+      "condition": "stiff20kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 6.695896392905354e-08
+    },
+    {
+      "job": "stiff20kpa_guided_s25212",
+      "method": "guided",
+      "condition": "stiff20kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 1.7101818317044604e-07
+    },
+    {
+      "job": "stiff20kpa_bc_initial_s25212",
+      "method": "bc_initial",
+      "condition": "stiff20kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 1.701880694149338e-07
+    },
+    {
+      "job": "stiff20kpa_residual_s25212",
+      "method": "residual",
+      "condition": "stiff20kpa",
+      "train_seed": 25212,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0024756843195063993,
+      "bounded_target_correction_rms_mean_rad": 0.0024255037814358716,
+      "one_step_command_effect_rms_mean_rad": 0.0024254177880877192,
+      "max_requested_rad": 0.006190926767885685
+    },
+    {
+      "job": "stiff20kpa_ppo_s25213",
+      "method": "ppo",
+      "condition": "stiff20kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 6.700068722054198e-08
+    },
+    {
+      "job": "stiff20kpa_guided_s25213",
+      "method": "guided",
+      "condition": "stiff20kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 1.710626484907607e-07
+    },
+    {
+      "job": "stiff20kpa_bc_initial_s25213",
+      "method": "bc_initial",
+      "condition": "stiff20kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "stiff20kpa_residual_s25213",
+      "method": "residual",
+      "condition": "stiff20kpa",
+      "train_seed": 25213,
+      "count": 16,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.002273085789056495,
+      "bounded_target_correction_rms_mean_rad": 0.0020825495694700535,
+      "one_step_command_effect_rms_mean_rad": 0.002082531174145687,
+      "max_requested_rad": 0.004389036912471056
+    },
+    {
+      "job": "stiff20kpa_reference",
+      "method": "reference",
+      "condition": "stiff20kpa",
+      "train_seed": null,
+      "count": 16,
+      "action_max_error_rad": 1.385792491870319e-07
+    },
+    {
+      "job": "fine_ppo_s25211",
+      "method": "ppo",
+      "condition": "fine",
+      "train_seed": 25211,
+      "count": 8,
+      "action_max_error_rad": 6.753712900042785e-08
+    },
+    {
+      "job": "fine_guided_s25211",
+      "method": "guided",
+      "condition": "fine",
+      "train_seed": 25211,
+      "count": 8,
+      "action_max_error_rad": 1.7077362546302766e-07
+    },
+    {
+      "job": "fine_bc_initial_s25211",
+      "method": "bc_initial",
+      "condition": "fine",
+      "train_seed": 25211,
+      "count": 8,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "fine_residual_s25211",
+      "method": "residual",
+      "condition": "fine",
+      "train_seed": 25211,
+      "count": 8,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.002626353205414489,
+      "bounded_target_correction_rms_mean_rad": 0.0023424713663458456,
+      "one_step_command_effect_rms_mean_rad": 0.0023419928203938347,
+      "max_requested_rad": 0.005527839995920658
+    },
+    {
+      "job": "fine_ppo_s25212",
+      "method": "ppo",
+      "condition": "fine",
+      "train_seed": 25212,
+      "count": 8,
+      "action_max_error_rad": 6.706625232943964e-08
+    },
+    {
+      "job": "fine_guided_s25212",
+      "method": "guided",
+      "condition": "fine",
+      "train_seed": 25212,
+      "count": 8,
+      "action_max_error_rad": 1.709959507323333e-07
+    },
+    {
+      "job": "fine_bc_initial_s25212",
+      "method": "bc_initial",
+      "condition": "fine",
+      "train_seed": 25212,
+      "count": 8,
+      "action_max_error_rad": 1.701880694149338e-07
+    },
+    {
+      "job": "fine_residual_s25212",
+      "method": "residual",
+      "condition": "fine",
+      "train_seed": 25212,
+      "count": 8,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0024842583516146988,
+      "bounded_target_correction_rms_mean_rad": 0.0024339623797470277,
+      "one_step_command_effect_rms_mean_rad": 0.0024338749357922422,
+      "max_requested_rad": 0.006191285327076912
+    },
+    {
+      "job": "fine_ppo_s25213",
+      "method": "ppo",
+      "condition": "fine",
+      "train_seed": 25213,
+      "count": 8,
+      "action_max_error_rad": 6.676971908703422e-08
+    },
+    {
+      "job": "fine_guided_s25213",
+      "method": "guided",
+      "condition": "fine",
+      "train_seed": 25213,
+      "count": 8,
+      "action_max_error_rad": 1.710626484907607e-07
+    },
+    {
+      "job": "fine_bc_initial_s25213",
+      "method": "bc_initial",
+      "condition": "fine",
+      "train_seed": 25213,
+      "count": 8,
+      "action_max_error_rad": 1.705018282116555e-07
+    },
+    {
+      "job": "fine_residual_s25213",
+      "method": "residual",
+      "condition": "fine",
+      "train_seed": 25213,
+      "count": 8,
+      "action_max_error_rad": 7.654190059547261e-09,
+      "requested_rms_mean_rad": 0.0022725154121872038,
+      "bounded_target_correction_rms_mean_rad": 0.002082252731662058,
+      "one_step_command_effect_rms_mean_rad": 0.002082234471451029,
+      "max_requested_rad": 0.004388557747006416
+    },
+    {
+      "job": "fine_reference",
+      "method": "reference",
+      "condition": "fine",
+      "train_seed": null,
+      "count": 8,
+      "action_max_error_rad": 1.385792491870319e-07
+    }
+  ],
+  "total_episodes": 1560
+}

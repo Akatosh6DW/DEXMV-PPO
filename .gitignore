@@ -44,3 +44,6 @@ tensorboard/
 
 # Curated references are part of the published policy interface.
 !/release/blobs/*.npz
+!/release/blobs/*.mp4
+!/release/records/**/*.log
+/release_downloads/

@@ -1,0 +1,21 @@
+{
+  "model_sha256": "4d7a1611ef740eb3f13e900de483ca4ccb4b9a4bf6f6752cca24e79e55791ce8",
+  "reference_sha256": "ca5d243ae0995600b608cd797b126d38bd59c7ecad29048afcac57e5d4d96d99",
+  "dataset_sha256": "5c29bdbdd15669ac08cf2d9076ca966441863aa8a3ce3a449630fcd8022a4999",
+  "actor_dim": 123,
+  "physics_backend": "native_mujoco_callback",
+  "seeds": [
+    61200,
+    61202,
+    61203,
+    61207,
+    61208,
+    61209,
+    61212,
+    61218,
+    61219,
+    61220,
+    61223
+  ],
+  "criterion": "S06 cylinder: thumb AND index AND middle distal palmar contacts, 30s, substep audited"
+}

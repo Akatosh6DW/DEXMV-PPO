@@ -1,0 +1,13 @@
+{
+  "trace": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_benchmark_suite/S12/study_v2/evaluation/nominal/reference/trajectory_260000.npz",
+  "frames": 308,
+  "fps": 20,
+  "camera": "palm",
+  "mode": "visual",
+  "video": "S12_soft_cylinder_reference_replay_fixed_i260000_palm_visual_failure.mp4",
+  "stop_reason": "quality_violation",
+  "geometry_time_offset_sec": -0.0002,
+  "maximum_vertex_error_m": 3.32121388169071e-08,
+  "full_episode_success": false,
+  "geometry": "true deformable surface; optional massless hand CAD"
+}

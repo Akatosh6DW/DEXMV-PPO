@@ -1,0 +1,1867 @@
+{
+  "selected": {
+    "sequence": 96,
+    "packet": "seq_096.npz",
+    "start": 182,
+    "end": 271,
+    "geometry_score_m": 0.0082702780830747,
+    "mean_radial_gap_m": 0.005078247209054212,
+    "max_frame_displacement_m": 0.007120073670197443,
+    "mean_opposition_cosine": -0.9443365054401002
+  },
+  "candidates": [
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 284,
+      "end": 373,
+      "geometry_score_m": 0.0073250976062305614,
+      "mean_radial_gap_m": 0.004360375767559295,
+      "max_frame_displacement_m": 0.005883586534627788,
+      "mean_opposition_cosine": -0.9509170697901325
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 283,
+      "end": 372,
+      "geometry_score_m": 0.007392406908452572,
+      "mean_radial_gap_m": 0.004442240446473276,
+      "max_frame_displacement_m": 0.005360750711845356,
+      "mean_opposition_cosine": -0.9485991730072795
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 285,
+      "end": 374,
+      "geometry_score_m": 0.007414644453203324,
+      "mean_radial_gap_m": 0.004341031324880073,
+      "max_frame_displacement_m": 0.005979625905670341,
+      "mean_opposition_cosine": -0.9515760797548077
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 286,
+      "end": 375,
+      "geometry_score_m": 0.007568710065597334,
+      "mean_radial_gap_m": 0.004391619880511151,
+      "max_frame_displacement_m": 0.005979625905670341,
+      "mean_opposition_cosine": -0.9472991582458035
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 282,
+      "end": 371,
+      "geometry_score_m": 0.007590580863659365,
+      "mean_radial_gap_m": 0.004529654673249434,
+      "max_frame_displacement_m": 0.006099760054782084,
+      "mean_opposition_cosine": -0.9468748487760176
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 287,
+      "end": 376,
+      "geometry_score_m": 0.007737646499757071,
+      "mean_radial_gap_m": 0.004475892557530362,
+      "max_frame_displacement_m": 0.005979625905670341,
+      "mean_opposition_cosine": -0.9364533715824257
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 281,
+      "end": 370,
+      "geometry_score_m": 0.007743791884875908,
+      "mean_radial_gap_m": 0.004588917757677047,
+      "max_frame_displacement_m": 0.006099760054782084,
+      "mean_opposition_cosine": -0.9454394825828033
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 288,
+      "end": 377,
+      "geometry_score_m": 0.007839079907166788,
+      "mean_radial_gap_m": 0.004557925664777603,
+      "max_frame_displacement_m": 0.005979625905670341,
+      "mean_opposition_cosine": -0.9275461685536069
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 280,
+      "end": 369,
+      "geometry_score_m": 0.007863579365247893,
+      "mean_radial_gap_m": 0.004679892649997012,
+      "max_frame_displacement_m": 0.006099760054782084,
+      "mean_opposition_cosine": -0.9437073072080223
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 279,
+      "end": 368,
+      "geometry_score_m": 0.007913931877008819,
+      "mean_radial_gap_m": 0.0047518795356512045,
+      "max_frame_displacement_m": 0.006099760054782084,
+      "mean_opposition_cosine": -0.9415638179958409
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 289,
+      "end": 378,
+      "geometry_score_m": 0.007929580042367497,
+      "mean_radial_gap_m": 0.004596042838905919,
+      "max_frame_displacement_m": 0.005979625905670341,
+      "mean_opposition_cosine": -0.9217861331707996
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 278,
+      "end": 367,
+      "geometry_score_m": 0.007949875103168514,
+      "mean_radial_gap_m": 0.004738991807225231,
+      "max_frame_displacement_m": 0.006099760054782084,
+      "mean_opposition_cosine": -0.937962858183574
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 277,
+      "end": 366,
+      "geometry_score_m": 0.007993394112497956,
+      "mean_radial_gap_m": 0.004723156631934555,
+      "max_frame_displacement_m": 0.006099760054782084,
+      "mean_opposition_cosine": -0.9323029962402902
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 290,
+      "end": 379,
+      "geometry_score_m": 0.008015658413983957,
+      "mean_radial_gap_m": 0.004591024582791486,
+      "max_frame_displacement_m": 0.005979625905670341,
+      "mean_opposition_cosine": -0.9191866305877542
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 276,
+      "end": 365,
+      "geometry_score_m": 0.008058027335922337,
+      "mean_radial_gap_m": 0.004759110406762157,
+      "max_frame_displacement_m": 0.006099760054782084,
+      "mean_opposition_cosine": -0.9253737530626418
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 291,
+      "end": 380,
+      "geometry_score_m": 0.008095630132808574,
+      "mean_radial_gap_m": 0.0045797586978203455,
+      "max_frame_displacement_m": 0.0069113625870609405,
+      "mean_opposition_cosine": -0.9191461577133815
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 292,
+      "end": 381,
+      "geometry_score_m": 0.008138793107019286,
+      "mean_radial_gap_m": 0.004596639835546134,
+      "max_frame_displacement_m": 0.0069113625870609405,
+      "mean_opposition_cosine": -0.9198198985773757
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 293,
+      "end": 382,
+      "geometry_score_m": 0.008181209513977144,
+      "mean_radial_gap_m": 0.004664109857029907,
+      "max_frame_displacement_m": 0.0069113625870609405,
+      "mean_opposition_cosine": -0.9202175714698398
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 275,
+      "end": 364,
+      "geometry_score_m": 0.008193617155126814,
+      "mean_radial_gap_m": 0.0048679086231421306,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.9158488223077129
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 269,
+      "end": 358,
+      "geometry_score_m": 0.008246924027140187,
+      "mean_radial_gap_m": 0.004981309587545138,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8598129798924068
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 270,
+      "end": 359,
+      "geometry_score_m": 0.00826828975706589,
+      "mean_radial_gap_m": 0.004984684877757304,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.866743209275559
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 182,
+      "end": 271,
+      "geometry_score_m": 0.0082702780830747,
+      "mean_radial_gap_m": 0.005078247209054212,
+      "max_frame_displacement_m": 0.007120073670197443,
+      "mean_opposition_cosine": -0.9443365054401002
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 294,
+      "end": 383,
+      "geometry_score_m": 0.008288868060625471,
+      "mean_radial_gap_m": 0.004814522596176417,
+      "max_frame_displacement_m": 0.0069113625870609405,
+      "mean_opposition_cosine": -0.9200587329030537
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 183,
+      "end": 272,
+      "geometry_score_m": 0.00829735405917082,
+      "mean_radial_gap_m": 0.005135291481405085,
+      "max_frame_displacement_m": 0.007120073670197443,
+      "mean_opposition_cosine": -0.9400370533859144
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 274,
+      "end": 363,
+      "geometry_score_m": 0.008300394253911684,
+      "mean_radial_gap_m": 0.004950856243196651,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.9055293025695332
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 268,
+      "end": 357,
+      "geometry_score_m": 0.00834026157439916,
+      "mean_radial_gap_m": 0.005085866473762635,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8524597665025675
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 271,
+      "end": 360,
+      "geometry_score_m": 0.008341768776018315,
+      "mean_radial_gap_m": 0.005040678054420657,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8749789053359974
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 273,
+      "end": 362,
+      "geometry_score_m": 0.008356138155527562,
+      "mean_radial_gap_m": 0.005007929383482334,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8942506143175943
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 272,
+      "end": 361,
+      "geometry_score_m": 0.008367637584428381,
+      "mean_radial_gap_m": 0.005030595629209582,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8842718685194071
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 181,
+      "end": 270,
+      "geometry_score_m": 0.008387143917669069,
+      "mean_radial_gap_m": 0.005098255016118289,
+      "max_frame_displacement_m": 0.007120073670197443,
+      "mean_opposition_cosine": -0.9500965681877372
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 184,
+      "end": 273,
+      "geometry_score_m": 0.008501008659848366,
+      "mean_radial_gap_m": 0.005258540938760554,
+      "max_frame_displacement_m": 0.007120073670197443,
+      "mean_opposition_cosine": -0.938613370291135
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 267,
+      "end": 356,
+      "geometry_score_m": 0.008517215803263593,
+      "mean_radial_gap_m": 0.005281683188011552,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8465283596869743
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 180,
+      "end": 269,
+      "geometry_score_m": 0.008577626138842328,
+      "mean_radial_gap_m": 0.005192087317436386,
+      "max_frame_displacement_m": 0.007120073670197443,
+      "mean_opposition_cosine": -0.9554554677129926
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 266,
+      "end": 355,
+      "geometry_score_m": 0.008673488313372321,
+      "mean_radial_gap_m": 0.005510486848776839,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.839831603849729
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 236,
+      "end": 325,
+      "geometry_score_m": 0.008689597580273154,
+      "mean_radial_gap_m": 0.0051772965714560245,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.9037030710075409
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 179,
+      "end": 268,
+      "geometry_score_m": 0.008690684705572327,
+      "mean_radial_gap_m": 0.006239183917550238,
+      "max_frame_displacement_m": 0.00589000488359917,
+      "mean_opposition_cosine": -0.9826926969143608
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 235,
+      "end": 324,
+      "geometry_score_m": 0.008706389601594892,
+      "mean_radial_gap_m": 0.005192423430615845,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.904567408525276
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 185,
+      "end": 274,
+      "geometry_score_m": 0.008728142747582716,
+      "mean_radial_gap_m": 0.005426799075195574,
+      "max_frame_displacement_m": 0.007123036415438846,
+      "mean_opposition_cosine": -0.9388765900827782
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 237,
+      "end": 326,
+      "geometry_score_m": 0.00873685426349027,
+      "mean_radial_gap_m": 0.0051634719937525995,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.902514669734558
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 238,
+      "end": 327,
+      "geometry_score_m": 0.0087656134059902,
+      "mean_radial_gap_m": 0.005161079735633965,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.9005167685600887
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 179,
+      "end": 268,
+      "geometry_score_m": 0.008783316984955113,
+      "mean_radial_gap_m": 0.005351071771004559,
+      "max_frame_displacement_m": 0.007120073670197443,
+      "mean_opposition_cosine": -0.9590946296419395
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 239,
+      "end": 328,
+      "geometry_score_m": 0.008801027558997537,
+      "mean_radial_gap_m": 0.005186590337057323,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8973410338961508
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 234,
+      "end": 323,
+      "geometry_score_m": 0.00883007933064859,
+      "mean_radial_gap_m": 0.0052026970587515575,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.904867815675063
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 265,
+      "end": 354,
+      "geometry_score_m": 0.00884588364178695,
+      "mean_radial_gap_m": 0.005748491060153268,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8304134038447375
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 178,
+      "end": 267,
+      "geometry_score_m": 0.00885886715558424,
+      "mean_radial_gap_m": 0.006289208375637176,
+      "max_frame_displacement_m": 0.006473739207212364,
+      "mean_opposition_cosine": -0.9827152660021922
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 231,
+      "end": 320,
+      "geometry_score_m": 0.008871694592831181,
+      "mean_radial_gap_m": 0.005138302394730749,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.9017704639945433
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 232,
+      "end": 321,
+      "geometry_score_m": 0.00889256847084729,
+      "mean_radial_gap_m": 0.005170479961717819,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.9017374294194034
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 178,
+      "end": 267,
+      "geometry_score_m": 0.008913874879037624,
+      "mean_radial_gap_m": 0.005548230273605531,
+      "max_frame_displacement_m": 0.006709724342557174,
+      "mean_opposition_cosine": -0.9609342275867157
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 233,
+      "end": 322,
+      "geometry_score_m": 0.008914866976711327,
+      "mean_radial_gap_m": 0.005191630191254682,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.9037379486778102
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 240,
+      "end": 329,
+      "geometry_score_m": 0.008917097675344324,
+      "mean_radial_gap_m": 0.005805689709758606,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9576776988022883
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 240,
+      "end": 329,
+      "geometry_score_m": 0.008917537704598546,
+      "mean_radial_gap_m": 0.005257725014971077,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.893483618796643
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 230,
+      "end": 319,
+      "geometry_score_m": 0.008930344950098704,
+      "mean_radial_gap_m": 0.005666881105935364,
+      "max_frame_displacement_m": 0.006339491109689113,
+      "mean_opposition_cosine": -0.9708356808566425
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 229,
+      "end": 318,
+      "geometry_score_m": 0.008946296826783745,
+      "mean_radial_gap_m": 0.005554844088258035,
+      "max_frame_displacement_m": 0.007949684804240404,
+      "mean_opposition_cosine": -0.9716462931103536
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 241,
+      "end": 330,
+      "geometry_score_m": 0.00895482920412469,
+      "mean_radial_gap_m": 0.0057987713530295104,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9575749696803929
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 230,
+      "end": 319,
+      "geometry_score_m": 0.008960058662037702,
+      "mean_radial_gap_m": 0.005138598954793397,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.9040047234640552
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 239,
+      "end": 328,
+      "geometry_score_m": 0.008979314727842023,
+      "mean_radial_gap_m": 0.005858768813416546,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9583482884695956
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 231,
+      "end": 320,
+      "geometry_score_m": 0.00899912162062846,
+      "mean_radial_gap_m": 0.005801393361402701,
+      "max_frame_displacement_m": 0.006339491109689113,
+      "mean_opposition_cosine": -0.9686231706729734
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 264,
+      "end": 353,
+      "geometry_score_m": 0.009017129344579376,
+      "mean_radial_gap_m": 0.005946769324748473,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.820227454108727
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 241,
+      "end": 330,
+      "geometry_score_m": 0.009020767709455787,
+      "mean_radial_gap_m": 0.005361600344547164,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8895669072771153
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 245,
+      "end": 334,
+      "geometry_score_m": 0.009029613553165287,
+      "mean_radial_gap_m": 0.005530874162733153,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8802711883740776
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 177,
+      "end": 266,
+      "geometry_score_m": 0.009030174971464508,
+      "mean_radial_gap_m": 0.006316322011381315,
+      "max_frame_displacement_m": 0.006998914395170824,
+      "mean_opposition_cosine": -0.979480591671346
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 242,
+      "end": 331,
+      "geometry_score_m": 0.009051207119417874,
+      "mean_radial_gap_m": 0.005792048095709648,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.957571873694136
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 246,
+      "end": 335,
+      "geometry_score_m": 0.00905704424982335,
+      "mean_radial_gap_m": 0.005682653187036401,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8800895380600846
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 244,
+      "end": 333,
+      "geometry_score_m": 0.00908468821643391,
+      "mean_radial_gap_m": 0.005471335901329839,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8812859928992345
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 242,
+      "end": 331,
+      "geometry_score_m": 0.009111514896056449,
+      "mean_radial_gap_m": 0.005442480447758548,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8860957024667331
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 243,
+      "end": 332,
+      "geometry_score_m": 0.009124670866088263,
+      "mean_radial_gap_m": 0.005465069578491453,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8832051090819699
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 247,
+      "end": 336,
+      "geometry_score_m": 0.009151288682083238,
+      "mean_radial_gap_m": 0.0059166961282372125,
+      "max_frame_displacement_m": 0.007834156759884775,
+      "mean_opposition_cosine": -0.8811975861408707
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 263,
+      "end": 352,
+      "geometry_score_m": 0.009162436406353294,
+      "mean_radial_gap_m": 0.006104165555315585,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.8083180240555812
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 232,
+      "end": 321,
+      "geometry_score_m": 0.009163320789882847,
+      "mean_radial_gap_m": 0.005879872930769318,
+      "max_frame_displacement_m": 0.006339491109689113,
+      "mean_opposition_cosine": -0.9678381053148492
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 177,
+      "end": 266,
+      "geometry_score_m": 0.009170591683600253,
+      "mean_radial_gap_m": 0.005798614710716868,
+      "max_frame_displacement_m": 0.006709724342557174,
+      "mean_opposition_cosine": -0.9592759602562905
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 238,
+      "end": 327,
+      "geometry_score_m": 0.009189710877616627,
+      "mean_radial_gap_m": 0.005990716671482263,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9599780230843684
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 258,
+      "end": 347,
+      "geometry_score_m": 0.009202180085270417,
+      "mean_radial_gap_m": 0.005985018329254983,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.7575938504111462
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 259,
+      "end": 348,
+      "geometry_score_m": 0.009211494833507519,
+      "mean_radial_gap_m": 0.006045314788194622,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.7692702457446465
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 176,
+      "end": 265,
+      "geometry_score_m": 0.009216635163504712,
+      "mean_radial_gap_m": 0.006371815990876024,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9699546543487187
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 248,
+      "end": 337,
+      "geometry_score_m": 0.009233545806778952,
+      "mean_radial_gap_m": 0.006200013358621962,
+      "max_frame_displacement_m": 0.006008384783531981,
+      "mean_opposition_cosine": -0.8846612126172376
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 260,
+      "end": 349,
+      "geometry_score_m": 0.009237155979574235,
+      "mean_radial_gap_m": 0.006121470179006033,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.7784613724623154
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 262,
+      "end": 351,
+      "geometry_score_m": 0.00924305281592314,
+      "mean_radial_gap_m": 0.006165066400517411,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.7972051283006218
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 175,
+      "end": 264,
+      "geometry_score_m": 0.009243311509839792,
+      "mean_radial_gap_m": 0.006354564010660814,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9652109428424919
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 243,
+      "end": 332,
+      "geometry_score_m": 0.009270196987747283,
+      "mean_radial_gap_m": 0.005869247505389922,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9565868134621179
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 261,
+      "end": 350,
+      "geometry_score_m": 0.009283378379468885,
+      "mean_radial_gap_m": 0.006165120707726264,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.7876688698048414
+    },
+    {
+      "sequence": 77,
+      "packet": "seq_077.npz",
+      "start": 257,
+      "end": 346,
+      "geometry_score_m": 0.009283792660035005,
+      "mean_radial_gap_m": 0.0059896772529803265,
+      "max_frame_displacement_m": 0.006840379481095804,
+      "mean_opposition_cosine": -0.741915214226706
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 174,
+      "end": 263,
+      "geometry_score_m": 0.009309113339543824,
+      "mean_radial_gap_m": 0.006291712303004737,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9637918901061793
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 233,
+      "end": 322,
+      "geometry_score_m": 0.009316464514468954,
+      "mean_radial_gap_m": 0.006009507088009677,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9681707317901007
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 249,
+      "end": 338,
+      "geometry_score_m": 0.009328471893750523,
+      "mean_radial_gap_m": 0.006372047827397193,
+      "max_frame_displacement_m": 0.006008384783531981,
+      "mean_opposition_cosine": -0.8929118992862526
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 173,
+      "end": 262,
+      "geometry_score_m": 0.009388081322078816,
+      "mean_radial_gap_m": 0.006251664585140652,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9642068201926902
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 237,
+      "end": 326,
+      "geometry_score_m": 0.009408776588273732,
+      "mean_radial_gap_m": 0.0061471382595826045,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9618276469675892
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 250,
+      "end": 339,
+      "geometry_score_m": 0.009429474636466022,
+      "mean_radial_gap_m": 0.006553414878212804,
+      "max_frame_displacement_m": 0.006008384783531981,
+      "mean_opposition_cosine": -0.9004245369363125
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 255,
+      "end": 344,
+      "geometry_score_m": 0.009433870562820683,
+      "mean_radial_gap_m": 0.006712289007322725,
+      "max_frame_displacement_m": 0.005299279678131288,
+      "mean_opposition_cosine": -0.9324006395299126
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 244,
+      "end": 333,
+      "geometry_score_m": 0.009437398844110559,
+      "mean_radial_gap_m": 0.005987725469125431,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9548233684828197
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 171,
+      "end": 260,
+      "geometry_score_m": 0.009450710248204708,
+      "mean_radial_gap_m": 0.006222522642878991,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.965021160085753
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 234,
+      "end": 323,
+      "geometry_score_m": 0.00945543266846056,
+      "mean_radial_gap_m": 0.006154067922931863,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9679189816678668
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 170,
+      "end": 259,
+      "geometry_score_m": 0.009461675936143412,
+      "mean_radial_gap_m": 0.006249373291766673,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.965561576711664
+    },
+    {
+      "sequence": 96,
+      "packet": "seq_096.npz",
+      "start": 176,
+      "end": 265,
+      "geometry_score_m": 0.0094618779954312,
+      "mean_radial_gap_m": 0.006024174783114979,
+      "max_frame_displacement_m": 0.006709724342557174,
+      "mean_opposition_cosine": -0.9562408666911544
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 256,
+      "end": 345,
+      "geometry_score_m": 0.009464060346979504,
+      "mean_radial_gap_m": 0.006827586956520426,
+      "max_frame_displacement_m": 0.005299279678131288,
+      "mean_opposition_cosine": -0.938033613533192
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 172,
+      "end": 261,
+      "geometry_score_m": 0.009478968426502376,
+      "mean_radial_gap_m": 0.006228781273800892,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9645351962237141
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 169,
+      "end": 258,
+      "geometry_score_m": 0.009480489216398031,
+      "mean_radial_gap_m": 0.006287248047550124,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9659448641290289
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 254,
+      "end": 343,
+      "geometry_score_m": 0.009500441207305206,
+      "mean_radial_gap_m": 0.006656829675834578,
+      "max_frame_displacement_m": 0.006008384783531981,
+      "mean_opposition_cosine": -0.9259530004989557
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 236,
+      "end": 325,
+      "geometry_score_m": 0.009520519932699133,
+      "mean_radial_gap_m": 0.006257387877458986,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9639143811163178
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 245,
+      "end": 334,
+      "geometry_score_m": 0.0095223122102862,
+      "mean_radial_gap_m": 0.006100685299220434,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9524226327897012
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 251,
+      "end": 340,
+      "geometry_score_m": 0.009547616986557664,
+      "mean_radial_gap_m": 0.006692019659305112,
+      "max_frame_displacement_m": 0.006008384783531981,
+      "mean_opposition_cosine": -0.9077129538374055
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 168,
+      "end": 257,
+      "geometry_score_m": 0.009549672181516627,
+      "mean_radial_gap_m": 0.006366896953608967,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9662120774568334
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 235,
+      "end": 324,
+      "geometry_score_m": 0.009552716562407696,
+      "mean_radial_gap_m": 0.006263153901836538,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9663038597320646
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 246,
+      "end": 335,
+      "geometry_score_m": 0.009592187418723058,
+      "mean_radial_gap_m": 0.006160907776182961,
+      "max_frame_displacement_m": 0.00635752438946747,
+      "mean_opposition_cosine": -0.9502023727799072
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 253,
+      "end": 342,
+      "geometry_score_m": 0.009594264542468542,
+      "mean_radial_gap_m": 0.006666201265269763,
+      "max_frame_displacement_m": 0.006008384783531981,
+      "mean_opposition_cosine": -0.9196504713080369
+    },
+    {
+      "sequence": 53,
+      "packet": "seq_053.npz",
+      "start": 205,
+      "end": 294,
+      "geometry_score_m": 0.009596680364716868,
+      "mean_radial_gap_m": 0.005536003604174411,
+      "max_frame_displacement_m": 0.007276178130392831,
+      "mean_opposition_cosine": -0.9127932177552796
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 252,
+      "end": 341,
+      "geometry_score_m": 0.009616234352917433,
+      "mean_radial_gap_m": 0.006697289099761797,
+      "max_frame_displacement_m": 0.006008384783531981,
+      "mean_opposition_cosine": -0.9143797502887009
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 257,
+      "end": 346,
+      "geometry_score_m": 0.009622574553763892,
+      "mean_radial_gap_m": 0.0069730354251767955,
+      "max_frame_displacement_m": 0.005299279678131288,
+      "mean_opposition_cosine": -0.9426942545649543
+    },
+    {
+      "sequence": 73,
+      "packet": "seq_073.npz",
+      "start": 247,
+      "end": 336,
+      "geometry_score_m": 0.009665697609386105,
+      "mean_radial_gap_m": 0.0061323273130211835,
+      "max_frame_displacement_m": 0.006467392777772505,
+      "mean_opposition_cosine": -0.9492675622786334
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 167,
+      "end": 256,
+      "geometry_score_m": 0.009733361554573182,
+      "mean_radial_gap_m": 0.006498429893453872,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9665838048609178
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 258,
+      "end": 347,
+      "geometry_score_m": 0.009785053821518053,
+      "mean_radial_gap_m": 0.007141256805478496,
+      "max_frame_displacement_m": 0.005299279678131288,
+      "mean_opposition_cosine": -0.9454894677414393
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 259,
+      "end": 348,
+      "geometry_score_m": 0.009922970545750955,
+      "mean_radial_gap_m": 0.0073024603302683,
+      "max_frame_displacement_m": 0.005299279678131288,
+      "mean_opposition_cosine": -0.9471606382139383
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 265,
+      "end": 354,
+      "geometry_score_m": 0.009953035209795713,
+      "mean_radial_gap_m": 0.007207980668341898,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.9550648653393286
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 195,
+      "end": 284,
+      "geometry_score_m": 0.009972593816599769,
+      "mean_radial_gap_m": 0.007363386603202514,
+      "max_frame_displacement_m": 0.004830376673605574,
+      "mean_opposition_cosine": -0.9473450702118793
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 264,
+      "end": 353,
+      "geometry_score_m": 0.009974557322285854,
+      "mean_radial_gap_m": 0.007241414567449317,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.9544845293727983
+    },
+    {
+      "sequence": 66,
+      "packet": "seq_066.npz",
+      "start": 166,
+      "end": 255,
+      "geometry_score_m": 0.009978859468199798,
+      "mean_radial_gap_m": 0.0066737342931690495,
+      "max_frame_displacement_m": 0.007483884539609527,
+      "mean_opposition_cosine": -0.9660871767335042
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 266,
+      "end": 355,
+      "geometry_score_m": 0.009984481848961842,
+      "mean_radial_gap_m": 0.007249996454628132,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.9559472265036303
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 279,
+      "end": 368,
+      "geometry_score_m": 0.009986450546455267,
+      "mean_radial_gap_m": 0.005781178800013184,
+      "max_frame_displacement_m": 0.0077820849085382515,
+      "mean_opposition_cosine": -0.9476420202983022
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 280,
+      "end": 369,
+      "geometry_score_m": 0.009988358698914096,
+      "mean_radial_gap_m": 0.005660211252939173,
+      "max_frame_displacement_m": 0.0077820849085382515,
+      "mean_opposition_cosine": -0.9432782370193495
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 196,
+      "end": 285,
+      "geometry_score_m": 0.01001067869260805,
+      "mean_radial_gap_m": 0.007356274772930879,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9441117327465324
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 260,
+      "end": 349,
+      "geometry_score_m": 0.01003751128260165,
+      "mean_radial_gap_m": 0.007407045099927348,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.9488916531842057
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 278,
+      "end": 367,
+      "geometry_score_m": 0.010037554793562237,
+      "mean_radial_gap_m": 0.005938413422664227,
+      "max_frame_displacement_m": 0.0077820849085382515,
+      "mean_opposition_cosine": -0.9494071761425773
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 194,
+      "end": 283,
+      "geometry_score_m": 0.010051831375965522,
+      "mean_radial_gap_m": 0.007333841842588121,
+      "max_frame_displacement_m": 0.006149861573609726,
+      "mean_opposition_cosine": -0.9540192037420419
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 263,
+      "end": 352,
+      "geometry_score_m": 0.010053697879285615,
+      "mean_radial_gap_m": 0.007358322241192713,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.9536406358710587
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 267,
+      "end": 356,
+      "geometry_score_m": 0.010058763164076272,
+      "mean_radial_gap_m": 0.007353531054441149,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.9573410852428095
+    },
+    {
+      "sequence": 30,
+      "packet": "seq_030.npz",
+      "start": 252,
+      "end": 341,
+      "geometry_score_m": 0.01006453594163151,
+      "mean_radial_gap_m": 0.00724205804653342,
+      "max_frame_displacement_m": 0.006511625107332544,
+      "mean_opposition_cosine": -0.9368725922221898
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 197,
+      "end": 286,
+      "geometry_score_m": 0.01007688119706971,
+      "mean_radial_gap_m": 0.007334169914644891,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9433280356997665
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 262,
+      "end": 351,
+      "geometry_score_m": 0.010116652968264464,
+      "mean_radial_gap_m": 0.007439303795382902,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.9522209925954451
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 193,
+      "end": 282,
+      "geometry_score_m": 0.01011727195749305,
+      "mean_radial_gap_m": 0.007297781331385864,
+      "max_frame_displacement_m": 0.006779031688626066,
+      "mean_opposition_cosine": -0.9608645825006412
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 198,
+      "end": 287,
+      "geometry_score_m": 0.010117901161410788,
+      "mean_radial_gap_m": 0.007319701547675876,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9433080162977895
+    },
+    {
+      "sequence": 65,
+      "packet": "seq_065.npz",
+      "start": 261,
+      "end": 350,
+      "geometry_score_m": 0.010127257868842358,
+      "mean_radial_gap_m": 0.007461049355403454,
+      "max_frame_displacement_m": 0.005601389534251439,
+      "mean_opposition_cosine": -0.950374821638965
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 199,
+      "end": 288,
+      "geometry_score_m": 0.010142234445852211,
+      "mean_radial_gap_m": 0.007316032264118589,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9433725622991087
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 200,
+      "end": 289,
+      "geometry_score_m": 0.010147836722092936,
+      "mean_radial_gap_m": 0.007324705271819509,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9432427066904403
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 277,
+      "end": 366,
+      "geometry_score_m": 0.01015572028019511,
+      "mean_radial_gap_m": 0.006152290627360745,
+      "max_frame_displacement_m": 0.0077820849085382515,
+      "mean_opposition_cosine": -0.9489971855708303
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 201,
+      "end": 290,
+      "geometry_score_m": 0.010182472865170954,
+      "mean_radial_gap_m": 0.0073813286083030775,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9432552756154736
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 202,
+      "end": 291,
+      "geometry_score_m": 0.010203680797408899,
+      "mean_radial_gap_m": 0.0074474959454071555,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9431229507998734
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 203,
+      "end": 292,
+      "geometry_score_m": 0.01021250245908752,
+      "mean_radial_gap_m": 0.007480112878727467,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9423553503031469
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 204,
+      "end": 293,
+      "geometry_score_m": 0.01026065322324434,
+      "mean_radial_gap_m": 0.0074948381778743075,
+      "max_frame_displacement_m": 0.005509006916600587,
+      "mean_opposition_cosine": -0.9405565380545605
+    },
+    {
+      "sequence": 30,
+      "packet": "seq_030.npz",
+      "start": 253,
+      "end": 342,
+      "geometry_score_m": 0.010261650433608781,
+      "mean_radial_gap_m": 0.007469860717013807,
+      "max_frame_displacement_m": 0.006511625107332544,
+      "mean_opposition_cosine": -0.9341238390055654
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 276,
+      "end": 365,
+      "geometry_score_m": 0.010323426946786481,
+      "mean_radial_gap_m": 0.006413942205798031,
+      "max_frame_displacement_m": 0.0077820849085382515,
+      "mean_opposition_cosine": -0.947472228573809
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 205,
+      "end": 294,
+      "geometry_score_m": 0.010345430818840474,
+      "mean_radial_gap_m": 0.007536319245390791,
+      "max_frame_displacement_m": 0.00579766580900684,
+      "mean_opposition_cosine": -0.9377756298683964
+    },
+    {
+      "sequence": 30,
+      "packet": "seq_030.npz",
+      "start": 254,
+      "end": 343,
+      "geometry_score_m": 0.010383418709685443,
+      "mean_radial_gap_m": 0.007673292017672401,
+      "max_frame_displacement_m": 0.006511625107332544,
+      "mean_opposition_cosine": -0.9306795189084751
+    },
+    {
+      "sequence": 15,
+      "packet": "seq_015.npz",
+      "start": 235,
+      "end": 324,
+      "geometry_score_m": 0.010397549592349828,
+      "mean_radial_gap_m": 0.007667344244168395,
+      "max_frame_displacement_m": 0.007149929769965987,
+      "mean_opposition_cosine": -0.8190287049604815
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 206,
+      "end": 295,
+      "geometry_score_m": 0.010448164024273739,
+      "mean_radial_gap_m": 0.007602888127305554,
+      "max_frame_displacement_m": 0.00579766580900684,
+      "mean_opposition_cosine": -0.9340895772153892
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 275,
+      "end": 364,
+      "geometry_score_m": 0.01045289416461892,
+      "mean_radial_gap_m": 0.006630615746491867,
+      "max_frame_displacement_m": 0.0077820849085382515,
+      "mean_opposition_cosine": -0.9455897199101154
+    },
+    {
+      "sequence": 15,
+      "packet": "seq_015.npz",
+      "start": 234,
+      "end": 323,
+      "geometry_score_m": 0.010454412374372531,
+      "mean_radial_gap_m": 0.007596115435604536,
+      "max_frame_displacement_m": 0.007149929769965987,
+      "mean_opposition_cosine": -0.8211029699919934
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 274,
+      "end": 363,
+      "geometry_score_m": 0.010466370962744186,
+      "mean_radial_gap_m": 0.0068139166462707285,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9433923688026462
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 273,
+      "end": 362,
+      "geometry_score_m": 0.01047403305064688,
+      "mean_radial_gap_m": 0.006960029165055732,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9409028593911076
+    },
+    {
+      "sequence": 15,
+      "packet": "seq_015.npz",
+      "start": 233,
+      "end": 322,
+      "geometry_score_m": 0.010482917200056681,
+      "mean_radial_gap_m": 0.007574593670655512,
+      "max_frame_displacement_m": 0.007149929769965987,
+      "mean_opposition_cosine": -0.824565283495565
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 272,
+      "end": 361,
+      "geometry_score_m": 0.010520362585741454,
+      "mean_radial_gap_m": 0.007104430514913314,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9382420858511187
+    },
+    {
+      "sequence": 15,
+      "packet": "seq_015.npz",
+      "start": 232,
+      "end": 321,
+      "geometry_score_m": 0.010525192325796583,
+      "mean_radial_gap_m": 0.0075774389561470016,
+      "max_frame_displacement_m": 0.007149929769965987,
+      "mean_opposition_cosine": -0.8288863250659279
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 207,
+      "end": 296,
+      "geometry_score_m": 0.01052660038765338,
+      "mean_radial_gap_m": 0.007680780474207971,
+      "max_frame_displacement_m": 0.00579766580900684,
+      "mean_opposition_cosine": -0.9298056749418734
+    },
+    {
+      "sequence": 15,
+      "packet": "seq_015.npz",
+      "start": 236,
+      "end": 325,
+      "geometry_score_m": 0.010531371547195075,
+      "mean_radial_gap_m": 0.007799215104677381,
+      "max_frame_displacement_m": 0.006657101063960938,
+      "mean_opposition_cosine": -0.8137771650466749
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 208,
+      "end": 297,
+      "geometry_score_m": 0.010574884409962723,
+      "mean_radial_gap_m": 0.007759576470374497,
+      "max_frame_displacement_m": 0.00579766580900684,
+      "mean_opposition_cosine": -0.9245558235554664
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 271,
+      "end": 360,
+      "geometry_score_m": 0.010594980406899499,
+      "mean_radial_gap_m": 0.00726439792660566,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9360471483891888
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 209,
+      "end": 298,
+      "geometry_score_m": 0.010614353121762014,
+      "mean_radial_gap_m": 0.00782707404248529,
+      "max_frame_displacement_m": 0.00579766580900684,
+      "mean_opposition_cosine": -0.9184448674872826
+    },
+    {
+      "sequence": 86,
+      "packet": "seq_086.npz",
+      "start": 210,
+      "end": 299,
+      "geometry_score_m": 0.010621766222408737,
+      "mean_radial_gap_m": 0.007878032931759883,
+      "max_frame_displacement_m": 0.00579766580900684,
+      "mean_opposition_cosine": -0.9115337966593657
+    },
+    {
+      "sequence": 15,
+      "packet": "seq_015.npz",
+      "start": 237,
+      "end": 326,
+      "geometry_score_m": 0.01068821394249685,
+      "mean_radial_gap_m": 0.007844682100679068,
+      "max_frame_displacement_m": 0.007187011792338087,
+      "mean_opposition_cosine": -0.8057051981674818
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 270,
+      "end": 359,
+      "geometry_score_m": 0.010808440030816754,
+      "mean_radial_gap_m": 0.007442732567934246,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9346175160943226
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 269,
+      "end": 358,
+      "geometry_score_m": 0.011020695467026264,
+      "mean_radial_gap_m": 0.00762499863097828,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9342373199700108
+    },
+    {
+      "sequence": 14,
+      "packet": "seq_014.npz",
+      "start": 309,
+      "end": 398,
+      "geometry_score_m": 0.011023275482401618,
+      "mean_radial_gap_m": 0.007541801179778631,
+      "max_frame_displacement_m": 0.007514260855710993,
+      "mean_opposition_cosine": -0.9221564753453361
+    },
+    {
+      "sequence": 14,
+      "packet": "seq_014.npz",
+      "start": 308,
+      "end": 397,
+      "geometry_score_m": 0.011040299505016142,
+      "mean_radial_gap_m": 0.007510243312268638,
+      "max_frame_displacement_m": 0.007514260855710993,
+      "mean_opposition_cosine": -0.9201633957916103
+    },
+    {
+      "sequence": 14,
+      "packet": "seq_014.npz",
+      "start": 310,
+      "end": 399,
+      "geometry_score_m": 0.011100315864768458,
+      "mean_radial_gap_m": 0.007657398862187301,
+      "max_frame_displacement_m": 0.007514260855710993,
+      "mean_opposition_cosine": -0.9246385358204775
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 268,
+      "end": 357,
+      "geometry_score_m": 0.011189171536922378,
+      "mean_radial_gap_m": 0.007781058575574522,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9348836416737248
+    },
+    {
+      "sequence": 88,
+      "packet": "seq_088.npz",
+      "start": 240,
+      "end": 329,
+      "geometry_score_m": 0.011230286291239698,
+      "mean_radial_gap_m": 0.008242400989331005,
+      "max_frame_displacement_m": 0.006866012146618776,
+      "mean_opposition_cosine": -0.755960190759119
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 263,
+      "end": 352,
+      "geometry_score_m": 0.011262415008931579,
+      "mean_radial_gap_m": 0.007960679625879553,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9282633507196472
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 264,
+      "end": 353,
+      "geometry_score_m": 0.01127328887472556,
+      "mean_radial_gap_m": 0.007937756252763425,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9325101386390978
+    },
+    {
+      "sequence": 6,
+      "packet": "seq_006.npz",
+      "start": 194,
+      "end": 283,
+      "geometry_score_m": 0.011293367845240359,
+      "mean_radial_gap_m": 0.00726077821382057,
+      "max_frame_displacement_m": 0.007752160498432059,
+      "mean_opposition_cosine": -0.9459298562637423
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 265,
+      "end": 354,
+      "geometry_score_m": 0.011300049642809012,
+      "mean_radial_gap_m": 0.007938286736713356,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9357864188939105
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 267,
+      "end": 356,
+      "geometry_score_m": 0.011303109261260333,
+      "mean_radial_gap_m": 0.007887592823111708,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9359245231306096
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 262,
+      "end": 351,
+      "geometry_score_m": 0.011304334817104952,
+      "mean_radial_gap_m": 0.00804495753101048,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9235342214173488
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 266,
+      "end": 355,
+      "geometry_score_m": 0.011319323126006364,
+      "mean_radial_gap_m": 0.00793053360766374,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9369287141090652
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 261,
+      "end": 350,
+      "geometry_score_m": 0.011374523754970214,
+      "mean_radial_gap_m": 0.008193720581971431,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9190898342688812
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 260,
+      "end": 349,
+      "geometry_score_m": 0.011513392146431042,
+      "mean_radial_gap_m": 0.008383447897270085,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9153098290302132
+    },
+    {
+      "sequence": 93,
+      "packet": "seq_093.npz",
+      "start": 259,
+      "end": 348,
+      "geometry_score_m": 0.011750290328266338,
+      "mean_radial_gap_m": 0.008567880539641628,
+      "max_frame_displacement_m": 0.007749001633930717,
+      "mean_opposition_cosine": -0.9122277548476402
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 252,
+      "end": 341,
+      "geometry_score_m": 0.011806925204973607,
+      "mean_radial_gap_m": 0.009347302240255125,
+      "max_frame_displacement_m": 0.005088939783648422,
+      "mean_opposition_cosine": -0.9200754085116916
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 251,
+      "end": 340,
+      "geometry_score_m": 0.01182395102731501,
+      "mean_radial_gap_m": 0.009248673144801663,
+      "max_frame_displacement_m": 0.006987305066124037,
+      "mean_opposition_cosine": -0.9220130734843989
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 253,
+      "end": 342,
+      "geometry_score_m": 0.011861804370058337,
+      "mean_radial_gap_m": 0.009429906444030174,
+      "max_frame_displacement_m": 0.005088939783648422,
+      "mean_opposition_cosine": -0.9163938690466641
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 254,
+      "end": 343,
+      "geometry_score_m": 0.011939695191848577,
+      "mean_radial_gap_m": 0.009488482386198425,
+      "max_frame_displacement_m": 0.005088939783648422,
+      "mean_opposition_cosine": -0.9117377202623291
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 255,
+      "end": 344,
+      "geometry_score_m": 0.011989102012151405,
+      "mean_radial_gap_m": 0.009528351359110804,
+      "max_frame_displacement_m": 0.005088939783648422,
+      "mean_opposition_cosine": -0.9064008037966035
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 296,
+      "end": 385,
+      "geometry_score_m": 0.012060416001501945,
+      "mean_radial_gap_m": 0.010057091378964317,
+      "max_frame_displacement_m": 0.0036892612557185333,
+      "mean_opposition_cosine": -0.8994092202589499
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 297,
+      "end": 386,
+      "geometry_score_m": 0.012073337940325855,
+      "mean_radial_gap_m": 0.010032689561447733,
+      "max_frame_displacement_m": 0.0036892612557185333,
+      "mean_opposition_cosine": -0.8992650237780597
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 256,
+      "end": 345,
+      "geometry_score_m": 0.012104821153003271,
+      "mean_radial_gap_m": 0.009578565595255781,
+      "max_frame_displacement_m": 0.005088939783648422,
+      "mean_opposition_cosine": -0.8997569822542051
+    },
+    {
+      "sequence": 17,
+      "packet": "seq_017.npz",
+      "start": 298,
+      "end": 387,
+      "geometry_score_m": 0.012108783812936088,
+      "mean_radial_gap_m": 0.010042955818651247,
+      "max_frame_displacement_m": 0.0036892612557185333,
+      "mean_opposition_cosine": -0.8983002533251828
+    }
+  ],
+  "source_sha256": "0046c12f80c01cddf7d006cc51fd2af9d85edc978093c4a768fa60e073261846",
+  "manifest_sha256": "3fb29646ee5d4927aa01365f00cdee9969232028b2ceee90c579136f92d7043a",
+  "mesh_sha256": "2b1a93e66da866238860072bc071fb8dac7650e913071a76940cab6b36da5236",
+  "source_center_m": [
+    -0.00019600056111812592,
+    0.001687999814748764,
+    -0.008315499871969223
+  ],
+  "source_extents_m": [
+    0.06964400038123131,
+    0.06964399665594101,
+    0.10363700240850449
+  ],
+  "target_extents_m": [
+    0.053,
+    0.053,
+    0.053
+  ],
+  "criterion": "Opposing thumb/index on cylindrical side, near surface, smooth for 0.3 s; geometry-only minimum gap",
+  "robot_rewards_used": false,
+  "robot_rollouts_used": false,
+  "requested_sequence": 96,
+  "note": "Adroit marker geometry from published processed data, not independently verified human pose truth"
+}

@@ -1,0 +1,45 @@
+{
+  "template": 1,
+  "rule": "minimal",
+  "roll": 0.0,
+  "reference_sha256": "0ff89e8be0c9ef4a0299bf13b5cc397e39cce6877b1b59beadde6a61b48a8468",
+  "model_sha256": "38262f073ff9b604930794f3eb41c95d1377ad4c4f2359a1a39bcd3b100b6128",
+  "short_seeds": [
+    210000,
+    210001,
+    210002,
+    210003,
+    210004,
+    210005,
+    210006,
+    210007
+  ],
+  "long_seeds": [
+    210100,
+    210101,
+    210102,
+    210103,
+    210104,
+    210105,
+    210106,
+    210107,
+    210108,
+    210109,
+    210110,
+    210111,
+    210112,
+    210113,
+    210114,
+    210115
+  ],
+  "selection": "single template and rule, development only; no per-test rollout oracle",
+  "release_sec": 5.0,
+  "move_sec": 2.0,
+  "episode_sec": 42.0,
+  "hold_sec": 30.0,
+  "workspace_translation": [
+    0.0,
+    0.0,
+    0.25
+  ]
+}

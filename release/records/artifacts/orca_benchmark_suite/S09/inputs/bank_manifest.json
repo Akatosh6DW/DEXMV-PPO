@@ -1,0 +1,17 @@
+{
+  "input": "artifacts/orca_benchmark_suite/S09/P03_long_selection",
+  "pose_count": 6,
+  "success_filter": false,
+  "model_sha256": "511437a672dc5dbd19f78742a0dc4db7614c5803336c5ce7de9f0b2b18aa114a",
+  "reference_sha256": "0ff89e8be0c9ef4a0299bf13b5cc397e39cce6877b1b59beadde6a61b48a8468",
+  "sources": {
+    "artifacts/orca_benchmark_suite/S09/P03_long_selection/pose_000/reference.npz": "3a577e4babcf9a7b1114ceb6ed381ef162dcca1fbe140e1a1b6ade78aee3be7c",
+    "artifacts/orca_benchmark_suite/S09/P03_long_selection/pose_001/reference.npz": "efeab1c09a73ebd491ca2de462d39c6250ac31cb3f8551948ad5e4b95890ebde",
+    "artifacts/orca_benchmark_suite/S09/P03_long_selection/pose_002/reference.npz": "adef4587521f1e17f4555922a9b3047c7efa96171ae2b506bf961cad50e5dd80",
+    "artifacts/orca_benchmark_suite/S09/P03_long_selection/pose_003/reference.npz": "a66c07514a66c288afc4ac69b2dc51d2013a3d8616e76696bf5f16c1d39fc77a",
+    "artifacts/orca_benchmark_suite/S09/P03_long_selection/pose_004/reference.npz": "14bc8a6f2bab900663ee0ef43e4cf6b0a1161954dc31aa3e714a35afbc5deea6",
+    "artifacts/orca_benchmark_suite/S09/P03_long_selection/pose_005/reference.npz": "ac77a90d099aeba9d7b7e19326335793f0ff053e73d58ef9e80cb522f53b4141"
+  },
+  "base_selection": "nearest undirected cylinder axis at reset; no test-success oracle",
+  "origin": "DexMV sequence96 object-relative fingertips, constrained IK and bounded simulation correction"
+}

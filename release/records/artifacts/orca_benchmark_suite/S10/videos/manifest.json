@@ -1,0 +1,156 @@
+[
+  {
+    "method": "reference_exact_quality",
+    "training_seed": 0,
+    "case_seed": 220000,
+    "success30": true,
+    "file": "圆柱_S10_整手对准_参考回放_零修正_初态220000_手心_成功_外观.mp4",
+    "sha256": "8e3b353b030caf35a67e39823680425059243c3fa15f0344bfe07a6d059a86e7",
+    "duration_sec": 9.05,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/reference_exact_quality_s0/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "reference_exact_quality",
+    "training_seed": 0,
+    "case_seed": 220000,
+    "success30": true,
+    "file": "圆柱_S10_整手对准_参考回放_零修正_初态220000_手心_成功_碰撞几何.mp4",
+    "sha256": "27ad8709fab59b091b5b3f3bc919efbd66959dc9d7298dc24674870edcda0a7c",
+    "duration_sec": 9.05,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/reference_exact_quality_s0/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "reference_exact_quality",
+    "training_seed": 0,
+    "case_seed": 220002,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_参考回放_零修正_初态220002_手心_失败_外观.mp4",
+    "sha256": "e0030e1b0b1e691638ffc1fcfcd40ed46edf48fa70113402de6eded3b5d0732e",
+    "duration_sec": 11.85,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/reference_exact_quality_s0/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "reference_exact_quality",
+    "training_seed": 0,
+    "case_seed": 220002,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_参考回放_零修正_初态220002_手心_失败_碰撞几何.mp4",
+    "sha256": "5abe2a493b1529e05cb8e631c912618278eb1a8cead81e0cfc9a5c3d79082d2d",
+    "duration_sec": 11.85,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/reference_exact_quality_s0/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "ppo",
+    "training_seed": 22101,
+    "case_seed": 220000,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_从零手指PPO_初态220000_手心_失败_外观.mp4",
+    "sha256": "ace949e5e59b664b957dc0d95232ffe8e7c334725efc50551a0ebfa639d0b2d7",
+    "duration_sec": 5.2,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/ppo_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "ppo",
+    "training_seed": 22101,
+    "case_seed": 220000,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_从零手指PPO_初态220000_手心_失败_碰撞几何.mp4",
+    "sha256": "00a2e00932436242f2e5748fa0ae3812426d1db800a9a462d29861e57168f328",
+    "duration_sec": 5.2,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/ppo_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "guided",
+    "training_seed": 22101,
+    "case_seed": 220000,
+    "success30": true,
+    "file": "圆柱_S10_整手对准_BC后PPO_初态220000_手心_成功_外观.mp4",
+    "sha256": "0ab7e519943b2d440ac9bb3bf913895af0b9cf46e36f2a4894db0760be3f674a",
+    "duration_sec": 9.05,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/guided_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "guided",
+    "training_seed": 22101,
+    "case_seed": 220000,
+    "success30": true,
+    "file": "圆柱_S10_整手对准_BC后PPO_初态220000_手心_成功_碰撞几何.mp4",
+    "sha256": "7b4849ffeb1314cb3e9764a3f80a6523ed2f8654b891b37ead3f47444d6441ce",
+    "duration_sec": 9.05,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/guided_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "guided",
+    "training_seed": 22101,
+    "case_seed": 220017,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_BC后PPO_初态220017_手心_失败_外观.mp4",
+    "sha256": "7813db55c696cba1b2f0f6f1b95126eae2a5cba6ed56d76d6fea487e55e4be68",
+    "duration_sec": 23.4,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/guided_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "guided",
+    "training_seed": 22101,
+    "case_seed": 220017,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_BC后PPO_初态220017_手心_失败_碰撞几何.mp4",
+    "sha256": "d514529265c3131e7a44267e3596e3a0dbfd9a3e1f1421b1323f0b05f747905e",
+    "duration_sec": 23.4,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/guided_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "residual",
+    "training_seed": 22101,
+    "case_seed": 220000,
+    "success30": true,
+    "file": "圆柱_S10_整手对准_参考加残差PPO_初态220000_手心_成功_外观.mp4",
+    "sha256": "cc1c491a572adb01de4204c3fc8eb6ea2779bbd9312641cc76d5e13402a0def7",
+    "duration_sec": 9.05,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/residual_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "residual",
+    "training_seed": 22101,
+    "case_seed": 220000,
+    "success30": true,
+    "file": "圆柱_S10_整手对准_参考加残差PPO_初态220000_手心_成功_碰撞几何.mp4",
+    "sha256": "f98366741724da67b8bb133aca8eccfa214cdbb1bea46fa2ef59cbc817e6c5c2",
+    "duration_sec": 9.05,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/residual_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "residual",
+    "training_seed": 22101,
+    "case_seed": 220019,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_参考加残差PPO_初态220019_手心_失败_外观.mp4",
+    "sha256": "e7c0b905a7941251401b609c54208f842a8e2f5f212967172f66faeb8caa7b3b",
+    "duration_sec": 9.3,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/residual_s22101/step_000000000/preview_trajectories.npz"
+  },
+  {
+    "method": "residual",
+    "training_seed": 22101,
+    "case_seed": 220019,
+    "success30": false,
+    "file": "圆柱_S10_整手对准_参考加残差PPO_初态220019_手心_失败_碰撞几何.mp4",
+    "sha256": "e46e8d76562166729dbf2c8dc5aa66454b4af981f9d664d69aff7c8018973180",
+    "duration_sec": 9.3,
+    "decoded": true,
+    "trace": "artifacts/orca_benchmark_suite/S10/eval/residual_s22101/step_000000000/preview_trajectories.npz"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "complete": true,
+  "videos": 18,
+  "total_video_bytes": 4093874,
+  "full_decode_passed": 18,
+  "files": [
+    {
+      "file": "方块_S02__纯PPO__手心__成功__训练1002_初态40000__外观网格.mp4",
+      "bytes": 261159,
+      "sha256": "504a0527ceae63e13ef314929df622e46adcf1f5be8ceb73d9bfd79986d00b0c",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S02__纯PPO__手心__成功__训练1002_初态40000__碰撞几何.mp4",
+      "bytes": 238835,
+      "sha256": "1746505206bbb2fc1e0f304217d5ff09b98a871200f7262a49bc4f58621f6ca2",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S02__BC加PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+      "bytes": 207512,
+      "sha256": "501a176981d24c3d3798d50230eb70cffcfb5f203307a18bf808e0342810eba1",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S02__BC加PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4",
+      "bytes": 191435,
+      "sha256": "6cecbb74dade3d3ba3081dd1593e5199002f469f8edd4e5ef950e56adc64b6aa",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+      "bytes": 198564,
+      "sha256": "3f186bb80e020a8b06ffb5041e4ccec370aabd35d77d60e0463a88cbb8d6e668",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4",
+      "bytes": 187097,
+      "sha256": "3c75dfdcfc2b68a31cd46c79b2ca1499cca149851619631bcfad7ede87a84953",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S04__纯PPO__手心__成功__训练21002_初态81001__外观网格.mp4",
+      "bytes": 249006,
+      "sha256": "f323bebb1a592efba99d501b6d9a9210e21ed8d5a5b6448d37458f3ec858e58d",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S04__纯PPO__手心__成功__训练21002_初态81001__碰撞几何.mp4",
+      "bytes": 221518,
+      "sha256": "d46349bf4957c5eeaa22eced1423a14c0d97d1cd96e5492633497d8695caf1f1",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S04__BC加PPO__手心__成功__训练21001_初态81000__外观网格.mp4",
+      "bytes": 213921,
+      "sha256": "6570b0c7b80154c6d554df0d30d18e0fefa8ee754c91ab6c7d7241f01e117d06",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S04__BC加PPO__手心__成功__训练21001_初态81000__碰撞几何.mp4",
+      "bytes": 196309,
+      "sha256": "def572ec966e6486ea1f7c496e7433eb52d6cb84cbb23fa05effee3c968672d0",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S04__视频参考加残差PPO__手心__成功__训练21001_初态81000__外观网格.mp4",
+      "bytes": 207300,
+      "sha256": "86533d7852291a58786500b108eefdec8499f75823c42712924dabd992b893a0",
+      "full_decode_ok": true
+    },
+    {
+      "file": "方块_S04__视频参考加残差PPO__手心__成功__训练21001_初态81000__碰撞几何.mp4",
+      "bytes": 194835,
+      "sha256": "bdc603d27c2746f8478c8331e3ffe410fc4eda9d12affa5998274f639e9682d7",
+      "full_decode_ok": true
+    },
+    {
+      "file": "圆柱_S02__纯PPO__手心__成功__训练1002_初态40003__外观网格.mp4",
+      "bytes": 310256,
+      "sha256": "bfa29e35534e74fdb7ed33ca5e0946178f5a7d49de3ac4e730ce455fb3c520df",
+      "full_decode_ok": true
+    },
+    {
+      "file": "圆柱_S02__纯PPO__手心__成功__训练1002_初态40003__碰撞几何.mp4",
+      "bytes": 269800,
+      "sha256": "f15332967aa62262adfe6898802856b1aaf1413642feed7b9693ce099955351a",
+      "full_decode_ok": true
+    },
+    {
+      "file": "圆柱_S02__BC加PPO__手心__失败__训练1001_初态40000__外观网格.mp4",
+      "bytes": 312103,
+      "sha256": "bd19ee00ac3367c3d5515764c2c05db668d7874d39f117b576bdf81d5c889a8e",
+      "full_decode_ok": true
+    },
+    {
+      "file": "圆柱_S02__BC加PPO__手心__失败__训练1001_初态40000__碰撞几何.mp4",
+      "bytes": 276489,
+      "sha256": "6853668c9cc54d4715682f8f88b5ad570d49f57e376fb1b0ff003b6d075963c3",
+      "full_decode_ok": true
+    },
+    {
+      "file": "圆柱_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+      "bytes": 184271,
+      "sha256": "667a2a29a62f99d5b3748df7f41173c0333185a9592646f0476ca596c372e040",
+      "full_decode_ok": true
+    },
+    {
+      "file": "圆柱_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4",
+      "bytes": 173464,
+      "sha256": "bf6bb0ee6556077b21c72ceb4c2f96b794f160a7b289180615ec5b747be469fa",
+      "full_decode_ok": true
+    }
+  ]
+}

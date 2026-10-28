@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-23T02:35:34.507656+00:00",
+  "python": "3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]",
+  "executable": "/home/ll/miniconda3/envs/aero_rl/bin/python",
+  "platform": "Linux-6.17.0-23-generic-x86_64-with-glibc2.39",
+  "logical_cpu_count": 32,
+  "packages": {
+    "mujoco": "3.5.0",
+    "jax": "0.9.0.1",
+    "jaxlib": "0.9.0.1",
+    "brax": "0.14.1",
+    "flax": "0.12.4",
+    "optax": "0.2.6",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "ml-collections": "1.1.0",
+    "mediapy": "1.2.6",
+    "Pillow": "12.1.1",
+    "matplotlib": "3.10.8"
+  },
+  "gpu": {
+    "returncode": 0,
+    "stdout": "NVIDIA GeForce RTX 4060 Laptop GPU, 595.58.03, 8188 MiB",
+    "stderr": ""
+  },
+  "git_head": {
+    "returncode": 0,
+    "stdout": "13c77806087ee8c79d4c9268b09e9b8ec5df8977",
+    "stderr": ""
+  },
+  "submodules": {
+    "returncode": 0,
+    "stdout": "168623681d7b7645e7e759560a222758e914a9c9 Aero-Hand (release_1.0.0-64-g1686236)\n df61077d16eddc6497cb0fe9b6474af63608b7d3 DexMV (heads/master)\n 272d907f318983bb72ed29a0e06bdfec17b07266 DexMV-Learn (heads/master)",
+    "stderr": ""
+  },
+  "local_framework": {
+    "Aero-Hand/sim_rl/mujoco_playground/mujoco_playground/_src/wrapper.py": "ac04844053d84a8904abdd36e41d5f32fef83ba5f97134e03a6bf8bc1c72e0df",
+    "Aero-Hand/sim_rl/mujoco_playground/mujoco_playground/_src/mjx_env.py": "ed4d3e1b93d268d57d41ef3532e3396c20607c2c1d39801feb2fd8d5d9c270a4"
+  },
+  "invocation_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+    "jax_default_matmul_precision": "highest",
+    "jax_pmap_shmap_merge": false
+  }
+}

@@ -6,11 +6,11 @@
 
 ## 当前成果
 
-截至2026-10-23：
+截至2026-10-28（实验数据截至2026-10-24）：
 
 - **S10整手对准圆柱**已经完成三训练种子对比、共同初态测试、逐例统计和手心视频。先用物体位姿把整手对准，再执行手指抓法。原成功标准下，BC后PPO为93.49%，参考回放和残差PPO均为91.41%。
 - **S11固定瓶身开盖**完成小规模机构与接触测试。校正接触后能拧到脱扣，但取盖时失去夹持，未完成取下并拿稳。暂不开展大规模开盖策略训练。
-- **软物体**尚未建立形变与材料模型，当前抓取结果对应刚体。
+- **S12软圆柱抓取**已完成三训练种子、65组共1560回合独立评估与十段手心视频。标准条件严格成功率：BC起点95.83%、BC后PPO80.21%、参考50%、残差PPO44.79%、纯PPO0%；没有证明PPO稳定优于起点。21回合局部单元失效已计失败，不能声称所有物理轨迹有效。[完整结果与资料入口](docs/experiments/S12/README.md)。
 
 先读[S10通俗讲解](docs/experiments/S10/从头理解整手对准实验.md)、[S10结论](docs/experiments/S10/结论与分析.md)和[S11论文调研及可行性记录](docs/experiments/S11/README.md)。
 
@@ -55,6 +55,7 @@
 | S09 | 固定基座适应不同圆柱朝向，以及BC后PPO退化的修复 | [总入口](docs/experiments/S09/README.md) |
 | S10 | 整手先对准，能否共享同一相对抓法？ | [完整协议和结果](docs/experiments/S10/README.md) |
 | S11 | 固定瓶身，Orca单手能否旋拧并取下瓶盖？ | [小规模可行性](docs/experiments/S11/README.md) |
+| S12 | 视频几何先验换成可变形材料后，能否稳定抓持并减少挤压？ | [完整结果、原理与审计](docs/experiments/S12/README.md) |
 
 S10的1,792条策略测试记录使用128个共同初态，另有512条几何对照记录。主要策略各训练3次，每次163,840次在线交互；BC的20,000次监督更新单独计算。参考回放本身已经较强，本轮没有观察到残差相对参考的稳定净收益。完整成功要求撤去支撑后连续合格抓持30秒、结束时仍合格，并通过接触质量检查。
 
@@ -78,6 +79,8 @@ S10的1,792条策略测试记录使用128个共同初态，另有512条几何对
 
 ## 环境与启动
 
+**新开发者请先读 [安装与续训入口](docs/development/README.md)**。本次发布增加了 S12 训练样本、最终权重、统计与逐帧审计附件；旧实验策略见 [POLICIES.csv](release/POLICIES.csv)。两人协作约定见 [CONTRIBUTING.md](CONTRIBUTING.md)，可复用提示词见 [项目提示词](docs/development/prompts.md)，上传/排除范围见 [发布清单说明](docs/development/publication.md)。
+
 本机PPO及模型展示环境名为`aero_rl`：
 
 ```bash
@@ -100,6 +103,7 @@ PPO端以MuJoCo、JAX/Brax和本地`mujoco_playground`为主。DexMV旧环境与
 ```bash
 python -m unittest discover -s scripts -p 'test_s10*.py'
 python -m unittest discover -s scripts -p 'test_s11*.py'
+python -m unittest discover -s scripts -p 'test_s12*.py'
 ```
 
 完整数据仍在本机时，可运行`python scripts/verify_s10_delivery.py`核对S10权重来源、预算、共同初态与视频。该命令需要完整实验输出，不是仅下载源码后的安装测试。

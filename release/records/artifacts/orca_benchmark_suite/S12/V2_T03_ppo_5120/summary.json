@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "step": 0,
+      "elapsed_sec": 17.47309529999984,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "return_mean": -1.285275529287901,
+      "strain_max": 0.3586733341217041,
+      "penetration_max": 0.0015847856411710382,
+      "force_max": 1.1461803913116455
+    },
+    {
+      "step": 2560,
+      "elapsed_sec": 114.91480519600009,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "return_mean": -1.2288137053255923,
+      "strain_max": 0.26389604806900024,
+      "penetration_max": 0.0010314295068383217,
+      "force_max": 0.7771686911582947
+    },
+    {
+      "step": 5120,
+      "elapsed_sec": 211.01129404300082,
+      "success15": 0.0,
+      "hold_sec": 0.0,
+      "return_mean": -1.2405122691343422,
+      "strain_max": 0.26791512966156006,
+      "penetration_max": 0.0010478231124579906,
+      "force_max": 1.0314316749572754
+    }
+  ],
+  "success15": {
+    "first": 0.0,
+    "last": 0.0,
+    "max": 0.0,
+    "best_step": 0
+  },
+  "hold_sec": {
+    "first": 0.0,
+    "last": 0.0,
+    "max": 0.0,
+    "best_step": 0
+  }
+}

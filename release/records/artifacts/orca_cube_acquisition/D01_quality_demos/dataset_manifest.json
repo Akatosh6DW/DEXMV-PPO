@@ -1,0 +1,221 @@
+{
+  "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+  "reference_sha256": "a0aef5ab80560558b5b10347995ca236188e82be7c43191886d4f2c5fe8dcb2c",
+  "dataset_sha256": "44e1fb5ab374edb366c4f51c7ac047689317376af8c9d9203d04a04ae1adf191",
+  "actor_dim": 123,
+  "physics_backend": "native_mujoco_callback",
+  "source_video_count": 1,
+  "source_sequence": 20,
+  "source_frames": [
+    30,
+    95
+  ],
+  "attempts": 64,
+  "accepted": 40,
+  "seeds": [
+    10000,
+    10003,
+    10004,
+    10006,
+    10007,
+    10008,
+    10012,
+    10015,
+    10016,
+    10017,
+    10019,
+    10021,
+    10022,
+    10025,
+    10026,
+    10028,
+    10029,
+    10031,
+    10032,
+    10033,
+    10034,
+    10035,
+    10036,
+    10037,
+    10038,
+    10039,
+    10041,
+    10042,
+    10044,
+    10045,
+    10046,
+    10048,
+    10050,
+    10051,
+    10052,
+    10054,
+    10057,
+    10058,
+    10060,
+    10063
+  ],
+  "penetration": [
+    {
+      "seed": 10000,
+      "max_penetration_m": 0.0011965609353575962
+    },
+    {
+      "seed": 10003,
+      "max_penetration_m": 0.0011789287310483938
+    },
+    {
+      "seed": 10004,
+      "max_penetration_m": 0.001185971888878876
+    },
+    {
+      "seed": 10006,
+      "max_penetration_m": 0.0011816045617694367
+    },
+    {
+      "seed": 10007,
+      "max_penetration_m": 0.001182995055812498
+    },
+    {
+      "seed": 10008,
+      "max_penetration_m": 0.001201123173734153
+    },
+    {
+      "seed": 10012,
+      "max_penetration_m": 0.0011822036082610723
+    },
+    {
+      "seed": 10015,
+      "max_penetration_m": 0.001183142051879295
+    },
+    {
+      "seed": 10016,
+      "max_penetration_m": 0.0011801938831424823
+    },
+    {
+      "seed": 10017,
+      "max_penetration_m": 0.0013473886711585373
+    },
+    {
+      "seed": 10019,
+      "max_penetration_m": 0.0016057661533655093
+    },
+    {
+      "seed": 10021,
+      "max_penetration_m": 0.0011813555560098114
+    },
+    {
+      "seed": 10022,
+      "max_penetration_m": 0.00118171361946576
+    },
+    {
+      "seed": 10025,
+      "max_penetration_m": 0.0011794772985698043
+    },
+    {
+      "seed": 10026,
+      "max_penetration_m": 0.0012106963575784788
+    },
+    {
+      "seed": 10028,
+      "max_penetration_m": 0.0012010505826032134
+    },
+    {
+      "seed": 10029,
+      "max_penetration_m": 0.0011803573326809825
+    },
+    {
+      "seed": 10031,
+      "max_penetration_m": 0.001181177778248256
+    },
+    {
+      "seed": 10032,
+      "max_penetration_m": 0.0012456388451367135
+    },
+    {
+      "seed": 10033,
+      "max_penetration_m": 0.0011816804688214565
+    },
+    {
+      "seed": 10034,
+      "max_penetration_m": 0.001182288181441343
+    },
+    {
+      "seed": 10035,
+      "max_penetration_m": 0.0011810793212843652
+    },
+    {
+      "seed": 10036,
+      "max_penetration_m": 0.001186967013759142
+    },
+    {
+      "seed": 10037,
+      "max_penetration_m": 0.0011835000715274026
+    },
+    {
+      "seed": 10038,
+      "max_penetration_m": 0.0011807695569924191
+    },
+    {
+      "seed": 10039,
+      "max_penetration_m": 0.0011816163438697416
+    },
+    {
+      "seed": 10041,
+      "max_penetration_m": 0.0011794562890919983
+    },
+    {
+      "seed": 10042,
+      "max_penetration_m": 0.0011996250529374584
+    },
+    {
+      "seed": 10044,
+      "max_penetration_m": 0.0011803573668480857
+    },
+    {
+      "seed": 10045,
+      "max_penetration_m": 0.0011832406139833428
+    },
+    {
+      "seed": 10046,
+      "max_penetration_m": 0.0011837553939933777
+    },
+    {
+      "seed": 10048,
+      "max_penetration_m": 0.0011824412083048614
+    },
+    {
+      "seed": 10050,
+      "max_penetration_m": 0.0011798442276554537
+    },
+    {
+      "seed": 10051,
+      "max_penetration_m": 0.001180879137501695
+    },
+    {
+      "seed": 10052,
+      "max_penetration_m": 0.001560522918169771
+    },
+    {
+      "seed": 10054,
+      "max_penetration_m": 0.0015718645327925402
+    },
+    {
+      "seed": 10057,
+      "max_penetration_m": 0.0011798313151685103
+    },
+    {
+      "seed": 10058,
+      "max_penetration_m": 0.0011806738926256012
+    },
+    {
+      "seed": 10060,
+      "max_penetration_m": 0.001181078224841113
+    },
+    {
+      "seed": 10063,
+      "max_penetration_m": 0.0011809948011171183
+    }
+  ],
+  "teacher": "video retargeting plus <=.12 rad simulator-selected correction",
+  "split": "first 75% rollouts training, remainder validation; not independent videos"
+}

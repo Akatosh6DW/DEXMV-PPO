@@ -1,0 +1,1358 @@
+{
+  "complete": true,
+  "cases": [
+    {
+      "id": "方块_S02__ppo",
+      "study": "方块_S02",
+      "method": "ppo",
+      "train_seed": 1002,
+      "test_seed": 40000,
+      "episode": 0,
+      "source_trace": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/ppo_s1002/step_000000000/preview_trajectories.npz",
+      "trace_sha256": "458ebdaf8b9a09c5a33ac7dd36834036aa1a29e08fd97dabfe293066d3baa29c",
+      "initial_states": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/ppo_s1002/step_000000000/initial_states.npz",
+      "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+      "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+      "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+      "run_config": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/ppo_s1002/run_config.json",
+      "run_config_sha256": "0e6c3e9e02e89bb83f66277eefda512087588ed261f48c4bde820a477485ce2e",
+      "outcome": {
+        "seed": 40000,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 25.643983840942383,
+        "forbidden": false,
+        "max_penetration_m": 0.001938117784447968,
+        "post_release_penetration_m": 0.001253616064786911,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 28.9746150970459,
+        "clean_success30": true,
+        "residual_rms_rad": 0.0,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 12,
+      "videos": {
+        "stl": "方块_S02__纯PPO__手心__成功__训练1002_初态40000__外观网格.mp4",
+        "collision": "方块_S02__纯PPO__手心__成功__训练1002_初态40000__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "方块_S02__guided",
+      "study": "方块_S02",
+      "method": "guided",
+      "train_seed": 1001,
+      "test_seed": 40000,
+      "episode": 0,
+      "source_trace": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/guided_s1001/step_000000000/preview_trajectories.npz",
+      "trace_sha256": "fb865a73bf3256a6eebdba99d98f8b9cb2020164741dc26bb514d79f7ab1c8bb",
+      "initial_states": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/guided_s1001/step_000000000/initial_states.npz",
+      "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+      "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+      "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+      "run_config": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/guided_s1001/run_config.json",
+      "run_config_sha256": "4f1cae6e4c59ef1d00fe0854ca6a2dbfa1d018715095bc7092be2bd88369b6fb",
+      "outcome": {
+        "seed": 40000,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 24.349916458129883,
+        "forbidden": false,
+        "max_penetration_m": 0.001770238159224391,
+        "post_release_penetration_m": 0.001770238159224391,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 24.378299713134766,
+        "clean_success30": true,
+        "residual_rms_rad": 0.0,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 28,
+      "videos": {
+        "stl": "方块_S02__BC加PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+        "collision": "方块_S02__BC加PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "方块_S02__residual",
+      "study": "方块_S02",
+      "method": "residual",
+      "train_seed": 1001,
+      "test_seed": 40000,
+      "episode": 0,
+      "source_trace": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/residual_s1001/step_000000000/preview_trajectories.npz",
+      "trace_sha256": "cb44eac24ca2bc3438a7382db308d26e32f9d63b3418bdb1d01680d9d6dba23a",
+      "initial_states": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/residual_s1001/step_000000000/initial_states.npz",
+      "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+      "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+      "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+      "run_config": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/residual_s1001/run_config.json",
+      "run_config_sha256": "e6e38a985a437d02a9c34a6e19133211e3fd1e6eaafb56583dec7b5b0cdb01e4",
+      "outcome": {
+        "seed": 40000,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 9.58279800415039,
+        "forbidden": false,
+        "max_penetration_m": 0.0012371577322483063,
+        "post_release_penetration_m": 0.0012063197791576385,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 9.889951705932617,
+        "clean_success30": true,
+        "residual_rms_rad": 0.0036698170006275177,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 22,
+      "videos": {
+        "stl": "方块_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+        "collision": "方块_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "方块_S04__ppo",
+      "study": "方块_S04",
+      "method": "ppo",
+      "train_seed": 21002,
+      "test_seed": 81001,
+      "episode": 1,
+      "source_trace": "artifacts/orca_benchmark_suite/S04/eval/ppo/s21002/evaluation/preview_trajectories.npz",
+      "trace_sha256": "9dd96b8d6c34e4b4517efb4086bb91b8c55c592743db3e459012ef9bcc3aff57",
+      "initial_states": "artifacts/orca_benchmark_suite/S04/eval/ppo/s21002/evaluation/initial_states.npz",
+      "initial_states_sha256": "726aca97d2dce654938c3e1a84506aaedcab47caa1a49f78c13e06891bdd345c",
+      "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+      "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+      "run_config": "artifacts/orca_benchmark_suite/S04/eval/ppo/s21002/run_config.json",
+      "run_config_sha256": "1e977da0fd3482f2662bb9561e8c6249064574f3fdaee5b81f0ce1894fbbd4a7",
+      "outcome": {
+        "seed": 81001,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 33.71677780151367,
+        "forbidden": false,
+        "max_penetration_m": 0.0022958414629101753,
+        "post_release_penetration_m": 0.0013728433987125754,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 35.72849655151367,
+        "clean_success30": true,
+        "residual_rms_rad": 0.0,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true,
+        "full_episode_clean_success30": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 12,
+      "videos": {
+        "stl": "方块_S04__纯PPO__手心__成功__训练21002_初态81001__外观网格.mp4",
+        "collision": "方块_S04__纯PPO__手心__成功__训练21002_初态81001__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "方块_S04__guided",
+      "study": "方块_S04",
+      "method": "guided",
+      "train_seed": 21001,
+      "test_seed": 81000,
+      "episode": 0,
+      "source_trace": "artifacts/orca_benchmark_suite/S04/eval/guided/s21001/evaluation/preview_trajectories.npz",
+      "trace_sha256": "4409b62aa356e4c2d3e9b769a4bb237bb4d3fa0b9d5fe3c20000b38a5f442045",
+      "initial_states": "artifacts/orca_benchmark_suite/S04/eval/guided/s21001/evaluation/initial_states.npz",
+      "initial_states_sha256": "726aca97d2dce654938c3e1a84506aaedcab47caa1a49f78c13e06891bdd345c",
+      "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+      "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+      "run_config": "artifacts/orca_benchmark_suite/S04/eval/guided/s21001/run_config.json",
+      "run_config_sha256": "750abf629ec6d805d40de727da8f5d4fc793001fc95635a645897fb6f09618d8",
+      "outcome": {
+        "seed": 81000,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 28.31828498840332,
+        "forbidden": false,
+        "max_penetration_m": 0.0019232885679230094,
+        "post_release_penetration_m": 0.0019232885679230094,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 28.327640533447266,
+        "clean_success30": true,
+        "residual_rms_rad": 0.0,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true,
+        "full_episode_clean_success30": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 34,
+      "videos": {
+        "stl": "方块_S04__BC加PPO__手心__成功__训练21001_初态81000__外观网格.mp4",
+        "collision": "方块_S04__BC加PPO__手心__成功__训练21001_初态81000__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "方块_S04__residual",
+      "study": "方块_S04",
+      "method": "residual",
+      "train_seed": 21001,
+      "test_seed": 81000,
+      "episode": 0,
+      "source_trace": "artifacts/orca_benchmark_suite/S04/eval/residual/s21001/evaluation/preview_trajectories.npz",
+      "trace_sha256": "a09ea1b4bce1092db3cf9f87badf90109f981ed99b0cdfb307b6b196c585b9b2",
+      "initial_states": "artifacts/orca_benchmark_suite/S04/eval/residual/s21001/evaluation/initial_states.npz",
+      "initial_states_sha256": "726aca97d2dce654938c3e1a84506aaedcab47caa1a49f78c13e06891bdd345c",
+      "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+      "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+      "run_config": "artifacts/orca_benchmark_suite/S04/eval/residual/s21001/run_config.json",
+      "run_config_sha256": "ccca0d577c4eb0015279fadb62ed1fee0c2997634b4c6cc646e1769579a680cf",
+      "outcome": {
+        "seed": 81000,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 14.300830841064453,
+        "forbidden": false,
+        "max_penetration_m": 0.0017234093975275755,
+        "post_release_penetration_m": 0.0013711171923205256,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 18.23072052001953,
+        "clean_success30": true,
+        "residual_rms_rad": 0.01394863985478878,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true,
+        "full_episode_clean_success30": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 32,
+      "videos": {
+        "stl": "方块_S04__视频参考加残差PPO__手心__成功__训练21001_初态81000__外观网格.mp4",
+        "collision": "方块_S04__视频参考加残差PPO__手心__成功__训练21001_初态81000__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "圆柱_S02__ppo",
+      "study": "圆柱_S02",
+      "method": "ppo",
+      "train_seed": 1002,
+      "test_seed": 40003,
+      "episode": 3,
+      "source_trace": "artifacts/orca_cylinder_s02/eval/B0_nominal/ppo_s1002/step_000000000/preview_trajectories.npz",
+      "trace_sha256": "8b2f7157441b68cddd9cdd7c0aa471e6ca40c86701fe5c7ada2c70b1a86f55d8",
+      "initial_states": "artifacts/orca_cylinder_s02/eval/B0_nominal/ppo_s1002/step_000000000/initial_states.npz",
+      "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+      "model": "artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+      "model_sha256": "0dd42f19bb7e604b0f41c5ea99e69acc722039ff2b80da6082a4d878eebd4a40",
+      "run_config": "artifacts/orca_cylinder_s02/eval/B0_nominal/ppo_s1002/run_config.json",
+      "run_config_sha256": "8fa8b20b70c2da5080df556c356f5554c75b1de1538f781f115b7eb4d7f383c2",
+      "outcome": {
+        "seed": 40003,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 38.76755905151367,
+        "forbidden": false,
+        "max_penetration_m": 0.002376400865614414,
+        "post_release_penetration_m": 0.0014278419548645616,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 38.76755905151367,
+        "clean_success30": true,
+        "residual_rms_rad": 0.0,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 16,
+      "videos": {
+        "stl": "圆柱_S02__纯PPO__手心__成功__训练1002_初态40003__外观网格.mp4",
+        "collision": "圆柱_S02__纯PPO__手心__成功__训练1002_初态40003__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "圆柱_S02__guided",
+      "study": "圆柱_S02",
+      "method": "guided",
+      "train_seed": 1001,
+      "test_seed": 40000,
+      "episode": 0,
+      "source_trace": "artifacts/orca_cylinder_s02/eval/B0_nominal/guided_s1001/step_000000000/preview_trajectories.npz",
+      "trace_sha256": "7eb970b7c5587cb6dd7fca68c07965f062f341d8e71d8d8a540b1112c10e1a32",
+      "initial_states": "artifacts/orca_cylinder_s02/eval/B0_nominal/guided_s1001/step_000000000/initial_states.npz",
+      "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+      "model": "artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+      "model_sha256": "0dd42f19bb7e604b0f41c5ea99e69acc722039ff2b80da6082a4d878eebd4a40",
+      "run_config": "artifacts/orca_cylinder_s02/eval/B0_nominal/guided_s1001/run_config.json",
+      "run_config_sha256": "f8d620db18e81be033bdbfcadab403bf288252962d188a87fe8b996d5c90f678",
+      "outcome": {
+        "seed": 40000,
+        "success30": false,
+        "success15": false,
+        "longest_hold_sec": 9.4,
+        "final_valid": false,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 24.308618545532227,
+        "forbidden": true,
+        "max_penetration_m": 0.0016542220255360007,
+        "post_release_penetration_m": 0.0016542220255360007,
+        "substep_forbidden": true,
+        "substep_force_peak_n": 25.469758987426758,
+        "clean_success30": false,
+        "residual_rms_rad": 0.0,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true
+      },
+      "endpoint": 247,
+      "hold_start": null,
+      "end_reason": "撤托后接触审计不合格",
+      "status": "失败",
+      "frames": 249,
+      "simulation_end_sec": 12.4,
+      "seconds": 12.450000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 0,
+      "videos": {
+        "stl": "圆柱_S02__BC加PPO__手心__失败__训练1001_初态40000__外观网格.mp4",
+        "collision": "圆柱_S02__BC加PPO__手心__失败__训练1001_初态40000__碰撞几何.mp4"
+      }
+    },
+    {
+      "id": "圆柱_S02__residual",
+      "study": "圆柱_S02",
+      "method": "residual",
+      "train_seed": 1001,
+      "test_seed": 40000,
+      "episode": 0,
+      "source_trace": "artifacts/orca_cylinder_s02/eval/B0_nominal/residual_s1001/step_000000000/preview_trajectories.npz",
+      "trace_sha256": "eaf150633c0a9b256d93a04a690698d7cf0504d2e9074667464b4b1040d37607",
+      "initial_states": "artifacts/orca_cylinder_s02/eval/B0_nominal/residual_s1001/step_000000000/initial_states.npz",
+      "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+      "model": "artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+      "model_sha256": "0dd42f19bb7e604b0f41c5ea99e69acc722039ff2b80da6082a4d878eebd4a40",
+      "run_config": "artifacts/orca_cylinder_s02/eval/B0_nominal/residual_s1001/run_config.json",
+      "run_config_sha256": "98f75c4e9922ce2bbb98425042502c7c4d728988709ec73d7517decc3d80a322",
+      "outcome": {
+        "seed": 40000,
+        "success30": true,
+        "success15": true,
+        "longest_hold_sec": 37.050000000000004,
+        "final_valid": true,
+        "acquisition_sec": 3.0,
+        "finger_peak_n": 4.136220455169678,
+        "forbidden": false,
+        "max_penetration_m": 0.0008481803815811872,
+        "post_release_penetration_m": 0.00016474870790261775,
+        "substep_forbidden": false,
+        "substep_force_peak_n": 5.154299259185791,
+        "clean_success30": true,
+        "residual_rms_rad": 0.0044088177382946014,
+        "valid_before_push": true,
+        "valid_one_second_after_push": true
+      },
+      "endpoint": 139,
+      "hold_start": 59,
+      "end_reason": "稳定抓持连续满4秒",
+      "status": "成功",
+      "frames": 141,
+      "simulation_end_sec": 7.0,
+      "seconds": 7.050000000000001,
+      "camera": {
+        "azimuth": 225,
+        "elevation": -18,
+        "distance": 0.4,
+        "lookat": [
+          0.035,
+          0.025,
+          0.245
+        ]
+      },
+      "candidates_considered": 40,
+      "saved_clean_successes": 20,
+      "videos": {
+        "stl": "圆柱_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+        "collision": "圆柱_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4"
+      }
+    }
+  ],
+  "reports": [
+    {
+      "case": {
+        "id": "方块_S02__ppo",
+        "study": "方块_S02",
+        "method": "ppo",
+        "train_seed": 1002,
+        "test_seed": 40000,
+        "episode": 0,
+        "source_trace": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/ppo_s1002/step_000000000/preview_trajectories.npz",
+        "trace_sha256": "458ebdaf8b9a09c5a33ac7dd36834036aa1a29e08fd97dabfe293066d3baa29c",
+        "initial_states": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/ppo_s1002/step_000000000/initial_states.npz",
+        "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+        "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+        "run_config": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/ppo_s1002/run_config.json",
+        "run_config_sha256": "0e6c3e9e02e89bb83f66277eefda512087588ed261f48c4bde820a477485ce2e",
+        "outcome": {
+          "seed": 40000,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 25.643983840942383,
+          "forbidden": false,
+          "max_penetration_m": 0.001938117784447968,
+          "post_release_penetration_m": 0.001253616064786911,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 28.9746150970459,
+          "clean_success30": true,
+          "residual_rms_rad": 0.0,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 12,
+        "videos": {
+          "stl": "方块_S02__纯PPO__手心__成功__训练1002_初态40000__外观网格.mp4",
+          "collision": "方块_S02__纯PPO__手心__成功__训练1002_初态40000__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "504a0527ceae63e13ef314929df622e46adcf1f5be8ceb73d9bfd79986d00b0c",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 46.48208880879934,
+          "mean_scene_change": 7.784939236111111
+        },
+        "collision": {
+          "sha256": "1746505206bbb2fc1e0f304217d5ff09b98a871200f7262a49bc4f58621f6ca2",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 48.36700331814525,
+          "mean_scene_change": 6.664309561965812
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "方块_S02__guided",
+        "study": "方块_S02",
+        "method": "guided",
+        "train_seed": 1001,
+        "test_seed": 40000,
+        "episode": 0,
+        "source_trace": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/guided_s1001/step_000000000/preview_trajectories.npz",
+        "trace_sha256": "fb865a73bf3256a6eebdba99d98f8b9cb2020164741dc26bb514d79f7ab1c8bb",
+        "initial_states": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/guided_s1001/step_000000000/initial_states.npz",
+        "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+        "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+        "run_config": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/guided_s1001/run_config.json",
+        "run_config_sha256": "4f1cae6e4c59ef1d00fe0854ca6a2dbfa1d018715095bc7092be2bd88369b6fb",
+        "outcome": {
+          "seed": 40000,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 24.349916458129883,
+          "forbidden": false,
+          "max_penetration_m": 0.001770238159224391,
+          "post_release_penetration_m": 0.001770238159224391,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 24.378299713134766,
+          "clean_success30": true,
+          "residual_rms_rad": 0.0,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 28,
+        "videos": {
+          "stl": "方块_S02__BC加PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+          "collision": "方块_S02__BC加PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "501a176981d24c3d3798d50230eb70cffcfb5f203307a18bf808e0342810eba1",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 46.38516260278085,
+          "mean_scene_change": 5.4539646768162395
+        },
+        "collision": {
+          "sha256": "6cecbb74dade3d3ba3081dd1593e5199002f469f8edd4e5ef950e56adc64b6aa",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 48.176589646828624,
+          "mean_scene_change": 4.489793669871795
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "方块_S02__residual",
+        "study": "方块_S02",
+        "method": "residual",
+        "train_seed": 1001,
+        "test_seed": 40000,
+        "episode": 0,
+        "source_trace": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/residual_s1001/step_000000000/preview_trajectories.npz",
+        "trace_sha256": "cb44eac24ca2bc3438a7382db308d26e32f9d63b3418bdb1d01680d9d6dba23a",
+        "initial_states": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/residual_s1001/step_000000000/initial_states.npz",
+        "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+        "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+        "run_config": "artifacts/orca_benchmark_suite/S02/eval/B0_nominal/residual_s1001/run_config.json",
+        "run_config_sha256": "e6e38a985a437d02a9c34a6e19133211e3fd1e6eaafb56583dec7b5b0cdb01e4",
+        "outcome": {
+          "seed": 40000,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 9.58279800415039,
+          "forbidden": false,
+          "max_penetration_m": 0.0012371577322483063,
+          "post_release_penetration_m": 0.0012063197791576385,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 9.889951705932617,
+          "clean_success30": true,
+          "residual_rms_rad": 0.0036698170006275177,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 22,
+        "videos": {
+          "stl": "方块_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+          "collision": "方块_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "3f186bb80e020a8b06ffb5041e4ccec370aabd35d77d60e0463a88cbb8d6e668",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 46.37318534839978,
+          "mean_scene_change": 2.5017177483974358
+        },
+        "collision": {
+          "sha256": "3c75dfdcfc2b68a31cd46c79b2ca1499cca149851619631bcfad7ede87a84953",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 48.05759373570033,
+          "mean_scene_change": 2.3935290909900284
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "方块_S04__ppo",
+        "study": "方块_S04",
+        "method": "ppo",
+        "train_seed": 21002,
+        "test_seed": 81001,
+        "episode": 1,
+        "source_trace": "artifacts/orca_benchmark_suite/S04/eval/ppo/s21002/evaluation/preview_trajectories.npz",
+        "trace_sha256": "9dd96b8d6c34e4b4517efb4086bb91b8c55c592743db3e459012ef9bcc3aff57",
+        "initial_states": "artifacts/orca_benchmark_suite/S04/eval/ppo/s21002/evaluation/initial_states.npz",
+        "initial_states_sha256": "726aca97d2dce654938c3e1a84506aaedcab47caa1a49f78c13e06891bdd345c",
+        "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+        "run_config": "artifacts/orca_benchmark_suite/S04/eval/ppo/s21002/run_config.json",
+        "run_config_sha256": "1e977da0fd3482f2662bb9561e8c6249064574f3fdaee5b81f0ce1894fbbd4a7",
+        "outcome": {
+          "seed": 81001,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 33.71677780151367,
+          "forbidden": false,
+          "max_penetration_m": 0.0022958414629101753,
+          "post_release_penetration_m": 0.0013728433987125754,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 35.72849655151367,
+          "clean_success30": true,
+          "residual_rms_rad": 0.0,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true,
+          "full_episode_clean_success30": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 12,
+        "videos": {
+          "stl": "方块_S04__纯PPO__手心__成功__训练21002_初态81001__外观网格.mp4",
+          "collision": "方块_S04__纯PPO__手心__成功__训练21002_初态81001__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "f323bebb1a592efba99d501b6d9a9210e21ed8d5a5b6448d37458f3ec858e58d",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 46.53327429364789,
+          "mean_scene_change": 7.865686765491453
+        },
+        "collision": {
+          "sha256": "d46349bf4957c5eeaa22eced1423a14c0d97d1cd96e5492633497d8695caf1f1",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 48.424482236054374,
+          "mean_scene_change": 6.807246594551282
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "方块_S04__guided",
+        "study": "方块_S04",
+        "method": "guided",
+        "train_seed": 21001,
+        "test_seed": 81000,
+        "episode": 0,
+        "source_trace": "artifacts/orca_benchmark_suite/S04/eval/guided/s21001/evaluation/preview_trajectories.npz",
+        "trace_sha256": "4409b62aa356e4c2d3e9b769a4bb237bb4d3fa0b9d5fe3c20000b38a5f442045",
+        "initial_states": "artifacts/orca_benchmark_suite/S04/eval/guided/s21001/evaluation/initial_states.npz",
+        "initial_states_sha256": "726aca97d2dce654938c3e1a84506aaedcab47caa1a49f78c13e06891bdd345c",
+        "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+        "run_config": "artifacts/orca_benchmark_suite/S04/eval/guided/s21001/run_config.json",
+        "run_config_sha256": "750abf629ec6d805d40de727da8f5d4fc793001fc95635a645897fb6f09618d8",
+        "outcome": {
+          "seed": 81000,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 28.31828498840332,
+          "forbidden": false,
+          "max_penetration_m": 0.0019232885679230094,
+          "post_release_penetration_m": 0.0019232885679230094,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 28.327640533447266,
+          "clean_success30": true,
+          "residual_rms_rad": 0.0,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true,
+          "full_episode_clean_success30": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 34,
+        "videos": {
+          "stl": "方块_S04__BC加PPO__手心__成功__训练21001_初态81000__外观网格.mp4",
+          "collision": "方块_S04__BC加PPO__手心__成功__训练21001_初态81000__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "6570b0c7b80154c6d554df0d30d18e0fefa8ee754c91ab6c7d7241f01e117d06",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 46.25620697132036,
+          "mean_scene_change": 3.641840834223647
+        },
+        "collision": {
+          "sha256": "def572ec966e6486ea1f7c496e7433eb52d6cb84cbb23fa05effee3c968672d0",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 48.033707833360964,
+          "mean_scene_change": 3.0430555555555556
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "方块_S04__residual",
+        "study": "方块_S04",
+        "method": "residual",
+        "train_seed": 21001,
+        "test_seed": 81000,
+        "episode": 0,
+        "source_trace": "artifacts/orca_benchmark_suite/S04/eval/residual/s21001/evaluation/preview_trajectories.npz",
+        "trace_sha256": "a09ea1b4bce1092db3cf9f87badf90109f981ed99b0cdfb307b6b196c585b9b2",
+        "initial_states": "artifacts/orca_benchmark_suite/S04/eval/residual/s21001/evaluation/initial_states.npz",
+        "initial_states_sha256": "726aca97d2dce654938c3e1a84506aaedcab47caa1a49f78c13e06891bdd345c",
+        "model": "artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "model_sha256": "3bee2436762cb841d78666d54e6ed923f8d45b23641d90ddacffe99e4859097d",
+        "run_config": "artifacts/orca_benchmark_suite/S04/eval/residual/s21001/run_config.json",
+        "run_config_sha256": "ccca0d577c4eb0015279fadb62ed1fee0c2997634b4c6cc646e1769579a680cf",
+        "outcome": {
+          "seed": 81000,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 14.300830841064453,
+          "forbidden": false,
+          "max_penetration_m": 0.0017234093975275755,
+          "post_release_penetration_m": 0.0013711171923205256,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 18.23072052001953,
+          "clean_success30": true,
+          "residual_rms_rad": 0.01394863985478878,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true,
+          "full_episode_clean_success30": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 32,
+        "videos": {
+          "stl": "方块_S04__视频参考加残差PPO__手心__成功__训练21001_初态81000__外观网格.mp4",
+          "collision": "方块_S04__视频参考加残差PPO__手心__成功__训练21001_初态81000__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_collision_refit/O20_hic53_elliptic/cube.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "86533d7852291a58786500b108eefdec8499f75823c42712924dabd992b893a0",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 46.39617250263109,
+          "mean_scene_change": 3.3469512330840456
+        },
+        "collision": {
+          "sha256": "bdc603d27c2746f8478c8331e3ffe410fc4eda9d12affa5998274f639e9682d7",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 48.04458512159317,
+          "mean_scene_change": 2.895589610042735
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "圆柱_S02__ppo",
+        "study": "圆柱_S02",
+        "method": "ppo",
+        "train_seed": 1002,
+        "test_seed": 40003,
+        "episode": 3,
+        "source_trace": "artifacts/orca_cylinder_s02/eval/B0_nominal/ppo_s1002/step_000000000/preview_trajectories.npz",
+        "trace_sha256": "8b2f7157441b68cddd9cdd7c0aa471e6ca40c86701fe5c7ada2c70b1a86f55d8",
+        "initial_states": "artifacts/orca_cylinder_s02/eval/B0_nominal/ppo_s1002/step_000000000/initial_states.npz",
+        "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+        "model": "artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+        "model_sha256": "0dd42f19bb7e604b0f41c5ea99e69acc722039ff2b80da6082a4d878eebd4a40",
+        "run_config": "artifacts/orca_cylinder_s02/eval/B0_nominal/ppo_s1002/run_config.json",
+        "run_config_sha256": "8fa8b20b70c2da5080df556c356f5554c75b1de1538f781f115b7eb4d7f383c2",
+        "outcome": {
+          "seed": 40003,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 38.76755905151367,
+          "forbidden": false,
+          "max_penetration_m": 0.002376400865614414,
+          "post_release_penetration_m": 0.0014278419548645616,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 38.76755905151367,
+          "clean_success30": true,
+          "residual_rms_rad": 0.0,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 16,
+        "videos": {
+          "stl": "圆柱_S02__纯PPO__手心__成功__训练1002_初态40003__外观网格.mp4",
+          "collision": "圆柱_S02__纯PPO__手心__成功__训练1002_初态40003__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "bfa29e35534e74fdb7ed33ca5e0946178f5a7d49de3ac4e730ce455fb3c520df",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 45.94074899245388,
+          "mean_scene_change": 7.781118678774929
+        },
+        "collision": {
+          "sha256": "f15332967aa62262adfe6898802856b1aaf1413642feed7b9693ce099955351a",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 47.90829852717839,
+          "mean_scene_change": 6.695823317307692
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "圆柱_S02__guided",
+        "study": "圆柱_S02",
+        "method": "guided",
+        "train_seed": 1001,
+        "test_seed": 40000,
+        "episode": 0,
+        "source_trace": "artifacts/orca_cylinder_s02/eval/B0_nominal/guided_s1001/step_000000000/preview_trajectories.npz",
+        "trace_sha256": "7eb970b7c5587cb6dd7fca68c07965f062f341d8e71d8d8a540b1112c10e1a32",
+        "initial_states": "artifacts/orca_cylinder_s02/eval/B0_nominal/guided_s1001/step_000000000/initial_states.npz",
+        "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+        "model": "artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+        "model_sha256": "0dd42f19bb7e604b0f41c5ea99e69acc722039ff2b80da6082a4d878eebd4a40",
+        "run_config": "artifacts/orca_cylinder_s02/eval/B0_nominal/guided_s1001/run_config.json",
+        "run_config_sha256": "f8d620db18e81be033bdbfcadab403bf288252962d188a87fe8b996d5c90f678",
+        "outcome": {
+          "seed": 40000,
+          "success30": false,
+          "success15": false,
+          "longest_hold_sec": 9.4,
+          "final_valid": false,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 24.308618545532227,
+          "forbidden": true,
+          "max_penetration_m": 0.0016542220255360007,
+          "post_release_penetration_m": 0.0016542220255360007,
+          "substep_forbidden": true,
+          "substep_force_peak_n": 25.469758987426758,
+          "clean_success30": false,
+          "residual_rms_rad": 0.0,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true
+        },
+        "endpoint": 247,
+        "hold_start": null,
+        "end_reason": "撤托后接触审计不合格",
+        "status": "失败",
+        "frames": 249,
+        "simulation_end_sec": 12.4,
+        "seconds": 12.450000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 0,
+        "videos": {
+          "stl": "圆柱_S02__BC加PPO__手心__失败__训练1001_初态40000__外观网格.mp4",
+          "collision": "圆柱_S02__BC加PPO__手心__失败__训练1001_初态40000__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "bd19ee00ac3367c3d5515764c2c05db668d7874d39f117b576bdf81d5c889a8e",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "12.450000",
+            "nb_read_frames": "249"
+          },
+          "min_scene_pixel_std": 45.72766295635619,
+          "mean_scene_change": 4.392096242877493
+        },
+        "collision": {
+          "sha256": "6853668c9cc54d4715682f8f88b5ad570d49f57e376fb1b0ff003b6d075963c3",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "12.450000",
+            "nb_read_frames": "249"
+          },
+          "min_scene_pixel_std": 47.66256105447326,
+          "mean_scene_change": 4.339543269230769
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "圆柱_S02__residual",
+        "study": "圆柱_S02",
+        "method": "residual",
+        "train_seed": 1001,
+        "test_seed": 40000,
+        "episode": 0,
+        "source_trace": "artifacts/orca_cylinder_s02/eval/B0_nominal/residual_s1001/step_000000000/preview_trajectories.npz",
+        "trace_sha256": "eaf150633c0a9b256d93a04a690698d7cf0504d2e9074667464b4b1040d37607",
+        "initial_states": "artifacts/orca_cylinder_s02/eval/B0_nominal/residual_s1001/step_000000000/initial_states.npz",
+        "initial_states_sha256": "6a3228564084b28a8e9ed6310ade2dc44c647ab3822a4c85ed8cfbbeb437215a",
+        "model": "artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+        "model_sha256": "0dd42f19bb7e604b0f41c5ea99e69acc722039ff2b80da6082a4d878eebd4a40",
+        "run_config": "artifacts/orca_cylinder_s02/eval/B0_nominal/residual_s1001/run_config.json",
+        "run_config_sha256": "98f75c4e9922ce2bbb98425042502c7c4d728988709ec73d7517decc3d80a322",
+        "outcome": {
+          "seed": 40000,
+          "success30": true,
+          "success15": true,
+          "longest_hold_sec": 37.050000000000004,
+          "final_valid": true,
+          "acquisition_sec": 3.0,
+          "finger_peak_n": 4.136220455169678,
+          "forbidden": false,
+          "max_penetration_m": 0.0008481803815811872,
+          "post_release_penetration_m": 0.00016474870790261775,
+          "substep_forbidden": false,
+          "substep_force_peak_n": 5.154299259185791,
+          "clean_success30": true,
+          "residual_rms_rad": 0.0044088177382946014,
+          "valid_before_push": true,
+          "valid_one_second_after_push": true
+        },
+        "endpoint": 139,
+        "hold_start": 59,
+        "end_reason": "稳定抓持连续满4秒",
+        "status": "成功",
+        "frames": 141,
+        "simulation_end_sec": 7.0,
+        "seconds": 7.050000000000001,
+        "camera": {
+          "azimuth": 225,
+          "elevation": -18,
+          "distance": 0.4,
+          "lookat": [
+            0.035,
+            0.025,
+            0.245
+          ]
+        },
+        "candidates_considered": 40,
+        "saved_clean_successes": 20,
+        "videos": {
+          "stl": "圆柱_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__外观网格.mp4",
+          "collision": "圆柱_S02__视频参考加残差PPO__手心__成功__训练1001_初态40000__碰撞几何.mp4"
+        }
+      },
+      "scene_check": {
+        "visual_geoms_added": 30,
+        "physics_arrays_match": true,
+        "source_model": "/home/ll/SRTP/DEXMV-PPO/artifacts/orca_cylinder_s02/videos/scenes/B0_nominal.xml",
+        "mode": "render_only"
+      },
+      "no_physics_resimulation": true,
+      "videos": {
+        "stl": {
+          "sha256": "667a2a29a62f99d5b3748df7f41173c0333185a9592646f0476ca596c372e040",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 45.65555556917781,
+          "mean_scene_change": 2.249323918269231
+        },
+        "collision": {
+          "sha256": "bf6bb0ee6556077b21c72ceb4c2f96b794f160a7b289180615ec5b747be469fa",
+          "probe": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "duration": "7.050000",
+            "nb_read_frames": "141"
+          },
+          "min_scene_pixel_std": 47.59576454868871,
+          "mean_scene_change": 2.0268557469729345
+        }
+      }
+    }
+  ],
+  "renderer_sha256": "7ad33c62f99713616bfc476181c399329e239babaa50c2c3279dd2bff29311eb",
+  "backend": "Mesa llvmpipe EGL software rendering",
+  "no_training": true,
+  "no_physics_resimulation": true
+}

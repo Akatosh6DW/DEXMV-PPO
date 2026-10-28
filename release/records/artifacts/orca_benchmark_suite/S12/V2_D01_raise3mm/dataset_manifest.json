@@ -1,0 +1,24 @@
+{
+  "model_sha256": "4b474cd43e3181c70ee30cf514c9c712f6d90053174c11a05ab4280c7318d2a5",
+  "reference_sha256": "0ff89e8be0c9ef4a0299bf13b5cc397e39cce6877b1b59beadde6a61b48a8468",
+  "actor_dim": 93,
+  "physics_backend": "native_mujoco_volumetric_elastic_full",
+  "task_sha256": "83e196f92d974e235203d4d8faea3311021e011dc0d0919d2bfc0c59bc64a649",
+  "dataset_sha256": "aadabca9c475e7eff987e59b546a445b4d1b5076ddcc69274ffb7a44b8beb59a",
+  "attempted_seeds": [
+    250100,
+    250101,
+    250102,
+    250103,
+    250104,
+    250105,
+    250106,
+    250107
+  ],
+  "seeds": [
+    250100,
+    250101,
+    250102,
+    250105
+  ]
+}
